@@ -1,2 +1,4 @@
-# nemo-benchmarks
-Benchmarks and examples for the Nemo rule reasoner
+# Nemo Examples and Benchmarks
+
+This repository contains exampls and benchmarks that can be used for the [Nemo rule reasoner](https://github.com/knowsys/nemo/).
+
