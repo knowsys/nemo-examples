@@ -1,0 +1,10 @@
+@source hospital[5]: load-csv("data/100k/hospital.csv.gz") .
+@source medprescription[6]: load-csv("data/100k/medprescription.csv.gz") .
+@source physician[4]: load-csv("data/100k/physician.csv.gz") .
+@source treatment[5]: load-csv("data/100k/treatment.csv.gz") .
+
+prescription(?id,?patient,?npi,!C1) :- treatment(?id,?patient,?hospital,?npi,?conf1),physician(?npi,?name,?spec,?conf2) .
+doctor(?npi,?doctor,?spec,!H,!C2) :- medprescription(?id,?patient,?npi,?doctor,?spec,?conf) .
+prescription(?id,?patient,?npi,!C1) :- medprescription(?id,?patient,?npi,?doctor,?spec,?conf) .
+doctor(?npi,?name,?spec,?hospital,!C2) :- treatment(?id,?patient,?hospital,?npi,?conf1),physician(?npi,?name,?spec,?conf2) .
+targethospital(?doctor,?spec,?hospital1,?npi1,?hconf1) :- hospital(?doctor,?spec,?hospital1,?npi1,?hconf1) .
