@@ -38,13 +38,11 @@ nemo/targets/release/nmo run-doctors-1m.rls
 ## VLog
 The simplest way to use [VLog](https://github.com/karmaresearch/vlog) is through [Rulewerk](https://github.com/knowsys/rulewerk). We used the [Version 0.9.0](https://github.com/knowsys/rulewerk/releases/tag/v0.9.0). 
 
-To build the standalone client, run `mvn install -Pclient`. This generates `standalone-rulewerk-client-[VERSION].jar` in `rulewerk-client/target`.
-
 Performing an experiment requires you to execute the standalone client, load the `.rls` file with the `@load` command, and start the reasoning process with `@reason`. 
 
 Using "Doctors 1M" as an example, the following commands are required:
 ```bash
-java -jar rulewerk-client/target/standalone-rulewerk-client-0.10.0-SNAPSHOT.jar 
+java -jar rulewerk-client-0.9.0.jar
 
 rulewerk> @load "run-doctors-1m.rls"
 rulewerk> @reason
