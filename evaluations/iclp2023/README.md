@@ -15,24 +15,13 @@ We performed the experiments on the following data sets:
 
 ## Nemo
 
-For the experiments, we used [Version 0.1.0 of Nemo](https://github.com/knowsys/nemo/releases/tag/v0.1.0):
-
-```bash
-git clone https://github.com/knowsys/nemo
-git checkout v0.1.0
-```
-
-This version requires the nightly build of Rust. Hence, to compile use
-```bash
-rustup toolchain install nightly
-cargo +nightly build -r
-```
+For the experiments, we used [Version 0.1.0 of Nemo](https://github.com/knowsys/nemo/releases/tag/v0.1.0).
 
 To run an experiment, navigate into the directory named after the experiment which contains the `.rls` file and provide it as an argument to our tool `nmo`. Running the experiment "Doctors 1M" for example would require the following commands:
 
 ```bash
 cd chasebench/doctors
-nemo/targets/release/nmo run-doctors-1m.rls
+nmo run-doctors-1m.rls
 ```
 
 ## VLog
