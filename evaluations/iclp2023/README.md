@@ -38,4 +38,4 @@ rulewerk> @reason
 ```
 
 ## Results
-Each experiment has been repeated three times. The reported run times are the average time and includes the loading of the input data as well as the reasoning itself. All the individual measurements can be found in `results.xlsx`.
+Each experiment has been repeated three times. The reported run times are the average time and includes the loading of the input data as well as the reasoning itself. All the individual measurements can be found in `results.ods`.
