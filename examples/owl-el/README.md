@@ -9,8 +9,8 @@ reasoning calculus published in Fig. 3 of
 in Datalog rules.
 
 The calculus requires a normalised version of the EL ontology as input data. We provide two examples:
-- `from-preprocessed-csv` shows only the OWL EL calculus, working on the preprocessed data encoded in several CSV files.
-- `from-owl-rdf` uses rules (with negation and existential quantifiers) to extract the preprocessed data from an OWL file in OWL/RDF format, which can then directly be used in reasoning
+- [`from-preprocessed-csv`](https://github.com/knowsys/nemo-examples/tree/main/examples/owl-el/from-preprocessed-csv) shows only the OWL EL calculus, working on the preprocessed data encoded in several CSV files.
+- [`from-owl-rdf`](https://github.com/knowsys/nemo-examples/tree/main/examples/owl-el/from-owl-rdf) uses rules (with negation and existential quantifiers) to extract the preprocessed data from an OWL file in OWL/RDF format, which can then directly be used in reasoning
 
 The latter therefore implements a complete OWL EL reasoner (file parsing, ontology preprocessing, reasoning, and output of class hierarchy) in Nemo.
 
