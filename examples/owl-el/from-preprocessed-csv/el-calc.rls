@@ -5,13 +5,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix genid: <https://rulewerk.semantic-web.org/.well-known/genid/> .
 
-@source nf:isMainClass[1]: load-csv("data/isMainClass.csv.gz") .
-@source nf:isSubClass[1]: load-csv("data/isSubClass.csv.gz") .
-@source nf:conj[3]: load-csv("data/conj.csv.gz") .
-@source nf:exists[3]: load-csv("data/exists.csv.gz") .
-@source nf:subClassOf[2]: load-csv("data/subClassOf.csv.gz") .
-@source nf:subPropChain[3]: load-csv("data/subPropChain.csv.gz") .
-@source nf:subProp[2]: load-csv("data/subProp.csv.gz") .
+@source nf:isMainClass[any]: load-csv("data/isMainClass.csv.gz") .
+@source nf:isSubClass[any]: load-csv("data/isSubClass.csv.gz") .
+@source nf:conj[any,any,any]: load-csv("data/conj.csv.gz") .
+@source nf:exists[any,any,any]: load-csv("data/exists.csv.gz") .
+@source nf:subClassOf[any,any]: load-csv("data/subClassOf.csv.gz") .
+@source nf:subPropChain[any,any,any]: load-csv("data/subPropChain.csv.gz") .
+@source nf:subProp[any,any]: load-csv("data/subProp.csv.gz") .
 
 %%% Start classification for all named classes:
 
