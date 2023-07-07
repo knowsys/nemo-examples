@@ -15,7 +15,7 @@ We performed the experiments on the following data sets:
 
 ## Nemo
 
-For the experiments, we used [Version 0.1.0 of Nemo](https://github.com/knowsys/nemo/releases/tag/v0.1.0).
+For the experiments, we used [Version 0.2.0 of Nemo](https://github.com/knowsys/nemo/releases/tag/v0.2.0).
 
 To run an experiment, navigate into the directory named after the experiment which contains the `.rls` file and provide it as an argument to our tool `nmo`. Running the experiment "Doctors 1M" for example would require the following commands:
 
