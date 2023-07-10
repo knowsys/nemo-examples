@@ -6,9 +6,8 @@
 % find old trees. It can be modified to use a different species or genus of
 % plant, and by changing the required age.
 
-@declare tree(any,any,integer,integer) .
-@source tree[4]: load-csv("dresden-trees-ages-heights.csv") .    % location URL, species, age, height in m
-@source taxon[3]: load-csv("wikidata-taxon-name-parent.csv.gz") . % Wikidata ID, taxon name, Wikidata ID of parent taxon
+@source tree[any,string,integer,integer]: load-csv("dresden-trees-ages-heights.csv") .    % location URL, species, age, height in m
+@source taxon[any,string,any]: load-csv("wikidata-taxon-name-parent.csv.gz") . % Wikidata ID, taxon name, Wikidata ID of parent taxon
 
 limeSpecies(?X, "Tilia") :- taxon(?X, "Tilia", ?P).
 limeSpecies(?X, ?Name) :- taxon(?X, ?Name, ?Y), limeSpecies(?Y, ?N).
