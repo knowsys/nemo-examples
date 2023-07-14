@@ -8,7 +8,7 @@ stripped of lines that contain the string "phi-assign" as explained in the comme
 The analysis handles the following three cases:
  * copying of constants (constant propagation) 
  * constant folding of unary expressions (negation)
- * constant folding of binary expressions (\+,\-,\*,\/)
+ * constant folding of binary expressions (`+`,`-`,`*`,`/`)
 
 
 To run this analysis with custom DOOP input you have to:
