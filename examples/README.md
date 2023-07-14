@@ -6,4 +6,4 @@ We provide the following examples:
 * `owl-el`: classification of OWL EL ontologies, possibly directly from the original OWL/RDF file
   *(uses: negation, existential rules, RDF input, CSV input)*
 * `constant-folding`: program analysis that detects constant propagation and constant folding with unary and binary expressions
-  *(uses: TSV input from DOOP, arithmetic expressions +,-,/,\*)*
+  *(uses: TSV input from DOOP, arithmetic expressions \+,\-,\/,\*)*
