@@ -1,0 +1,247 @@
+% own relations:
+@declare ConstFold_nemo(string, string, integer,string) .
+@declare IntConst_nemo(string, integer,  string) .
+
+
+% dive into doop-syntax:
+% the instrucion-id (?ins) is a unique identifier for each line of intermediate code (IR)
+% everything that happens on one IR-line, will be linked with the same instruction-id
+% it may look like this: "<Example: void main(java.lang.String[])>/assign/4"
+% where "<Example: void main(java.lang.String[])>/" is the function signature
+% "assign/" means it is an assignment (i.e. a=b;), and "4" is the line number of the statement
+
+
+
+%loaded files from doop:
+
+% AssignNumConstant:        contains all variables that hold a constant value (i.e. a = 1) -> this is the base for this analysis
+@source AssignNumConstant[string, integer, integer, string, string] : load-tsv("data/AssignNumConstant.facts") .
+
+
+% AssignLocal:              holds assignments of type a = b. However we use the filtered version ("AssignLocalNoPhi.facts"), 
+%                           which only holds static assignments (assignments that include the string "phi-assign" are dynamically and have been removed)
+@source AssignLocal[string, integer, string, string, string] : load-tsv("data/AssignLocalNoPhi.facts") .
+
+
+% OperatorAt:               links an instruction-id of a unary or binary expression to its operator
+%                           most common operators: (~, +, -, *, /, >=, <=, ==, <<, !=, >, len, <, %, ^, cmp, &, cmpl, cmpg, >>>, >>, |)
+@source OperatorAt[2] : load-tsv("data/OperatorAt.facts") .
+
+
+% AssignUnop:               holds the instruction-id and variable that is getting assigned by a unary expression
+@source AssignUnop[string, integer, string, string] : load-tsv("data/AssignUnop.facts") .
+
+
+% AssignBinop:              holds the instruction-id and the variable that is getting assigned by a binary expression
+@source AssignBinop[string, integer, string, string] : load-tsv("data/AssignBinop.facts") .
+
+
+% AssignOperFrom:           links an instruction-id of a unary or binary expression, to the VARIABLE(S) that are used    
+%                           (i.e. a = b + c, will have two entries in AssignOperFrom)
+@source AssignOperFrom[string, integer, string] : load-tsv("data/AssignOperFrom.facts") .
+
+
+% AssignOperFromConstant:   links an instruction-id of a unary or binary expression to the CONSTANT(S) used 
+%                           (i.e. a = b + 2, will have one entries in AssignOperFromConstant)
+@source AssignOperFromConstant[string, integer, integer] : load-tsv("data/AssignOperFromConstant.facts") .
+
+
+
+% Implementation:
+% IntConst_nemo contains all constants (given & computed)
+% it is initialized with all constants that are supplied by doop in AssignNumConstant (i.e. a = 2;)
+% ConstFold_nemo will contain all variables and values where constant folding & propagation was successfull
+% the doop relations AssignUnop & AssignBinop ONLY contain the instruction-id and the assigned variable 
+% -> we need to manually check, if the expression consists of constants (a =  1 + 2;) variables (a = b + c;) or both (a = b + 2;)
+%   -> 2 cases for unary expressions:   (- const), (- var)                           
+%   -> 3 cases each for binary expressions (+,*): (var + var), (const + const), (const + var)-> order of var & const is irrelevant
+%   -> 4 cases each for binary expressions (-, /): (var - var), (const - const), (const - var), (var - const) -> order of var & const is relevant 
+
+
+% Initialize IntConst_nemo with all constants from AssignNumConstant
+IntConst_nemo(?var, ?val,?meth) :-
+    AssignNumConstant(?ins, ?ln, ?val, ?var, ?meth).
+
+
+% Assignment without Operator (i.e.  a  = b)
+IntConst_nemo(?var_to, ?val, ?meth),
+ConstFold_nemo(?ins,?var_to, ?val,  ?meth) :-
+    AssignLocal(?ins, ?ln, ?var_from, ?var_to, ?meth),
+    IntConst_nemo(?var_from, ?val, ?meth).
+
+
+
+% Unary-Negation: "-" is translated to "~" in OperatorAt
+
+IntConst_nemo(?var, 0 - ?val1 , ?meth),
+ConstFold_nemo(?ins,?var, 0 - ?val1 ,  ?meth) :-
+    AssignUnop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "~" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    IntConst_nemo(?var1, ?val1, ?meth) .
+
+IntConst_nemo(?var, 0 - ?val1 , ?meth),
+ConstFold_nemo(?ins,?var, 0 - ?val1 ,  ?meth) :-
+    AssignUnop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "~" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) .
+
+
+
+% Addition
+
+IntConst_nemo(?var, ?val1 + ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 + ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "+" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+IntConst_nemo(?var, ?val1 + ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 + ?val2, ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "+" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo(?var, ?val1 + ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 + ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "+" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2 ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+
+
+% Subtraction
+
+IntConst_nemo(?var, ?val1 - ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 - ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "-" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2, 
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+IntConst_nemo(?var, ?val1 - ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 - ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "-" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo(?var, ?val1 - ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 - ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "-" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo( ?var, ?val1 - ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 - ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "-" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2 ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+
+
+% Multiplication
+
+IntConst_nemo(?var, ?val1 * ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 * ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "*" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+IntConst_nemo( ?var, ?val1 * ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 * ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "*" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo(?var, ?val1 * ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 * ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "*" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2 ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+
+
+% Division
+
+IntConst_nemo(?var, ?val1 / ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 / ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "/" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2, 
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+IntConst_nemo(?var, ?val1 / ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 / ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "/" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo(?var, ?val1 / ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 / ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "/" ,
+    AssignOperFromConstant(?ins, ?pos1, ?val1) ,
+    AssignOperFromConstant(?ins, ?pos2, ?val2) ,
+    ?pos1 < ?pos2.
+
+IntConst_nemo(?var, ?val1 / ?val2, ?meth),
+ConstFold_nemo(?ins,?var, ?val1 / ?val2,  ?meth) :-
+    AssignBinop(?ins,?x, ?var, ?meth) ,
+    OperatorAt(?ins, ?op) ,
+    ?op = "/" ,
+    AssignOperFrom(?ins, ?pos1, ?var1) ,
+    AssignOperFrom(?ins, ?pos2, ?var2) ,
+    ?pos1 < ?pos2 ,
+    IntConst_nemo(?var1, ?val1, ?meth) ,
+    IntConst_nemo(?var2, ?val2,?meth) .
+
+
+@output ConstFold_nemo .
+@output IntConst_nemo .
