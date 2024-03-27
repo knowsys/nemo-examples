@@ -1,224 +1,226 @@
-% Sources
-@source act_vnm_8_nl0_ce0[4]: load-csv("data/act_vnm_8_nl0_ce0.csv.gz") .
-@source air_ad_39_nl0_ce0[5]: load-csv("data/air_ad_39_nl0_ce0.csv.gz") .
-@source amount_vnm_4_nl0_ce0[3]: load-csv("data/amount_vnm_4_nl0_ce0.csv.gz") .
-@source apparatus_vnm_47_nl0_ce0[4]: load-csv("data/apparatus_vnm_47_nl0_ce0.csv.gz") .
-@source attack_vi_51_nl0_ce0[5]: load-csv("data/attack_vi_51_nl0_ce0.csv.gz") .
-@source automatic_ad_29_nl0_ce0[4]: load-csv("data/automatic_ad_29_nl0_ce0.csv.gz") .
-@source automatic_vnm_22_nl0_ce0[4]: load-csv("data/automatic_vnm_22_nl0_ce0.csv.gz") .
-@source avoid_vh_18_nl0_ce0[7]: load-csv("data/avoid_vh_18_nl0_ce0.csv.gz") .
-@source avoid_vi_32_nl0_ce0[3]: load-csv("data/avoid_vi_32_nl0_ce0.csv.gz") .
-@source back_ad_62_nl0_ce0[4]: load-csv("data/back_ad_62_nl0_ce0.csv.gz") .
-@source bag_vh_38_nl0_ce0[4]: load-csv("data/bag_vh_38_nl0_ce0.csv.gz") .
-@source base_vh_64_nl0_ce0[3]: load-csv("data/base_vh_64_nl0_ce0.csv.gz") .
-@source bath_ad_14_nl0_ce0[3]: load-csv("data/bath_ad_14_nl0_ce0.csv.gz") .
-@source become_ad_32_nl0_ce0[4]: load-csv("data/become_ad_32_nl0_ce0.csv.gz") .
-@source become_vh_45_nl0_ce0[4]: load-csv("data/become_vh_45_nl0_ce0.csv.gz") .
-@source bed_ad_53_nl0_ce0[2]: load-csv("data/bed_ad_53_nl0_ce0.csv.gz") .
-@source behavior_vi_59_nl0_ce0[6]: load-csv("data/behavior_vi_59_nl0_ce0.csv.gz") .
-@source belong_vnm_18_nl0_ce0[3]: load-csv("data/belong_vnm_18_nl0_ce0.csv.gz") .
-@source birth_vi_15_nl0_ce0[3]: load-csv("data/birth_vi_15_nl0_ce0.csv.gz") .
-@source book_vh_42_nl0_ce0[6]: load-csv("data/book_vh_42_nl0_ce0.csv.gz") .
-@source branch_vi_11_nl0_ce0[4]: load-csv("data/branch_vi_11_nl0_ce0.csv.gz") .
-@source brick_vi_62_nl0_ce0[9]: load-csv("data/brick_vi_62_nl0_ce0.csv.gz") .
-@source bright_vi_12_nl0_ce0[5]: load-csv("data/bright_vi_12_nl0_ce0.csv.gz") .
-@source bucket_vh_8_nl0_ce0[4]: load-csv("data/bucket_vh_8_nl0_ce0.csv.gz") .
-@source building_vh_33_nl0_ce0[5]: load-csv("data/building_vh_33_nl0_ce0.csv.gz") .
-@source buy_vh_62_nl0_ce0[5]: load-csv("data/buy_vh_62_nl0_ce0.csv.gz") .
-@source buy_vnm_20_nl0_ce0[5]: load-csv("data/buy_vnm_20_nl0_ce0.csv.gz") .
-@source cause_ad_31_nl0_ce0[5]: load-csv("data/cause_ad_31_nl0_ce0.csv.gz") .
-@source certain_vnm_3_nl0_ce0[5]: load-csv("data/certain_vnm_3_nl0_ce0.csv.gz") .
-@source check_vi_49_nl0_ce0[5]: load-csv("data/check_vi_49_nl0_ce0.csv.gz") .
-@source chemical_ad_20_nl0_ce0[5]: load-csv("data/chemical_ad_20_nl0_ce0.csv.gz") .
-@source chess_ad_52_nl0_ce0[3]: load-csv("data/chess_ad_52_nl0_ce0.csv.gz") .
-@source chief_vnm_17_nl0_ce0[4]: load-csv("data/chief_vnm_17_nl0_ce0.csv.gz") .
-@source chief_vnm_30_nl0_ce0[3]: load-csv("data/chief_vnm_30_nl0_ce0.csv.gz") .
-@source chin_vnm_13_nl0_ce0[5]: load-csv("data/chin_vnm_13_nl0_ce0.csv.gz") .
-@source circle_vnm_51_nl0_ce0[4]: load-csv("data/circle_vnm_51_nl0_ce0.csv.gz") .
-@source clear_vi_64_nl0_ce0[4]: load-csv("data/clear_vi_64_nl0_ce0.csv.gz") .
-@source collect_vh_19_nl0_ce0[4]: load-csv("data/collect_vh_19_nl0_ce0.csv.gz") .
-@source comb_vi_52_nl0_ce0[4]: load-csv("data/comb_vi_52_nl0_ce0.csv.gz") .
-@source committee_vnm_15_nl0_ce0[4]: load-csv("data/committee_vnm_15_nl0_ce0.csv.gz") .
-@source complain_vh_5_nl0_ce0[6]: load-csv("data/complain_vh_5_nl0_ce0.csv.gz") .
-@source condition_ad_35_nl0_ce0[1]: load-csv("data/condition_ad_35_nl0_ce0.csv.gz") .
-@source contact_vh_58_nl0_ce0[3]: load-csv("data/contact_vh_58_nl0_ce0.csv.gz") .
-@source control_ad_11_nl0_ce0[4]: load-csv("data/control_ad_11_nl0_ce0.csv.gz") .
-@source control_vh_39_nl0_ce0[5]: load-csv("data/control_vh_39_nl0_ce0.csv.gz") .
-@source copy_vnm_23_nl0_ce0[3]: load-csv("data/copy_vnm_23_nl0_ce0.csv.gz") .
-@source cover_vi_17_nl0_ce0[4]: load-csv("data/cover_vi_17_nl0_ce0.csv.gz") .
-@source cruel_ad_54_nl0_ce0[2]: load-csv("data/cruel_ad_54_nl0_ce0.csv.gz") .
-@source curve_vi_58_nl0_ce0[4]: load-csv("data/curve_vi_58_nl0_ce0.csv.gz") .
-@source cut_vi_25_nl0_ce0[4]: load-csv("data/cut_vi_25_nl0_ce0.csv.gz") .
-@source damage_vi_61_nl0_ce0[6]: load-csv("data/damage_vi_61_nl0_ce0.csv.gz") .
-@source danger_vi_53_nl0_ce0[5]: load-csv("data/danger_vi_53_nl0_ce0.csv.gz") .
-@source degree_vh_32_nl0_ce0[2]: load-csv("data/degree_vh_32_nl0_ce0.csv.gz") .
-@source delicate_ad_6_nl0_ce0[4]: load-csv("data/delicate_ad_6_nl0_ce0.csv.gz") .
-@source detail_vh_48_nl0_ce0[5]: load-csv("data/detail_vh_48_nl0_ce0.csv.gz") .
-@source disgust_ad_8_nl0_ce0[4]: load-csv("data/disgust_ad_8_nl0_ce0.csv.gz") .
-@source division_vh_2_nl0_ce0[6]: load-csv("data/division_vh_2_nl0_ce0.csv.gz") .
-@source do_vnm_58_nl0_ce0[6]: load-csv("data/do_vnm_58_nl0_ce0.csv.gz") .
-@source dress_ad_55_nl0_ce0[2]: load-csv("data/dress_ad_55_nl0_ce0.csv.gz") .
-@source drink_vh_10_nl0_ce0[5]: load-csv("data/drink_vh_10_nl0_ce0.csv.gz") .
-@source drive_vh_37_nl0_ce0[3]: load-csv("data/drive_vh_37_nl0_ce0.csv.gz") .
-@source early_vi_56_nl0_ce0[6]: load-csv("data/early_vi_56_nl0_ce0.csv.gz") .
-@source eat_vnm_63_nl0_ce0[5]: load-csv("data/eat_vnm_63_nl0_ce0.csv.gz") .
-@source effect_vnm_34_nl0_ce0[6]: load-csv("data/effect_vnm_34_nl0_ce0.csv.gz") .
-@source enable_ad_9_nl0_ce0[5]: load-csv("data/enable_ad_9_nl0_ce0.csv.gz") .
-@source error_vnm_43_nl0_ce0[4]: load-csv("data/error_vnm_43_nl0_ce0.csv.gz") .
-@source examine_ad_26_nl0_ce0[4]: load-csv("data/examine_ad_26_nl0_ce0.csv.gz") .
-@source expect_vnm_21_nl0_ce0[4]: load-csv("data/expect_vnm_21_nl0_ce0.csv.gz") .
-@source feather_vi_21_nl0_ce0[2]: load-csv("data/feather_vi_21_nl0_ce0.csv.gz") .
-@source fill_vh_46_nl0_ce0[6]: load-csv("data/fill_vh_46_nl0_ce0.csv.gz") .
-@source flower_vi_30_nl0_ce0[4]: load-csv("data/flower_vi_30_nl0_ce0.csv.gz") .
-@source fold_vnm_53_nl0_ce0[7]: load-csv("data/fold_vnm_53_nl0_ce0.csv.gz") .
-@source force_vnm_19_nl0_ce0[4]: load-csv("data/force_vnm_19_nl0_ce0.csv.gz") .
-@source forgive_vi_24_nl0_ce0[5]: load-csv("data/forgive_vi_24_nl0_ce0.csv.gz") .
-@source friend_ad_22_nl0_ce0[6]: load-csv("data/friend_ad_22_nl0_ce0.csv.gz") .
-@source fruit_vi_28_nl0_ce0[5]: load-csv("data/fruit_vi_28_nl0_ce0.csv.gz") .
-@source gain_ad_46_nl0_ce0[2]: load-csv("data/gain_ad_46_nl0_ce0.csv.gz") .
-@source garden_vi_3_nl0_ce0[5]: load-csv("data/garden_vi_3_nl0_ce0.csv.gz") .
-@source glove_vi_63_nl0_ce0[3]: load-csv("data/glove_vi_63_nl0_ce0.csv.gz") .
-@source government_vh_9_nl0_ce0[5]: load-csv("data/government_vh_9_nl0_ce0.csv.gz") .
-@source green_ad_27_nl0_ce0[4]: load-csv("data/green_ad_27_nl0_ce0.csv.gz") .
-@source guide_vh_27_nl0_ce0[4]: load-csv("data/guide_vh_27_nl0_ce0.csv.gz") .
-@source hanging_vi_16_nl0_ce0[5]: load-csv("data/hanging_vi_16_nl0_ce0.csv.gz") .
-@source harbor_vi_8_nl0_ce0[5]: load-csv("data/harbor_vi_8_nl0_ce0.csv.gz") .
-@source hard_vnm_36_nl0_ce0[4]: load-csv("data/hard_vnm_36_nl0_ce0.csv.gz") .
-@source hat_vnm_12_nl0_ce0[4]: load-csv("data/hat_vnm_12_nl0_ce0.csv.gz") .
-@source head_vnm_28_nl0_ce0[6]: load-csv("data/head_vnm_28_nl0_ce0.csv.gz") .
-@source hide_vh_20_nl0_ce0[5]: load-csv("data/hide_vh_20_nl0_ce0.csv.gz") .
-@source ice_vi_13_nl0_ce0[5]: load-csv("data/ice_vi_13_nl0_ce0.csv.gz") .
-@source imagine_ad_23_nl0_ce0[6]: load-csv("data/imagine_ad_23_nl0_ce0.csv.gz") .
-@source important_vh_7_nl0_ce0[3]: load-csv("data/important_vh_7_nl0_ce0.csv.gz") .
-@source impulse_ad_10_nl0_ce0[3]: load-csv("data/impulse_ad_10_nl0_ce0.csv.gz") .
-@source insurance_vi_14_nl0_ce0[6]: load-csv("data/insurance_vi_14_nl0_ce0.csv.gz") .
-@source insurance_vi_50_nl0_ce0[5]: load-csv("data/insurance_vi_50_nl0_ce0.csv.gz") .
-@source join_vh_41_nl0_ce0[5]: load-csv("data/join_vh_41_nl0_ce0.csv.gz") .
-@source keep_vnm_10_nl0_ce0[7]: load-csv("data/keep_vnm_10_nl0_ce0.csv.gz") .
-@source last_vi_4_nl0_ce0[4]: load-csv("data/last_vi_4_nl0_ce0.csv.gz") .
-@source last_vnm_26_nl0_ce0[5]: load-csv("data/last_vnm_26_nl0_ce0.csv.gz") .
-@source last_vnm_35_nl0_ce0[4]: load-csv("data/last_vnm_35_nl0_ce0.csv.gz") .
-@source laugh_ad_13_nl0_ce0[4]: load-csv("data/laugh_ad_13_nl0_ce0.csv.gz") .
-@source laugh_vh_25_nl0_ce0[4]: load-csv("data/laugh_vh_25_nl0_ce0.csv.gz") .
-@source learning_ad_36_nl0_ce0[4]: load-csv("data/learning_ad_36_nl0_ce0.csv.gz") .
-@source leather_vh_52_nl0_ce0[6]: load-csv("data/leather_vh_52_nl0_ce0.csv.gz") .
-@source library_ad_3_nl0_ce0[4]: load-csv("data/library_ad_3_nl0_ce0.csv.gz") .
-@source limit_vnm_60_nl0_ce0[5]: load-csv("data/limit_vnm_60_nl0_ce0.csv.gz") .
-@source line_vi_10_nl0_ce0[5]: load-csv("data/line_vi_10_nl0_ce0.csv.gz") .
-@source look_vh_63_nl0_ce0[4]: load-csv("data/look_vh_63_nl0_ce0.csv.gz") .
-@source loose_vnm_32_nl0_ce0[5]: load-csv("data/loose_vnm_32_nl0_ce0.csv.gz") .
-@source loud_vnm_16_nl0_ce0[5]: load-csv("data/loud_vnm_16_nl0_ce0.csv.gz") .
-@source machine_vi_23_nl0_ce0[5]: load-csv("data/machine_vi_23_nl0_ce0.csv.gz") .
-@source make_ad_5_nl0_ce0[5]: load-csv("data/make_ad_5_nl0_ce0.csv.gz") .
-@source map_vi_57_nl0_ce0[7]: load-csv("data/map_vi_57_nl0_ce0.csv.gz") .
-@source meal_vnm_27_nl0_ce0[5]: load-csv("data/meal_vnm_27_nl0_ce0.csv.gz") .
-@source mixed_vi_2_nl0_ce0[5]: load-csv("data/mixed_vi_2_nl0_ce0.csv.gz") .
-@source moon_vi_20_nl0_ce0[5]: load-csv("data/moon_vi_20_nl0_ce0.csv.gz") .
-@source music_vi_43_nl0_ce0[11]: load-csv("data/music_vi_43_nl0_ce0.csv.gz") .
-@source must_vnm_57_nl0_ce0[6]: load-csv("data/must_vnm_57_nl0_ce0.csv.gz") .
-@source nail_ad_28_nl0_ce0[4]: load-csv("data/nail_ad_28_nl0_ce0.csv.gz") .
-@source natural_ad_44_nl0_ce0[5]: load-csv("data/natural_ad_44_nl0_ce0.csv.gz") .
-@source need_vnm_59_nl0_ce0[4]: load-csv("data/need_vnm_59_nl0_ce0.csv.gz") .
-@source nerve_vh_47_nl0_ce0[3]: load-csv("data/nerve_vh_47_nl0_ce0.csv.gz") .
-@source news_ad_17_nl0_ce0[5]: load-csv("data/news_ad_17_nl0_ce0.csv.gz") .
-@source new_vnm_62_nl0_ce0[2]: load-csv("data/new_vnm_62_nl0_ce0.csv.gz") .
-@source nose_vh_28_nl0_ce0[5]: load-csv("data/nose_vh_28_nl0_ce0.csv.gz") .
-@source note_vh_24_nl0_ce0[6]: load-csv("data/note_vh_24_nl0_ce0.csv.gz") .
-@source opinion_vi_9_nl0_ce0[5]: load-csv("data/opinion_vi_9_nl0_ce0.csv.gz") .
-@source organization_ad_59_nl0_ce0[2]: load-csv("data/organization_ad_59_nl0_ce0.csv.gz") .
-@source ornament_vh_17_nl0_ce0[4]: load-csv("data/ornament_vh_17_nl0_ce0.csv.gz") .
-@source owner_vh_26_nl0_ce0[6]: load-csv("data/owner_vh_26_nl0_ce0.csv.gz") .
-@source paint_vnm_2_nl0_ce0[3]: load-csv("data/paint_vnm_2_nl0_ce0.csv.gz") .
-@source paper_vh_35_nl0_ce0[2]: load-csv("data/paper_vh_35_nl0_ce0.csv.gz") .
-@source parallel_ad_41_nl0_ce0[4]: load-csv("data/parallel_ad_41_nl0_ce0.csv.gz") .
-@source pass_vi_46_nl0_ce0[5]: load-csv("data/pass_vi_46_nl0_ce0.csv.gz") .
-@source past_vh_49_nl0_ce0[5]: load-csv("data/past_vh_49_nl0_ce0.csv.gz") .
-@source pencil_vh_4_nl0_ce0[5]: load-csv("data/pencil_vh_4_nl0_ce0.csv.gz") .
-@source pen_vh_15_nl0_ce0[5]: load-csv("data/pen_vh_15_nl0_ce0.csv.gz") .
-@source pipe_ad_2_nl0_ce0[5]: load-csv("data/pipe_ad_2_nl0_ce0.csv.gz") .
-@source place_vi_6_nl0_ce0[4]: load-csv("data/place_vi_6_nl0_ce0.csv.gz") .
-@source plough_vnm_55_nl0_ce0[4]: load-csv("data/plough_vnm_55_nl0_ce0.csv.gz") .
-@source poor_vh_12_nl0_ce0[6]: load-csv("data/poor_vh_12_nl0_ce0.csv.gz") .
-@source poor_vnm_5_nl0_ce0[6]: load-csv("data/poor_vnm_5_nl0_ce0.csv.gz") .
-@source porter_vi_55_nl0_ce0[9]: load-csv("data/porter_vi_55_nl0_ce0.csv.gz") .
-@source possible_ad_21_nl0_ce0[5]: load-csv("data/possible_ad_21_nl0_ce0.csv.gz") .
-@source power_vi_19_nl0_ce0[6]: load-csv("data/power_vi_19_nl0_ce0.csv.gz") .
-@source present_vnm_11_nl0_ce0[5]: load-csv("data/present_vnm_11_nl0_ce0.csv.gz") .
-@source private_vh_55_nl0_ce0[4]: load-csv("data/private_vh_55_nl0_ce0.csv.gz") .
-@source prove_vh_13_nl0_ce0[4]: load-csv("data/prove_vh_13_nl0_ce0.csv.gz") .
-@source publish_ad_18_nl0_ce0[4]: load-csv("data/publish_ad_18_nl0_ce0.csv.gz") .
-@source pull_vi_35_nl0_ce0[3]: load-csv("data/pull_vi_35_nl0_ce0.csv.gz") .
-@source quiet_ad_19_nl0_ce0[3]: load-csv("data/quiet_ad_19_nl0_ce0.csv.gz") .
-@source raise_vi_29_nl0_ce0[5]: load-csv("data/raise_vi_29_nl0_ce0.csv.gz") .
-@source ready_vnm_6_nl0_ce0[3]: load-csv("data/ready_vnm_6_nl0_ce0.csv.gz") .
-@source record_vi_37_nl0_ce0[6]: load-csv("data/record_vi_37_nl0_ce0.csv.gz") .
-@source record_vnm_44_nl0_ce0[3]: load-csv("data/record_vnm_44_nl0_ce0.csv.gz") .
-@source regret_vnm_40_nl0_ce0[3]: load-csv("data/regret_vnm_40_nl0_ce0.csv.gz") .
-@source reply_vi_42_nl0_ce0[5]: load-csv("data/reply_vi_42_nl0_ce0.csv.gz") .
-@source report_vnm_1_nl0_ce0[5]: load-csv("data/report_vnm_1_nl0_ce0.csv.gz") .
-@source representative_vh_34_nl0_ce0[5]: load-csv("data/representative_vh_34_nl0_ce0.csv.gz") .
-@source respect_vnm_7_nl0_ce0[4]: load-csv("data/respect_vnm_7_nl0_ce0.csv.gz") .
-@source ring_vh_3_nl0_ce0[5]: load-csv("data/ring_vh_3_nl0_ce0.csv.gz") .
-@source run_ad_24_nl0_ce0[6]: load-csv("data/run_ad_24_nl0_ce0.csv.gz") .
-@source scissors_vnm_38_nl0_ce0[6]: load-csv("data/scissors_vnm_38_nl0_ce0.csv.gz") .
-@source seat_vh_50_nl0_ce0[6]: load-csv("data/seat_vh_50_nl0_ce0.csv.gz") .
-@source secret_vnm_56_nl0_ce0[6]: load-csv("data/secret_vnm_56_nl0_ce0.csv.gz") .
-@source seed_vi_27_nl0_ce0[4]: load-csv("data/seed_vi_27_nl0_ce0.csv.gz") .
-@source see_ad_42_nl0_ce0[3]: load-csv("data/see_ad_42_nl0_ce0.csv.gz") .
-@source selection_vh_6_nl0_ce0[3]: load-csv("data/selection_vh_6_nl0_ce0.csv.gz") .
-@source separate_vnm_24_nl0_ce0[6]: load-csv("data/separate_vnm_24_nl0_ce0.csv.gz") .
-@source sex_vnm_42_nl0_ce0[6]: load-csv("data/sex_vnm_42_nl0_ce0.csv.gz") .
-@source shake_ad_37_nl0_ce0[5]: load-csv("data/shake_ad_37_nl0_ce0.csv.gz") .
-@source share_ad_50_nl0_ce0[4]: load-csv("data/share_ad_50_nl0_ce0.csv.gz") .
-@source shoe_vh_57_nl0_ce0[5]: load-csv("data/shoe_vh_57_nl0_ce0.csv.gz") .
-@source shut_vnm_52_nl0_ce0[4]: load-csv("data/shut_vnm_52_nl0_ce0.csv.gz") .
-@source sing_ad_58_nl0_ce0[5]: load-csv("data/sing_ad_58_nl0_ce0.csv.gz") .
-@source sky_ad_15_nl0_ce0[3]: load-csv("data/sky_ad_15_nl0_ce0.csv.gz") .
-@source snake_vh_29_nl0_ce0[6]: load-csv("data/snake_vh_29_nl0_ce0.csv.gz") .
-@source sneeze_vh_53_nl0_ce0[6]: load-csv("data/sneeze_vh_53_nl0_ce0.csv.gz") .
-@source society_vi_1_nl0_ce0[5]: load-csv("data/society_vi_1_nl0_ce0.csv.gz") .
-@source soup_vi_22_nl0_ce0[5]: load-csv("data/soup_vi_22_nl0_ce0.csv.gz") .
-@source special_vnm_29_nl0_ce0[5]: load-csv("data/special_vnm_29_nl0_ce0.csv.gz") .
-@source spoon_ad_34_nl0_ce0[5]: load-csv("data/spoon_ad_34_nl0_ce0.csv.gz") .
-@source stamp_ad_12_nl0_ce0[5]: load-csv("data/stamp_ad_12_nl0_ce0.csv.gz") .
-@source sticky_vnm_14_nl0_ce0[5]: load-csv("data/sticky_vnm_14_nl0_ce0.csv.gz") .
-@source stick_vh_30_nl0_ce0[5]: load-csv("data/stick_vh_30_nl0_ce0.csv.gz") .
-@source stiff_vi_5_nl0_ce0[5]: load-csv("data/stiff_vi_5_nl0_ce0.csv.gz") .
-@source stone_vi_44_nl0_ce0[3]: load-csv("data/stone_vi_44_nl0_ce0.csv.gz") .
-@source stop_vh_21_nl0_ce0[3]: load-csv("data/stop_vh_21_nl0_ce0.csv.gz") .
-@source straight_vh_54_nl0_ce0[6]: load-csv("data/straight_vh_54_nl0_ce0.csv.gz") .
-@source strong_vi_31_nl0_ce0[6]: load-csv("data/strong_vi_31_nl0_ce0.csv.gz") .
-@source structure_vh_22_nl0_ce0[4]: load-csv("data/structure_vh_22_nl0_ce0.csv.gz") .
-@source sweet_vnm_37_nl0_ce0[5]: load-csv("data/sweet_vnm_37_nl0_ce0.csv.gz") .
-@source test_ad_1_nl0_ce0[3]: load-csv("data/test_ad_1_nl0_ce0.csv.gz") .
-@source test_vi_33_nl0_ce0[3]: load-csv("data/test_vi_33_nl0_ce0.csv.gz") .
-@source thank_ad_16_nl0_ce0[4]: load-csv("data/thank_ad_16_nl0_ce0.csv.gz") .
-@source time_vnm_9_nl0_ce0[5]: load-csv("data/time_vnm_9_nl0_ce0.csv.gz") .
-@source tree_vi_39_nl0_ce0[3]: load-csv("data/tree_vi_39_nl0_ce0.csv.gz") .
-@source umbrella_vnm_41_nl0_ce0[6]: load-csv("data/umbrella_vnm_41_nl0_ce0.csv.gz") .
-@source visit_ad_45_nl0_ce0[5]: load-csv("data/visit_ad_45_nl0_ce0.csv.gz") .
-@source visit_vi_26_nl0_ce0[4]: load-csv("data/visit_vi_26_nl0_ce0.csv.gz") .
-@source voice_vnm_49_nl0_ce0[3]: load-csv("data/voice_vnm_49_nl0_ce0.csv.gz") .
-@source wall_vi_7_nl0_ce0[5]: load-csv("data/wall_vi_7_nl0_ce0.csv.gz") .
-@source want_ad_30_nl0_ce0[5]: load-csv("data/want_ad_30_nl0_ce0.csv.gz") .
-@source warn_vh_1_nl0_ce0[6]: load-csv("data/warn_vh_1_nl0_ce0.csv.gz") .
-@source wash_vh_23_nl0_ce0[5]: load-csv("data/wash_vh_23_nl0_ce0.csv.gz") .
-@source watch_vnm_61_nl0_ce0[4]: load-csv("data/watch_vnm_61_nl0_ce0.csv.gz") .
-@source wax_vnm_46_nl0_ce0[6]: load-csv("data/wax_vnm_46_nl0_ce0.csv.gz") .
-@source wear_ad_25_nl0_ce0[5]: load-csv("data/wear_ad_25_nl0_ce0.csv.gz") .
-@source whip_vh_11_nl0_ce0[5]: load-csv("data/whip_vh_11_nl0_ce0.csv.gz") .
-@source whistle_vh_31_nl0_ce0[6]: load-csv("data/whistle_vh_31_nl0_ce0.csv.gz") .
-@source will_ad_7_nl0_ce0[5]: load-csv("data/will_ad_7_nl0_ce0.csv.gz") .
-@source wind_vnm_25_nl0_ce0[3]: load-csv("data/wind_vnm_25_nl0_ce0.csv.gz") .
-@source wing_vh_14_nl0_ce0[4]: load-csv("data/wing_vh_14_nl0_ce0.csv.gz") .
-@source winter_vh_16_nl0_ce0[7]: load-csv("data/winter_vh_16_nl0_ce0.csv.gz") .
-@source woman_vnm_31_nl0_ce0[3]: load-csv("data/woman_vnm_31_nl0_ce0.csv.gz") .
-@source work_vi_18_nl0_ce0[4]: load-csv("data/work_vi_18_nl0_ce0.csv.gz") .
-@source worm_ad_33_nl0_ce0[3]: load-csv("data/worm_ad_33_nl0_ce0.csv.gz") .
-@source worry_ad_4_nl0_ce0[4]: load-csv("data/worry_ad_4_nl0_ce0.csv.gz") .
-@source write_vh_56_nl0_ce0[3]: load-csv("data/write_vh_56_nl0_ce0.csv.gz") .
+%%% Imports
 
-% Rules
+@import act_vnm_8_nl0_ce0 :- csv { resource = "data/act_vnm_8_nl0_ce0.csv.gz" } .
+@import air_ad_39_nl0_ce0 :- csv { resource = "data/air_ad_39_nl0_ce0.csv.gz" } .
+@import amount_vnm_4_nl0_ce0 :- csv { resource = "data/amount_vnm_4_nl0_ce0.csv.gz" } .
+@import apparatus_vnm_47_nl0_ce0 :- csv { resource = "data/apparatus_vnm_47_nl0_ce0.csv.gz" } .
+@import attack_vi_51_nl0_ce0 :- csv { resource = "data/attack_vi_51_nl0_ce0.csv.gz" } .
+@import automatic_ad_29_nl0_ce0 :- csv { resource = "data/automatic_ad_29_nl0_ce0.csv.gz" } .
+@import automatic_vnm_22_nl0_ce0 :- csv { resource = "data/automatic_vnm_22_nl0_ce0.csv.gz" } .
+@import avoid_vh_18_nl0_ce0 :- csv { resource = "data/avoid_vh_18_nl0_ce0.csv.gz" } .
+@import avoid_vi_32_nl0_ce0 :- csv { resource = "data/avoid_vi_32_nl0_ce0.csv.gz" } .
+@import back_ad_62_nl0_ce0 :- csv { resource = "data/back_ad_62_nl0_ce0.csv.gz" } .
+@import bag_vh_38_nl0_ce0 :- csv { resource = "data/bag_vh_38_nl0_ce0.csv.gz" } .
+@import base_vh_64_nl0_ce0 :- csv { resource = "data/base_vh_64_nl0_ce0.csv.gz" } .
+@import bath_ad_14_nl0_ce0 :- csv { resource = "data/bath_ad_14_nl0_ce0.csv.gz" } .
+@import become_ad_32_nl0_ce0 :- csv { resource = "data/become_ad_32_nl0_ce0.csv.gz" } .
+@import become_vh_45_nl0_ce0 :- csv { resource = "data/become_vh_45_nl0_ce0.csv.gz" } .
+@import bed_ad_53_nl0_ce0 :- csv { resource = "data/bed_ad_53_nl0_ce0.csv.gz" } .
+@import behavior_vi_59_nl0_ce0 :- csv { resource = "data/behavior_vi_59_nl0_ce0.csv.gz" } .
+@import belong_vnm_18_nl0_ce0 :- csv { resource = "data/belong_vnm_18_nl0_ce0.csv.gz" } .
+@import birth_vi_15_nl0_ce0 :- csv { resource = "data/birth_vi_15_nl0_ce0.csv.gz" } .
+@import book_vh_42_nl0_ce0 :- csv { resource = "data/book_vh_42_nl0_ce0.csv.gz" } .
+@import branch_vi_11_nl0_ce0 :- csv { resource = "data/branch_vi_11_nl0_ce0.csv.gz" } .
+@import brick_vi_62_nl0_ce0 :- csv { resource = "data/brick_vi_62_nl0_ce0.csv.gz" } .
+@import bright_vi_12_nl0_ce0 :- csv { resource = "data/bright_vi_12_nl0_ce0.csv.gz" } .
+@import bucket_vh_8_nl0_ce0 :- csv { resource = "data/bucket_vh_8_nl0_ce0.csv.gz" } .
+@import building_vh_33_nl0_ce0 :- csv { resource = "data/building_vh_33_nl0_ce0.csv.gz" } .
+@import buy_vh_62_nl0_ce0 :- csv { resource = "data/buy_vh_62_nl0_ce0.csv.gz" } .
+@import buy_vnm_20_nl0_ce0 :- csv { resource = "data/buy_vnm_20_nl0_ce0.csv.gz" } .
+@import cause_ad_31_nl0_ce0 :- csv { resource = "data/cause_ad_31_nl0_ce0.csv.gz" } .
+@import certain_vnm_3_nl0_ce0 :- csv { resource = "data/certain_vnm_3_nl0_ce0.csv.gz" } .
+@import check_vi_49_nl0_ce0 :- csv { resource = "data/check_vi_49_nl0_ce0.csv.gz" } .
+@import chemical_ad_20_nl0_ce0 :- csv { resource = "data/chemical_ad_20_nl0_ce0.csv.gz" } .
+@import chess_ad_52_nl0_ce0 :- csv { resource = "data/chess_ad_52_nl0_ce0.csv.gz" } .
+@import chief_vnm_17_nl0_ce0 :- csv { resource = "data/chief_vnm_17_nl0_ce0.csv.gz" } .
+@import chief_vnm_30_nl0_ce0 :- csv { resource = "data/chief_vnm_30_nl0_ce0.csv.gz" } .
+@import chin_vnm_13_nl0_ce0 :- csv { resource = "data/chin_vnm_13_nl0_ce0.csv.gz" } .
+@import circle_vnm_51_nl0_ce0 :- csv { resource = "data/circle_vnm_51_nl0_ce0.csv.gz" } .
+@import clear_vi_64_nl0_ce0 :- csv { resource = "data/clear_vi_64_nl0_ce0.csv.gz" } .
+@import collect_vh_19_nl0_ce0 :- csv { resource = "data/collect_vh_19_nl0_ce0.csv.gz" } .
+@import comb_vi_52_nl0_ce0 :- csv { resource = "data/comb_vi_52_nl0_ce0.csv.gz" } .
+@import committee_vnm_15_nl0_ce0 :- csv { resource = "data/committee_vnm_15_nl0_ce0.csv.gz" } .
+@import complain_vh_5_nl0_ce0 :- csv { resource = "data/complain_vh_5_nl0_ce0.csv.gz" } .
+@import condition_ad_35_nl0_ce0 :- csv { resource = "data/condition_ad_35_nl0_ce0.csv.gz" } .
+@import contact_vh_58_nl0_ce0 :- csv { resource = "data/contact_vh_58_nl0_ce0.csv.gz" } .
+@import control_ad_11_nl0_ce0 :- csv { resource = "data/control_ad_11_nl0_ce0.csv.gz" } .
+@import control_vh_39_nl0_ce0 :- csv { resource = "data/control_vh_39_nl0_ce0.csv.gz" } .
+@import copy_vnm_23_nl0_ce0 :- csv { resource = "data/copy_vnm_23_nl0_ce0.csv.gz" } .
+@import cover_vi_17_nl0_ce0 :- csv { resource = "data/cover_vi_17_nl0_ce0.csv.gz" } .
+@import cruel_ad_54_nl0_ce0 :- csv { resource = "data/cruel_ad_54_nl0_ce0.csv.gz" } .
+@import curve_vi_58_nl0_ce0 :- csv { resource = "data/curve_vi_58_nl0_ce0.csv.gz" } .
+@import cut_vi_25_nl0_ce0 :- csv { resource = "data/cut_vi_25_nl0_ce0.csv.gz" } .
+@import damage_vi_61_nl0_ce0 :- csv { resource = "data/damage_vi_61_nl0_ce0.csv.gz" } .
+@import danger_vi_53_nl0_ce0 :- csv { resource = "data/danger_vi_53_nl0_ce0.csv.gz" } .
+@import degree_vh_32_nl0_ce0 :- csv { resource = "data/degree_vh_32_nl0_ce0.csv.gz" } .
+@import delicate_ad_6_nl0_ce0 :- csv { resource = "data/delicate_ad_6_nl0_ce0.csv.gz" } .
+@import detail_vh_48_nl0_ce0 :- csv { resource = "data/detail_vh_48_nl0_ce0.csv.gz" } .
+@import disgust_ad_8_nl0_ce0 :- csv { resource = "data/disgust_ad_8_nl0_ce0.csv.gz" } .
+@import division_vh_2_nl0_ce0 :- csv { resource = "data/division_vh_2_nl0_ce0.csv.gz" } .
+@import do_vnm_58_nl0_ce0 :- csv { resource = "data/do_vnm_58_nl0_ce0.csv.gz" } .
+@import dress_ad_55_nl0_ce0 :- csv { resource = "data/dress_ad_55_nl0_ce0.csv.gz" } .
+@import drink_vh_10_nl0_ce0 :- csv { resource = "data/drink_vh_10_nl0_ce0.csv.gz" } .
+@import drive_vh_37_nl0_ce0 :- csv { resource = "data/drive_vh_37_nl0_ce0.csv.gz" } .
+@import early_vi_56_nl0_ce0 :- csv { resource = "data/early_vi_56_nl0_ce0.csv.gz" } .
+@import eat_vnm_63_nl0_ce0 :- csv { resource = "data/eat_vnm_63_nl0_ce0.csv.gz" } .
+@import effect_vnm_34_nl0_ce0 :- csv { resource = "data/effect_vnm_34_nl0_ce0.csv.gz" } .
+@import enable_ad_9_nl0_ce0 :- csv { resource = "data/enable_ad_9_nl0_ce0.csv.gz" } .
+@import error_vnm_43_nl0_ce0 :- csv { resource = "data/error_vnm_43_nl0_ce0.csv.gz" } .
+@import examine_ad_26_nl0_ce0 :- csv { resource = "data/examine_ad_26_nl0_ce0.csv.gz" } .
+@import expect_vnm_21_nl0_ce0 :- csv { resource = "data/expect_vnm_21_nl0_ce0.csv.gz" } .
+@import feather_vi_21_nl0_ce0 :- csv { resource = "data/feather_vi_21_nl0_ce0.csv.gz" } .
+@import fill_vh_46_nl0_ce0 :- csv { resource = "data/fill_vh_46_nl0_ce0.csv.gz" } .
+@import flower_vi_30_nl0_ce0 :- csv { resource = "data/flower_vi_30_nl0_ce0.csv.gz" } .
+@import fold_vnm_53_nl0_ce0 :- csv { resource = "data/fold_vnm_53_nl0_ce0.csv.gz" } .
+@import force_vnm_19_nl0_ce0 :- csv { resource = "data/force_vnm_19_nl0_ce0.csv.gz" } .
+@import forgive_vi_24_nl0_ce0 :- csv { resource = "data/forgive_vi_24_nl0_ce0.csv.gz" } .
+@import friend_ad_22_nl0_ce0 :- csv { resource = "data/friend_ad_22_nl0_ce0.csv.gz" } .
+@import fruit_vi_28_nl0_ce0 :- csv { resource = "data/fruit_vi_28_nl0_ce0.csv.gz" } .
+@import gain_ad_46_nl0_ce0 :- csv { resource = "data/gain_ad_46_nl0_ce0.csv.gz" } .
+@import garden_vi_3_nl0_ce0 :- csv { resource = "data/garden_vi_3_nl0_ce0.csv.gz" } .
+@import glove_vi_63_nl0_ce0 :- csv { resource = "data/glove_vi_63_nl0_ce0.csv.gz" } .
+@import government_vh_9_nl0_ce0 :- csv { resource = "data/government_vh_9_nl0_ce0.csv.gz" } .
+@import green_ad_27_nl0_ce0 :- csv { resource = "data/green_ad_27_nl0_ce0.csv.gz" } .
+@import guide_vh_27_nl0_ce0 :- csv { resource = "data/guide_vh_27_nl0_ce0.csv.gz" } .
+@import hanging_vi_16_nl0_ce0 :- csv { resource = "data/hanging_vi_16_nl0_ce0.csv.gz" } .
+@import harbor_vi_8_nl0_ce0 :- csv { resource = "data/harbor_vi_8_nl0_ce0.csv.gz" } .
+@import hard_vnm_36_nl0_ce0 :- csv { resource = "data/hard_vnm_36_nl0_ce0.csv.gz" } .
+@import hat_vnm_12_nl0_ce0 :- csv { resource = "data/hat_vnm_12_nl0_ce0.csv.gz" } .
+@import head_vnm_28_nl0_ce0 :- csv { resource = "data/head_vnm_28_nl0_ce0.csv.gz" } .
+@import hide_vh_20_nl0_ce0 :- csv { resource = "data/hide_vh_20_nl0_ce0.csv.gz" } .
+@import ice_vi_13_nl0_ce0 :- csv { resource = "data/ice_vi_13_nl0_ce0.csv.gz" } .
+@import imagine_ad_23_nl0_ce0 :- csv { resource = "data/imagine_ad_23_nl0_ce0.csv.gz" } .
+@import important_vh_7_nl0_ce0 :- csv { resource = "data/important_vh_7_nl0_ce0.csv.gz" } .
+@import impulse_ad_10_nl0_ce0 :- csv { resource = "data/impulse_ad_10_nl0_ce0.csv.gz" } .
+@import insurance_vi_14_nl0_ce0 :- csv { resource = "data/insurance_vi_14_nl0_ce0.csv.gz" } .
+@import insurance_vi_50_nl0_ce0 :- csv { resource = "data/insurance_vi_50_nl0_ce0.csv.gz" } .
+@import join_vh_41_nl0_ce0 :- csv { resource = "data/join_vh_41_nl0_ce0.csv.gz" } .
+@import keep_vnm_10_nl0_ce0 :- csv { resource = "data/keep_vnm_10_nl0_ce0.csv.gz" } .
+@import last_vi_4_nl0_ce0 :- csv { resource = "data/last_vi_4_nl0_ce0.csv.gz" } .
+@import last_vnm_26_nl0_ce0 :- csv { resource = "data/last_vnm_26_nl0_ce0.csv.gz" } .
+@import last_vnm_35_nl0_ce0 :- csv { resource = "data/last_vnm_35_nl0_ce0.csv.gz" } .
+@import laugh_ad_13_nl0_ce0 :- csv { resource = "data/laugh_ad_13_nl0_ce0.csv.gz" } .
+@import laugh_vh_25_nl0_ce0 :- csv { resource = "data/laugh_vh_25_nl0_ce0.csv.gz" } .
+@import learning_ad_36_nl0_ce0 :- csv { resource = "data/learning_ad_36_nl0_ce0.csv.gz" } .
+@import leather_vh_52_nl0_ce0 :- csv { resource = "data/leather_vh_52_nl0_ce0.csv.gz" } .
+@import library_ad_3_nl0_ce0 :- csv { resource = "data/library_ad_3_nl0_ce0.csv.gz" } .
+@import limit_vnm_60_nl0_ce0 :- csv { resource = "data/limit_vnm_60_nl0_ce0.csv.gz" } .
+@import line_vi_10_nl0_ce0 :- csv { resource = "data/line_vi_10_nl0_ce0.csv.gz" } .
+@import look_vh_63_nl0_ce0 :- csv { resource = "data/look_vh_63_nl0_ce0.csv.gz" } .
+@import loose_vnm_32_nl0_ce0 :- csv { resource = "data/loose_vnm_32_nl0_ce0.csv.gz" } .
+@import loud_vnm_16_nl0_ce0 :- csv { resource = "data/loud_vnm_16_nl0_ce0.csv.gz" } .
+@import machine_vi_23_nl0_ce0 :- csv { resource = "data/machine_vi_23_nl0_ce0.csv.gz" } .
+@import make_ad_5_nl0_ce0 :- csv { resource = "data/make_ad_5_nl0_ce0.csv.gz" } .
+@import map_vi_57_nl0_ce0 :- csv { resource = "data/map_vi_57_nl0_ce0.csv.gz" } .
+@import meal_vnm_27_nl0_ce0 :- csv { resource = "data/meal_vnm_27_nl0_ce0.csv.gz" } .
+@import mixed_vi_2_nl0_ce0 :- csv { resource = "data/mixed_vi_2_nl0_ce0.csv.gz" } .
+@import moon_vi_20_nl0_ce0 :- csv { resource = "data/moon_vi_20_nl0_ce0.csv.gz" } .
+@import music_vi_43_nl0_ce0 :- csv { resource = "data/music_vi_43_nl0_ce0.csv.gz" } .
+@import must_vnm_57_nl0_ce0 :- csv { resource = "data/must_vnm_57_nl0_ce0.csv.gz" } .
+@import nail_ad_28_nl0_ce0 :- csv { resource = "data/nail_ad_28_nl0_ce0.csv.gz" } .
+@import natural_ad_44_nl0_ce0 :- csv { resource = "data/natural_ad_44_nl0_ce0.csv.gz" } .
+@import need_vnm_59_nl0_ce0 :- csv { resource = "data/need_vnm_59_nl0_ce0.csv.gz" } .
+@import nerve_vh_47_nl0_ce0 :- csv { resource = "data/nerve_vh_47_nl0_ce0.csv.gz" } .
+@import news_ad_17_nl0_ce0 :- csv { resource = "data/news_ad_17_nl0_ce0.csv.gz" } .
+@import new_vnm_62_nl0_ce0 :- csv { resource = "data/new_vnm_62_nl0_ce0.csv.gz" } .
+@import nose_vh_28_nl0_ce0 :- csv { resource = "data/nose_vh_28_nl0_ce0.csv.gz" } .
+@import note_vh_24_nl0_ce0 :- csv { resource = "data/note_vh_24_nl0_ce0.csv.gz" } .
+@import opinion_vi_9_nl0_ce0 :- csv { resource = "data/opinion_vi_9_nl0_ce0.csv.gz" } .
+@import organization_ad_59_nl0_ce0 :- csv { resource = "data/organization_ad_59_nl0_ce0.csv.gz" } .
+@import ornament_vh_17_nl0_ce0 :- csv { resource = "data/ornament_vh_17_nl0_ce0.csv.gz" } .
+@import owner_vh_26_nl0_ce0 :- csv { resource = "data/owner_vh_26_nl0_ce0.csv.gz" } .
+@import paint_vnm_2_nl0_ce0 :- csv { resource = "data/paint_vnm_2_nl0_ce0.csv.gz" } .
+@import paper_vh_35_nl0_ce0 :- csv { resource = "data/paper_vh_35_nl0_ce0.csv.gz" } .
+@import parallel_ad_41_nl0_ce0 :- csv { resource = "data/parallel_ad_41_nl0_ce0.csv.gz" } .
+@import pass_vi_46_nl0_ce0 :- csv { resource = "data/pass_vi_46_nl0_ce0.csv.gz" } .
+@import past_vh_49_nl0_ce0 :- csv { resource = "data/past_vh_49_nl0_ce0.csv.gz" } .
+@import pencil_vh_4_nl0_ce0 :- csv { resource = "data/pencil_vh_4_nl0_ce0.csv.gz" } .
+@import pen_vh_15_nl0_ce0 :- csv { resource = "data/pen_vh_15_nl0_ce0.csv.gz" } .
+@import pipe_ad_2_nl0_ce0 :- csv { resource = "data/pipe_ad_2_nl0_ce0.csv.gz" } .
+@import place_vi_6_nl0_ce0 :- csv { resource = "data/place_vi_6_nl0_ce0.csv.gz" } .
+@import plough_vnm_55_nl0_ce0 :- csv { resource = "data/plough_vnm_55_nl0_ce0.csv.gz" } .
+@import poor_vh_12_nl0_ce0 :- csv { resource = "data/poor_vh_12_nl0_ce0.csv.gz" } .
+@import poor_vnm_5_nl0_ce0 :- csv { resource = "data/poor_vnm_5_nl0_ce0.csv.gz" } .
+@import porter_vi_55_nl0_ce0 :- csv { resource = "data/porter_vi_55_nl0_ce0.csv.gz" } .
+@import possible_ad_21_nl0_ce0 :- csv { resource = "data/possible_ad_21_nl0_ce0.csv.gz" } .
+@import power_vi_19_nl0_ce0 :- csv { resource = "data/power_vi_19_nl0_ce0.csv.gz" } .
+@import present_vnm_11_nl0_ce0 :- csv { resource = "data/present_vnm_11_nl0_ce0.csv.gz" } .
+@import private_vh_55_nl0_ce0 :- csv { resource = "data/private_vh_55_nl0_ce0.csv.gz" } .
+@import prove_vh_13_nl0_ce0 :- csv { resource = "data/prove_vh_13_nl0_ce0.csv.gz" } .
+@import publish_ad_18_nl0_ce0 :- csv { resource = "data/publish_ad_18_nl0_ce0.csv.gz" } .
+@import pull_vi_35_nl0_ce0 :- csv { resource = "data/pull_vi_35_nl0_ce0.csv.gz" } .
+@import quiet_ad_19_nl0_ce0 :- csv { resource = "data/quiet_ad_19_nl0_ce0.csv.gz" } .
+@import raise_vi_29_nl0_ce0 :- csv { resource = "data/raise_vi_29_nl0_ce0.csv.gz" } .
+@import ready_vnm_6_nl0_ce0 :- csv { resource = "data/ready_vnm_6_nl0_ce0.csv.gz" } .
+@import record_vi_37_nl0_ce0 :- csv { resource = "data/record_vi_37_nl0_ce0.csv.gz" } .
+@import record_vnm_44_nl0_ce0 :- csv { resource = "data/record_vnm_44_nl0_ce0.csv.gz" } .
+@import regret_vnm_40_nl0_ce0 :- csv { resource = "data/regret_vnm_40_nl0_ce0.csv.gz" } .
+@import reply_vi_42_nl0_ce0 :- csv { resource = "data/reply_vi_42_nl0_ce0.csv.gz" } .
+@import report_vnm_1_nl0_ce0 :- csv { resource = "data/report_vnm_1_nl0_ce0.csv.gz" } .
+@import representative_vh_34_nl0_ce0 :- csv { resource = "data/representative_vh_34_nl0_ce0.csv.gz" } .
+@import respect_vnm_7_nl0_ce0 :- csv { resource = "data/respect_vnm_7_nl0_ce0.csv.gz" } .
+@import ring_vh_3_nl0_ce0 :- csv { resource = "data/ring_vh_3_nl0_ce0.csv.gz" } .
+@import run_ad_24_nl0_ce0 :- csv { resource = "data/run_ad_24_nl0_ce0.csv.gz" } .
+@import scissors_vnm_38_nl0_ce0 :- csv { resource = "data/scissors_vnm_38_nl0_ce0.csv.gz" } .
+@import seat_vh_50_nl0_ce0 :- csv { resource = "data/seat_vh_50_nl0_ce0.csv.gz" } .
+@import secret_vnm_56_nl0_ce0 :- csv { resource = "data/secret_vnm_56_nl0_ce0.csv.gz" } .
+@import seed_vi_27_nl0_ce0 :- csv { resource = "data/seed_vi_27_nl0_ce0.csv.gz" } .
+@import see_ad_42_nl0_ce0 :- csv { resource = "data/see_ad_42_nl0_ce0.csv.gz" } .
+@import selection_vh_6_nl0_ce0 :- csv { resource = "data/selection_vh_6_nl0_ce0.csv.gz" } .
+@import separate_vnm_24_nl0_ce0 :- csv { resource = "data/separate_vnm_24_nl0_ce0.csv.gz" } .
+@import sex_vnm_42_nl0_ce0 :- csv { resource = "data/sex_vnm_42_nl0_ce0.csv.gz" } .
+@import shake_ad_37_nl0_ce0 :- csv { resource = "data/shake_ad_37_nl0_ce0.csv.gz" } .
+@import share_ad_50_nl0_ce0 :- csv { resource = "data/share_ad_50_nl0_ce0.csv.gz" } .
+@import shoe_vh_57_nl0_ce0 :- csv { resource = "data/shoe_vh_57_nl0_ce0.csv.gz" } .
+@import shut_vnm_52_nl0_ce0 :- csv { resource = "data/shut_vnm_52_nl0_ce0.csv.gz" } .
+@import sing_ad_58_nl0_ce0 :- csv { resource = "data/sing_ad_58_nl0_ce0.csv.gz" } .
+@import sky_ad_15_nl0_ce0 :- csv { resource = "data/sky_ad_15_nl0_ce0.csv.gz" } .
+@import snake_vh_29_nl0_ce0 :- csv { resource = "data/snake_vh_29_nl0_ce0.csv.gz" } .
+@import sneeze_vh_53_nl0_ce0 :- csv { resource = "data/sneeze_vh_53_nl0_ce0.csv.gz" } .
+@import society_vi_1_nl0_ce0 :- csv { resource = "data/society_vi_1_nl0_ce0.csv.gz" } .
+@import soup_vi_22_nl0_ce0 :- csv { resource = "data/soup_vi_22_nl0_ce0.csv.gz" } .
+@import special_vnm_29_nl0_ce0 :- csv { resource = "data/special_vnm_29_nl0_ce0.csv.gz" } .
+@import spoon_ad_34_nl0_ce0 :- csv { resource = "data/spoon_ad_34_nl0_ce0.csv.gz" } .
+@import stamp_ad_12_nl0_ce0 :- csv { resource = "data/stamp_ad_12_nl0_ce0.csv.gz" } .
+@import sticky_vnm_14_nl0_ce0 :- csv { resource = "data/sticky_vnm_14_nl0_ce0.csv.gz" } .
+@import stick_vh_30_nl0_ce0 :- csv { resource = "data/stick_vh_30_nl0_ce0.csv.gz" } .
+@import stiff_vi_5_nl0_ce0 :- csv { resource = "data/stiff_vi_5_nl0_ce0.csv.gz" } .
+@import stone_vi_44_nl0_ce0 :- csv { resource = "data/stone_vi_44_nl0_ce0.csv.gz" } .
+@import stop_vh_21_nl0_ce0 :- csv { resource = "data/stop_vh_21_nl0_ce0.csv.gz" } .
+@import straight_vh_54_nl0_ce0 :- csv { resource = "data/straight_vh_54_nl0_ce0.csv.gz" } .
+@import strong_vi_31_nl0_ce0 :- csv { resource = "data/strong_vi_31_nl0_ce0.csv.gz" } .
+@import structure_vh_22_nl0_ce0 :- csv { resource = "data/structure_vh_22_nl0_ce0.csv.gz" } .
+@import sweet_vnm_37_nl0_ce0 :- csv { resource = "data/sweet_vnm_37_nl0_ce0.csv.gz" } .
+@import test_ad_1_nl0_ce0 :- csv { resource = "data/test_ad_1_nl0_ce0.csv.gz" } .
+@import test_vi_33_nl0_ce0 :- csv { resource = "data/test_vi_33_nl0_ce0.csv.gz" } .
+@import thank_ad_16_nl0_ce0 :- csv { resource = "data/thank_ad_16_nl0_ce0.csv.gz" } .
+@import time_vnm_9_nl0_ce0 :- csv { resource = "data/time_vnm_9_nl0_ce0.csv.gz" } .
+@import tree_vi_39_nl0_ce0 :- csv { resource = "data/tree_vi_39_nl0_ce0.csv.gz" } .
+@import umbrella_vnm_41_nl0_ce0 :- csv { resource = "data/umbrella_vnm_41_nl0_ce0.csv.gz" } .
+@import visit_ad_45_nl0_ce0 :- csv { resource = "data/visit_ad_45_nl0_ce0.csv.gz" } .
+@import visit_vi_26_nl0_ce0 :- csv { resource = "data/visit_vi_26_nl0_ce0.csv.gz" } .
+@import voice_vnm_49_nl0_ce0 :- csv { resource = "data/voice_vnm_49_nl0_ce0.csv.gz" } .
+@import wall_vi_7_nl0_ce0 :- csv { resource = "data/wall_vi_7_nl0_ce0.csv.gz" } .
+@import want_ad_30_nl0_ce0 :- csv { resource = "data/want_ad_30_nl0_ce0.csv.gz" } .
+@import warn_vh_1_nl0_ce0 :- csv { resource = "data/warn_vh_1_nl0_ce0.csv.gz" } .
+@import wash_vh_23_nl0_ce0 :- csv { resource = "data/wash_vh_23_nl0_ce0.csv.gz" } .
+@import watch_vnm_61_nl0_ce0 :- csv { resource = "data/watch_vnm_61_nl0_ce0.csv.gz" } .
+@import wax_vnm_46_nl0_ce0 :- csv { resource = "data/wax_vnm_46_nl0_ce0.csv.gz" } .
+@import wear_ad_25_nl0_ce0 :- csv { resource = "data/wear_ad_25_nl0_ce0.csv.gz" } .
+@import whip_vh_11_nl0_ce0 :- csv { resource = "data/whip_vh_11_nl0_ce0.csv.gz" } .
+@import whistle_vh_31_nl0_ce0 :- csv { resource = "data/whistle_vh_31_nl0_ce0.csv.gz" } .
+@import will_ad_7_nl0_ce0 :- csv { resource = "data/will_ad_7_nl0_ce0.csv.gz" } .
+@import wind_vnm_25_nl0_ce0 :- csv { resource = "data/wind_vnm_25_nl0_ce0.csv.gz" } .
+@import wing_vh_14_nl0_ce0 :- csv { resource = "data/wing_vh_14_nl0_ce0.csv.gz" } .
+@import winter_vh_16_nl0_ce0 :- csv { resource = "data/winter_vh_16_nl0_ce0.csv.gz" } .
+@import woman_vnm_31_nl0_ce0 :- csv { resource = "data/woman_vnm_31_nl0_ce0.csv.gz" } .
+@import work_vi_18_nl0_ce0 :- csv { resource = "data/work_vi_18_nl0_ce0.csv.gz" } .
+@import worm_ad_33_nl0_ce0 :- csv { resource = "data/worm_ad_33_nl0_ce0.csv.gz" } .
+@import worry_ad_4_nl0_ce0 :- csv { resource = "data/worry_ad_4_nl0_ce0.csv.gz" } .
+@import write_vh_56_nl0_ce0 :- csv { resource = "data/write_vh_56_nl0_ce0.csv.gz" } .
+
+%%% Rules
+
 touch_ad_1_nl0_ce0(?a,?b,?c,!d) :- test_ad_1_nl0_ce0(?a,?b,?c) .
 different_vi_1_nl0_ce0(?a,?b,?c),society_vi_1_nl0_ce1(?a,?d,?e) :- society_vi_1_nl0_ce0(?a,?b,?c,?d,?e) .
 blue_vh_1_nl0_ce0(?a,?b,?c,!g),describe_vh_1_nl0_ce1(?d,?e,?f,!h,!g) :- warn_vh_1_nl0_ce0(?a,?b,?c,?d,?e,?f) .
