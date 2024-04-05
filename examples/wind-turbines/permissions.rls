@@ -1,6 +1,6 @@
 %%% This rule file defines a fictional scenario where 
 %%% the construction of several wind turbines near a German city is proposed.
-%%% The task is to check whether the proposed projects satisfy all the regulations.
+%%% The task is to check whether the planned projects satisfy all the regulations.
 %%%
 %%% For this example, a wind turbine is approved if
 %%%    * it is sufficiently far away from a residential building, and
@@ -25,7 +25,7 @@ CIRC_EARTH(40075000.0).
 % Load a QGIS (https://www.qgis.org/de/site/) export containing all marked location of a German town.
 %
 % We only store the longitude and latitude,
-% as well as the "tag" column for distiguishing a residential buildings.
+% as well as the "tag" column for distiguishing residential buildings.
 @import locations :- csv { 
     resource = "data/locations.csv", 
     format = (double, double, skip, skip, skip, skip, skip, skip, skip, skip, skip, skip, string)
@@ -54,7 +54,7 @@ project_location("Wind Turbine C", 13.688126881341304, 50.90297432498729).
 project_height_m("Wind Turbine C", 60).
 project_species("Wind Turbine C", "Mauersegler").
 
-%%% Check if all regulations are satisfied
+%%% Check whether all regulations are satisfied
 
 % We are only interested in locations that are tagged with an address
 coordinates(?longitude, ?latitude) :- locations(?longitude, ?latitude, ?tag), TRUE(CONTAINS(?tag, "addr")).
@@ -95,7 +95,7 @@ project_reject(?project) :-
 % A project is approved if it is not rejected.
 project_approved(?project) :- project(?project), ~project_reject(?project).
 
-% Get the distance of closest house.
+% Get the distance of the closest house for each project.
 closest_house(?project, #min(?distance)) :- distance(?project, ?distance).
 
 %%% Export the name of all approved and rejected project
