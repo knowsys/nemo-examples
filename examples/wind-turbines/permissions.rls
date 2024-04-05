@@ -4,7 +4,7 @@
 %%%
 %%% For this example, a wind turbine is approved if
 %%%    * it is sufficiently far away from a residential building, and
-%%%    * there where no sightings of an endangered animal near the proposed location,
+%%%    * there were no sightings of an endangered animal near the proposed location,
 %%%      unless the proposed wind turbine is not taller than 50m, 
 %%%      in which case it is deemed to not have an environmental impact.
 
