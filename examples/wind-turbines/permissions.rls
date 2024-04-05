@@ -12,7 +12,7 @@
 
 % Workaround that allows us to use boolean functions to filter tables
 TRUE("true"^^<http://www.w3.org/2001/XMLSchema#boolean>).
-% The constants Pi
+% The constant Pi
 PI(3.14159).
 
 %%% Imports
