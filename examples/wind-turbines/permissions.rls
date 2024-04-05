@@ -70,8 +70,8 @@ project_location_m(?project, ?Xm, ?Ym) :- project_location(?project, ?longitude,
     ?Xm = ?longitude * 40075000.0 * COS(?latitude / 180.0 * ?PI) / 360.0,
     ?Ym = ?latitude * 111320.0.
 
-% An environmental impact assessment is only needed 
-% if the planned wind turbine that is taller than 50m.
+% An environmental impact assessment is only needed, 
+% if the planned wind turbine is taller than 50m.
 environmental_impact(?project) :- project_height_m(?project, ?height), ?height >= 50.
 
 % Calculate for each project the distance to all residence buldings
