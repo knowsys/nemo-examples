@@ -33,6 +33,7 @@ PI(3.14159).
 %%% 
 %%% project(?name): Name of the project
 %%% project_location(?project, ?longitude, ?latitude): Geographic coordinates of the proposed project
+%%% project_height_m(?project, ?height): Height of the proposed wind turbine
 %%% project_species(?project, ?species): Sighting of an animal of that ?species at the project site 
 
 project("Wind Turbine A").
