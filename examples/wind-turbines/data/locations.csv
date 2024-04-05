@@ -1,0 +1,782 @@
+X,Y,fid,osm_id,name,barrier,highway,ref,address,is_in,place,man_made,other_tags
+13.7844543,50.9016537,"62","31144849","Hausdorf, Ziegeleigut",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7457832,50.908273,"73","36293001","Hirschbach, Hermsdorfer Straße",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7498927,50.9056778,"74","36295892",Hirschbach,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.7685192,50.9070128,"75","36295914",,,give_way,,,,,,"""direction""=>""forward"""
+13.6973303,50.8969934,"97","57377730",,,,,,,,,"""maxweight""=>""7.5"""
+13.7484596,50.9046219,"99","57409770",Hirschbach,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.6929976,50.8975378,"100","58945720",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""sidewalk"",""fire_hydrant:type""=>""underground"""
+13.6932751,50.8972493,"101","58945741",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Kaufland_in_Reinholdshain.jpg"",""opening_hours""=>""Mo-Sa 07:00-22:00"",""phone""=>""+49 3504 69450"",""website""=>""https://www.kaufland.de/Home/index.jsp?FilialID=4300"""
+13.7619927,50.8953042,"102","59245491",Reinhardtsgrimma,,,,,,,,"""direction""=>""backward"",""traffic_sign""=>""city_limit"""
+13.7002375,50.9089248,"134","158592319","Reinberger Straße, Oberhäslich Steig 2",,bus_stop,"2",,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1450"",""shelter""=>""yes"""
+13.6963607,50.9092918,"304","354671721","Öberhäslich, Gasthof",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6960631,50.9091803,"305","354671723","Oberhäslich, Gasthof",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6960351,50.8975155,"323","368862884",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""fuel"",""description:de""=>""EPT-Card opening_hours: 7/24"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Tankstelle_in_Reinholdshain.jpg"",""opening_hours""=>""Mo-Fr 06:00-19:00; Sa,Su 08:00-16:00"",""operator""=>""Rüdiger & Co. Mineralöl GmbH"""
+13.6891708,50.8920486,"456","1007571130",,,,,,,,,"""hiking""=>""no"",""information""=>""guidepost"",""tourism""=>""information"""
+13.6893752,50.8920004,"458","1007571329",,,,,,,,,"""amenity""=>""bench"",""backrest""=>""yes"",""colour""=>""brown"",""material""=>""wood"",""seats""=>""3"""
+13.689872,50.8989276,"461","1041857368",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.7692738,50.8935066,"482","1240111798",Neue Häuser,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1963"",""shelter""=>""no"""
+13.6804187,50.8862639,"489","1330655641",,,,,,,,,"""amenity""=>""bench"""
+13.7115851,50.9132492,"492","1340339241","Wendeplatz, Reinberg (Kr PIR) Steig 1",,bus_stop,"1",,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1455"",""shelter""=>""yes"""
+13.681208,50.886937,"500","1421763953",,,,,,,,,"""amenity""=>""bench"""
+13.694886,50.8976847,"502","1424088131",Anlieferung,,,,,,,,"""entrance""=>""service"""
+13.6941359,50.8975221,"503","1424088132",Kaufland,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""brand""=>""Kaufland"",""brand:wikidata""=>""Q685967"",""brand:wikipedia""=>""en:Kaufland"",""image""=>""http://commons.wikimedia.org/wiki/File:Kaufland_in_Reinholdshain.jpg"",""opening_hours""=>""Mo-Sa 07:00-22:00"",""phone""=>""+49 3504 69450"",""shop""=>""supermarket"",""website""=>""https://www.kaufland.de/Home/index.jsp?FilialID=4300"",""wheelchair""=>""yes"""
+13.693159,50.897441,"504","1424088133",Leergut,,,,,,,,"""amenity""=>""recycling"",""entrance""=>""service"""
+13.6911925,50.8965056,"505","1424088156",Gewerbegebiet,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1436"",""shelter""=>""yes"""
+13.6989758,50.8964908,"506","1424088159",,,,,,,,,"""natural""=>""tree"""
+13.6982458,50.8965359,"507","1424088166",,,,,,,,,"""natural""=>""tree"""
+13.6978298,50.8966045,"508","1424088185",,,,,,,,,"""natural""=>""tree"""
+13.6892863,50.8965902,"509","1424088191",,,,,,,,,"""entrance""=>""main"""
+13.6928897,50.8966098,"510","1424088203",Gewerbegebiet,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1436"",""shelter""=>""yes"""
+13.6974091,50.8966921,"511","1424088209",,,,,,,,,"""natural""=>""tree"""
+13.6917172,50.8967248,"512","1424088211",Jaintsch,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""building""=>""yes"",""craft""=>""shoemaker"",""entrance""=>""main"",""website""=>""https://orthopaedie-jaintsch.de/"""
+13.6899646,50.8967087,"513","1424088224",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""office""=>""architect"""
+13.6918591,50.8971198,"514","1424088267",,,,,,,,,"""description:de""=>""Plan des Gwerbegebietes"",""tourism""=>""information"""
+13.6933041,50.8970567,"515","1424088290",,,,,,,,,"""amenity""=>""bicycle_parking"""
+13.6957364,50.8970121,"516","1424088291",,,street_lamp,,,,,,
+13.693577,50.897127,"517","1424088297",Deichmann,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""brand""=>""Deichmann"",""brand:wikidata""=>""Q664543"",""brand:wikipedia""=>""en:Deichmann SE"",""opening_hours""=>""Mo-Sa 07:00-22:00"",""shop""=>""shoes"",""website""=>""https://www.deichmann.com/DE/de/corp/home.jsp"""
+13.6901724,50.8972291,"518","1424088310",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.brc.de/index.php?option=com_contact&view=contact&id=2&Itemid=58;http://www.gwd-druck.de/"""
+13.6912853,50.8972934,"519","1424088329",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""shop""=>""car"",""website""=>""https://www.ah-siebeneicher.de/"""
+13.69391,50.897255,"520","1424088332",AWG-Modecenter,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""brand""=>""AWG-Modecenter"",""brand:wikidata""=>""Q300220"",""brand:wikipedia""=>""de:AWG-Modecenter"",""opening_hours""=>""Mo-Sa 07:00-22:00"",""shop""=>""clothes"",""short_name""=>""AWG"",""website""=>""https://www.awg-mode.de/?cl=srstoredetailsawg&cnid=92106&storeid=1077"""
+13.693309,50.897297,"521","1424088334",Blütenstil,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""phone""=>""+49 3504 610658"",""shop""=>""florist"""
+13.6889308,50.8973719,"522","1424088344",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housename""=>""Wagner"",""addr:housenumber""=>""10"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""shop""=>""car_repair"",""website""=>""http://www.auto-service-wagner.de/"""
+13.6954667,50.8973661,"523","1424088354",,,street_lamp,,,,,,
+13.6936213,50.8974192,"524","1424088360",Bäckerei Bährenhecke,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""contact:website""=>""https://www.baeckerei-baerenhecke.de"",""opening_hours""=>""Mo-Sa 07:00-17:00"",""shop""=>""bakery"""
+13.6919128,50.897566,"525","1424088394",Winter,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""shop""=>""car"""
+13.6893384,50.8975984,"526","1424088395",Zöltsch,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""8"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""office""=>""company"",""website""=>""http://www.flammstrahltechnik-zoeltsch.de"""
+13.6953116,50.8976549,"527","1424088457",,,street_lamp,,,,,,
+13.6940554,50.8977071,"528","1424088469",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""80"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""pillar"""
+13.6956314,50.897713,"529","1424088472",,,,,,,,,"""amenity""=>""car_wash"""
+13.6928052,50.8977382,"530","1424088498",Lack Bauer,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""email""=>""info@lackbauer.de"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Lack_Bauer_in_Reinholdshain.jpg"",""opening_hours""=>""Mo-Fr 07:00-18:00"",""phone""=>""+49 3504 615517"",""website""=>""http://www.lackbauer.de"""
+13.6907559,50.897779,"531","1424088501",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6935744,50.8978609,"532","1424088526",Stikar,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Renault_Autohaus_in_Reinholdshain.jpg"",""opening_hours""=>""Mo-Fr 07:00-18:00; Sa 09:00-12:00"",""phone""=>""+49 3504 69410"",""shop""=>""car"",""website""=>""http://www.renault-stikar.de/"""
+13.6949995,50.8978761,"533","1424088533","Bistro ""Star"" Döner",,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""9"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""cuisine""=>""kebab"",""disused:amenity""=>""restaurant"",""entrance""=>""main"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_Bistro_D%C3%B6ner.jpg"",""opening_hours""=>""Mo-Fr 10:30-20:30; Sa 11:30-20:00; Su off"""
+13.6953748,50.8978797,"534","1424088536",,,,,,,,,"""entrance""=>""service"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_Polsterei.jpg"""
+13.6957791,50.8985342,"535","1424088746",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""13"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.ihr-einrichter.de"""
+13.6945816,50.8985848,"536","1424088760",,,,,,,,,"""entrance""=>""yes"""
+13.6906713,50.8985888,"537","1424088762",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.694048,50.8986053,"538","1424088766",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6902256,50.8987892,"539","1424088785",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6966947,50.8994622,"540","1424088831",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""underground"""
+13.6898942,50.8994919,"541","1424088853",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6951121,50.8995277,"542","1424088860",,,,,,,,,"""entrance""=>""yes"""
+13.69704,50.9000536,"543","1424088911",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6942323,50.9001766,"544","1424088924",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6965376,50.9004594,"545","1424088940",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""100"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""pillar"""
+13.6934578,50.897326,"546","1424088967",Richter,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""opening_hours""=>""Mo-Sa 07:00-22:00"",""shop""=>""butcher"",""website""=>""http://www.richter-fleischwaren.de/tl/"""
+13.6898287,50.8973261,"547","1426189121",Grafische Werkstätten,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""6"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""shop""=>""copyshop"""
+13.6904729,50.8983572,"548","1426189130",LKW Service Pötzsch GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""7"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""brand""=>""MAN, Neoplan, Iveco, Iveco Bus, VDL Bus & Coach, Multicar"",""email""=>""service@lkw-poetzsch.de"",""entrance""=>""main"",""phone""=>""+49 3504 64690"",""website""=>""https://www.lkw-poetzsch.de/"""
+13.688452,50.8978589,"549","1426189139",Kleber-Heisserer Bau GmbH,,,,,,,works,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""9"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""email""=>""info@kleber-heisserer.de"",""entrance""=>""main"",""phone""=>""+49 3504 64610"",""website""=>""http://www.kleber-heisserer.de/"""
+13.6891521,50.8972183,"550","1426189146",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6887407,50.8972777,"551","1426189160",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6916555,50.8974333,"552","1426189181",,,,,,,,,"""amenity""=>""post_box"",""operator""=>""Deutsche Post"""
+13.6887062,50.8977841,"553","1426189226",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6887165,50.8980051,"554","1426189265",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6942396,50.8984415,"555","1426189286",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6890082,50.8984712,"556","1426189290",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6962673,50.899067,"557","1426189318",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6899742,50.8988567,"558","1426857304",,,crossing,,,,,,"""crossing""=>""unmarked"""
+13.6851569,50.8971673,"560","1430727697",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""13"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6843678,50.8970423,"561","1430727698",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""15"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6845249,50.8963011,"562","1430727699",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""16"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6844433,50.896557,"563","1430727737",,,,,,,,,"""historic""=>""milestone"",""image""=>""http://commons.wikimedia.org/wiki/File:Weg%C3%A4ule_Reinholdshain_Dippoldiswalder_Stra%C3%9Fe_am_Gewerbegebiet.jpg"""
+13.6882035,50.8968538,"564","1430807202",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""7"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.kuechen-lorenz.de/"""
+13.6886528,50.8967131,"565","1430807210",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""7a"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""https://www.strabag.com/"""
+13.688322,50.8974736,"566","1430807211",Winkler,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""9a"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6874205,50.8970639,"567","1430807217",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""43b"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6969068,50.8967418,"568","1430807257",,,,,,,,,"""natural""=>""tree"""
+13.6925708,50.8967045,"569","1430807260",,,,,,,,,"""natural""=>""tree"""
+13.6933739,50.8968689,"570","1430807267",,,,,,,,,"""natural""=>""tree"""
+13.6956643,50.8969762,"571","1430807275",,,,,,,,,"""natural""=>""tree"""
+13.6941656,50.8970421,"572","1430807282",,,,,,,,,"""natural""=>""tree"""
+13.6950855,50.8970788,"573","1430807286",,,,,,,,,"""natural""=>""tree"""
+13.6948552,50.8971033,"574","1430807287",,,,,,,,,"""natural""=>""tree"""
+13.6945724,50.8970997,"575","1430807288",,,,,,,,,"""natural""=>""tree"""
+13.6888156,50.8971781,"576","1430807297",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6886239,50.8972338,"577","1430807310",,,,,,,,,"""bicycle""=>""yes"",""entrance""=>""yes"",""foot""=>""yes"",""motorcar""=>""yes"",""motorcycle""=>""yes"""
+13.6884343,50.8975909,"578","1430807356",,,,,,,,,"""entrance""=>""yes"""
+13.6882635,50.8979148,"579","1430807379",,,,,,,,,"""entrance""=>""main"",""shop""=>""construction_trade"",""website""=>""https://www.riedel-brechertechnik.de/"""
+13.6907272,50.8981202,"580","1430930054",,,,,,,,,"""access""=>""no"",""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""door""=>""loading_dock"",""entrance""=>""service"",""website""=>""http://www.elektro-schmieder.de/"""
+13.6900618,50.8962993,"581","1430930055",,,street_lamp,,,,,,
+13.690749,50.8963347,"582","1430930056",,,street_lamp,,,,,,
+13.6914123,50.8963742,"583","1430930057",,,street_lamp,,,,,,
+13.6896201,50.8964624,"584","1430930059",,,street_lamp,,,,,,
+13.6920103,50.8964588,"585","1430930060",,,street_lamp,,,,,,
+13.6891555,50.8964695,"586","1430930061",,,street_lamp,,,,,,
+13.6901301,50.896464,"587","1430930062",,,street_lamp,,,,,,
+13.6887156,50.8965016,"588","1430930064",,,street_lamp,,,,,,
+13.6910661,50.8964732,"589","1430930067",,,street_lamp,,,,,,
+13.6882305,50.8965426,"590","1430930068",,,street_lamp,,,,,,
+13.6877763,50.8965664,"591","1430930071",,,street_lamp,,,,,,
+13.6917029,50.8965394,"592","1430930072",,,street_lamp,,,,,,
+13.689651,50.8965257,"593","1430930073",,,,,,,,,"""advertising""=>""billboard"",""height""=>""6"",""operator""=>""ALDI"""
+13.6894799,50.8965485,"594","1430930075",,,street_lamp,,,,,,
+13.6897779,50.8966443,"595","1430930083",,,street_lamp,,,,,,
+13.6894941,50.8967165,"596","1430930089",,,street_lamp,,,,,,
+13.692121,50.8967512,"597","1430930096",,,street_lamp,,,,,,
+13.6897857,50.8968925,"598","1430930102",,,street_lamp,,,,,,
+13.6895188,50.8969093,"599","1430930109",,,street_lamp,,,,,,
+13.6902365,50.8970933,"600","1430930118",,,,,,,,,"""natural""=>""tree"""
+13.6901086,50.8970977,"601","1430930121",,,,,,,,,"""natural""=>""tree"""
+13.6910083,50.8971001,"602","1430930122",,,,,,,,,"""amenity""=>""post_box"",""brand""=>""PostModern"",""check_date""=>""2017-12-24"",""collection_times""=>""Mo-Fr 17:00"",""operator""=>""Media Logistik"",""post_box:type""=>""lamp"",""website""=>""https://www.post-modern.de/"""
+13.6899735,50.8971047,"603","1430930123",,,,,,,,,"""natural""=>""tree"""
+13.6895485,50.8971178,"604","1430930124",,,,,,,,,"""advertising""=>""billboard"",""height""=>""4"",""operator""=>""ALDI"""
+13.6898054,50.8971132,"605","1430930125",,,,,,,,,"""natural""=>""tree"""
+13.6895112,50.8971001,"606","1430930128",,,street_lamp,,,,,,
+13.6918846,50.8971597,"607","1430930133",,,street_lamp,,,,,,
+13.6905873,50.8971622,"608","1430930146",,,street_lamp,,,,,,
+13.6903004,50.8972041,"609","1430930148",,,street_lamp,,,,,,
+13.6910559,50.8972201,"610","1430930152",,,street_lamp,,,,,,
+13.6897307,50.8972183,"611","1430930159",,,street_lamp,,,,,,
+13.6892534,50.8972312,"612","1430930160",,,street_lamp,,,,,,
+13.6914263,50.8972671,"613","1430930177",,,street_lamp,,,,,,
+13.691625,50.8973533,"614","1430930180",,,crossing,,,,,,"""crossing""=>""unmarked"""
+13.6917901,50.8973935,"615","1430930183",,,street_lamp,,,,,,
+13.6911306,50.8974951,"616","1430930188",,,,,,,,,"""shop""=>""car_repair"""
+13.6922189,50.8977399,"617","1430930206",,,,,,,,,"""shop""=>""car_repair"""
+13.6923579,50.8977681,"618","1430930213",,,,,,,,,"""entrance""=>""yes"""
+13.6913474,50.8979065,"619","1430930217",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6916126,50.8978874,"620","1430930218",,,,,,,,,"""entrance""=>""yes"""
+13.6888657,50.8974741,"621","1430934073",,,,,,,,,"""entrance""=>""yes"""
+13.6959048,50.8975362,"622","1431143108",,,,,,,,,"""shop""=>""car_repair"""
+13.6888715,50.8976028,"623","1431143112",,,,,,,,,"""shop""=>""tyres"""
+13.6931586,50.8978641,"624","1431143137",,,,,,,,,"""entrance""=>""service"""
+13.6929884,50.8981737,"625","1431143158",,,,,,,,,"""entrance""=>""service"""
+13.6934977,50.8981995,"626","1431143160",Stikar,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""yes"",""shop""=>""car_repair"",""website""=>""http://www.renault-stikar.de/"""
+13.6852546,50.9006528,"627","1432462628",Sonnenberg,,,,,,,,"""natural""=>""peak"",""wikidata""=>""Q31315851"""
+13.6959872,50.9091494,"628","1434220050",,,crossing,,,,,,"""crossing""=>""traffic_signals"",""crossing:island""=>""no"""
+13.7070042,50.8897628,"644","1434984965",Oberdorf,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1479"",""shelter""=>""no"""
+13.7071742,50.8897641,"645","1434984966",Oberdorf,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1479"",""shelter""=>""yes"""
+13.7034761,50.8948534,"646","1434984999",Kindergarten,,bus_stop,,,,,,"""bench""=>""no"",""bin""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1480"",""shelter""=>""no"""
+13.7029551,50.8953083,"647","1434985017",Kindergarten,,bus_stop,,,,,,"""bench""=>""yes"",""bin""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1480"",""shelter""=>""yes"""
+13.6995685,50.8964359,"648","1434985019",Mitte,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1478"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.7029076,50.9024677,"649","1434985021","Brücke, Reinholdshain (Kr PIR) Steig 1",,bus_stop,"1",,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1477"",""shelter""=>""yes"""
+13.7028808,50.9026174,"650","1434985024","Brücke, Reinholdshain (Kr PIR) Steig 2",,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1477"",""shelter""=>""yes"""
+13.7680581,50.9069783,"651","1434985026",Abzweig Hirschbachmühle,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1962"",""shelter""=>""no"""
+13.7448123,50.907025,"652","1434985028",Wartehalle,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1991"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.744644,50.9071169,"653","1434985030",Wartehalle,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1991"",""shelter""=>""no"",""tactile_paving""=>""no"""
+13.7383517,50.9072951,"654","1434985032",Oberdorf,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1992"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.7383385,50.9073787,"655","1434985035",Oberdorf,,bus_stop,,,,,,"""bench""=>""no"",""bin""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1992"",""shelter""=>""no"""
+13.7004873,50.8962214,"656","1442062679",König-Johann-Denkmal,,,,,,,,"""alt_name""=>""Kriegerdenkmal 1871"",""description""=>""Denkmal des Königlich Sächsischen Militärvereins"",""heritage""=>""yes"",""historic""=>""memorial"",""image""=>""http://commons.wikimedia.org/wiki/File:Denkmal_Reinholdshain_Dipps.jpg"",""inscription""=>""Die dankbaren ... königlich sächsischer Militärverein Reinholdshain"""
+13.7016565,50.8960158,"657","1442062680",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""26"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6995015,50.8975805,"658","1442062681",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2a"",""addr:postcode""=>""01744"",""addr:street""=>""Vorwerk"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7018559,50.895821,"659","1442062706",Sühnekreuz Reinholdshain,,,,,,,,"""format""=>""stone_cross"",""heritage""=>""yes"",""historic""=>""stone"",""image""=>""http://commons.wikimedia.org/wiki/File:Steinkreuz_Reinholdshain.jpg"",""stone_type""=>""conciliation_cross"",""website""=>""http://www.suehnekreuz.de/sachsen/reinholdshain.htm"""
+13.6995844,50.8962747,"660","1442062783",,,,,,,,,"""amenity""=>""post_box"",""operator""=>""Deutsche Post"""
+13.7010734,50.8967551,"661","1442062843",,,give_way,,,,,,
+13.699579,50.896288,"662","1442062885",Mitte,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1478"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.6960807,50.89911,"663","1444700336",Knorr Präzisionsteile,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""15"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""https://knorr-praezisionsteile.de/"""
+13.6947248,50.8999513,"664","1444700339",AWO,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""15a"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""https://www.awo-in-sachsen.de/index.php?entry_id=113"""
+13.6965712,50.8999166,"665","1444700343",,,,,,,,,"""entrance""=>""yes"""
+13.6965961,50.9004975,"666","1444700350",Wend & Wienrich GbR,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""18"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.wend-wienrich.de"""
+13.6949563,50.9005851,"667","1444700353",Bernd Schütze und Steffen Lohse GbR,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""22"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""craft""=>""electrician"",""entrance""=>""main"",""phone""=>""+49 3504 612551"""
+13.6946053,50.9008742,"668","1444700361",KDF,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""24"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""email""=>""info@kdf-parkett.de"",""entrance""=>""main"",""opening_hours""=>""Mo-Fr 07:00-18:00; Sa-Su,PH off"",""operator""=>""Parkett- und Fußbodenleger GmbH"",""phone""=>""+49 3504 618801"",""website""=>""https://www.kdf-parkett.de/"""
+13.6971754,50.8998035,"669","1444700363",Dowaldwerke GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""8-12"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""alt_name""=>""Pneumatik Hydraulik GmbH"",""entrance""=>""main"",""website""=>""http://dowaldwerke.griessbach.de/"""
+13.6956451,50.9007342,"670","1444700364",FFZ Feinmechanisches Fertigungszentrum Glashütte GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""20"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.ffz-glashuette.de/"""
+13.6944642,50.8993125,"671","1444700410",,,,,,,,,"""entrance""=>""yes"""
+13.6949473,50.899439,"672","1444700412",,,,,,,,,"""entrance""=>""yes"""
+13.6952433,50.8996092,"673","1444700426",,,turning_circle,,,,,,"""access""=>""private"""
+13.6948839,50.8997322,"674","1444700434",,,,,,,,,"""entrance""=>""yes"""
+13.697526,50.899799,"675","1444700452",,,,,,,,,"""entrance""=>""yes"""
+13.6969331,50.8999256,"676","1444700458",,,,,,,,,"""entrance""=>""yes"""
+13.6965415,50.900274,"677","1444700498",,,,,,,,,"""entrance""=>""yes"""
+13.6926242,50.8992913,"678","1445274335",Selectrona GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housename""=>""Selectrona GmbH"",""addr:housenumber""=>""19 / 21"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""https://www.soehnergroup.com/"""
+13.6918281,50.8994318,"679","1445274336",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""34"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7026707,50.8954151,"680","1445274439",,,,,,,,,"""description""=>""backward: Kinder"",""hazard""=>""yes"""
+13.6922047,50.8992927,"681","1445274480",,,,,,,,,"""hazard""=>""yes"""
+13.69198,50.8993234,"682","1445274484",,,,,,,,,"""entrance""=>""yes"""
+13.691581,50.8993422,"683","1445274486",,,,,,,,,"""entrance""=>""yes"""
+13.6925463,50.8999306,"684","1445274506",,,,,,,,,"""entrance""=>""yes"""
+13.6982865,50.9002237,"685","1445274521",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6935858,50.9001869,"686","1445274523",,,,,,,,,"""entrance""=>""yes"""
+13.6942565,50.9009463,"687","1445274571",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6984085,50.9011303,"688","1445274578",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6986423,50.9032839,"689","1445274588",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6987516,50.9044363,"690","1445274591",,,,,,,,,"""power""=>""pole"""
+13.6988443,50.9053009,"691","1445274600",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6988394,50.9062969,"692","1445274602",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6988539,50.9076011,"693","1445274603",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6988901,50.9085868,"694","1445274604",,,,,,,,,"""power""=>""pole"",""tower:type""=>""steel_grating"""
+13.693538,50.8986133,"695","1445508287",,,,"10",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6895657,50.8985044,"696","1446076899",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housename""=>""raumcreativ C&B"",""addr:housenumber""=>""14"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.raumcreativ.com"""
+13.6913576,50.8981949,"697","1446076900",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""https://www.uwe-wilhelm-isolierungen.de/"""
+13.69054,50.8983448,"698","1446076904",ADAC,,,,,,,,"""club""=>""automobile"""
+13.6900513,50.8983872,"699","1446076906",,,,,,,,,"""entrance""=>""yes"""
+13.689221,50.8985187,"700","1446076920",,,,,,,,,"""entrance""=>""yes"""
+13.6909274,50.8985904,"701","1446076930",,,crossing,,,,,,"""crossing""=>""unmarked"""
+13.6910957,50.8987632,"702","1446076938",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6896231,50.8987772,"703","1446076940",,,,,,,,,"""entrance""=>""yes"""
+13.6895606,50.8988202,"704","1446076942",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""150"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6904167,50.8983676,"705","1446076987",SIXT,,,,,,,,"""amenity""=>""car_rental"""
+13.6894149,50.898929,"706","1446301772",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housename""=>""Maschinenservice Geigenmüller"",""addr:housenumber""=>""11"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""website""=>""http://www.bg-ms.de/"""
+13.696131,50.8988721,"707","1446301814",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""80"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""pillar"""
+13.6896341,50.89888,"708","1446301815",,,,,,,,,"""entrance""=>""yes"""
+13.6956013,50.8989484,"709","1446301826",,,,,,,,,"""amenity""=>""bench"""
+13.6955968,50.8989711,"710","1446301835",,,,,,,,,"""amenity""=>""waste_basket"""
+13.6893686,50.8990028,"711","1446301840",,,,,,,,,"""entrance""=>""yes"""
+13.6932014,50.8996678,"715","1474868809",,,,,,,,,"""entrance""=>""yes"""
+13.6846707,50.896749,"718","1490316701",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7007206,50.8965205,"748","1658329231",,,give_way,,,,,,
+13.7540025,50.8925411,"749","1661505703",,,give_way,,,,,,"""direction""=>""backward"""
+13.7030037,50.9028191,"751","1680843271",,,give_way,,,,,,
+13.6982024,50.8992932,"758","1709783218",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.6950341,50.900527,"759","1709783229",,,crossing,,,,,,"""crossing""=>""unmarked"""
+13.7380427,50.9072803,"764","1736500116",Hirschbach,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.7448035,50.9103365,"765","1736500117",Hirschbach,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.7461127,50.9071704,"766","1736500142",,,stop,,,,,,"""stop:position""=>""right"""
+13.734134,50.9209134,"770","1761086799",Mühlweg,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1996"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.680121,50.8955035,"771","1761216531",,,,,,,,,"""flow_control""=>""water_level"",""waterway""=>""flow_control"""
+13.6811201,50.8955264,"772","1761216539",,,,,,,,,"""flow_control""=>""water_level"",""waterway""=>""flow_control"""
+13.6868754,50.8964717,"778","1761216625",,,street_lamp,,,,,,
+13.6928348,50.8967571,"779","1761216651",,,,,,,,,"""natural""=>""tree"""
+13.6989175,50.9102613,"787","1781369706",,,stop,,,,,,
+13.6988052,50.9102954,"788","1781369738",,,,,,,,,"""TMC:cid_58:tabcd_1:Class""=>""Point"",""TMC:cid_58:tabcd_1:Direction""=>""both"",""TMC:cid_58:tabcd_1:LCLversion""=>""9.00"",""TMC:cid_58:tabcd_1:LocationCode""=>""42783"",""TMC:cid_58:tabcd_1:NextLocationCode""=>""42785"",""TMC:cid_58:tabcd_1:PrevLocationCode""=>""21065"""
+13.784601,50.9020839,"790","1793473073","Hausdorf, Ziegeleigut",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7863117,50.9065035,"791","1793473089","Hausdorf, Wendeplatz",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7863739,50.9067106,"792","1793473101","Hausdorf, Wendeplatz",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7051153,50.9111355,"794","1803718310",Oberhäslich,,,,,,,,"""alt_name""=>""Reinberg 1 km"",""traffic_sign""=>""city_limit"""
+13.6925408,50.9078929,"795","1806220184",Oberhäslich,,,,,,,,"""direction""=>""backward"",""traffic_sign""=>""city_limit"""
+13.6901273,50.9080844,"796","1806220185",Oberhäslich,,,,,,,,"""alt_name""=>""Dippoldiswalde 2 km"",""traffic_sign""=>""city_limit"""
+13.6927204,50.9080158,"797","1806220221",,,give_way,,,,,,"""direction""=>""forward"""
+13.6935235,50.8996857,"798","1814984054",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""17"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6933882,50.8997507,"799","1814984170",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7015676,50.9048949,"800","1814984275",Reinholdshain,,,,,,,,"""alt_name""=>""Oberhäslich 1 km"",""traffic_sign""=>""city_limit"""
+13.7000201,50.9087955,"801","1814984360",,,give_way,,,,,,
+13.6974384,50.8980692,"811","1832806859",KiK,,,"6418",,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""brand""=>""KiK"",""brand:wikidata""=>""Q883965"",""opening_hours""=>""Mo-Fr 09:00-19:00; Sa 09:00-16:00"",""shop""=>""clothes"""
+13.6978716,50.8969142,"812","1832806862",Bauzentrum Reinholdshain,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""operator""=>""Reinholdshainer Raiffeisen Handels GmbH"",""shop""=>""garden_centre"",""website""=>""https://www.bhg-reinholdshain.de/"""
+13.697545,50.8979202,"813","1832881815",Grillstüb´l,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""fast_food"",""entrance""=>""main"",""opening_hours""=>""Mo-Fr 09:00-15:30"""
+13.6975294,50.8980199,"814","1832881818",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""shop""=>""vacant"""
+13.7008633,50.8972213,"815","1832884907",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""water"",""fire_hydrant:pressure""=>""suction"",""fire_hydrant:type""=>""pipe"",""water_source""=>""pond"""
+13.6961409,50.8992041,"817","1839638378",,,,,,,,,"""entrance""=>""yes"""
+13.6962424,50.899584,"818","1839638383",,,,,,,,,"""entrance""=>""yes"""
+13.6967596,50.8996687,"819","1839638389",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6968687,50.900461,"820","1839638594",,,,,,,,,"""entrance""=>""yes"""
+13.6939127,50.900322,"821","1840918537",Mercedes Kahnt,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""26-28"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""brand""=>""Mercedes-Benz"",""entrance""=>""main"",""shop""=>""car"",""website""=>""https://www.kahnt.dippoldiswalde.mercedes-benz.de/content/deutschland/retail-plz0/kahnt/de/desktop/home.html"""
+13.6897183,50.8993675,"822","1840918541",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6968605,50.8997731,"823","1840918553",,,street_lamp,,,,,,
+13.6969638,50.900023,"824","1840918581",,,street_lamp,,,,,,
+13.6926825,50.9002331,"825","1840918594",,,street_lamp,,,,,,
+13.6966822,50.9002332,"826","1840918595",,,street_lamp,,,,,,
+13.694743,50.9003456,"827","1840918619",,,street_lamp,,,,,,
+13.6963336,50.9004059,"828","1840918627",,,street_lamp,,,,,,
+13.6951288,50.9004958,"829","1840918653",,,street_lamp,,,,,,
+13.6959623,50.9005487,"830","1840918660",,,street_lamp,,,,,,
+13.6955355,50.9005813,"831","1840918664",,,street_lamp,,,,,,
+13.6946053,50.9011489,"832","1840918713",,,,,,,,,"""natural""=>""tree"""
+13.6970134,50.9016825,"833","1840918733",,,,,,,,,"""natural""=>""tree"""
+13.6985297,50.902224,"834","1840918746",,,,,,,,,"""power""=>""pole"",""tower:type""=>""concrete"""
+13.7021643,50.9045256,"836","1841029508","Reinholdshain, Schule",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7020983,50.9045417,"837","1841029615","Schule, Reinholdshain (Kr PIR) Steig 1",,bus_stop,"1",,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1481"",""shelter""=>""no"""
+13.7545015,50.8923203,"840","1852737896","Reinhardtsgrimma, Schule",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6964641,50.9000464,"841","1864324824",,,,,,,,,"""entrance""=>""main"""
+13.6975596,50.8993129,"842","1864324959",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""green"",""fire_hydrant:pressure""=>""suction"",""fire_hydrant:type""=>""pipe"",""water_source""=>""pond"""
+13.6967884,50.8998631,"843","1864324993",,,,,,,,,"""entrance""=>""yes"""
+13.696689,50.8998876,"844","1864324995",,,,,,,,,"""entrance""=>""yes"""
+13.696477,50.8999398,"845","1864325000",,,,,,,,,"""entrance""=>""yes"""
+13.6971335,50.8999972,"846","1864325008",,,,,,,,,"""amenity""=>""recycling"",""recycling:glass""=>""yes"",""recycling_type""=>""container"""
+13.6990443,50.9000185,"847","1864325017",,,,,,,,,"""natural""=>""tree"""
+13.6960395,50.9002428,"848","1864325030",,,,,,,,,"""natural""=>""tree"""
+13.6959164,50.9008672,"849","1864325087",,,,,,,,,"""entrance""=>""main"""
+13.6818218,50.8914793,"850","1865457364",,,,,,,,,"""pipeline""=>""marker"",""substance""=>""cng"""
+13.6840125,50.8932271,"851","1865457392",,,,ENSO R 39,,,,,"""description:de""=>""pipeline 0321"",""pipeline""=>""marker"",""substance""=>""cng"""
+13.6876489,50.8963912,"852","1865457523",,,,ENSO R 38,,,,,"""description:de""=>""pipeline 0321"",""pipeline""=>""marker"",""substance""=>""cng"""
+13.7072665,50.8981331,"853","1907364737",,,,,,,,,"""natural""=>""tree"""
+13.702769,50.9002838,"854","1907364992",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7105411,50.9026856,"855","1907365186",,,passing_place,,,,,,
+13.7048102,50.8984753,"856","1913826124",,,,,,,,,"""natural""=>""tree"""
+13.7044161,50.8985251,"857","1913826125",,,,,,,,,"""natural""=>""tree"""
+13.7036121,50.8985887,"858","1913826134",,,,,,,,,"""natural""=>""tree"""
+13.7035395,50.8990878,"859","1913826240",,,,,,,,,"""natural""=>""tree"""
+13.7016835,50.8991414,"860","1913826247",,,give_way,,,,,,
+13.7005742,50.8992117,"861","1913826256",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7005664,50.8993305,"862","1913826284",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7056994,50.8995174,"863","1913826331",,,,,,,,,"""natural""=>""tree"""
+13.7032544,50.8996025,"864","1913826355",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7041228,50.8999016,"865","1913826471",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7036625,50.8999488,"866","1913826486",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7030291,50.9000214,"867","1913826534",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7025964,50.9003157,"868","1913826622",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7013352,50.9007491,"869","1913826743",,,,,,,,,"""natural""=>""tree"""
+13.7043268,50.9009135,"870","1913826770",,,,,,,,,"""natural""=>""tree"""
+13.7031699,50.9010167,"871","1913826793",,,,,,,,,"""natural""=>""tree"""
+13.7038352,50.9010306,"872","1913826801",,,,,,,,,"""natural""=>""tree"""
+13.7034473,50.9011201,"873","1913826858",,,,,,,,,"""natural""=>""tree"""
+13.7023883,50.9011405,"874","1913826893",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7011062,50.8999384,"875","1913826906",,,,,,,,,"""natural""=>""tree"""
+13.7031951,50.9011817,"876","1913826907",,,,,,,,,"""natural""=>""tree"""
+13.7036933,50.9012653,"877","1913826963",,,,,,,,,"""natural""=>""tree"""
+13.7025165,50.9014678,"878","1913827134",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7025365,50.9015178,"879","1913827205",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7026303,50.9019107,"880","1913827373",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.702764,50.9021954,"881","1913827462",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7029172,50.9023683,"882","1913827465",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7090372,50.912116,"883","1918418416",Reinberg,,,,,,,,"""alt_name""=>""Oberhäslich 1 km"",""traffic_sign""=>""city_limit"""
+13.6940855,50.8985934,"884","1920540839",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.695648,50.8989201,"885","1920540848",,,,,,,,,"""amenity""=>""bench"""
+13.6956287,50.8989249,"886","1920540850",,,,,,,,,"""amenity""=>""waste_basket"""
+13.6956107,50.8989309,"887","1920540851",,,,,,,,,"""amenity""=>""bench"""
+13.6956075,50.8989874,"888","1920540860",,,,,,,,,"""amenity""=>""bench"""
+13.6901616,50.8983668,"890","1931836912",,,,,,,,,"""entrance""=>""yes"""
+13.6898742,50.8984199,"891","1931836913",,,,,,,,,"""entrance""=>""yes"""
+13.6889505,50.8985725,"892","1931836914",,,,,,,,,"""entrance""=>""yes"""
+13.6944136,50.8987401,"893","1931836915",,,,,,,,,"""entrance""=>""yes"""
+13.6944941,50.8987577,"894","1931836916",,,,,,,,,"""entrance""=>""yes"""
+13.6945625,50.8987727,"895","1931836917",,,,,,,,,"""entrance""=>""yes"""
+13.6946551,50.898793,"896","1931836918",,,,,,,,,"""entrance""=>""yes"""
+13.6973955,50.899435,"897","1931836921",,,,,,,,,"""entrance""=>""emergency"""
+13.6934829,50.9001433,"898","1931836923",,,,,,,,,"""entrance""=>""yes"""
+13.6936891,50.9002757,"899","1931836924",,,,,,,,,"""entrance""=>""yes"""
+13.6937565,50.9003022,"900","1931836925",,,,,,,,,"""entrance""=>""yes"""
+13.6938905,50.9006027,"901","1931836926",,,,,,,,,"""entrance""=>""yes"""
+13.6939524,50.8999937,"905","1936916261",Anlieferung,,,,,,,,"""entrance""=>""yes"""
+13.6941619,50.8983197,"906","1936916287",,,street_lamp,,,,,,
+13.6943615,50.8983736,"907","1936916290",,,street_lamp,,,,,,
+13.6938495,50.8984172,"908","1936916301",,,street_lamp,,,,,,
+13.694726,50.8984559,"909","1936916307",,,street_lamp,,,,,,
+13.6942243,50.8985207,"910","1936916322",,,street_lamp,,,,,,
+13.6951013,50.898542,"911","1936916325",,,street_lamp,,,,,,
+13.6933835,50.8985536,"912","1936916330",,,,"8",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6934549,50.8985815,"913","1936916339",,,,"9",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6936098,50.8986415,"914","1936916345",,,,"11",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6960441,50.8988331,"915","1936916351",,,street_lamp,,,,,,
+13.696235,50.8990241,"916","1936916355",,,street_lamp,,,,,,
+13.6916435,50.8990916,"917","1936916364",,,street_lamp,,,,,,
+13.6921339,50.8992261,"918","1936916372",,,street_lamp,,,,,,
+13.6964068,50.8992906,"919","1936916377",,,street_lamp,,,,,,
+13.6925622,50.8993911,"920","1936916386",,,street_lamp,,,,,,
+13.6969266,50.8994609,"921","1936916389",,,,,,,,,"""entrance""=>""yes"""
+13.6966167,50.8995418,"922","1936916394",,,street_lamp,,,,,,
+13.694543,50.8996277,"923","1936916396",,,,,,,,,"""entrance""=>""yes"""
+13.6944615,50.8998134,"924","1936916407",,,,,,,,,"""entrance""=>""yes"""
+13.6974655,50.8999398,"925","1936916410",,,street_lamp,,,,,,
+13.6980254,50.8999438,"926","1936916412",,,street_lamp,,,,,,
+13.6939911,50.9000066,"927","1936916416",,,street_lamp,,,,,,
+13.6943778,50.9001829,"928","1936916422",,,street_lamp,,,,,,
+13.6946573,50.9003167,"929","1936916425",,,,,,,,,"""entrance""=>""yes"""
+13.6938767,50.9001161,"930","1937143971",,,street_lamp,,,,,,
+13.6943087,50.9003247,"931","1937143978",,,street_lamp,,,,,,
+13.694352,50.9005121,"932","1937143986",,,street_lamp,,,,,,
+13.6942215,50.9006947,"933","1937144025",,,street_lamp,,,,,,
+13.694456,50.9008329,"934","1937144048",,,street_lamp,,,,,,
+13.6949646,50.9008818,"935","1937144052",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6977901,50.8981569,"946","2001083862",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4a"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6939709,50.8986644,"947","2001083900",,,street_lamp,,,,,,
+13.6952379,50.89878,"948","2001083904",,,street_lamp,,,,,,
+13.6938805,50.8988125,"949","2001083907",,,street_lamp,,,,,,
+13.6949473,50.8988723,"950","2001083911",,,street_lamp,,,,,,
+13.6946584,50.8989466,"951","2001083914",,,street_lamp,,,,,,
+13.6937841,50.8990007,"952","2001083915",,,street_lamp,,,,,,
+13.6945087,50.8991293,"953","2001083921",,,street_lamp,,,,,,
+13.6936262,50.8991802,"954","2001083922",,,street_lamp,,,,,,
+13.6936438,50.899226,"955","2001083924",,,street_lamp,,,,,,
+13.6938131,50.8992707,"956","2001083925",,,street_lamp,,,,,,
+13.6942385,50.8993165,"957","2001083926",,,street_lamp,,,,,,
+13.6939461,50.8993456,"958","2001083927",,,street_lamp,,,,,,
+13.6940196,50.8993612,"959","2001083928",,,street_lamp,,,,,,
+13.694486,50.8995843,"960","2001083930",,,street_lamp,,,,,,
+13.6941998,50.8996821,"961","2001083931",,,street_lamp,,,,,,
+13.6932574,50.8996865,"962","2001083932",,,street_lamp,,,,,,
+13.6940491,50.8998179,"963","2001083933",,,street_lamp,,,,,,
+13.6943601,50.8998439,"964","2001083934",,,street_lamp,,,,,,
+13.6936287,50.8998441,"965","2001083935",,,street_lamp,,,,,,
+13.6938932,50.8999618,"966","2001083936",,,street_lamp,,,,,,
+13.6958956,50.8980506,"973","2024607859",Dowaldwerke GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""8-12"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""alt_name""=>""Pneumatik Hydraulik GmbH"",""entrance""=>""main"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_Hydraulik.jpg"",""website""=>""http://dowaldwerke.griessbach.de/"""
+13.6962799,50.8981551,"974","2024607864",,,,,,,,,"""emergency""=>""exit"",""entrance""=>""emergency"""
+13.692146,50.8984822,"975","2024607873",,,,"7",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.692055,50.8986832,"976","2024607876",,,,"6",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6919428,50.8989046,"977","2024607885",,,,"5",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6919139,50.8990167,"978","2024607888",,,,"4",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6933025,50.8990991,"979","2024607896",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6896684,50.8992996,"980","2024607907",,,,,,,,,"""operator""=>""SachsenEnergie"",""pipeline""=>""marker"",""substance""=>""cng"",""was:operator""=>""ENSO Energie Sachsen Ost"",""was:operator:short""=>""ENSO"""
+13.6896839,50.8993043,"981","2024607909",,,,AS8,,,,,"""pipeline""=>""blow-out"""
+13.6896659,50.8993073,"982","2024607910",,,,A8,,,,,"""pipeline""=>""blow-out"""
+13.6896895,50.8993114,"983","2024607911",,,,S6,,,,,"""pipeline""=>""valve"""
+13.6896836,50.8993202,"984","2024607912",,,,S9,,,,,"""pipeline""=>""valve"""
+13.6896954,50.8993255,"985","2024607913",,,,S5,,,,,"""pipeline""=>""valve"""
+13.6896941,50.8993333,"986","2024607915",,,,AS7,,,,,"""pipeline""=>""blow-out"""
+13.6896751,50.8993365,"987","2024607916",,,,A7,,,,,"""pipeline""=>""blow-out"""
+13.6928329,50.899334,"988","2024607917",,,,"3",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.689639,50.8993446,"989","2024607918",,,,,,,,,"""operator""=>""SachsenEnergie"",""pipeline""=>""marker"",""substance""=>""cng"",""was:operator""=>""ENSO Energie Sachsen Ost"",""was:operator:short""=>""ENSO"""
+13.69289,50.8993575,"990","2024607919",,,,"2",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.692943,50.899376,"991","2024607922",,,,"1",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6896541,50.8994022,"992","2024607925",,,,,,,,,"""operator""=>""SachsenEnergie"",""pipeline""=>""marker"",""substance""=>""cng"",""was:operator""=>""ENSO Energie Sachsen Ost"",""was:operator:short""=>""ENSO"""
+13.6897032,50.899399,"993","2024607926",,,,S1,,,,,"""description:de""=>""NDL"",""pipeline""=>""valve"""
+13.6896905,50.8994006,"994","2024607927",,,,A7,,,,,"""description:de""=>""NDL"",""pipeline""=>""valve"""
+13.6897061,50.899405,"995","2024607928",,,,,,,,,"""operator""=>""SachsenEnergie"",""pipeline""=>""marker"",""substance""=>""cng"",""was:operator""=>""ENSO Energie Sachsen Ost"",""was:operator:short""=>""ENSO"""
+13.6897182,50.8994098,"996","2024607930",,,,S11,,,,,"""pipeline""=>""valve"""
+13.68972,50.8994191,"997","2024607931",,,,MS3,,,,,
+13.6897247,50.8994371,"998","2024607932",,,,,,,,,"""description:de""=>""Fortführung unbekannt"""
+13.6895675,50.8996184,"999","2024607936",,,,,,,,,"""description:de""=>""Fortführung unbekannt"""
+13.6971815,50.9000009,"1000","2024607938",,,,,,,,,"""natural""=>""tree"""
+13.697169,50.9000338,"1001","2024607939",,,,,,,,,"""natural""=>""tree"""
+13.6971417,50.9000636,"1002","2024607941",,,,,,,,,"""natural""=>""tree"""
+13.6970994,50.9000996,"1003","2024607944",,,,,,,,,"""natural""=>""tree"""
+13.6955122,50.9001709,"1004","2024607946",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.698015,50.9001917,"1005","2024607947",,,street_lamp,,,,,,
+13.6977329,50.9001941,"1006","2024607948",,,street_lamp,,,,,,
+13.6974496,50.9001956,"1007","2024607949",,,street_lamp,,,,,,
+13.6950558,50.9003671,"1008","2024607950",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.695548,50.8982175,"1010","2027865304",IGS,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""11"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""craft""=>""carpenter"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:IGS_Innenausbau_in_Reinholdshain.jpg"",""phone""=>""+49 3504 620862"",""website""=>""http://igs-innenausbau.de/"""
+13.69935,50.8961747,"1013","2027865319",,,,,,,,,"""entrance""=>""yes"""
+13.6992743,50.8961955,"1014","2027865322",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""20"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.701279,50.8963966,"1015","2027865348",,,give_way,,,,,,
+13.6988749,50.8964777,"1017","2027865372",,,street_lamp,,,,,,
+13.7011128,50.8964814,"1018","2027865375",,,,,,,,,"""natural""=>""tree"""
+13.6910796,50.8964894,"1019","2027865383",,,,,,,,,"""natural""=>""tree"""
+13.698655,50.8964965,"1020","2027865388",,,,,,,,,"""natural""=>""tree"""
+13.6983021,50.8965192,"1021","2027865399",,,street_lamp,,,,,,
+13.6926016,50.8965509,"1022","2027865436",,,street_lamp,,,,,,
+13.6978635,50.8965858,"1023","2027865478",,,street_lamp,,,,,,
+13.7009359,50.8965921,"1024","2027865490",,,,,,,,,"""entrance""=>""main"""
+13.6948309,50.896611,"1025","2027865523",,,,,,,,,"""natural""=>""tree"""
+13.6923432,50.8966779,"1026","2027865583",,,street_lamp,,,,,,
+13.6973826,50.8966877,"1027","2027865594",,,street_lamp,,,,,,
+13.6918598,50.8966959,"1028","2027865601",,,street_lamp,,,,,,
+13.6955643,50.8967598,"1029","2027865630",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""underground"""
+13.6969601,50.8967778,"1030","2027865639",,,street_lamp,,,,,,
+13.6949341,50.8967968,"1031","2027865653",,,,,,,,,"""natural""=>""tree"""
+13.6965608,50.8968615,"1032","2027865675",,,street_lamp,,,,,,
+13.694893,50.8969057,"1033","2027865694",,,,,,,,,"""natural""=>""tree"""
+13.6961523,50.8969408,"1034","2027865711",,,street_lamp,,,,,,
+13.6970174,50.8969623,"1035","2027865725",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""6"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""craft""=>""hvac"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Busch_Heizung_und_Sanit%C3%A4r_Reinholdshain.jpg"",""phone""=>""+49 3504 610699"",""website""=>""http://www.heizung-busch.de/"""
+13.69708,50.8969975,"1036","2027865729",,,,,,,,,"""entrance""=>""yes"""
+13.6956457,50.8970003,"1037","2027865732",,,,,,,,,"""winter_service""=>""no"""
+13.6940654,50.8970533,"1038","2027865741",,,street_lamp,,,,,,
+13.695329,50.8970815,"1039","2027865750",,,street_lamp,,,,,,
+13.6944767,50.8971303,"1040","2027865757",,,street_lamp,,,,,,
+13.6949081,50.8971397,"1041","2027865762",,,street_lamp,,,,,,
+13.6954414,50.8973837,"1042","2027865798",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6996963,50.8976963,"1043","2027865826",,,,,,,,,"""generator:method""=>""photovoltaic"",""generator:output:electricity""=>""yes"",""generator:source""=>""solar"",""power""=>""generator"""
+13.695253,50.8977255,"1044","2027865831",,,,,,,,,"""winter_service""=>""no"""
+13.6953654,50.8980121,"1045","2027865856",Ullrich,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""11a"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Raumausstatter_Ullrich_in_Reinholdshain.jpg"",""phone""=>""+49 3504 629305"",""shop""=>""interior_decoration"",""website""=>""http://www.raumausstattung-ullrich.de/"""
+13.6934232,50.8981836,"1046","2027865867",,,,,,,,,"""entrance""=>""yes"""
+13.7000974,50.8981914,"1047","2027865868",,,,,,,,,"""generator:method""=>""photovoltaic"",""generator:output:electricity""=>""yes"",""generator:source""=>""solar"",""power""=>""generator"""
+13.6935773,50.8982165,"1048","2027865869",,,,,,,,,"""entrance""=>""yes"""
+13.6996802,50.8982469,"1049","2027865872",,,,,,,,,"""entrance""=>""yes"""
+13.699737,50.8982815,"1050","2027865876",,,,,,,,,"""generator:method""=>""photovoltaic"",""generator:output:electricity""=>""yes"",""generator:source""=>""solar"",""power""=>""generator"""
+13.6945103,50.8985692,"1051","2027865879",,,,,,,,,"""entrance""=>""yes"""
+13.6946523,50.8986003,"1052","2027865880",,,,,,,,,"""entrance""=>""yes"""
+13.6942272,50.8986556,"1053","2027865882",,,,,,,,,"""entrance""=>""main"""
+13.6899226,50.8963289,"1054","2027865885",Reinholdshain,,,,,,,,"""alt_name""=>""Dippoldiswalde 1 km"",""traffic_sign""=>""city_limit"""
+13.7011277,50.8964744,"1055","2028256022",,,,,,,,,"""historic""=>""milestone"",""image""=>""http://commons.wikimedia.org/wiki/File:Wegs%C3%A4ule_in_Reinholdshain.jpg"""
+13.6985537,50.8965705,"1056","2028256026",,,street_lamp,,,,,,
+13.6982903,50.896612,"1057","2028256031",,,street_lamp,,,,,,
+13.698002,50.8966488,"1058","2028256035",,,street_lamp,,,,,,
+13.6977286,50.8966935,"1059","2028256047",,,street_lamp,,,,,,
+13.698789,50.896697,"1060","2028256050",,,,,,,,,"""access""=>""private"",""entrance""=>""service"""
+13.6974577,50.8967656,"1061","2028256056",,,street_lamp,,,,,,
+13.6917634,50.8969279,"1062","2028256073",,,street_lamp,,,,,,
+13.6972614,50.8970438,"1063","2028256089",,,street_lamp,,,,,,
+13.6933487,50.8970447,"1064","2028256090",,,,,,,,,"""entrance""=>""emergency"""
+13.6937529,50.8970796,"1065","2028256109",,,,,,,,,"""entrance""=>""emergency"""
+13.6918188,50.897144,"1066","2028256125",,,street_lamp,,,,,,
+13.6942037,50.8971755,"1067","2028256147",,,,,,,,,"""entrance""=>""emergency"""
+13.6971309,50.8972139,"1068","2028256168",,,street_lamp,,,,,,
+13.6888595,50.8972443,"1069","2028256177",,,street_lamp,,,,,,
+13.6978805,50.8971518,"1070","2028256178",Bauzentrum Reinholdshain,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""image""=>""http://commons.wikimedia.org/wiki/File:Bauzentrum_Reinholdshain.jpg"",""operator""=>""Reinholdshainer Raiffeisen Handels GmbH"",""website""=>""https://www.bhg-reinholdshain.de/"""
+13.6949031,50.8972875,"1071","2028256184",,,,,,,,,"""entrance""=>""service"""
+13.6948908,50.8973179,"1072","2028256191",,,,,,,,,"""entrance""=>""emergency"""
+13.6918506,50.897362,"1073","2028256204",,,street_lamp,,,,,,
+13.6971421,50.8973699,"1074","2028256206",,,street_lamp,,,,,,
+13.6916878,50.8974051,"1075","2028256215",,,street_lamp,,,,,,
+13.6885739,50.8974205,"1076","2028256220",,,street_lamp,,,,,,
+13.69818,50.897433,"1077","2028256222",,,,,,,,,"""access""=>""private"",""emergency""=>""yes"",""entrance""=>""yes"""
+13.698896,50.8974373,"1078","2028256224",,,,,,,,,"""entrance""=>""yes"""
+13.6922917,50.8974497,"1079","2028256231",,,street_lamp,,,,,,
+13.6971645,50.8975203,"1080","2028256254",,,street_lamp,,,,,,
+13.6937204,50.8975612,"1081","2028256257",,,,,,,,,"""entrance""=>""emergency"""
+13.693449,50.8975468,"1082","2028256262",,,,,,,,,"""description:de""=>""Leergut-Abholung"",""entrance""=>""service"""
+13.6915499,50.8976496,"1083","2028256265",,,street_lamp,,,,,,
+13.6886293,50.8976849,"1084","2028256270",,,street_lamp,,,,,,
+13.6966737,50.8977561,"1085","2028256278",,,street_lamp,,,,,,
+13.6962487,50.8978205,"1086","2028256280",,,street_lamp,,,,,,
+13.6953068,50.8978307,"1087","2028256283",,,street_lamp,,,,,,
+13.6887435,50.8978966,"1088","2028256287",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""125"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.6914033,50.8979145,"1089","2028256289",,,street_lamp,,,,,,
+13.6968265,50.8979216,"1090","2028256291",,,street_lamp,,,,,,
+13.6958535,50.8979247,"1091","2028256294",,,street_lamp,,,,,,
+13.6888182,50.8979398,"1092","2028256296",,,street_lamp,,,,,,
+13.6968414,50.8981426,"1093","2028256304",,,street_lamp,,,,,,
+13.6912564,50.8981661,"1094","2028256306",,,street_lamp,,,,,,
+13.689001,50.898193,"1095","2028256308",,,street_lamp,,,,,,
+13.697705,50.898221,"1096","2028256310",,,street_lamp,,,,,,
+13.6975149,50.8982625,"1097","2028256312",,,street_lamp,,,,,,
+13.6973136,50.8982954,"1098","2028256315",,,street_lamp,,,,,,
+13.6970129,50.8983268,"1099","2028256320",,,street_lamp,,,,,,
+13.6984504,50.8983358,"1100","2028256322",,,,,,,,,"""entrance""=>""emergency"""
+13.6910886,50.8984208,"1101","2028256325",,,street_lamp,,,,,,
+13.6891802,50.8984469,"1102","2028256328",,,street_lamp,,,,,,
+13.6906862,50.8986408,"1103","2028256330",,,street_lamp,,,,,,
+13.6893999,50.8986946,"1104","2028256332",,,street_lamp,,,,,,
+13.6911106,50.898709,"1105","2028256334",,,street_lamp,,,,,,
+13.690268,50.8987594,"1106","2028256335",,,street_lamp,,,,,,
+13.6897938,50.8988419,"1107","2028256337",,,street_lamp,,,,,,
+13.6913716,50.8989351,"1108","2028256339",,,street_lamp,,,,,,
+13.6898726,50.8991323,"1109","2028256341",,,street_lamp,,,,,,
+13.6898647,50.8993945,"1110","2028256342",,,street_lamp,,,,,,
+13.6954062,50.9008248,"1111","2028256368",,,,,,,,,"""entrance""=>""service"""
+13.6965585,50.8977664,"1112","2028256370",Tankstelle,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1475"",""shelter""=>""no"",""tactile_paving""=>""no"""
+13.6899438,50.8988208,"1114","2028395737",,,,,,,,,"""amenity""=>""grit_bin"""
+13.6942793,50.8986192,"1119","2032076919",Nähservice,,,,,,,,"""craft""=>""tailor"",""phone""=>""+49 174 4514370"""
+13.7049138,50.8934215,"1120","2032077096",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""100"",""fire_hydrant:position""=>""sidewalk"",""fire_hydrant:type""=>""underground"""
+13.7048314,50.8936812,"1121","2032077104",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""sidewalk"",""fire_hydrant:type""=>""underground"""
+13.6921357,50.8964039,"1122","2032077163",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""200"",""fire_hydrant:position""=>""green"",""fire_hydrant:type""=>""underground"""
+13.6934164,50.8989927,"1123","2032077187",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:position""=>""parking_lot"",""fire_hydrant:pressure""=>""suction"",""fire_hydrant:type""=>""pipe"",""water_source""=>""groundwater"""
+13.7089866,50.8974168,"1149","2141685381",,,,,,,,collecting_chute,
+13.7104401,50.8977739,"1150","2141685386",,,,,,,,collecting_chute,
+13.7099736,50.8988412,"1151","2141685400",,,,,,,,collecting_chute,
+13.6932453,50.8974279,"1152","2154865663",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""post_office"",""opening_hours""=>""Mo-Sa 08:00-20:00"",""operator""=>""Deutsche Post"",""operator:wikidata""=>""Q157645"",""operator:wikipedia""=>""de:Deutsche Post AG"""
+13.693274,50.897369,"1153","2154865666",Sparkasse,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""atm"",""operator""=>""Sparkasse"",""website""=>""https://www.ostsaechsische-sparkasse-dresden.de/module/ihre_sparkasse/filialfinder/index.php?n=%2Fmodule%2Fihre_sparkasse%2Ffilialfinder%2F&IFLBSERVERID=IF@@042@@IF#details/115670"""
+13.6932165,50.897423,"1154","2154865670",,,,,,,,,"""entrance""=>""yes"""
+13.7564035,50.8918372,"1159","2177764290",,,give_way,,,,,,"""direction""=>""backward"""
+13.741864,50.8889681,"1165","2185320020",Reinhardtsgrimma,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.7591036,50.8930163,"1166","2186942242",,,give_way,,,,,,"""direction""=>""forward"""
+13.708294,50.8971297,"1168","2201392795",,,stop,,,,,,
+13.7081066,50.8971772,"1169","2201392798",BHS Asphaltmischwerk Reinholdshain,,,,,,,,"""access""=>""private"",""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""contact:phone""=>""+49 162 2573402"",""entrance""=>""main"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_Asphaltmischwerk.jpg"",""phone""=>""+49 3504 617990"",""website""=>""http://www.bhs-dresden.de/werk-reinholdshain.html"""
+13.7017318,50.8965721,"1170","2201800260",Bauernschänke,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""19"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""nightclub"",""entrance""=>""main"",""phone""=>""+49 174 3092877"""
+13.7013794,50.8964448,"1171","2201800261",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""19"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"""
+13.7022356,50.8958738,"1172","2201800273",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7012238,50.8963048,"1173","2201800280",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""24"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7026504,50.8957949,"1174","2201800285",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2a"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7023143,50.8961661,"1175","2201800287",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2b"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.704195,50.8964536,"1176","2201800288",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7132433,50.8952574,"1177","2201800315",,,,,,,,,"""natural""=>""tree"""
+13.7129859,50.8953213,"1178","2201800319",,,,,,,,,"""natural""=>""tree"""
+13.7124909,50.8954403,"1179","2201800326",,,,,,,,,"""natural""=>""tree"""
+13.712025,50.8955527,"1180","2201800347",,,,,,,,,"""natural""=>""tree"""
+13.7115067,50.8956813,"1181","2201800396",,,,,,,,,"""natural""=>""tree"""
+13.7110303,50.8957974,"1182","2201800419",,,,,,,,,"""natural""=>""tree"""
+13.7105528,50.8959384,"1183","2201800436",,,,,,,,,"""natural""=>""tree"""
+13.7019286,50.895985,"1184","2201800448",,,,,,,,,"""description:de""=>""ziemlich eingewachsen"",""historic""=>""milestone"",""image""=>""http://commons.wikimedia.org/wiki/File:Wegs%C3%A4ule_Reinholdshain_Reinhardtsgrimmaer_Stra%C3%9Fe.jpg"""
+13.710052,50.8960927,"1185","2201800473",,,,,,,,,"""natural""=>""tree"""
+13.7098377,50.8961551,"1186","2201800504",,,,,,,,,"""natural""=>""tree"""
+13.7094235,50.8961736,"1187","2201800514",,,,,,,,,"""natural""=>""tree"""
+13.7092012,50.8962131,"1188","2201800518",,,,,,,,,"""natural""=>""tree"""
+13.7093263,50.8962646,"1189","2201800535",,,,,,,,,"""natural""=>""tree"""
+13.7086873,50.8962993,"1190","2201800568",,,,,,,,,"""natural""=>""tree"""
+13.7071124,50.8962997,"1191","2201800571",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7090794,50.8963035,"1192","2201800576",,,,,,,,,"""natural""=>""tree"""
+13.7082919,50.8963429,"1193","2201800595",,,,,,,,,"""natural""=>""tree"""
+13.7085413,50.8963873,"1194","2201800639",,,,,,,,,"""natural""=>""tree"""
+13.7082769,50.8964166,"1195","2201800659",,,,,,,,,"""natural""=>""tree"""
+13.7040319,50.8964929,"1196","2201800724",,,,,,,,,"""entrance""=>""yes"""
+13.7039896,50.8966138,"1197","2201800785",,,,,,,,,"""entrance""=>""main"""
+13.7041097,50.898553,"1198","2201801069",,,,,,,,,"""natural""=>""tree"""
+13.7038419,50.8985779,"1199","2201801071",,,,,,,,,"""natural""=>""tree"""
+13.7056182,50.8988735,"1200","2201801085",,,,,,,,,"""natural""=>""tree"""
+13.6905471,50.8988742,"1201","2205223869",Metalltechnik Göbel GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housename""=>""Göbel Metalltechnik"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"",""phone""=>""+49 3504 694960"",""website""=>""https://www.goebel-gruppe.eu/"""
+13.7018044,50.8960453,"1202","2205223870",,,stop,,,,,,
+13.7008318,50.8954067,"1236","2354517302",Reinholdshain,,,,,,village,,"""population""=>""534"",""wikidata""=>""Q2141631"",""wikipedia""=>""de:Reinholdshain (Dippoldiswalde)"""
+13.6976003,50.8966551,"1242","2354560176",,,,,,,,,"""natural""=>""tree"""
+13.6927926,50.8967114,"1243","2354560180",,,street_lamp,,,,,,
+13.6966371,50.8968076,"1244","2354560188",,,,,,,,,"""natural""=>""tree"""
+13.6931081,50.8968116,"1245","2354560189",,,,,,,,,"""natural""=>""tree"""
+13.6963573,50.8968607,"1246","2354560191",,,,,,,,,"""natural""=>""tree"""
+13.6932676,50.8968871,"1247","2354560192",,,street_lamp,,,,,,
+13.6935293,50.8968995,"1248","2354560193",,,,,,,,,"""natural""=>""tree"""
+13.6959837,50.8969155,"1249","2354560195",,,,,,,,,"""natural""=>""tree"""
+13.6937618,50.896951,"1250","2354560196",,,,,,,,,"""natural""=>""tree"""
+13.6936629,50.8969682,"1251","2354560197",,,street_lamp,,,,,,
+13.6940265,50.89701,"1252","2354560198",,,,,,,,,"""natural""=>""tree"""
+13.6953338,50.8970319,"1253","2354560199",,,,,,,,,"""natural""=>""tree"""
+13.6944433,50.8970867,"1254","2354560200",,,,,,,,,"""natural""=>""tree"""
+13.7082929,50.8936677,"1257","2361793841",,,,,,,,,"""natural""=>""tree"""
+13.7693055,50.8934769,"1267","2425620212","Reinhardtsgrimma, Neue Häuser",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6979443,50.8971569,"1269","2430740466",,,,,,,,,"""amenity""=>""vending_machine"",""payment:coins""=>""yes"",""vending""=>""coffee"""
+13.7785761,50.9233108,"1271","2435369408","Lungkwitz, Abzw. Steinbruch",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6941131,50.8976444,"1279","2483686965",,,,,,,,,"""entrance""=>""emergency"""
+13.7083124,50.8934495,"1280","2485400192",,,,,,,,collecting_chute,
+13.7071093,50.8945578,"1281","2485400255",,,,,,,,collecting_chute,
+13.7063677,50.8948313,"1282","2485400269",,,,,,,,collecting_chute,
+13.7061837,50.894906,"1283","2485400272",,,,,,,,collecting_chute,
+13.7062043,50.8949427,"1284","2485400278",,,,,,,,collecting_chute,
+13.706026,50.8950931,"1285","2485400291",,,,,,,,collecting_chute,
+13.70581,50.8951132,"1286","2485400295",,,,,,,,collecting_chute,
+13.6967603,50.8976875,"1307","2566057817",,,,,,,,,"""maxweight""=>""7.5"""
+13.696212,50.9007908,"1322","2629589840",,,street_lamp,,,,,,
+13.6960882,50.900885,"1323","2629589841",,,street_lamp,,,,,,
+13.6964243,50.9009941,"1324","2629589842",,,street_lamp,,,,,,
+13.6962651,50.9010374,"1325","2629589843",,,street_lamp,,,,,,
+13.7047559,50.9075563,"1326","2629589932",,,,,,,,,"""pipeline""=>""marker"",""substance""=>""cng"""
+13.6992765,50.907701,"1327","2629589938",,lift_gate,,,,,,,"""bicycle""=>""yes"",""foot""=>""yes"""
+13.7109492,50.8845662,"1335","2747137089",Reinholdshain,,,,,,,,"""direction""=>""forward"",""traffic_sign""=>""city_limit"""
+13.7002161,50.9092685,"1337","2781658798",,,give_way,,,,,,
+13.7003475,50.9088206,"1338","2789930093","Reinberger Straße, Oberhäslich Steig 1",,bus_stop,"1",,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1450"",""shelter""=>""no"""
+13.7003151,50.9088765,"1339","2789930101","Oberhäslich, Reinberger Straße",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7028256,50.9023447,"1342","2843769470",,,street_lamp,,,,,,
+13.7030804,50.9024644,"1343","2843769471",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""24"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7025206,50.9020165,"1344","2844086788",,,street_lamp,,,,,,
+13.7011063,50.8981871,"1345","2860108865",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7020045,50.8988879,"1346","2860108866",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""10"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7004805,50.8994448,"1347","2860108867",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""11"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.700914,50.8997366,"1348","2860108868",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""13"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7027074,50.90111,"1349","2860108869",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""14"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7027367,50.9013691,"1350","2860108870",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""16"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7027555,50.9016158,"1351","2860108871",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""18"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7021848,50.9011369,"1352","2860108872",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""19"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7028491,50.9019651,"1353","2860108873",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""20"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7023244,50.9014298,"1354","2860108874",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""21"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7020094,50.9013608,"1355","2860108875",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""21a"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7030514,50.9021776,"1356","2860108876",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""22"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7015982,50.8986957,"1357","2860108877",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7016169,50.8989398,"1358","2860108878",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7005237,50.8989839,"1359","2860108879",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""7"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7020913,50.8980711,"1360","2860108880",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""8"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7022159,50.8985678,"1361","2860108881",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""8a"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7005154,50.8990451,"1362","2860108882",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""9"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7013573,50.8971016,"1363","2860108894",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7016756,50.8972084,"1364","2860108895",Baumschule,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""6"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""email""=>""baumschule.andreas.meile@t-online.de"",""entrance""=>""main"",""office""=>""company"",""operator""=>""Andreas Meile"",""phone""=>""+49 3504 615725"""
+13.7013546,50.8972997,"1365","2860108900",,,,,,,,,"""entrance""=>""yes"""
+13.701282,50.8974901,"1366","2860109611",,,street_lamp,,,,,,
+13.7017629,50.8978936,"1367","2860109628",,,,,,,,,"""natural""=>""tree"""
+13.7016299,50.8979811,"1368","2860109633",,,street_lamp,,,,,,
+13.701536,50.8980877,"1369","2860109640",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7018256,50.8986479,"1370","2860109683",,,street_lamp,,,,,,
+13.7002295,50.8988798,"1371","2860109700",,,,,,,,,"""natural""=>""tree"""
+13.7018195,50.8988874,"1372","2860109701",,,,,,,,,"""entrance""=>""yes"""
+13.7018253,50.8991166,"1373","2860109716",,,street_lamp,,,,,,
+13.7016367,50.8991971,"1374","2860109718",,,,,,,,,"""natural""=>""tree"""
+13.7019606,50.8994604,"1375","2860109743",,,street_lamp,,,,,,
+13.7020934,50.8998137,"1376","2860109747",,,street_lamp,,,,,,
+13.702175,50.9002016,"1377","2860109750",,,street_lamp,,,,,,
+13.7023359,50.900515,"1378","2860109754",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7022193,50.9005265,"1379","2860109756",,,street_lamp,,,,,,
+13.7022573,50.9007726,"1380","2860109758",,,street_lamp,,,,,,
+13.7023546,50.9010662,"1381","2860109771",,,street_lamp,,,,,,
+13.7024514,50.9013137,"1382","2860109798",,,street_lamp,,,,,,
+13.7025231,50.9014938,"1383","2860109918",,,street_lamp,,,,,,
+13.7026007,50.9017092,"1384","2860109928",,,street_lamp,,,,,,
+13.7022526,50.9017522,"1385","2860109931",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""23"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7026069,50.9018556,"1386","2860109934",,,street_lamp,,,,,,
+13.702665,50.9020827,"1387","2860109947",,,street_lamp,,,,,,
+13.703184,50.9024419,"1388","2860109972",,,,,,,,,"""natural""=>""tree"""
+13.7011601,50.8968928,"1389","2861682526",Freiwillige Feuerwehr Reinholdshain,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""2"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""fire_station"",""email""=>""of.Reinholdshain@dippoldiswalde.de"",""entrance""=>""main"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_FreiwilligeFeuerWehr.jpg"",""phone""=>""+49 3504 649927"",""website""=>""http://feuerwehr.dippoldiswalde.de/pages/ortsfeuerwehren-der-feuerwehr-dippoldiswalde/ortsfeuerwehr-reinholdshain/of-reinholdshain.php"""
+13.702022,50.8962798,"1390","2861682527",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7020224,50.8957021,"1391","2861682528",,,street_lamp,,,,,,
+13.7016935,50.8960181,"1392","2861682529",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""100"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.7014102,50.8960917,"1393","2861682532",,,,,,,,,"""entrance""=>""yes"""
+13.7020043,50.896158,"1394","2861682540",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7031812,50.8964882,"1395","2861682560",,,street_lamp,,,,,,
+13.7037855,50.8965441,"1396","2861682566",,,street_lamp,,,,,,
+13.7014456,50.8965999,"1397","2861682575",,,,,,,,,"""entrance""=>""yes"""
+13.7007497,50.8966132,"1398","2861682576",,,street_lamp,,,,,,
+13.7013365,50.8966181,"1399","2861682577",,,,,,,,flagpole,
+13.7013733,50.8966312,"1400","2861682579",,,,,,,,flagpole,
+13.701242,50.8966697,"1401","2861682584",,,,,,,,collecting_chute,
+13.70102,50.8967194,"1402","2861682588",,,,,,,,,"""natural""=>""tree"""
+13.7011806,50.897136,"1403","2861682599",,,street_lamp,,,,,,
+13.7082309,50.8973618,"1404","2861683612",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6956138,50.8975357,"1405","2862105600",,,street_lamp,,,,,,
+13.7033892,50.8977213,"1406","2862280706",GBH Galshütter Baumaschinen Handel,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""contact:addr""=>""GBH - Glashütter Baumaschinen Handel, Gewerbering 9, OT Reinholdshain, 01744 Dippoldiswalde"",""description""=>""Lager"",""entrance""=>""main"",""phone""=>""+49 3504 6296990"""
+13.7052313,50.8939931,"1407","2862280707",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""10"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7037411,50.8949968,"1408","2862280708",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""31"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7048229,50.8945574,"1409","2862280709",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7053695,50.8946623,"1410","2862280710",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7055221,50.8941419,"1411","2862280711",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""9"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.704481,50.8971076,"1412","2862280712",Mittelalter-Shop,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""alt_name""=>""Antik, Larp und Reenactment"",""description""=>""Nur Online-Shop"",""email""=>""info@pera-peris.de"",""entrance""=>""main"",""office""=>""online_shop"",""operator""=>""Pera Peris"",""phone""=>""+49 3504 625695"",""shop""=>""gift"",""website""=>""https://www.peraperis.com/"""
+13.7054098,50.8940324,"1413","2862280726",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""80"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.7036966,50.8944915,"1414","2862280754",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7056293,50.8946512,"1415","2862280777",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7064852,50.894848,"1416","2862284803",,,,,,,,,"""natural""=>""tree"""
+13.7040099,50.8948934,"1417","2862284805",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7057939,50.8951861,"1418","2862284825",,,,,,,,,"""natural""=>""tree"""
+13.7039343,50.8952772,"1419","2862284834",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""27"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7038474,50.8956509,"1420","2862284848",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""25"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7033209,50.8957975,"1421","2862284858",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""21"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7030998,50.8960317,"1422","2862284864",,,,,,,,,"""entrance""=>""yes"""
+13.7033544,50.8960806,"1423","2862284866",,,,,,,,,"""entrance""=>""yes"""
+13.7030296,50.8961755,"1424","2862284867",,,,,,,,,"""entrance""=>""yes"""
+13.7032731,50.8962223,"1425","2862284869",,,,,,,,,"""entrance""=>""yes"""
+13.7053215,50.896542,"1426","2862284872",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7040632,50.8966101,"1427","2862284874",,,street_lamp,,,,,,
+13.7053975,50.8966131,"1428","2862284875",,,street_lamp,,,,,,
+13.7043457,50.8966157,"1429","2862284876",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:diameter""=>""80"",""fire_hydrant:position""=>""lane"",""fire_hydrant:type""=>""underground"""
+13.7041422,50.896617,"1430","2862284877",,,,,,,,collecting_chute,
+13.705067,50.896635,"1431","2862284881",,,street_lamp,,,,,,
+13.7044796,50.8966428,"1432","2862284882",,,street_lamp,,,,,,
+13.704215,50.8969567,"1433","2862284883",Reinholdshainer Agrar-Service GmbH,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Reinhardtsgrimmaer Straße"",""addr:suburb""=>""Reinholdshain"",""contact:phone""=>""+49 173 3561437"",""craft""=>""agricultural_service"",""description:de""=>""Kann geschlossen sein - Keine Kontaktmöglichkeiten mehr"",""email""=>""agrarservice-reinhain@t-online.de"",""entrance""=>""main"",""phone""=>""+49 3504 612162"""
+13.7033206,50.8947999,"1434","2862284884",Sonnenschein e.V.,,,,,,,,"""access""=>""private"",""leisure""=>""playground"""
+13.7034871,50.8948299,"1435","2863944501",Gemeinde,,,,,,,,"""tourism""=>""information"""
+13.6946408,50.8980721,"1436","2863944502",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""7"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""addr:suburb""=>""Reinholdshain"",""craft""=>""butcher"",""cuisine""=>""kebab"",""entrance""=>""main"""
+13.7038444,50.8945457,"1437","2863944503",Kindergarten,,,,,,,,"""tourism""=>""information"""
+13.7035456,50.8947992,"1438","2863944504",Kindergarten,,,,,,,,"""tourism""=>""information"""
+13.7042655,50.8944722,"1439","2863944518",,,street_lamp,,,,,,
+13.7033686,50.8945824,"1440","2863944538",,,,,,,,,"""entrance""=>""yes"""
+13.7037593,50.8946216,"1441","2863944545",,,,,,,,,"""emergency""=>""fire_hydrant"",""fire_hydrant:pressure""=>""suction"",""fire_hydrant:type""=>""pipe"",""water_source""=>""pond"""
+13.7038543,50.8946618,"1442","2863944552",,,street_lamp,,,,,,
+13.7040288,50.8947344,"1443","2863944566",,,give_way,,,,,,
+13.7034833,50.8947643,"1444","2863944571",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7034703,50.8948358,"1445","2863944580",,,street_lamp,,,,,,
+13.703091,50.8950596,"1446","2863944715",,,street_lamp,,,,,,
+13.7030167,50.8950804,"1447","2863944720",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7029118,50.8952701,"1448","2863944747","Reinholdshain, Kindergarten",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7027475,50.8953134,"1449","2863944755",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7024257,50.8954702,"1450","2863944764",,,street_lamp,,,,,,
+13.7034628,50.8945462,"1451","2863944814",Sonnenschein e.V.,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""32"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""kindergarten"",""email""=>""kita-reinholdshain@t-online.de"",""entrance""=>""main"",""image""=>""http://wiki.openstreetmap.org/wiki/File:2014_Reinholdshain_Kita_Sonnenschein_e.V..jpg"",""opening_hours""=>""Mo-Fr 06:30-17:00"",""phone""=>""+49 3504 612486"""
+13.7032572,50.8955988,"1452","2864526882",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""23"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7025597,50.8953085,"1453","2864526883",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""28"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7035644,50.8950641,"1454","2864526884",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""29"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7028745,50.8949571,"1455","2864526885",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""30"",""addr:postcode""=>""01744"",""addr:street""=>""Glashütter Straße"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.6975841,50.8980428,"1456","2864526886",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Am Bauzentrum"",""addr:suburb""=>""Reinholdshain"",""entrance""=>""main"""
+13.7017858,50.8958982,"1457","2864529719",,,street_lamp,,,,,,
+13.7013946,50.8965257,"1458","2864529722",,,,,,,,,"""emergency""=>""siren"""
+13.7011171,50.8968807,"1459","2864529725",,,,,,,,,"""description""=>""Sirene"",""emergency""=>""phone"""
+13.7795342,50.8982235,"1466","2986559572","Reinhardtsgrimma, Buschhaus",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7021032,50.9014773,"1535","3533913132",Mäusebande,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""21"",""addr:postcode""=>""01744"",""addr:street""=>""Kreischaer Straße"",""addr:suburb""=>""Reinholdshain"",""amenity""=>""kindergarten"",""description""=>""Tagesmutti"",""entrance""=>""main"",""operator""=>""Marina Liebisch"",""phone""=>""+49 3504 617860"""
+13.7019447,50.901523,"1536","3533913137",,,,,,,,,"""access""=>""private"",""leisure""=>""playground"",""operator""=>""Mäusebande"""
+13.6934216,50.8985399,"1547","3656359564",,,,"8",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6934955,50.8985713,"1548","3656359565",,,,"9",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6935776,50.898601,"1549","3656359566",,,,"10",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6936469,50.8986318,"1550","3656359567",,,,"11",,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.7225137,50.9156338,"1561","3798526062",,,,,,,,,"""pipeline""=>""valve"""
+13.724671,50.9160461,"1562","3798526070",,,,ENSO 30,,,,,"""pipeline""=>""marker"",""substance""=>""cng"""
+13.725696,50.9166213,"1563","3798526071",,,,ENSO 30,,,,,"""pipeline""=>""marker"",""substance""=>""cng"""
+13.6989438,50.9102407,"1590","4068578843",,,crossing,,,,,,"""crossing""=>""uncontrolled"""
+13.6911994,50.8984418,"1602","4305538089",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""19"",""addr:postcode""=>""01744"",""addr:street""=>""Industriering"",""amenity""=>""charging_station"",""operator""=>""Selectrona GmbH"""
+13.6975484,50.8981201,"1624","4813890338",MV Freital,,,,,,,,"""amenity""=>""post_office"",""operator""=>""Post Modern"""
+13.6892474,50.8965585,"1626","4843979067",,,,,,,,,"""amenity""=>""bicycle_parking"",""bicycle_parking""=>""rack"""
+13.6907551,50.896863,"1627","4843979079",Grafik und Werbung Michael Kosch,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:country""=>""DE"",""addr:housenumber""=>""1"",""addr:postcode""=>""01744"",""addr:street""=>""Gewerbering"",""addr:suburb""=>""Reinholdshain"",""alt_name""=>""Folienschnitzer"",""building""=>""yes"",""entrance""=>""main"",""office""=>""company"""
+13.7078105,50.904338,"1635","5092297464",Reinholdshain,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.7458609,50.9082731,"1636","5092303302",Hermsdorfer Straße,,bus_stop,,,,,,"""bench""=>""no"",""bin""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1990"",""shelter""=>""no"",""tactile_paving""=>""no"""
+13.7456973,50.9082723,"1637","5092303303",Hermsdorfer Straße,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1990"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.7340861,50.9198389,"1638","5092307142",Hermsdorf am Wilisch,,,,,,,,"""traffic_sign""=>""city_limit"""
+13.6907128,50.897854,"1673","5517221829",MVZ Dr. Martens,,,,,,,,"""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""amenity""=>""doctors"",""email""=>""anmeldung@martens-sachsen.de"",""phone""=>""+49 3501468634"",""website""=>""https://martens-sachsen.de/"""
+13.6933179,50.8971864,"1674","5905982193",,,,,,,,,"""access""=>""customers"",""amenity""=>""toilets"",""changing_table""=>""yes"",""fee""=>""no"",""unisex""=>""yes"",""wheelchair""=>""yes"""
+13.6933031,50.8972485,"1675","5905982194",,,,,,,,,"""amenity""=>""vending_machine"",""vending""=>""coffee"""
+13.6959755,50.9011541,"1724","6585099616",,,,,,,,,"""entrance""=>""gate"""
+13.6955376,50.9012003,"1725","6585099617",,,,,,,,,"""entrance""=>""emergency"""
+13.6907101,50.8978366,"1726","6585124154",IT-Team,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""office""=>""it"""
+13.6909195,50.8981268,"1727","6585138202",,,,,,,,,"""access""=>""private"",""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""5"",""addr:postcode""=>""01744"",""addr:street""=>""Oberhäslicher Straße"",""door""=>""yes"",""entrance""=>""main"""
+13.704952,50.8945315,"1793","7303978439",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""3"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"""
+13.7060762,50.8934414,"1794","7303978440",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""8"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"""
+13.7059614,50.8934152,"1795","7303978441",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""6"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"""
+13.7058301,50.8934067,"1796","7303978442",,,,,,,,,"""addr:city""=>""Dippoldiswalde"",""addr:housenumber""=>""4"",""addr:postcode""=>""01744"",""addr:street""=>""Lindenweg"",""addr:suburb""=>""Reinholdshain"""
+13.752989,50.8920658,"1797","7333188118",,,speed_camera,,,,,,"""description:de""=>""Geschwindigkeitsanzeige"",""direction""=>""242"",""maxspeed""=>""40"""
+13.6912747,50.8992321,"1824","7853720879",,,,,,,,,"""access""=>""permissive"",""entrance""=>""yes"""
+13.6968404,50.9002954,"1861","8397465893",,,,,,,,,"""natural""=>""tree"""
+13.6968638,50.9002306,"1862","8397465894",,,,,,,,,"""natural""=>""tree"""
+13.6969673,50.900203,"1863","8397465895",,,,,,,,,"""natural""=>""tree"""
+13.695385,50.9005378,"1864","8397465913",,,,,,,,,"""access""=>""private"",""entrance""=>""yes"""
+13.6964234,50.9092356,"1878","8454244433","Gasthof, Oberhäslich Steig 2",,bus_stop,"2",,,,,"""bench""=>""yes"",""bin""=>""yes"",""bus""=>""yes"",""lit""=>""yes"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1451"",""shelter""=>""yes"",""tactile_paving""=>""no"""
+13.7115799,50.9132306,"1881","8554440634","Reinberg, Wendeplatz",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7341783,50.9209123,"1882","8554440635","Hermsdorf am Wilisch, Mühlweg",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6965397,50.8977207,"1883","8554440641","Reinholdshain, Tankstelle",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7680538,50.9070381,"1885","8554440643",Abzweig Hirschbachmühle,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1962"",""shelter""=>""no"""
+13.7680552,50.9070057,"1886","8554440644","Reinhardtsgrimma, Abzweig Hirschbachmühle",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7448131,50.9070572,"1887","8554440645","Hirschbach, Wartehalle",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7446395,50.9070618,"1888","8554440646","Hirschbach, Wartehalle",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7383306,50.9073415,"1889","8554440647","Hirschbach, Oberdorf",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7029287,50.9025996,"1890","8554440648","Reinholdshain, Brücke",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7028427,50.9024816,"1891","8554440649","Reinholdshain, Brücke",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7070916,50.889767,"1902","8554440665","Reinholdshain, Oberdorf",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7035138,50.8948941,"1903","8554440666","Reinholdshain, Kindergarten",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6996083,50.8963546,"1904","8554440667","Reinholdshain, Mitte",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6912054,50.896414,"1905","8554440668","Reinholdshain, Gewerbegebiet",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.6928424,50.8966774,"1906","8554440669","Reinholdshain, Gewerbegebiet",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7881858,50.9107141,"1911","8554440691",Niederdorf,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1981"",""shelter""=>""yes"""
+13.7882639,50.9107171,"1912","8554440692","Hausdorf, Niederdorf",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7882656,50.9106071,"1913","8554440693","Hausdorf, Niederdorf",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7862439,50.906513,"1914","8554440696",Wendeplatz,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1980"",""shelter""=>""no"""
+13.7845527,50.9021046,"1915","8554440697",Ziegeleigut,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1983"",""shelter""=>""no"""
+13.7794934,50.8982528,"1916","8554440700",Buschhaus,,bus_stop,,,,,,"""bench""=>""no"",""bus""=>""yes"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1961"",""shelter""=>""no"""
+13.7688027,50.8932248,"1917","8554440702","Reinhardtsgrimma, Neue Häuser",,,,,,,,"""bus""=>""yes"",""public_transport""=>""stop_position"""
+13.7545328,50.8923617,"1918","8554440704",Schule,,bus_stop,,,,,,"""bench""=>""yes"",""bus""=>""yes"",""departures_board""=>""timetable"",""operator""=>""RVSOE"",""public_transport""=>""platform"",""ref:IFOPT""=>""de:14628:1960"",""shelter""=>""yes"""
