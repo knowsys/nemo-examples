@@ -14,6 +14,8 @@
 TRUE("true"^^<http://www.w3.org/2001/XMLSchema#boolean>).
 % The constant Pi
 PI(3.14159).
+% The equatorial circumference of Earth in meters
+CIRC_EARTH(40075000.0).
 
 %%% Imports
 
@@ -63,12 +65,12 @@ coordinates(?longitude, ?latitude) :- locations(?longitude, ?latitude, ?tag), TR
 % This calculation is an approximation based on an a stackoverflow answer:
 % https://stackoverflow.com/questions/639695/how-to-convert-latitude-or-longitude-to-meters
 
-coordinates_m(?Xm, ?Ym) :- coordinates(?longitude, ?latitude), PI(?PI),
-    ?Xm = ?longitude * 40075000.0 * COS(?latitude / 180.0 * ?PI) / 360.0,
-    ?Ym = ?latitude * 111320.0.
-project_location_m(?project, ?Xm, ?Ym) :- project_location(?project, ?longitude, ?latitude), PI(?PI),
-    ?Xm = ?longitude * 40075000.0 * COS(?latitude / 180.0 * ?PI) / 360.0,
-    ?Ym = ?latitude * 111320.0.
+coordinates_m(?Xm, ?Ym) :- coordinates(?longitude, ?latitude), PI(?PI), CIRC_EARTH(?earth),
+    ?Xm = ?longitude * ?earth * COS(?latitude / 180.0 * ?PI) / 360.0,
+    ?Ym = ?latitude * (?earth / 360.0).
+project_location_m(?project, ?Xm, ?Ym) :- project_location(?project, ?longitude, ?latitude), PI(?PI), CIRC_EARTH(?earth),
+    ?Xm = ?longitude * ?earth * COS(?latitude / 180.0 * ?PI) / 360.0,
+    ?Ym = ?latitude * (?earth / 360.0).
 
 % An environmental impact assessment is only needed, 
 % if the planned wind turbine is taller than 50m.
