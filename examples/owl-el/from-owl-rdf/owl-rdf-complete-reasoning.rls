@@ -10,8 +10,15 @@
 %%%   nf:subClassOf(?C,?D): ?C is syntactically specified to be a subclass of ?D 
 %%%   nf:subPropChain(?S1,?S2,?R): there was a role chain axiom ?S1 o ?S2 -> ?R
 %%%   nf:subProp(?R,?S): ?R is a subproperty of ?S (directly or indirectly) 
+%%%
+%%% Also, this program implements EL reasoning based on the (optimized) encoding described here:
+%%% https://link.springer.com/article/10.1007/s10817-013-9296-3
+%%% The description of rules at the bottom reference the names from Figure 3.
+%%%
+%%% The reasoning is applied to the normalised ontologies.
 
 @prefix nf: <http://rulewerk.semantic-web.org/normalForm/> .
+@prefix inf: <http://rulewerk.semantic-web.org/inferred/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sct: <http://www.ihtsdo.org/owlname#> .
@@ -19,7 +26,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix genid: <https://rulewerk.semantic-web.org/.well-known/genid/> .
 
-@import TRIPLE :- rdf { resource = "../data/el.ttl" } .
+@import TRIPLE :- rdf { resource = "galen-el.nt.gz" } .
 
 %%% Mark classes:
 ClassObject(owl:someValuesFrom) .
@@ -94,3 +101,67 @@ directSubProp(?R,?S) :- TRIPLE(?R,rdfs:subPropertyOf,?S) .
 % Initialise role hierarchy only for roles in subclass positions:
 nf:subProp(?P,?P) :- nf:exists(?C,?P,?D), nf:isSubClass(?C) . 
 nf:subProp(?R,?T) :- nf:subProp(?R,?S), directSubProp(?S,?T) .
+
+%%% Inference rules
+
+% Start classification for all named classes
+inf:init(?C) :- nf:isMainClass(?C) .
+% R_init
+inf:init(?C) :- inf:ex(?E, ?R, ?C) .
+
+% R_0: Every class is a sub class of itself
+inf:subClassOf(?C, ?C) :- inf:init(?C) .
+% R_\top: Every class is a sub class of owl:Thing
+inf:subClassOf(?C, "<http://www.w3.org/2002/07/owl#Thing>") :- nf:isMainClass(?C) .
+
+% R_\sqcap^-: 
+%   If ?C is contained in the intersection of ?D1 and ?D1,
+%   then ?C is contained in ?D1 and ?C is contained in ?D2.
+inf:subClassOf(?C,?D1), inf:subClassOf(?C,?D2) :- inf:subClassOf(?C,?Y), nf:conj(?Y,?D1,?D2) .
+
+% R_\sqcap^+: 
+%   If ?C is contained in ?D1 and ?D2, 
+%   then ?C is contained in the intersection ?I of ?D1 ?D2
+inf:subClassOf(?C, ?I) :-
+    inf:subClassOf(?C, ?D1), inf:subClassOf(?C, ?D2),
+    nf:conj(?I, ?D1, ?D2), nf:isSubClass(?I) .
+
+% R_\exists^-: 
+%   If every ?Y has an R-relation to a ?C
+%   and every ?E is a ?Y,
+%   then every ?E has an ?R-relation to a ?C
+inf:ex(?E, ?R, ?C) :- inf:subClassOf(?E, ?Y), nf:exists(?Y, ?R, ?C) .
+
+% R_\exists^+: 
+%   If every ?E has an ?R-relation to a ?C,
+%   and every ?C is a ?D,
+%   and ?R is a subproperty of ?S,
+%   then every ?E has an ?S-relation to a ?D
+%   (i.e. every ?E is an ?Y where ?Y is the class of 
+%   of individuals that have an ?S-relation to a ?D)
+inf:subClassOf(?E, ?Y) :-
+    inf:ex(?E, ?R, ?C), inf:subClassOf(?C, ?D), nf:subProp(?R, ?S), 
+    nf:exists(?Y, ?S, ?D), nf:isSubClass(?Y) .
+
+% R_\circ: 
+%   If ?E has an ?R1-relation to a ?C and ?C has an ?R2-relation to a ?D,
+%   and ?R1 is a subproperty of ?S1 and ?R2 is a subproperty of ?S2
+%   then ?E has an ?S-relation to a ?D
+inf:ex(?E, ?S, ?D) :-
+	inf:ex(?E, ?R1, ?C), inf:ex(?C, ?R2, ?D),
+	nf:subProp(?R1, ?S1), nf:subProp(?R2, ?S2), 
+    nf:subPropChain(?S1, ?S2, ?S) .
+
+% R_\sqsubseteq: Transitive closure of the subclass-of relation
+inf:subClassOf(?C,?E) :- inf:subClassOf(?C,?D), nf:subClassOf(?D,?E) .
+
+% R_\bot: If every ?E has an R-relation to a ?C but ?C is empty, then ?E is also empty
+inf:subClassOf(?E, "<http://www.w3.org/2002/07/owl#Nothing>") :-
+    inf:ex(?E,?R,?C), inf:subClassOf(?C,"<http://www.w3.org/2002/07/owl#Nothing>") .
+
+%%% Extract final results for main classes
+
+mainSubClassOf(?A,?B) :-
+	inf:subClassOf(?A,?B), nf:isMainClass(?A), nf:isMainClass(?B) .
+
+@export mainSubClassOf :- csv{compression="gzip"} .
