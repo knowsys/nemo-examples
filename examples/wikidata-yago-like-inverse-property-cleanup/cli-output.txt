@@ -1,0 +1,1196 @@
+[2024-05-14T21:08:39Z INFO  nmo] Version: 0.5.1-dev
+[2024-05-14T21:08:39Z INFO  nmo] Parsing rules ...
+[2024-05-14T21:08:39Z INFO  nmo] Rules parsed
+[2024-05-14T21:08:39Z INFO  nemo::execution::selection_strategy::strategy_stratified_negation] Stratified program: [[0, 1, 2, 3], [4], [5], [6, 7, 8], [9]]
+[2024-05-14T21:08:39Z INFO  nmo] Reasoning ... 
+[2024-05-14T21:08:39Z INFO  nemo::execution::execution_engine] <<< 1: APPLYING RULE 0 >>>
+[2024-05-14T21:08:39Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [s, _EQUALITY_0, o]
+       (1) [_EQUALITY_0, s, o]
+[2024-05-14T21:08:39Z INFO  nemo_physical::management::database::storage] Loading source TableReader implementation: RdfReader { read: "<unspecified std::io::Read>", variant: NTriples, base: None }
+[2024-05-14T21:08:39Z INFO  nemo::io::formats::rdf_reader] Starting RDF import (format RDF N-Triples)
+[2024-05-14T21:09:02Z INFO  nemo::io::formats::rdf_reader] ... processed 10000000 triples
+[2024-05-14T21:09:25Z INFO  nemo::io::formats::rdf_reader] ... processed 20000000 triples
+[2024-05-14T21:09:35Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://roter-kreis.de/Un_souvenir_de_Solf%C3%vA9rino': Invalid IRI percent encoding '%vA' on line 24218124 at position 141
+[2024-05-14T21:09:49Z INFO  nemo::io::formats::rdf_reader] ... processed 30000000 triples
+[2024-05-14T21:10:11Z INFO  nemo::io::formats::rdf_reader] ... processed 40000000 triples
+[2024-05-14T21:10:34Z INFO  nemo::io::formats::rdf_reader] ... processed 50000000 triples
+[2024-05-14T21:10:57Z INFO  nemo::io::formats::rdf_reader] ... processed 60000000 triples
+[2024-05-14T21:11:23Z INFO  nemo::io::formats::rdf_reader] ... processed 70000000 triples
+[2024-05-14T21:11:45Z INFO  nemo::io::formats::rdf_reader] ... processed 80000000 triples
+[2024-05-14T21:12:08Z INFO  nemo::io::formats::rdf_reader] ... processed 90000000 triples
+[2024-05-14T21:12:31Z INFO  nemo::io::formats::rdf_reader] ... processed 100000000 triples
+[2024-05-14T21:12:53Z INFO  nemo::io::formats::rdf_reader] ... processed 110000000 triples
+[2024-05-14T21:13:14Z INFO  nemo::io::formats::rdf_reader] ... processed 120000000 triples
+[2024-05-14T21:13:37Z INFO  nemo::io::formats::rdf_reader] ... processed 130000000 triples
+[2024-05-14T21:14:00Z INFO  nemo::io::formats::rdf_reader] ... processed 140000000 triples
+[2024-05-14T21:14:21Z INFO  nemo::io::formats::rdf_reader] ... processed 150000000 triples
+[2024-05-14T21:14:43Z INFO  nemo::io::formats::rdf_reader] ... processed 160000000 triples
+[2024-05-14T21:15:10Z INFO  nemo::io::formats::rdf_reader] ... processed 170000000 triples
+[2024-05-14T21:15:32Z INFO  nemo::io::formats::rdf_reader] ... processed 180000000 triples
+[2024-05-14T21:15:55Z INFO  nemo::io::formats::rdf_reader] ... processed 190000000 triples
+[2024-05-14T21:16:18Z INFO  nemo::io::formats::rdf_reader] ... processed 200000000 triples
+[2024-05-14T21:16:40Z INFO  nemo::io::formats::rdf_reader] ... processed 210000000 triples
+[2024-05-14T21:17:03Z INFO  nemo::io::formats::rdf_reader] ... processed 220000000 triples
+[2024-05-14T21:17:25Z INFO  nemo::io::formats::rdf_reader] ... processed 230000000 triples
+[2024-05-14T21:17:48Z INFO  nemo::io::formats::rdf_reader] ... processed 240000000 triples
+[2024-05-14T21:18:10Z INFO  nemo::io::formats::rdf_reader] ... processed 250000000 triples
+[2024-05-14T21:18:34Z INFO  nemo::io::formats::rdf_reader] ... processed 260000000 triples
+[2024-05-14T21:18:59Z INFO  nemo::io::formats::rdf_reader] ... processed 270000000 triples
+[2024-05-14T21:19:21Z INFO  nemo::io::formats::rdf_reader] ... processed 280000000 triples
+[2024-05-14T21:19:44Z INFO  nemo::io::formats::rdf_reader] ... processed 290000000 triples
+[2024-05-14T21:20:06Z INFO  nemo::io::formats::rdf_reader] ... processed 300000000 triples
+[2024-05-14T21:20:29Z INFO  nemo::io::formats::rdf_reader] ... processed 310000000 triples
+[2024-05-14T21:20:52Z INFO  nemo::io::formats::rdf_reader] ... processed 320000000 triples
+[2024-05-14T21:21:15Z INFO  nemo::io::formats::rdf_reader] ... processed 330000000 triples
+[2024-05-14T21:21:38Z INFO  nemo::io::formats::rdf_reader] ... processed 340000000 triples
+[2024-05-14T21:22:01Z INFO  nemo::io::formats::rdf_reader] ... processed 350000000 triples
+[2024-05-14T21:22:23Z INFO  nemo::io::formats::rdf_reader] ... processed 360000000 triples
+[2024-05-14T21:22:44Z INFO  nemo::io::formats::rdf_reader] ... processed 370000000 triples
+[2024-05-14T21:23:07Z INFO  nemo::io::formats::rdf_reader] ... processed 380000000 triples
+[2024-05-14T21:23:30Z INFO  nemo::io::formats::rdf_reader] ... processed 390000000 triples
+[2024-05-14T21:23:55Z INFO  nemo::io::formats::rdf_reader] ... processed 400000000 triples
+[2024-05-14T21:24:18Z INFO  nemo::io::formats::rdf_reader] ... processed 410000000 triples
+[2024-05-14T21:24:41Z INFO  nemo::io::formats::rdf_reader] ... processed 420000000 triples
+[2024-05-14T21:25:03Z INFO  nemo::io::formats::rdf_reader] ... processed 430000000 triples
+[2024-05-14T21:25:26Z INFO  nemo::io::formats::rdf_reader] ... processed 440000000 triples
+[2024-05-14T21:25:49Z INFO  nemo::io::formats::rdf_reader] ... processed 450000000 triples
+[2024-05-14T21:26:12Z INFO  nemo::io::formats::rdf_reader] ... processed 460000000 triples
+[2024-05-14T21:26:34Z INFO  nemo::io::formats::rdf_reader] ... processed 470000000 triples
+[2024-05-14T21:27:07Z INFO  nemo::io::formats::rdf_reader] ... processed 480000000 triples
+[2024-05-14T21:27:34Z INFO  nemo::io::formats::rdf_reader] ... processed 490000000 triples
+[2024-05-14T21:27:57Z INFO  nemo::io::formats::rdf_reader] ... processed 500000000 triples
+[2024-05-14T21:28:20Z INFO  nemo::io::formats::rdf_reader] ... processed 510000000 triples
+[2024-05-14T21:28:42Z INFO  nemo::io::formats::rdf_reader] ... processed 520000000 triples
+[2024-05-14T21:29:05Z INFO  nemo::io::formats::rdf_reader] ... processed 530000000 triples
+[2024-05-14T21:29:28Z INFO  nemo::io::formats::rdf_reader] ... processed 540000000 triples
+[2024-05-14T21:29:50Z INFO  nemo::io::formats::rdf_reader] ... processed 550000000 triples
+[2024-05-14T21:30:14Z INFO  nemo::io::formats::rdf_reader] ... processed 560000000 triples
+[2024-05-14T21:30:38Z INFO  nemo::io::formats::rdf_reader] ... processed 570000000 triples
+[2024-05-14T21:31:02Z INFO  nemo::io::formats::rdf_reader] ... processed 580000000 triples
+[2024-05-14T21:31:24Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%22509826%22,%20%22509826%22]': Invalid IRI code point '[' on line 589354712 at position 137
+[2024-05-14T21:31:25Z INFO  nemo::io::formats::rdf_reader] ... processed 590000000 triples
+[2024-05-14T21:31:39Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%226308582%22,%20%226308582%22]': Invalid IRI code point '[' on line 596097219 at position 139
+[2024-05-14T21:31:48Z INFO  nemo::io::formats::rdf_reader] ... processed 600000000 triples
+[2024-05-14T21:32:10Z INFO  nemo::io::formats::rdf_reader] ... processed 610000000 triples
+[2024-05-14T21:32:33Z INFO  nemo::io::formats::rdf_reader] ... processed 620000000 triples
+[2024-05-14T21:32:57Z INFO  nemo::io::formats::rdf_reader] ... processed 630000000 triples
+[2024-05-14T21:33:20Z INFO  nemo::io::formats::rdf_reader] ... processed 640000000 triples
+[2024-05-14T21:33:44Z INFO  nemo::io::formats::rdf_reader] ... processed 650000000 triples
+[2024-05-14T21:34:07Z INFO  nemo::io::formats::rdf_reader] ... processed 660000000 triples
+[2024-05-14T21:34:30Z INFO  nemo::io::formats::rdf_reader] ... processed 670000000 triples
+[2024-05-14T21:34:52Z INFO  nemo::io::formats::rdf_reader] ... processed 680000000 triples
+[2024-05-14T21:35:14Z INFO  nemo::io::formats::rdf_reader] ... processed 690000000 triples
+[2024-05-14T21:35:36Z INFO  nemo::io::formats::rdf_reader] ... processed 700000000 triples
+[2024-05-14T21:35:59Z INFO  nemo::io::formats::rdf_reader] ... processed 710000000 triples
+[2024-05-14T21:36:21Z INFO  nemo::io::formats::rdf_reader] ... processed 720000000 triples
+[2024-05-14T21:36:43Z INFO  nemo::io::formats::rdf_reader] ... processed 730000000 triples
+[2024-05-14T21:37:06Z INFO  nemo::io::formats::rdf_reader] ... processed 740000000 triples
+[2024-05-14T21:37:28Z INFO  nemo::io::formats::rdf_reader] ... processed 750000000 triples
+[2024-05-14T21:37:55Z INFO  nemo::io::formats::rdf_reader] ... processed 760000000 triples
+[2024-05-14T21:38:17Z INFO  nemo::io::formats::rdf_reader] ... processed 770000000 triples
+[2024-05-14T21:38:40Z INFO  nemo::io::formats::rdf_reader] ... processed 780000000 triples
+[2024-05-14T21:39:01Z INFO  nemo::io::formats::rdf_reader] ... processed 790000000 triples
+[2024-05-14T21:39:23Z INFO  nemo::io::formats::rdf_reader] ... processed 800000000 triples
+[2024-05-14T21:39:45Z INFO  nemo::io::formats::rdf_reader] ... processed 810000000 triples
+[2024-05-14T21:40:08Z INFO  nemo::io::formats::rdf_reader] ... processed 820000000 triples
+[2024-05-14T21:40:31Z INFO  nemo::io::formats::rdf_reader] ... processed 830000000 triples
+[2024-05-14T21:40:55Z INFO  nemo::io::formats::rdf_reader] ... processed 840000000 triples
+[2024-05-14T21:41:18Z INFO  nemo::io::formats::rdf_reader] ... processed 850000000 triples
+[2024-05-14T21:41:40Z INFO  nemo::io::formats::rdf_reader] ... processed 860000000 triples
+[2024-05-14T21:42:03Z INFO  nemo::io::formats::rdf_reader] ... processed 870000000 triples
+[2024-05-14T21:42:26Z INFO  nemo::io::formats::rdf_reader] ... processed 880000000 triples
+[2024-05-14T21:42:49Z INFO  nemo::io::formats::rdf_reader] ... processed 890000000 triples
+[2024-05-14T21:43:34Z INFO  nemo::io::formats::rdf_reader] ... processed 900000000 triples
+[2024-05-14T21:43:56Z INFO  nemo::io::formats::rdf_reader] ... processed 910000000 triples
+[2024-05-14T21:44:18Z INFO  nemo::io::formats::rdf_reader] ... processed 920000000 triples
+[2024-05-14T21:44:40Z INFO  nemo::io::formats::rdf_reader] ... processed 930000000 triples
+[2024-05-14T21:45:01Z INFO  nemo::io::formats::rdf_reader] ... processed 940000000 triples
+[2024-05-14T21:45:22Z INFO  nemo::io::formats::rdf_reader] ... processed 950000000 triples
+[2024-05-14T21:45:44Z INFO  nemo::io::formats::rdf_reader] ... processed 960000000 triples
+[2024-05-14T21:46:06Z INFO  nemo::io::formats::rdf_reader] ... processed 970000000 triples
+[2024-05-14T21:46:29Z INFO  nemo::io::formats::rdf_reader] ... processed 980000000 triples
+[2024-05-14T21:46:54Z INFO  nemo::io::formats::rdf_reader] ... processed 990000000 triples
+[2024-05-14T21:47:18Z INFO  nemo::io::formats::rdf_reader] ... processed 1000000000 triples
+[2024-05-14T21:47:42Z INFO  nemo::io::formats::rdf_reader] ... processed 1010000000 triples
+[2024-05-14T21:48:05Z INFO  nemo::io::formats::rdf_reader] ... processed 1020000000 triples
+[2024-05-14T21:48:28Z INFO  nemo::io::formats::rdf_reader] ... processed 1030000000 triples
+[2024-05-14T21:48:51Z INFO  nemo::io::formats::rdf_reader] ... processed 1040000000 triples
+[2024-05-14T21:49:24Z INFO  nemo::io::formats::rdf_reader] ... processed 1050000000 triples
+[2024-05-14T21:49:26Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 1050880978 at position 115
+[2024-05-14T21:49:26Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 1050880979 at position 118
+[2024-05-14T21:49:26Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 1050880980 at position 95
+[2024-05-14T21:49:47Z INFO  nemo::io::formats::rdf_reader] ... processed 1060000000 triples
+[2024-05-14T21:50:10Z INFO  nemo::io::formats::rdf_reader] ... processed 1070000000 triples
+[2024-05-14T21:50:32Z INFO  nemo::io::formats::rdf_reader] ... processed 1080000000 triples
+[2024-05-14T21:50:56Z INFO  nemo::io::formats::rdf_reader] ... processed 1090000000 triples
+[2024-05-14T21:51:18Z INFO  nemo::io::formats::rdf_reader] ... processed 1100000000 triples
+[2024-05-14T21:51:41Z INFO  nemo::io::formats::rdf_reader] ... processed 1110000000 triples
+[2024-05-14T21:52:05Z INFO  nemo::io::formats::rdf_reader] ... processed 1120000000 triples
+[2024-05-14T21:52:27Z INFO  nemo::io::formats::rdf_reader] ... processed 1130000000 triples
+[2024-05-14T21:52:49Z INFO  nemo::io::formats::rdf_reader] ... processed 1140000000 triples
+[2024-05-14T21:53:10Z INFO  nemo::io::formats::rdf_reader] ... processed 1150000000 triples
+[2024-05-14T21:53:33Z INFO  nemo::io::formats::rdf_reader] ... processed 1160000000 triples
+[2024-05-14T21:53:55Z INFO  nemo::io::formats::rdf_reader] ... processed 1170000000 triples
+[2024-05-14T21:54:17Z INFO  nemo::io::formats::rdf_reader] ... processed 1180000000 triples
+[2024-05-14T21:54:38Z INFO  nemo::io::formats::rdf_reader] ... processed 1190000000 triples
+[2024-05-14T21:55:00Z INFO  nemo::io::formats::rdf_reader] ... processed 1200000000 triples
+[2024-05-14T21:55:23Z INFO  nemo::io::formats::rdf_reader] ... processed 1210000000 triples
+[2024-05-14T21:55:45Z INFO  nemo::io::formats::rdf_reader] ... processed 1220000000 triples
+[2024-05-14T21:56:08Z INFO  nemo::io::formats::rdf_reader] ... processed 1230000000 triples
+[2024-05-14T21:56:30Z INFO  nemo::io::formats::rdf_reader] ... processed 1240000000 triples
+[2024-05-14T21:56:53Z INFO  nemo::io::formats::rdf_reader] ... processed 1250000000 triples
+[2024-05-14T21:57:16Z INFO  nemo::io::formats::rdf_reader] ... processed 1260000000 triples
+[2024-05-14T21:57:38Z INFO  nemo::io::formats::rdf_reader] ... processed 1270000000 triples
+[2024-05-14T21:58:01Z INFO  nemo::io::formats::rdf_reader] ... processed 1280000000 triples
+[2024-05-14T21:58:06Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%225230079%22,%20%225230079%22]': Invalid IRI code point '[' on line 1282245901 at position 139
+[2024-05-14T21:58:24Z INFO  nemo::io::formats::rdf_reader] ... processed 1290000000 triples
+[2024-05-14T21:58:47Z INFO  nemo::io::formats::rdf_reader] ... processed 1300000000 triples
+[2024-05-14T21:59:10Z INFO  nemo::io::formats::rdf_reader] ... processed 1310000000 triples
+[2024-05-14T21:59:32Z INFO  nemo::io::formats::rdf_reader] ... processed 1320000000 triples
+[2024-05-14T21:59:55Z INFO  nemo::io::formats::rdf_reader] ... processed 1330000000 triples
+[2024-05-14T22:00:18Z INFO  nemo::io::formats::rdf_reader] ... processed 1340000000 triples
+[2024-05-14T22:00:42Z INFO  nemo::io::formats::rdf_reader] ... processed 1350000000 triples
+[2024-05-14T22:01:05Z INFO  nemo::io::formats::rdf_reader] ... processed 1360000000 triples
+[2024-05-14T22:01:28Z INFO  nemo::io::formats::rdf_reader] ... processed 1370000000 triples
+[2024-05-14T22:01:50Z INFO  nemo::io::formats::rdf_reader] ... processed 1380000000 triples
+[2024-05-14T22:02:12Z INFO  nemo::io::formats::rdf_reader] ... processed 1390000000 triples
+[2024-05-14T22:02:35Z INFO  nemo::io::formats::rdf_reader] ... processed 1400000000 triples
+[2024-05-14T22:02:58Z INFO  nemo::io::formats::rdf_reader] ... processed 1410000000 triples
+[2024-05-14T22:03:21Z INFO  nemo::io::formats::rdf_reader] ... processed 1420000000 triples
+[2024-05-14T22:03:44Z INFO  nemo::io::formats::rdf_reader] ... processed 1430000000 triples
+[2024-05-14T22:04:07Z INFO  nemo::io::formats::rdf_reader] ... processed 1440000000 triples
+[2024-05-14T22:04:30Z INFO  nemo::io::formats::rdf_reader] ... processed 1450000000 triples
+[2024-05-14T22:04:53Z INFO  nemo::io::formats::rdf_reader] ... processed 1460000000 triples
+[2024-05-14T22:05:16Z INFO  nemo::io::formats::rdf_reader] ... processed 1470000000 triples
+[2024-05-14T22:05:38Z INFO  nemo::io::formats::rdf_reader] ... processed 1480000000 triples
+[2024-05-14T22:06:01Z INFO  nemo::io::formats::rdf_reader] ... processed 1490000000 triples
+[2024-05-14T22:06:24Z INFO  nemo::io::formats::rdf_reader] ... processed 1500000000 triples
+[2024-05-14T22:06:47Z INFO  nemo::io::formats::rdf_reader] ... processed 1510000000 triples
+[2024-05-14T22:07:10Z INFO  nemo::io::formats::rdf_reader] ... processed 1520000000 triples
+[2024-05-14T22:07:33Z INFO  nemo::io::formats::rdf_reader] ... processed 1530000000 triples
+[2024-05-14T22:07:55Z INFO  nemo::io::formats::rdf_reader] ... processed 1540000000 triples
+[2024-05-14T22:08:18Z INFO  nemo::io::formats::rdf_reader] ... processed 1550000000 triples
+[2024-05-14T22:08:41Z INFO  nemo::io::formats::rdf_reader] ... processed 1560000000 triples
+[2024-05-14T22:09:03Z INFO  nemo::io::formats::rdf_reader] ... processed 1570000000 triples
+[2024-05-14T22:09:27Z INFO  nemo::io::formats::rdf_reader] ... processed 1580000000 triples
+[2024-05-14T22:09:51Z INFO  nemo::io::formats::rdf_reader] ... processed 1590000000 triples
+[2024-05-14T22:10:15Z INFO  nemo::io::formats::rdf_reader] ... processed 1600000000 triples
+[2024-05-14T22:10:38Z INFO  nemo::io::formats::rdf_reader] ... processed 1610000000 triples
+[2024-05-14T22:11:01Z INFO  nemo::io::formats::rdf_reader] ... processed 1620000000 triples
+[2024-05-14T22:11:24Z INFO  nemo::io::formats::rdf_reader] ... processed 1630000000 triples
+[2024-05-14T22:11:47Z INFO  nemo::io::formats::rdf_reader] ... processed 1640000000 triples
+[2024-05-14T22:12:10Z INFO  nemo::io::formats::rdf_reader] ... processed 1650000000 triples
+[2024-05-14T22:12:34Z INFO  nemo::io::formats::rdf_reader] ... processed 1660000000 triples
+[2024-05-14T22:12:57Z INFO  nemo::io::formats::rdf_reader] ... processed 1670000000 triples
+[2024-05-14T22:13:21Z INFO  nemo::io::formats::rdf_reader] ... processed 1680000000 triples
+[2024-05-14T22:13:44Z INFO  nemo::io::formats::rdf_reader] ... processed 1690000000 triples
+[2024-05-14T22:14:15Z INFO  nemo::io::formats::rdf_reader] ... processed 1700000000 triples
+[2024-05-14T22:14:38Z INFO  nemo::io::formats::rdf_reader] ... processed 1710000000 triples
+[2024-05-14T22:15:00Z INFO  nemo::io::formats::rdf_reader] ... processed 1720000000 triples
+[2024-05-14T22:15:22Z INFO  nemo::io::formats::rdf_reader] ... processed 1730000000 triples
+[2024-05-14T22:15:45Z INFO  nemo::io::formats::rdf_reader] ... processed 1740000000 triples
+[2024-05-14T22:16:07Z INFO  nemo::io::formats::rdf_reader] ... processed 1750000000 triples
+[2024-05-14T22:16:30Z INFO  nemo::io::formats::rdf_reader] ... processed 1760000000 triples
+[2024-05-14T22:16:53Z INFO  nemo::io::formats::rdf_reader] ... processed 1770000000 triples
+[2024-05-14T22:17:15Z INFO  nemo::io::formats::rdf_reader] ... processed 1780000000 triples
+[2024-05-14T22:18:26Z INFO  nemo::io::formats::rdf_reader] ... processed 1790000000 triples
+[2024-05-14T22:18:48Z INFO  nemo::io::formats::rdf_reader] ... processed 1800000000 triples
+[2024-05-14T22:19:11Z INFO  nemo::io::formats::rdf_reader] ... processed 1810000000 triples
+[2024-05-14T22:19:32Z INFO  nemo::io::formats::rdf_reader] ... processed 1820000000 triples
+[2024-05-14T22:19:54Z INFO  nemo::io::formats::rdf_reader] ... processed 1830000000 triples
+[2024-05-14T22:20:16Z INFO  nemo::io::formats::rdf_reader] ... processed 1840000000 triples
+[2024-05-14T22:20:39Z INFO  nemo::io::formats::rdf_reader] ... processed 1850000000 triples
+[2024-05-14T22:21:03Z INFO  nemo::io::formats::rdf_reader] ... processed 1860000000 triples
+[2024-05-14T22:21:26Z INFO  nemo::io::formats::rdf_reader] ... processed 1870000000 triples
+[2024-05-14T22:21:49Z INFO  nemo::io::formats::rdf_reader] ... processed 1880000000 triples
+[2024-05-14T22:22:11Z INFO  nemo::io::formats::rdf_reader] ... processed 1890000000 triples
+[2024-05-14T22:22:34Z INFO  nemo::io::formats::rdf_reader] ... processed 1900000000 triples
+[2024-05-14T22:22:58Z INFO  nemo::io::formats::rdf_reader] ... processed 1910000000 triples
+[2024-05-14T22:23:21Z INFO  nemo::io::formats::rdf_reader] ... processed 1920000000 triples
+[2024-05-14T22:23:44Z INFO  nemo::io::formats::rdf_reader] ... processed 1930000000 triples
+[2024-05-14T22:23:53Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'irc://irc.libera.chat/##phantomics': Invalid IRI code point '#' on line 1934268679 at position 125
+[2024-05-14T22:24:06Z INFO  nemo::io::formats::rdf_reader] ... processed 1940000000 triples
+[2024-05-14T22:24:28Z INFO  nemo::io::formats::rdf_reader] ... processed 1950000000 triples
+[2024-05-14T22:24:50Z INFO  nemo::io::formats::rdf_reader] ... processed 1960000000 triples
+[2024-05-14T22:25:11Z INFO  nemo::io::formats::rdf_reader] ... processed 1970000000 triples
+[2024-05-14T22:25:32Z INFO  nemo::io::formats::rdf_reader] ... processed 1980000000 triples
+[2024-05-14T22:25:55Z INFO  nemo::io::formats::rdf_reader] ... processed 1990000000 triples
+[2024-05-14T22:26:18Z INFO  nemo::io::formats::rdf_reader] ... processed 2000000000 triples
+[2024-05-14T22:26:40Z INFO  nemo::io::formats::rdf_reader] ... processed 2010000000 triples
+[2024-05-14T22:26:52Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://stats.rugbyleaguerecords.com/playerdirectory.php?playersurname=%': Invalid IRI percent encoding '%' on line 2014921894 at position 159
+[2024-05-14T22:27:04Z INFO  nemo::io::formats::rdf_reader] ... processed 2020000000 triples
+[2024-05-14T22:27:06Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%226123580%22,%20%226123580%22]': Invalid IRI code point '[' on line 2021092443 at position 140
+[2024-05-14T22:27:28Z INFO  nemo::io::formats::rdf_reader] ... processed 2030000000 triples
+[2024-05-14T22:27:53Z INFO  nemo::io::formats::rdf_reader] ... processed 2040000000 triples
+[2024-05-14T22:28:16Z INFO  nemo::io::formats::rdf_reader] ... processed 2050000000 triples
+[2024-05-14T22:28:40Z INFO  nemo::io::formats::rdf_reader] ... processed 2060000000 triples
+[2024-05-14T22:29:03Z INFO  nemo::io::formats::rdf_reader] ... processed 2070000000 triples
+[2024-05-14T22:29:27Z INFO  nemo::io::formats::rdf_reader] ... processed 2080000000 triples
+[2024-05-14T22:29:50Z INFO  nemo::io::formats::rdf_reader] ... processed 2090000000 triples
+[2024-05-14T22:30:13Z INFO  nemo::io::formats::rdf_reader] ... processed 2100000000 triples
+[2024-05-14T22:30:26Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'irc://freenode.net/##limechat': Invalid IRI code point '#' on line 2105628290 at position 118
+[2024-05-14T22:30:37Z INFO  nemo::io::formats::rdf_reader] ... processed 2110000000 triples
+[2024-05-14T22:31:00Z INFO  nemo::io::formats::rdf_reader] ... processed 2120000000 triples
+[2024-05-14T22:31:23Z INFO  nemo::io::formats::rdf_reader] ... processed 2130000000 triples
+[2024-05-14T22:31:47Z INFO  nemo::io::formats::rdf_reader] ... processed 2140000000 triples
+[2024-05-14T22:32:10Z INFO  nemo::io::formats::rdf_reader] ... processed 2150000000 triples
+[2024-05-14T22:32:33Z INFO  nemo::io::formats::rdf_reader] ... processed 2160000000 triples
+[2024-05-14T22:32:55Z INFO  nemo::io::formats::rdf_reader] ... processed 2170000000 triples
+[2024-05-14T22:33:18Z INFO  nemo::io::formats::rdf_reader] ... processed 2180000000 triples
+[2024-05-14T22:33:25Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'irc://irc.oftc.net/##freak': Invalid IRI code point '#' on line 2182947802 at position 116
+[2024-05-14T22:33:46Z INFO  nemo::io::formats::rdf_reader] ... processed 2190000000 triples
+[2024-05-14T22:34:08Z INFO  nemo::io::formats::rdf_reader] ... processed 2200000000 triples
+[2024-05-14T22:34:30Z INFO  nemo::io::formats::rdf_reader] ... processed 2210000000 triples
+[2024-05-14T22:34:52Z INFO  nemo::io::formats::rdf_reader] ... processed 2220000000 triples
+[2024-05-14T22:35:16Z INFO  nemo::io::formats::rdf_reader] ... processed 2230000000 triples
+[2024-05-14T22:35:38Z INFO  nemo::io::formats::rdf_reader] ... processed 2240000000 triples
+[2024-05-14T22:36:02Z INFO  nemo::io::formats::rdf_reader] ... processed 2250000000 triples
+[2024-05-14T22:36:25Z INFO  nemo::io::formats::rdf_reader] ... processed 2260000000 triples
+[2024-05-14T22:36:48Z INFO  nemo::io::formats::rdf_reader] ... processed 2270000000 triples
+[2024-05-14T22:37:12Z INFO  nemo::io::formats::rdf_reader] ... processed 2280000000 triples
+[2024-05-14T22:37:35Z INFO  nemo::io::formats::rdf_reader] ... processed 2290000000 triples
+[2024-05-14T22:37:58Z INFO  nemo::io::formats::rdf_reader] ... processed 2300000000 triples
+[2024-05-14T22:38:21Z INFO  nemo::io::formats::rdf_reader] ... processed 2310000000 triples
+[2024-05-14T22:38:45Z INFO  nemo::io::formats::rdf_reader] ... processed 2320000000 triples
+[2024-05-14T22:39:08Z INFO  nemo::io::formats::rdf_reader] ... processed 2330000000 triples
+[2024-05-14T22:39:32Z INFO  nemo::io::formats::rdf_reader] ... processed 2340000000 triples
+[2024-05-14T22:39:54Z INFO  nemo::io::formats::rdf_reader] ... processed 2350000000 triples
+[2024-05-14T22:40:18Z INFO  nemo::io::formats::rdf_reader] ... processed 2360000000 triples
+[2024-05-14T22:41:05Z INFO  nemo::io::formats::rdf_reader] ... processed 2370000000 triples
+[2024-05-14T22:41:29Z INFO  nemo::io::formats::rdf_reader] ... processed 2380000000 triples
+[2024-05-14T22:41:53Z INFO  nemo::io::formats::rdf_reader] ... processed 2390000000 triples
+[2024-05-14T22:42:16Z INFO  nemo::io::formats::rdf_reader] ... processed 2400000000 triples
+[2024-05-14T22:42:39Z INFO  nemo::io::formats::rdf_reader] ... processed 2410000000 triples
+[2024-05-14T22:43:01Z INFO  nemo::io::formats::rdf_reader] ... processed 2420000000 triples
+[2024-05-14T22:43:25Z INFO  nemo::io::formats::rdf_reader] ... processed 2430000000 triples
+[2024-05-14T22:43:49Z INFO  nemo::io::formats::rdf_reader] ... processed 2440000000 triples
+[2024-05-14T22:44:12Z INFO  nemo::io::formats::rdf_reader] ... processed 2450000000 triples
+[2024-05-14T22:44:36Z INFO  nemo::io::formats::rdf_reader] ... processed 2460000000 triples
+[2024-05-14T22:44:59Z INFO  nemo::io::formats::rdf_reader] ... processed 2470000000 triples
+[2024-05-14T22:45:23Z INFO  nemo::io::formats::rdf_reader] ... processed 2480000000 triples
+[2024-05-14T22:45:46Z INFO  nemo::io::formats::rdf_reader] ... processed 2490000000 triples
+[2024-05-14T22:46:09Z INFO  nemo::io::formats::rdf_reader] ... processed 2500000000 triples
+[2024-05-14T22:46:33Z INFO  nemo::io::formats::rdf_reader] ... processed 2510000000 triples
+[2024-05-14T22:46:56Z INFO  nemo::io::formats::rdf_reader] ... processed 2520000000 triples
+[2024-05-14T22:47:19Z INFO  nemo::io::formats::rdf_reader] ... processed 2530000000 triples
+[2024-05-14T22:47:43Z INFO  nemo::io::formats::rdf_reader] ... processed 2540000000 triples
+[2024-05-14T22:48:06Z INFO  nemo::io::formats::rdf_reader] ... processed 2550000000 triples
+[2024-05-14T22:48:30Z INFO  nemo::io::formats::rdf_reader] ... processed 2560000000 triples
+[2024-05-14T22:48:53Z INFO  nemo::io::formats::rdf_reader] ... processed 2570000000 triples
+[2024-05-14T22:49:16Z INFO  nemo::io::formats::rdf_reader] ... processed 2580000000 triples
+[2024-05-14T22:49:39Z INFO  nemo::io::formats::rdf_reader] ... processed 2590000000 triples
+[2024-05-14T22:50:03Z INFO  nemo::io::formats::rdf_reader] ... processed 2600000000 triples
+[2024-05-14T22:50:27Z INFO  nemo::io::formats::rdf_reader] ... processed 2610000000 triples
+[2024-05-14T22:50:52Z INFO  nemo::io::formats::rdf_reader] ... processed 2620000000 triples
+[2024-05-14T22:51:15Z INFO  nemo::io::formats::rdf_reader] ... processed 2630000000 triples
+[2024-05-14T22:51:39Z INFO  nemo::io::formats::rdf_reader] ... processed 2640000000 triples
+[2024-05-14T22:52:03Z INFO  nemo::io::formats::rdf_reader] ... processed 2650000000 triples
+[2024-05-14T22:52:26Z INFO  nemo::io::formats::rdf_reader] ... processed 2660000000 triples
+[2024-05-14T22:52:49Z INFO  nemo::io::formats::rdf_reader] ... processed 2670000000 triples
+[2024-05-14T22:53:13Z INFO  nemo::io::formats::rdf_reader] ... processed 2680000000 triples
+[2024-05-14T22:53:38Z INFO  nemo::io::formats::rdf_reader] ... processed 2690000000 triples
+[2024-05-14T22:54:02Z INFO  nemo::io::formats::rdf_reader] ... processed 2700000000 triples
+[2024-05-14T22:54:26Z INFO  nemo::io::formats::rdf_reader] ... processed 2710000000 triples
+[2024-05-14T22:54:48Z INFO  nemo::io::formats::rdf_reader] ... processed 2720000000 triples
+[2024-05-14T22:55:11Z INFO  nemo::io::formats::rdf_reader] ... processed 2730000000 triples
+[2024-05-14T22:55:34Z INFO  nemo::io::formats::rdf_reader] ... processed 2740000000 triples
+[2024-05-14T22:55:56Z INFO  nemo::io::formats::rdf_reader] ... processed 2750000000 triples
+[2024-05-14T22:56:19Z INFO  nemo::io::formats::rdf_reader] ... processed 2760000000 triples
+[2024-05-14T22:56:32Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%222884977%22,%20%222884977%22]': Invalid IRI code point '[' on line 2765559102 at position 139
+[2024-05-14T22:56:42Z INFO  nemo::io::formats::rdf_reader] ... processed 2770000000 triples
+[2024-05-14T22:57:05Z INFO  nemo::io::formats::rdf_reader] ... processed 2780000000 triples
+[2024-05-14T22:57:28Z INFO  nemo::io::formats::rdf_reader] ... processed 2790000000 triples
+[2024-05-14T22:57:51Z INFO  nemo::io::formats::rdf_reader] ... processed 2800000000 triples
+[2024-05-14T22:58:14Z INFO  nemo::io::formats::rdf_reader] ... processed 2810000000 triples
+[2024-05-14T22:58:37Z INFO  nemo::io::formats::rdf_reader] ... processed 2820000000 triples
+[2024-05-14T22:59:00Z INFO  nemo::io::formats::rdf_reader] ... processed 2830000000 triples
+[2024-05-14T22:59:22Z INFO  nemo::io::formats::rdf_reader] ... processed 2840000000 triples
+[2024-05-14T22:59:44Z INFO  nemo::io::formats::rdf_reader] ... processed 2850000000 triples
+[2024-05-14T23:00:07Z INFO  nemo::io::formats::rdf_reader] ... processed 2860000000 triples
+[2024-05-14T23:00:30Z INFO  nemo::io::formats::rdf_reader] ... processed 2870000000 triples
+[2024-05-14T23:00:54Z INFO  nemo::io::formats::rdf_reader] ... processed 2880000000 triples
+[2024-05-14T23:01:18Z INFO  nemo::io::formats::rdf_reader] ... processed 2890000000 triples
+[2024-05-14T23:01:42Z INFO  nemo::io::formats::rdf_reader] ... processed 2900000000 triples
+[2024-05-14T23:02:05Z INFO  nemo::io::formats::rdf_reader] ... processed 2910000000 triples
+[2024-05-14T23:02:28Z INFO  nemo::io::formats::rdf_reader] ... processed 2920000000 triples
+[2024-05-14T23:02:52Z INFO  nemo::io::formats::rdf_reader] ... processed 2930000000 triples
+[2024-05-14T23:03:13Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.zeno.org/Kunstwerke/B/D%C3%BCrer,+Albrecht:+Illustration+zum+%C2%BBDer+Ritter+vom+Turn%C2%AB+%5B40%5': Invalid IRI percent encoding '%5' on line 2939098313 at position 201
+[2024-05-14T23:03:15Z INFO  nemo::io::formats::rdf_reader] ... processed 2940000000 triples
+[2024-05-14T23:03:39Z INFO  nemo::io::formats::rdf_reader] ... processed 2950000000 triples
+[2024-05-14T23:03:50Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://:www.sas3dancingfeet.com': Invalid character 'w' on line 2954880836 at position 122
+[2024-05-14T23:04:02Z INFO  nemo::io::formats::rdf_reader] ... processed 2960000000 triples
+[2024-05-14T23:04:24Z INFO  nemo::io::formats::rdf_reader] ... processed 2970000000 triples
+[2024-05-14T23:04:47Z INFO  nemo::io::formats::rdf_reader] ... processed 2980000000 triples
+[2024-05-14T23:05:08Z INFO  nemo::io::formats::rdf_reader] ... processed 2990000000 triples
+[2024-05-14T23:05:30Z INFO  nemo::io::formats::rdf_reader] ... processed 3000000000 triples
+[2024-05-14T23:05:52Z INFO  nemo::io::formats::rdf_reader] ... processed 3010000000 triples
+[2024-05-14T23:06:15Z INFO  nemo::io::formats::rdf_reader] ... processed 3020000000 triples
+[2024-05-14T23:06:39Z INFO  nemo::io::formats::rdf_reader] ... processed 3030000000 triples
+[2024-05-14T23:07:02Z INFO  nemo::io::formats::rdf_reader] ... processed 3040000000 triples
+[2024-05-14T23:07:19Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 3046968234 at position 104
+[2024-05-14T23:07:26Z INFO  nemo::io::formats::rdf_reader] ... processed 3050000000 triples
+[2024-05-14T23:07:42Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%225894091%22,%20%225894091%22]': Invalid IRI code point '[' on line 3056458668 at position 140
+[2024-05-14T23:07:51Z INFO  nemo::io::formats::rdf_reader] ... processed 3060000000 triples
+[2024-05-14T23:07:57Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://app.gitter.im/#/room/#Dalmirog_OctoPosh:gitter.im': Invalid IRI code point '#' on line 3062402549 at position 149
+[2024-05-14T23:08:15Z INFO  nemo::io::formats::rdf_reader] ... processed 3070000000 triples
+[2024-05-14T23:08:23Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://:www.moderncityhotel.com': Invalid character 'w' on line 3073489395 at position 121
+[2024-05-14T23:08:38Z INFO  nemo::io::formats::rdf_reader] ... processed 3080000000 triples
+[2024-05-14T23:09:01Z INFO  nemo::io::formats::rdf_reader] ... processed 3090000000 triples
+[2024-05-14T23:09:24Z INFO  nemo::io::formats::rdf_reader] ... processed 3100000000 triples
+[2024-05-14T23:09:47Z INFO  nemo::io::formats::rdf_reader] ... processed 3110000000 triples
+[2024-05-14T23:10:09Z INFO  nemo::io::formats::rdf_reader] ... processed 3120000000 triples
+[2024-05-14T23:10:32Z INFO  nemo::io::formats::rdf_reader] ... processed 3130000000 triples
+[2024-05-14T23:10:56Z INFO  nemo::io::formats::rdf_reader] ... processed 3140000000 triples
+[2024-05-14T23:11:19Z INFO  nemo::io::formats::rdf_reader] ... processed 3150000000 triples
+[2024-05-14T23:11:42Z INFO  nemo::io::formats::rdf_reader] ... processed 3160000000 triples
+[2024-05-14T23:12:05Z INFO  nemo::io::formats::rdf_reader] ... processed 3170000000 triples
+[2024-05-14T23:12:28Z INFO  nemo::io::formats::rdf_reader] ... processed 3180000000 triples
+[2024-05-14T23:12:50Z INFO  nemo::io::formats::rdf_reader] ... processed 3190000000 triples
+[2024-05-14T23:13:11Z INFO  nemo::io::formats::rdf_reader] ... processed 3200000000 triples
+[2024-05-14T23:13:35Z INFO  nemo::io::formats::rdf_reader] ... processed 3210000000 triples
+[2024-05-14T23:13:57Z INFO  nemo::io::formats::rdf_reader] ... processed 3220000000 triples
+[2024-05-14T23:14:19Z INFO  nemo::io::formats::rdf_reader] ... processed 3230000000 triples
+[2024-05-14T23:14:40Z INFO  nemo::io::formats::rdf_reader] ... processed 3240000000 triples
+[2024-05-14T23:15:01Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'ssh://git@gitlab.freedesktop.org:xorg/driver/xf86-video-ati.git': Invalid character 'x' on line 3249258711 at position 153
+[2024-05-14T23:15:03Z INFO  nemo::io::formats::rdf_reader] ... processed 3250000000 triples
+[2024-05-14T23:15:25Z INFO  nemo::io::formats::rdf_reader] ... processed 3260000000 triples
+[2024-05-14T23:15:48Z INFO  nemo::io::formats::rdf_reader] ... processed 3270000000 triples
+[2024-05-14T23:16:11Z INFO  nemo::io::formats::rdf_reader] ... processed 3280000000 triples
+[2024-05-14T23:16:34Z INFO  nemo::io::formats::rdf_reader] ... processed 3290000000 triples
+[2024-05-14T23:16:57Z INFO  nemo::io::formats::rdf_reader] ... processed 3300000000 triples
+[2024-05-14T23:17:20Z INFO  nemo::io::formats::rdf_reader] ... processed 3310000000 triples
+[2024-05-14T23:17:42Z INFO  nemo::io::formats::rdf_reader] ... processed 3320000000 triples
+[2024-05-14T23:18:05Z INFO  nemo::io::formats::rdf_reader] ... processed 3330000000 triples
+[2024-05-14T23:18:28Z INFO  nemo::io::formats::rdf_reader] ... processed 3340000000 triples
+[2024-05-14T23:18:51Z INFO  nemo::io::formats::rdf_reader] ... processed 3350000000 triples
+[2024-05-14T23:19:15Z INFO  nemo::io::formats::rdf_reader] ... processed 3360000000 triples
+[2024-05-14T23:19:36Z INFO  nemo::io::formats::rdf_reader] ... processed 3370000000 triples
+[2024-05-14T23:20:00Z INFO  nemo::io::formats::rdf_reader] ... processed 3380000000 triples
+[2024-05-14T23:20:23Z INFO  nemo::io::formats::rdf_reader] ... processed 3390000000 triples
+[2024-05-14T23:20:47Z INFO  nemo::io::formats::rdf_reader] ... processed 3400000000 triples
+[2024-05-14T23:21:10Z INFO  nemo::io::formats::rdf_reader] ... processed 3410000000 triples
+[2024-05-14T23:21:33Z INFO  nemo::io::formats::rdf_reader] ... processed 3420000000 triples
+[2024-05-14T23:23:40Z INFO  nemo::io::formats::rdf_reader] ... processed 3430000000 triples
+[2024-05-14T23:24:01Z INFO  nemo::io::formats::rdf_reader] ... processed 3440000000 triples
+[2024-05-14T23:24:24Z INFO  nemo::io::formats::rdf_reader] ... processed 3450000000 triples
+[2024-05-14T23:24:47Z INFO  nemo::io::formats::rdf_reader] ... processed 3460000000 triples
+[2024-05-14T23:25:11Z INFO  nemo::io::formats::rdf_reader] ... processed 3470000000 triples
+[2024-05-14T23:25:34Z INFO  nemo::io::formats::rdf_reader] ... processed 3480000000 triples
+[2024-05-14T23:25:57Z INFO  nemo::io::formats::rdf_reader] ... processed 3490000000 triples
+[2024-05-14T23:26:20Z INFO  nemo::io::formats::rdf_reader] ... processed 3500000000 triples
+[2024-05-14T23:26:43Z INFO  nemo::io::formats::rdf_reader] ... processed 3510000000 triples
+[2024-05-14T23:27:06Z INFO  nemo::io::formats::rdf_reader] ... processed 3520000000 triples
+[2024-05-14T23:27:29Z INFO  nemo::io::formats::rdf_reader] ... processed 3530000000 triples
+[2024-05-14T23:27:52Z INFO  nemo::io::formats::rdf_reader] ... processed 3540000000 triples
+[2024-05-14T23:28:15Z INFO  nemo::io::formats::rdf_reader] ... processed 3550000000 triples
+[2024-05-14T23:28:37Z INFO  nemo::io::formats::rdf_reader] ... processed 3560000000 triples
+[2024-05-14T23:28:49Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://:www.svirelyART.com': Invalid character 'w' on line 3565045854 at position 116
+[2024-05-14T23:29:01Z INFO  nemo::io::formats::rdf_reader] ... processed 3570000000 triples
+[2024-05-14T23:29:24Z INFO  nemo::io::formats::rdf_reader] ... processed 3580000000 triples
+[2024-05-14T23:29:46Z INFO  nemo::io::formats::rdf_reader] ... processed 3590000000 triples
+[2024-05-14T23:30:09Z INFO  nemo::io::formats::rdf_reader] ... processed 3600000000 triples
+[2024-05-14T23:30:32Z INFO  nemo::io::formats::rdf_reader] ... processed 3610000000 triples
+[2024-05-14T23:30:55Z INFO  nemo::io::formats::rdf_reader] ... processed 3620000000 triples
+[2024-05-14T23:31:18Z INFO  nemo::io::formats::rdf_reader] ... processed 3630000000 triples
+[2024-05-14T23:31:43Z INFO  nemo::io::formats::rdf_reader] ... processed 3640000000 triples
+[2024-05-14T23:31:52Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%22493678%22,%20%22493678%22]': Invalid IRI code point '[' on line 3644086478 at position 137
+[2024-05-14T23:32:06Z INFO  nemo::io::formats::rdf_reader] ... processed 3650000000 triples
+[2024-05-14T23:32:30Z INFO  nemo::io::formats::rdf_reader] ... processed 3660000000 triples
+[2024-05-14T23:32:53Z INFO  nemo::io::formats::rdf_reader] ... processed 3670000000 triples
+[2024-05-14T23:33:15Z INFO  nemo::io::formats::rdf_reader] ... processed 3680000000 triples
+[2024-05-14T23:33:39Z INFO  nemo::io::formats::rdf_reader] ... processed 3690000000 triples
+[2024-05-14T23:34:02Z INFO  nemo::io::formats::rdf_reader] ... processed 3700000000 triples
+[2024-05-14T23:34:26Z INFO  nemo::io::formats::rdf_reader] ... processed 3710000000 triples
+[2024-05-14T23:34:50Z INFO  nemo::io::formats::rdf_reader] ... processed 3720000000 triples
+[2024-05-14T23:35:13Z INFO  nemo::io::formats::rdf_reader] ... processed 3730000000 triples
+[2024-05-14T23:35:36Z INFO  nemo::io::formats::rdf_reader] ... processed 3740000000 triples
+[2024-05-14T23:36:18Z INFO  nemo::io::formats::rdf_reader] ... processed 3750000000 triples
+[2024-05-14T23:36:38Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%226359215%22,%20%226359215%22]': Invalid IRI code point '[' on line 3759066213 at position 139
+[2024-05-14T23:36:40Z INFO  nemo::io::formats::rdf_reader] ... processed 3760000000 triples
+[2024-05-14T23:37:03Z INFO  nemo::io::formats::rdf_reader] ... processed 3770000000 triples
+[2024-05-14T23:37:25Z INFO  nemo::io::formats::rdf_reader] ... processed 3780000000 triples
+[2024-05-14T23:37:48Z INFO  nemo::io::formats::rdf_reader] ... processed 3790000000 triples
+[2024-05-14T23:38:10Z INFO  nemo::io::formats::rdf_reader] ... processed 3800000000 triples
+[2024-05-14T23:38:32Z INFO  nemo::io::formats::rdf_reader] ... processed 3810000000 triples
+[2024-05-14T23:38:55Z INFO  nemo::io::formats::rdf_reader] ... processed 3820000000 triples
+[2024-05-14T23:39:16Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://www.sescsp.org.br/unidades/14_BAURU/#/uaba=programacao#/fdata=id%3D14': Invalid IRI code point '#' on line 3829335004 at position 166
+[2024-05-14T23:39:18Z INFO  nemo::io::formats::rdf_reader] ... processed 3830000000 triples
+[2024-05-14T23:39:40Z INFO  nemo::io::formats::rdf_reader] ... processed 3840000000 triples
+[2024-05-14T23:40:03Z INFO  nemo::io::formats::rdf_reader] ... processed 3850000000 triples
+[2024-05-14T23:40:25Z INFO  nemo::io::formats::rdf_reader] ... processed 3860000000 triples
+[2024-05-14T23:40:46Z INFO  nemo::io::formats::rdf_reader] ... processed 3870000000 triples
+[2024-05-14T23:41:09Z INFO  nemo::io::formats::rdf_reader] ... processed 3880000000 triples
+[2024-05-14T23:41:32Z INFO  nemo::io::formats::rdf_reader] ... processed 3890000000 triples
+[2024-05-14T23:41:55Z INFO  nemo::io::formats::rdf_reader] ... processed 3900000000 triples
+[2024-05-14T23:42:19Z INFO  nemo::io::formats::rdf_reader] ... processed 3910000000 triples
+[2024-05-14T23:42:42Z INFO  nemo::io::formats::rdf_reader] ... processed 3920000000 triples
+[2024-05-14T23:43:04Z INFO  nemo::io::formats::rdf_reader] ... processed 3930000000 triples
+[2024-05-14T23:43:27Z INFO  nemo::io::formats::rdf_reader] ... processed 3940000000 triples
+[2024-05-14T23:43:50Z INFO  nemo::io::formats::rdf_reader] ... processed 3950000000 triples
+[2024-05-14T23:44:14Z INFO  nemo::io::formats::rdf_reader] ... processed 3960000000 triples
+[2024-05-14T23:44:37Z INFO  nemo::io::formats::rdf_reader] ... processed 3970000000 triples
+[2024-05-14T23:44:59Z INFO  nemo::io::formats::rdf_reader] ... processed 3980000000 triples
+[2024-05-14T23:45:22Z INFO  nemo::io::formats::rdf_reader] ... processed 3990000000 triples
+[2024-05-14T23:45:44Z INFO  nemo::io::formats::rdf_reader] ... processed 4000000000 triples
+[2024-05-14T23:46:05Z INFO  nemo::io::formats::rdf_reader] ... processed 4010000000 triples
+[2024-05-14T23:46:26Z INFO  nemo::io::formats::rdf_reader] ... processed 4020000000 triples
+[2024-05-14T23:46:48Z INFO  nemo::io::formats::rdf_reader] ... processed 4030000000 triples
+[2024-05-14T23:47:10Z INFO  nemo::io::formats::rdf_reader] ... processed 4040000000 triples
+[2024-05-14T23:47:33Z INFO  nemo::io::formats::rdf_reader] ... processed 4050000000 triples
+[2024-05-14T23:47:41Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://mijngelderland.nl/inhoud/verhalen/huis-spijk-te-spijk#!#customCarouselDetail': Invalid IRI code point '#' on line 4053448042 at position 174
+[2024-05-14T23:47:56Z INFO  nemo::io::formats::rdf_reader] ... processed 4060000000 triples
+[2024-05-14T23:48:19Z INFO  nemo::io::formats::rdf_reader] ... processed 4070000000 triples
+[2024-05-14T23:48:44Z INFO  nemo::io::formats::rdf_reader] ... processed 4080000000 triples
+[2024-05-14T23:49:07Z INFO  nemo::io::formats::rdf_reader] ... processed 4090000000 triples
+[2024-05-14T23:49:30Z INFO  nemo::io::formats::rdf_reader] ... processed 4100000000 triples
+[2024-05-14T23:49:54Z INFO  nemo::io::formats::rdf_reader] ... processed 4110000000 triples
+[2024-05-14T23:50:09Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'irc://freenode/##c++': Invalid IRI code point '#' on line 4116693019 at position 108
+[2024-05-14T23:50:17Z INFO  nemo::io::formats::rdf_reader] ... processed 4120000000 triples
+[2024-05-14T23:50:40Z INFO  nemo::io::formats::rdf_reader] ... processed 4130000000 triples
+[2024-05-14T23:51:02Z INFO  nemo::io::formats::rdf_reader] ... processed 4140000000 triples
+[2024-05-14T23:51:25Z INFO  nemo::io::formats::rdf_reader] ... processed 4150000000 triples
+[2024-05-14T23:51:49Z INFO  nemo::io::formats::rdf_reader] ... processed 4160000000 triples
+[2024-05-14T23:51:56Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'irc://freenode.net/##cwm': Invalid IRI code point '#' on line 4162987025 at position 113
+[2024-05-14T23:52:12Z INFO  nemo::io::formats::rdf_reader] ... processed 4170000000 triples
+[2024-05-14T23:52:35Z INFO  nemo::io::formats::rdf_reader] ... processed 4180000000 triples
+[2024-05-14T23:52:58Z INFO  nemo::io::formats::rdf_reader] ... processed 4190000000 triples
+[2024-05-14T23:53:21Z INFO  nemo::io::formats::rdf_reader] ... processed 4200000000 triples
+[2024-05-14T23:53:43Z INFO  nemo::io::formats::rdf_reader] ... processed 4210000000 triples
+[2024-05-14T23:54:05Z INFO  nemo::io::formats::rdf_reader] ... processed 4220000000 triples
+[2024-05-14T23:54:16Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://geoliss.mre.gov.rs/recnik/PretragaRecnika.aspx?Term=kvarcdioritporfirit&Term1=%u017di%u010dna+stena': Invalid IRI percent encoding '%u0' on line 4224830758 at position 196
+[2024-05-14T23:54:28Z INFO  nemo::io::formats::rdf_reader] ... processed 4230000000 triples
+[2024-05-14T23:54:50Z INFO  nemo::io::formats::rdf_reader] ... processed 4240000000 triples
+[2024-05-14T23:55:12Z INFO  nemo::io::formats::rdf_reader] ... processed 4250000000 triples
+[2024-05-14T23:55:34Z INFO  nemo::io::formats::rdf_reader] ... processed 4260000000 triples
+[2024-05-14T23:55:56Z INFO  nemo::io::formats::rdf_reader] ... processed 4270000000 triples
+[2024-05-14T23:56:18Z INFO  nemo::io::formats::rdf_reader] ... processed 4280000000 triples
+[2024-05-14T23:56:41Z INFO  nemo::io::formats::rdf_reader] ... processed 4290000000 triples
+[2024-05-14T23:57:04Z INFO  nemo::io::formats::rdf_reader] ... processed 4300000000 triples
+[2024-05-14T23:57:26Z INFO  nemo::io::formats::rdf_reader] ... processed 4310000000 triples
+[2024-05-14T23:57:49Z INFO  nemo::io::formats::rdf_reader] ... processed 4320000000 triples
+[2024-05-14T23:58:12Z INFO  nemo::io::formats::rdf_reader] ... processed 4330000000 triples
+[2024-05-14T23:58:35Z INFO  nemo::io::formats::rdf_reader] ... processed 4340000000 triples
+[2024-05-14T23:58:58Z INFO  nemo::io::formats::rdf_reader] ... processed 4350000000 triples
+[2024-05-14T23:59:21Z INFO  nemo::io::formats::rdf_reader] ... processed 4360000000 triples
+[2024-05-14T23:59:44Z INFO  nemo::io::formats::rdf_reader] ... processed 4370000000 triples
+[2024-05-15T00:00:07Z INFO  nemo::io::formats::rdf_reader] ... processed 4380000000 triples
+[2024-05-15T00:00:30Z INFO  nemo::io::formats::rdf_reader] ... processed 4390000000 triples
+[2024-05-15T00:00:52Z INFO  nemo::io::formats::rdf_reader] ... processed 4400000000 triples
+[2024-05-15T00:01:15Z INFO  nemo::io::formats::rdf_reader] ... processed 4410000000 triples
+[2024-05-15T00:01:39Z INFO  nemo::io::formats::rdf_reader] ... processed 4420000000 triples
+[2024-05-15T00:02:03Z INFO  nemo::io::formats::rdf_reader] ... processed 4430000000 triples
+[2024-05-15T00:02:26Z INFO  nemo::io::formats::rdf_reader] ... processed 4440000000 triples
+[2024-05-15T00:02:49Z INFO  nemo::io::formats::rdf_reader] ... processed 4450000000 triples
+[2024-05-15T00:03:11Z INFO  nemo::io::formats::rdf_reader] ... processed 4460000000 triples
+[2024-05-15T00:03:33Z INFO  nemo::io::formats::rdf_reader] ... processed 4470000000 triples
+[2024-05-15T00:03:56Z INFO  nemo::io::formats::rdf_reader] ... processed 4480000000 triples
+[2024-05-15T00:04:20Z INFO  nemo::io::formats::rdf_reader] ... processed 4490000000 triples
+[2024-05-15T00:04:43Z INFO  nemo::io::formats::rdf_reader] ... processed 4500000000 triples
+[2024-05-15T00:05:06Z INFO  nemo::io::formats::rdf_reader] ... processed 4510000000 triples
+[2024-05-15T00:05:29Z INFO  nemo::io::formats::rdf_reader] ... processed 4520000000 triples
+[2024-05-15T00:05:52Z INFO  nemo::io::formats::rdf_reader] ... processed 4530000000 triples
+[2024-05-15T00:06:15Z INFO  nemo::io::formats::rdf_reader] ... processed 4540000000 triples
+[2024-05-15T00:06:38Z INFO  nemo::io::formats::rdf_reader] ... processed 4550000000 triples
+[2024-05-15T00:07:01Z INFO  nemo::io::formats::rdf_reader] ... processed 4560000000 triples
+[2024-05-15T00:07:24Z INFO  nemo::io::formats::rdf_reader] ... processed 4570000000 triples
+[2024-05-15T00:07:47Z INFO  nemo::io::formats::rdf_reader] ... processed 4580000000 triples
+[2024-05-15T00:08:10Z INFO  nemo::io::formats::rdf_reader] ... processed 4590000000 triples
+[2024-05-15T00:08:33Z INFO  nemo::io::formats::rdf_reader] ... processed 4600000000 triples
+[2024-05-15T00:08:56Z INFO  nemo::io::formats::rdf_reader] ... processed 4610000000 triples
+[2024-05-15T00:09:19Z INFO  nemo::io::formats::rdf_reader] ... processed 4620000000 triples
+[2024-05-15T00:09:34Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.gxchem.com/v2/hgy/index.w#!main//(#!home/!/banner1)': Invalid IRI code point '#' on line 4626784294 at position 151
+[2024-05-15T00:09:42Z INFO  nemo::io::formats::rdf_reader] ... processed 4630000000 triples
+[2024-05-15T00:09:47Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://www.sescsp.org.br/unidades/5_IPIRANGA/#/uaba=programacao#/fdata=id%3D5': Invalid IRI code point '#' on line 4632352114 at position 167
+[2024-05-15T00:10:05Z INFO  nemo::io::formats::rdf_reader] ... processed 4640000000 triples
+[2024-05-15T00:10:28Z INFO  nemo::io::formats::rdf_reader] ... processed 4650000000 triples
+[2024-05-15T00:10:31Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%222839306%22,%20%222839306%22]': Invalid IRI code point '[' on line 4651366119 at position 139
+[2024-05-15T00:10:53Z INFO  nemo::io::formats::rdf_reader] ... processed 4660000000 triples
+[2024-05-15T00:11:17Z INFO  nemo::io::formats::rdf_reader] ... processed 4670000000 triples
+[2024-05-15T00:11:41Z INFO  nemo::io::formats::rdf_reader] ... processed 4680000000 triples
+[2024-05-15T00:11:41Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.kaminomachi.jp/“y‹%7D‘ŠÙ/': Invalid IRI code point '' on line 4680080776 at position 139
+[2024-05-15T00:11:41Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.kaminomachi.jp/‚¨‚â‚±%7D‘ŠÙ/': Invalid IRI code point '' on line 4680160580 at position 145
+[2024-05-15T00:12:04Z INFO  nemo::io::formats::rdf_reader] ... processed 4690000000 triples
+[2024-05-15T00:12:27Z INFO  nemo::io::formats::rdf_reader] ... processed 4700000000 triples
+[2024-05-15T00:12:50Z INFO  nemo::io::formats::rdf_reader] ... processed 4710000000 triples
+[2024-05-15T00:13:14Z INFO  nemo::io::formats::rdf_reader] ... processed 4720000000 triples
+[2024-05-15T00:13:38Z INFO  nemo::io::formats::rdf_reader] ... processed 4730000000 triples
+[2024-05-15T00:14:02Z INFO  nemo::io::formats::rdf_reader] ... processed 4740000000 triples
+[2024-05-15T00:14:08Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%221425507%22,%20%221425507%22]': Invalid IRI code point '[' on line 4742630484 at position 139
+[2024-05-15T00:14:26Z INFO  nemo::io::formats::rdf_reader] ... processed 4750000000 triples
+[2024-05-15T00:14:49Z INFO  nemo::io::formats::rdf_reader] ... processed 4760000000 triples
+[2024-05-15T00:15:12Z INFO  nemo::io::formats::rdf_reader] ... processed 4770000000 triples
+[2024-05-15T00:15:34Z INFO  nemo::io::formats::rdf_reader] ... processed 4780000000 triples
+[2024-05-15T00:15:57Z INFO  nemo::io::formats::rdf_reader] ... processed 4790000000 triples
+[2024-05-15T00:16:19Z INFO  nemo::io::formats::rdf_reader] ... processed 4800000000 triples
+[2024-05-15T00:16:42Z INFO  nemo::io::formats::rdf_reader] ... processed 4810000000 triples
+[2024-05-15T00:17:04Z INFO  nemo::io::formats::rdf_reader] ... processed 4820000000 triples
+[2024-05-15T00:17:27Z INFO  nemo::io::formats::rdf_reader] ... processed 4830000000 triples
+[2024-05-15T00:17:50Z INFO  nemo::io::formats::rdf_reader] ... processed 4840000000 triples
+[2024-05-15T00:18:12Z INFO  nemo::io::formats::rdf_reader] ... processed 4850000000 triples
+[2024-05-15T00:18:35Z INFO  nemo::io::formats::rdf_reader] ... processed 4860000000 triples
+[2024-05-15T00:18:58Z INFO  nemo::io::formats::rdf_reader] ... processed 4870000000 triples
+[2024-05-15T00:19:20Z INFO  nemo::io::formats::rdf_reader] ... processed 4880000000 triples
+[2024-05-15T00:19:42Z INFO  nemo::io::formats::rdf_reader] ... processed 4890000000 triples
+[2024-05-15T00:20:04Z INFO  nemo::io::formats::rdf_reader] ... processed 4900000000 triples
+[2024-05-15T00:20:26Z INFO  nemo::io::formats::rdf_reader] ... processed 4910000000 triples
+[2024-05-15T00:20:50Z INFO  nemo::io::formats::rdf_reader] ... processed 4920000000 triples
+[2024-05-15T00:21:13Z INFO  nemo::io::formats::rdf_reader] ... processed 4930000000 triples
+[2024-05-15T00:21:37Z INFO  nemo::io::formats::rdf_reader] ... processed 4940000000 triples
+[2024-05-15T00:22:00Z INFO  nemo::io::formats::rdf_reader] ... processed 4950000000 triples
+[2024-05-15T00:22:22Z INFO  nemo::io::formats::rdf_reader] ... processed 4960000000 triples
+[2024-05-15T00:22:45Z INFO  nemo::io::formats::rdf_reader] ... processed 4970000000 triples
+[2024-05-15T00:23:09Z INFO  nemo::io::formats::rdf_reader] ... processed 4980000000 triples
+[2024-05-15T00:23:32Z INFO  nemo::io::formats::rdf_reader] ... processed 4990000000 triples
+[2024-05-15T00:23:55Z INFO  nemo::io::formats::rdf_reader] ... processed 5000000000 triples
+[2024-05-15T00:24:17Z INFO  nemo::io::formats::rdf_reader] ... processed 5010000000 triples
+[2024-05-15T00:24:40Z INFO  nemo::io::formats::rdf_reader] ... processed 5020000000 triples
+[2024-05-15T00:25:02Z INFO  nemo::io::formats::rdf_reader] ... processed 5030000000 triples
+[2024-05-15T00:25:23Z INFO  nemo::io::formats::rdf_reader] ... processed 5040000000 triples
+[2024-05-15T00:25:44Z INFO  nemo::io::formats::rdf_reader] ... processed 5050000000 triples
+[2024-05-15T00:26:06Z INFO  nemo::io::formats::rdf_reader] ... processed 5060000000 triples
+[2024-05-15T00:26:29Z INFO  nemo::io::formats::rdf_reader] ... processed 5070000000 triples
+[2024-05-15T00:26:52Z INFO  nemo::io::formats::rdf_reader] ... processed 5080000000 triples
+[2024-05-15T00:27:15Z INFO  nemo::io::formats::rdf_reader] ... processed 5090000000 triples
+[2024-05-15T00:27:40Z INFO  nemo::io::formats::rdf_reader] ... processed 5100000000 triples
+[2024-05-15T00:28:04Z INFO  nemo::io::formats::rdf_reader] ... processed 5110000000 triples
+[2024-05-15T00:28:27Z INFO  nemo::io::formats::rdf_reader] ... processed 5120000000 triples
+[2024-05-15T00:28:50Z INFO  nemo::io::formats::rdf_reader] ... processed 5130000000 triples
+[2024-05-15T00:29:14Z INFO  nemo::io::formats::rdf_reader] ... processed 5140000000 triples
+[2024-05-15T00:29:37Z INFO  nemo::io::formats::rdf_reader] ... processed 5150000000 triples
+[2024-05-15T00:30:00Z INFO  nemo::io::formats::rdf_reader] ... processed 5160000000 triples
+[2024-05-15T00:30:22Z INFO  nemo::io::formats::rdf_reader] ... processed 5170000000 triples
+[2024-05-15T00:30:46Z INFO  nemo::io::formats::rdf_reader] ... processed 5180000000 triples
+[2024-05-15T00:30:53Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://web.ebscohost.com/ehost/detail?vid=1&hid=105&sid=0bed772d-34e5-4699-b5fd-b85c081f6d50%40sessionmgr111&bdata=JnNpdGU9ZWhvc3QtbGl2ZQ==#db=a9h&jid=AQT#db=a9h&jid=AQT#db=a9h&jid=AQT': Invalid IRI code point '#' on line 5183169620 at position 272
+[2024-05-15T00:31:09Z INFO  nemo::io::formats::rdf_reader] ... processed 5190000000 triples
+[2024-05-15T00:31:32Z INFO  nemo::io::formats::rdf_reader] ... processed 5200000000 triples
+[2024-05-15T00:31:56Z INFO  nemo::io::formats::rdf_reader] ... processed 5210000000 triples
+[2024-05-15T00:32:18Z INFO  nemo::io::formats::rdf_reader] ... processed 5220000000 triples
+[2024-05-15T00:32:40Z INFO  nemo::io::formats::rdf_reader] ... processed 5230000000 triples
+[2024-05-15T00:33:02Z INFO  nemo::io::formats::rdf_reader] ... processed 5240000000 triples
+[2024-05-15T00:33:25Z INFO  nemo::io::formats::rdf_reader] ... processed 5250000000 triples
+[2024-05-15T00:34:49Z INFO  nemo::io::formats::rdf_reader] ... processed 5260000000 triples
+[2024-05-15T00:35:11Z INFO  nemo::io::formats::rdf_reader] ... processed 5270000000 triples
+[2024-05-15T00:35:32Z INFO  nemo::io::formats::rdf_reader] ... processed 5280000000 triples
+[2024-05-15T00:35:54Z INFO  nemo::io::formats::rdf_reader] ... processed 5290000000 triples
+[2024-05-15T00:36:17Z INFO  nemo::io::formats::rdf_reader] ... processed 5300000000 triples
+[2024-05-15T00:36:39Z INFO  nemo::io::formats::rdf_reader] ... processed 5310000000 triples
+[2024-05-15T00:37:02Z INFO  nemo::io::formats::rdf_reader] ... processed 5320000000 triples
+[2024-05-15T00:37:25Z INFO  nemo::io::formats::rdf_reader] ... processed 5330000000 triples
+[2024-05-15T00:37:48Z INFO  nemo::io::formats::rdf_reader] ... processed 5340000000 triples
+[2024-05-15T00:38:11Z INFO  nemo::io::formats::rdf_reader] ... processed 5350000000 triples
+[2024-05-15T00:38:33Z INFO  nemo::io::formats::rdf_reader] ... processed 5360000000 triples
+[2024-05-15T00:38:56Z INFO  nemo::io::formats::rdf_reader] ... processed 5370000000 triples
+[2024-05-15T00:39:19Z INFO  nemo::io::formats::rdf_reader] ... processed 5380000000 triples
+[2024-05-15T00:39:42Z INFO  nemo::io::formats::rdf_reader] ... processed 5390000000 triples
+[2024-05-15T00:40:06Z INFO  nemo::io::formats::rdf_reader] ... processed 5400000000 triples
+[2024-05-15T00:40:29Z INFO  nemo::io::formats::rdf_reader] ... processed 5410000000 triples
+[2024-05-15T00:40:51Z INFO  nemo::io::formats::rdf_reader] ... processed 5420000000 triples
+[2024-05-15T00:41:14Z INFO  nemo::io::formats::rdf_reader] ... processed 5430000000 triples
+[2024-05-15T00:41:38Z INFO  nemo::io::formats::rdf_reader] ... processed 5440000000 triples
+[2024-05-15T00:42:01Z INFO  nemo::io::formats::rdf_reader] ... processed 5450000000 triples
+[2024-05-15T00:42:25Z INFO  nemo::io::formats::rdf_reader] ... processed 5460000000 triples
+[2024-05-15T00:42:48Z INFO  nemo::io::formats::rdf_reader] ... processed 5470000000 triples
+[2024-05-15T00:43:10Z INFO  nemo::io::formats::rdf_reader] ... processed 5480000000 triples
+[2024-05-15T00:43:32Z INFO  nemo::io::formats::rdf_reader] ... processed 5490000000 triples
+[2024-05-15T00:43:55Z INFO  nemo::io::formats::rdf_reader] ... processed 5500000000 triples
+[2024-05-15T00:44:19Z INFO  nemo::io::formats::rdf_reader] ... processed 5510000000 triples
+[2024-05-15T00:44:42Z INFO  nemo::io::formats::rdf_reader] ... processed 5520000000 triples
+[2024-05-15T00:45:05Z INFO  nemo::io::formats::rdf_reader] ... processed 5530000000 triples
+[2024-05-15T00:45:28Z INFO  nemo::io::formats::rdf_reader] ... processed 5540000000 triples
+[2024-05-15T00:45:51Z INFO  nemo::io::formats::rdf_reader] ... processed 5550000000 triples
+[2024-05-15T00:46:14Z INFO  nemo::io::formats::rdf_reader] ... processed 5560000000 triples
+[2024-05-15T00:46:37Z INFO  nemo::io::formats::rdf_reader] ... processed 5570000000 triples
+[2024-05-15T00:47:00Z INFO  nemo::io::formats::rdf_reader] ... processed 5580000000 triples
+[2024-05-15T00:47:23Z INFO  nemo::io::formats::rdf_reader] ... processed 5590000000 triples
+[2024-05-15T00:47:46Z INFO  nemo::io::formats::rdf_reader] ... processed 5600000000 triples
+[2024-05-15T00:48:09Z INFO  nemo::io::formats::rdf_reader] ... processed 5610000000 triples
+[2024-05-15T00:48:33Z INFO  nemo::io::formats::rdf_reader] ... processed 5620000000 triples
+[2024-05-15T00:48:56Z INFO  nemo::io::formats::rdf_reader] ... processed 5630000000 triples
+[2024-05-15T00:49:19Z INFO  nemo::io::formats::rdf_reader] ... processed 5640000000 triples
+[2024-05-15T00:49:41Z INFO  nemo::io::formats::rdf_reader] ... processed 5650000000 triples
+[2024-05-15T00:50:04Z INFO  nemo::io::formats::rdf_reader] ... processed 5660000000 triples
+[2024-05-15T00:50:27Z INFO  nemo::io::formats::rdf_reader] ... processed 5670000000 triples
+[2024-05-15T00:50:51Z INFO  nemo::io::formats::rdf_reader] ... processed 5680000000 triples
+[2024-05-15T00:51:15Z INFO  nemo::io::formats::rdf_reader] ... processed 5690000000 triples
+[2024-05-15T00:51:39Z INFO  nemo::io::formats::rdf_reader] ... processed 5700000000 triples
+[2024-05-15T00:52:02Z INFO  nemo::io::formats::rdf_reader] ... processed 5710000000 triples
+[2024-05-15T00:52:25Z INFO  nemo::io::formats::rdf_reader] ... processed 5720000000 triples
+[2024-05-15T00:52:48Z INFO  nemo::io::formats::rdf_reader] ... processed 5730000000 triples
+[2024-05-15T00:53:11Z INFO  nemo::io::formats::rdf_reader] ... processed 5740000000 triples
+[2024-05-15T00:53:35Z INFO  nemo::io::formats::rdf_reader] ... processed 5750000000 triples
+[2024-05-15T00:53:59Z INFO  nemo::io::formats::rdf_reader] ... processed 5760000000 triples
+[2024-05-15T00:54:23Z INFO  nemo::io::formats::rdf_reader] ... processed 5770000000 triples
+[2024-05-15T00:54:46Z INFO  nemo::io::formats::rdf_reader] ... processed 5780000000 triples
+[2024-05-15T00:55:09Z INFO  nemo::io::formats::rdf_reader] ... processed 5790000000 triples
+[2024-05-15T00:55:31Z INFO  nemo::io::formats::rdf_reader] ... processed 5800000000 triples
+[2024-05-15T00:55:44Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%226462121%22,%20%226462121%22]': Invalid IRI code point '[' on line 5805480491 at position 139
+[2024-05-15T00:55:54Z INFO  nemo::io::formats::rdf_reader] ... processed 5810000000 triples
+[2024-05-15T00:56:16Z INFO  nemo::io::formats::rdf_reader] ... processed 5820000000 triples
+[2024-05-15T00:56:39Z INFO  nemo::io::formats::rdf_reader] ... processed 5830000000 triples
+[2024-05-15T00:57:01Z INFO  nemo::io::formats::rdf_reader] ... processed 5840000000 triples
+[2024-05-15T00:57:24Z INFO  nemo::io::formats::rdf_reader] ... processed 5850000000 triples
+[2024-05-15T00:57:47Z INFO  nemo::io::formats::rdf_reader] ... processed 5860000000 triples
+[2024-05-15T00:58:09Z INFO  nemo::io::formats::rdf_reader] ... processed 5870000000 triples
+[2024-05-15T00:58:32Z INFO  nemo::io::formats::rdf_reader] ... processed 5880000000 triples
+[2024-05-15T00:58:55Z INFO  nemo::io::formats::rdf_reader] ... processed 5890000000 triples
+[2024-05-15T00:59:17Z INFO  nemo::io::formats::rdf_reader] ... processed 5900000000 triples
+[2024-05-15T00:59:39Z INFO  nemo::io::formats::rdf_reader] ... processed 5910000000 triples
+[2024-05-15T01:00:01Z INFO  nemo::io::formats::rdf_reader] ... processed 5920000000 triples
+[2024-05-15T01:00:23Z INFO  nemo::io::formats::rdf_reader] ... processed 5930000000 triples
+[2024-05-15T01:00:46Z INFO  nemo::io::formats::rdf_reader] ... processed 5940000000 triples
+[2024-05-15T01:01:10Z INFO  nemo::io::formats::rdf_reader] ... processed 5950000000 triples
+[2024-05-15T01:01:33Z INFO  nemo::io::formats::rdf_reader] ... processed 5960000000 triples
+[2024-05-15T01:01:56Z INFO  nemo::io::formats::rdf_reader] ... processed 5970000000 triples
+[2024-05-15T01:02:19Z INFO  nemo::io::formats::rdf_reader] ... processed 5980000000 triples
+[2024-05-15T01:02:42Z INFO  nemo::io::formats::rdf_reader] ... processed 5990000000 triples
+[2024-05-15T01:03:06Z INFO  nemo::io::formats::rdf_reader] ... processed 6000000000 triples
+[2024-05-15T01:03:29Z INFO  nemo::io::formats::rdf_reader] ... processed 6010000000 triples
+[2024-05-15T01:03:52Z INFO  nemo::io::formats::rdf_reader] ... processed 6020000000 triples
+[2024-05-15T01:04:15Z INFO  nemo::io::formats::rdf_reader] ... processed 6030000000 triples
+[2024-05-15T01:04:37Z INFO  nemo::io::formats::rdf_reader] ... processed 6040000000 triples
+[2024-05-15T01:04:59Z INFO  nemo::io::formats::rdf_reader] ... processed 6050000000 triples
+[2024-05-15T01:05:20Z INFO  nemo::io::formats::rdf_reader] ... processed 6060000000 triples
+[2024-05-15T01:05:41Z INFO  nemo::io::formats::rdf_reader] ... processed 6070000000 triples
+[2024-05-15T01:06:03Z INFO  nemo::io::formats::rdf_reader] ... processed 6080000000 triples
+[2024-05-15T01:06:26Z INFO  nemo::io::formats::rdf_reader] ... processed 6090000000 triples
+[2024-05-15T01:06:49Z INFO  nemo::io::formats::rdf_reader] ... processed 6100000000 triples
+[2024-05-15T01:07:12Z INFO  nemo::io::formats::rdf_reader] ... processed 6110000000 triples
+[2024-05-15T01:07:23Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%227355258%22,%20%227355258%22]': Invalid IRI code point '[' on line 6114572687 at position 140
+[2024-05-15T01:07:36Z INFO  nemo::io::formats::rdf_reader] ... processed 6120000000 triples
+[2024-05-15T01:08:01Z INFO  nemo::io::formats::rdf_reader] ... processed 6130000000 triples
+[2024-05-15T01:08:25Z INFO  nemo::io::formats::rdf_reader] ... processed 6140000000 triples
+[2024-05-15T01:08:27Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.imprensaoficial.com.br/DO/BuscaDO2001Resultado_11_3.aspx?filtropalavraschave=%22PREFEITURA+MUNICIPAL+DE+EMBU%22&f=xhitlist&xhitlist_vpc=first&xhitlist_x=Advanced&xhitlist_q=%5bfield+%27dc%3': Invalid IRI percent encoding '%3' on line 6140940776 at position 290
+[2024-05-15T01:08:49Z INFO  nemo::io::formats::rdf_reader] ... processed 6150000000 triples
+[2024-05-15T01:09:12Z INFO  nemo::io::formats::rdf_reader] ... processed 6160000000 triples
+[2024-05-15T01:09:36Z INFO  nemo::io::formats::rdf_reader] ... processed 6170000000 triples
+[2024-05-15T01:09:59Z INFO  nemo::io::formats::rdf_reader] ... processed 6180000000 triples
+[2024-05-15T01:10:23Z INFO  nemo::io::formats::rdf_reader] ... processed 6190000000 triples
+[2024-05-15T01:10:46Z INFO  nemo::io::formats::rdf_reader] ... processed 6200000000 triples
+[2024-05-15T01:11:10Z INFO  nemo::io::formats::rdf_reader] ... processed 6210000000 triples
+[2024-05-15T01:11:34Z INFO  nemo::io::formats::rdf_reader] ... processed 6220000000 triples
+[2024-05-15T01:11:58Z INFO  nemo::io::formats::rdf_reader] ... processed 6230000000 triples
+[2024-05-15T01:12:03Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://matrix.to/#/#xmpp_speed-dreams-dev_chat.jabberfr.org:matrix.org': Invalid IRI code point '#' on line 6232101436 at position 160
+[2024-05-15T01:12:04Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://sunnetwork.in/tv-channel-details.aspx?Channelid=2&channelname=SURYA%Tv': Invalid IRI percent encoding '%Tv' on line 6232735313 at position 165
+[2024-05-15T01:12:21Z INFO  nemo::io::formats::rdf_reader] ... processed 6240000000 triples
+[2024-05-15T01:12:44Z INFO  nemo::io::formats::rdf_reader] ... processed 6250000000 triples
+[2024-05-15T01:13:06Z INFO  nemo::io::formats::rdf_reader] ... processed 6260000000 triples
+[2024-05-15T01:13:28Z INFO  nemo::io::formats::rdf_reader] ... processed 6270000000 triples
+[2024-05-15T01:13:52Z INFO  nemo::io::formats::rdf_reader] ... processed 6280000000 triples
+[2024-05-15T01:14:14Z INFO  nemo::io::formats::rdf_reader] ... processed 6290000000 triples
+[2024-05-15T01:14:36Z INFO  nemo::io::formats::rdf_reader] ... processed 6300000000 triples
+[2024-05-15T01:14:50Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://www.louvre.fr/jp/oeuvre-notices/%E3%80%8A%E5%B7%9D%E3%81%A8%E6%B9%BE%E3%81%AE%E9%81%A0%E6%99%AF%E3%80%8Q': Invalid IRI percent encoding '%8Q' on line 6306168251 at position 200
+[2024-05-15T01:14:58Z INFO  nemo::io::formats::rdf_reader] ... processed 6310000000 triples
+[2024-05-15T01:15:21Z INFO  nemo::io::formats::rdf_reader] ... processed 6320000000 triples
+[2024-05-15T01:15:43Z INFO  nemo::io::formats::rdf_reader] ... processed 6330000000 triples
+[2024-05-15T01:16:06Z INFO  nemo::io::formats::rdf_reader] ... processed 6340000000 triples
+[2024-05-15T01:16:29Z INFO  nemo::io::formats::rdf_reader] ... processed 6350000000 triples
+[2024-05-15T01:16:52Z INFO  nemo::io::formats::rdf_reader] ... processed 6360000000 triples
+[2024-05-15T01:17:15Z INFO  nemo::io::formats::rdf_reader] ... processed 6370000000 triples
+[2024-05-15T01:17:38Z INFO  nemo::io::formats::rdf_reader] ... processed 6380000000 triples
+[2024-05-15T01:18:01Z INFO  nemo::io::formats::rdf_reader] ... processed 6390000000 triples
+[2024-05-15T01:18:24Z INFO  nemo::io::formats::rdf_reader] ... processed 6400000000 triples
+[2024-05-15T01:18:47Z INFO  nemo::io::formats::rdf_reader] ... processed 6410000000 triples
+[2024-05-15T01:19:10Z INFO  nemo::io::formats::rdf_reader] ... processed 6420000000 triples
+[2024-05-15T01:19:33Z INFO  nemo::io::formats::rdf_reader] ... processed 6430000000 triples
+[2024-05-15T01:19:55Z INFO  nemo::io::formats::rdf_reader] ... processed 6440000000 triples
+[2024-05-15T01:20:18Z INFO  nemo::io::formats::rdf_reader] ... processed 6450000000 triples
+[2024-05-15T01:20:42Z INFO  nemo::io::formats::rdf_reader] ... processed 6460000000 triples
+[2024-05-15T01:21:06Z INFO  nemo::io::formats::rdf_reader] ... processed 6470000000 triples
+[2024-05-15T01:21:29Z INFO  nemo::io::formats::rdf_reader] ... processed 6480000000 triples
+[2024-05-15T01:21:52Z INFO  nemo::io::formats::rdf_reader] ... processed 6490000000 triples
+[2024-05-15T01:22:15Z INFO  nemo::io::formats::rdf_reader] ... processed 6500000000 triples
+[2024-05-15T01:22:37Z INFO  nemo::io::formats::rdf_reader] ... processed 6510000000 triples
+[2024-05-15T01:23:00Z INFO  nemo::io::formats::rdf_reader] ... processed 6520000000 triples
+[2024-05-15T01:23:23Z INFO  nemo::io::formats::rdf_reader] ... processed 6530000000 triples
+[2024-05-15T01:23:47Z INFO  nemo::io::formats::rdf_reader] ... processed 6540000000 triples
+[2024-05-15T01:24:10Z INFO  nemo::io::formats::rdf_reader] ... processed 6550000000 triples
+[2024-05-15T01:24:33Z INFO  nemo::io::formats::rdf_reader] ... processed 6560000000 triples
+[2024-05-15T01:24:56Z INFO  nemo::io::formats::rdf_reader] ... processed 6570000000 triples
+[2024-05-15T01:25:11Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://:www.ppas.cz': Invalid character 'w' on line 6576256336 at position 109
+[2024-05-15T01:25:19Z INFO  nemo::io::formats::rdf_reader] ... processed 6580000000 triples
+[2024-05-15T01:25:42Z INFO  nemo::io::formats::rdf_reader] ... processed 6590000000 triples
+[2024-05-15T01:26:05Z INFO  nemo::io::formats::rdf_reader] ... processed 6600000000 triples
+[2024-05-15T01:26:28Z INFO  nemo::io::formats::rdf_reader] ... processed 6610000000 triples
+[2024-05-15T01:26:51Z INFO  nemo::io::formats::rdf_reader] ... processed 6620000000 triples
+[2024-05-15T01:27:14Z INFO  nemo::io::formats::rdf_reader] ... processed 6630000000 triples
+[2024-05-15T01:27:38Z INFO  nemo::io::formats::rdf_reader] ... processed 6640000000 triples
+[2024-05-15T01:28:01Z INFO  nemo::io::formats::rdf_reader] ... processed 6650000000 triples
+[2024-05-15T01:28:24Z INFO  nemo::io::formats::rdf_reader] ... processed 6660000000 triples
+[2024-05-15T01:28:47Z INFO  nemo::io::formats::rdf_reader] ... processed 6670000000 triples
+[2024-05-15T01:29:10Z INFO  nemo::io::formats::rdf_reader] ... processed 6680000000 triples
+[2024-05-15T01:29:32Z INFO  nemo::io::formats::rdf_reader] ... processed 6690000000 triples
+[2024-05-15T01:29:56Z INFO  nemo::io::formats::rdf_reader] ... processed 6700000000 triples
+[2024-05-15T01:30:21Z INFO  nemo::io::formats::rdf_reader] ... processed 6710000000 triples
+[2024-05-15T01:30:45Z INFO  nemo::io::formats::rdf_reader] ... processed 6720000000 triples
+[2024-05-15T01:30:56Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://ì“ì’¬—§%7D‘ŠÙ.com/': Invalid IRI code point '' on line 6724971253 at position 134
+[2024-05-15T01:31:08Z INFO  nemo::io::formats::rdf_reader] ... processed 6730000000 triples
+[2024-05-15T01:31:31Z INFO  nemo::io::formats::rdf_reader] ... processed 6740000000 triples
+[2024-05-15T01:31:54Z INFO  nemo::io::formats::rdf_reader] ... processed 6750000000 triples
+[2024-05-15T01:32:17Z INFO  nemo::io::formats::rdf_reader] ... processed 6760000000 triples
+[2024-05-15T01:32:41Z INFO  nemo::io::formats::rdf_reader] ... processed 6770000000 triples
+[2024-05-15T01:33:05Z INFO  nemo::io::formats::rdf_reader] ... processed 6780000000 triples
+[2024-05-15T01:33:29Z INFO  nemo::io::formats::rdf_reader] ... processed 6790000000 triples
+[2024-05-15T01:33:53Z INFO  nemo::io::formats::rdf_reader] ... processed 6800000000 triples
+[2024-05-15T01:34:15Z INFO  nemo::io::formats::rdf_reader] ... processed 6810000000 triples
+[2024-05-15T01:34:38Z INFO  nemo::io::formats::rdf_reader] ... processed 6820000000 triples
+[2024-05-15T01:35:01Z INFO  nemo::io::formats::rdf_reader] ... processed 6830000000 triples
+[2024-05-15T01:35:23Z INFO  nemo::io::formats::rdf_reader] ... processed 6840000000 triples
+[2024-05-15T01:35:46Z INFO  nemo::io::formats::rdf_reader] ... processed 6850000000 triples
+[2024-05-15T01:36:08Z INFO  nemo::io::formats::rdf_reader] ... processed 6860000000 triples
+[2024-05-15T01:36:31Z INFO  nemo::io::formats::rdf_reader] ... processed 6870000000 triples
+[2024-05-15T01:36:54Z INFO  nemo::io::formats::rdf_reader] ... processed 6880000000 triples
+[2024-05-15T01:37:17Z INFO  nemo::io::formats::rdf_reader] ... processed 6890000000 triples
+[2024-05-15T01:37:40Z INFO  nemo::io::formats::rdf_reader] ... processed 6900000000 triples
+[2024-05-15T01:38:02Z INFO  nemo::io::formats::rdf_reader] ... processed 6910000000 triples
+[2024-05-15T01:38:25Z INFO  nemo::io::formats::rdf_reader] ... processed 6920000000 triples
+[2024-05-15T01:38:47Z INFO  nemo::io::formats::rdf_reader] ... processed 6930000000 triples
+[2024-05-15T01:39:09Z INFO  nemo::io::formats::rdf_reader] ... processed 6940000000 triples
+[2024-05-15T01:39:17Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 6943532408 at position 103
+[2024-05-15T01:39:32Z INFO  nemo::io::formats::rdf_reader] ... processed 6950000000 triples
+[2024-05-15T01:39:55Z INFO  nemo::io::formats::rdf_reader] ... processed 6960000000 triples
+[2024-05-15T01:40:18Z INFO  nemo::io::formats::rdf_reader] ... processed 6970000000 triples
+[2024-05-15T01:40:42Z INFO  nemo::io::formats::rdf_reader] ... processed 6980000000 triples
+[2024-05-15T01:44:43Z INFO  nemo::io::formats::rdf_reader] ... processed 6990000000 triples
+[2024-05-15T01:45:06Z INFO  nemo::io::formats::rdf_reader] ... processed 7000000000 triples
+[2024-05-15T01:45:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7010000000 triples
+[2024-05-15T01:45:52Z INFO  nemo::io::formats::rdf_reader] ... processed 7020000000 triples
+[2024-05-15T01:46:15Z INFO  nemo::io::formats::rdf_reader] ... processed 7030000000 triples
+[2024-05-15T01:46:39Z INFO  nemo::io::formats::rdf_reader] ... processed 7040000000 triples
+[2024-05-15T01:47:01Z INFO  nemo::io::formats::rdf_reader] ... processed 7050000000 triples
+[2024-05-15T01:47:23Z INFO  nemo::io::formats::rdf_reader] ... processed 7060000000 triples
+[2024-05-15T01:47:46Z INFO  nemo::io::formats::rdf_reader] ... processed 7070000000 triples
+[2024-05-15T01:48:07Z INFO  nemo::io::formats::rdf_reader] ... processed 7080000000 triples
+[2024-05-15T01:48:28Z INFO  nemo::io::formats::rdf_reader] ... processed 7090000000 triples
+[2024-05-15T01:48:50Z INFO  nemo::io::formats::rdf_reader] ... processed 7100000000 triples
+[2024-05-15T01:49:13Z INFO  nemo::io::formats::rdf_reader] ... processed 7110000000 triples
+[2024-05-15T01:49:32Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://:www.amirhosseinmashhuriazar.ir': Invalid character 'w' on line 7118417527 at position 129
+[2024-05-15T01:49:36Z INFO  nemo::io::formats::rdf_reader] ... processed 7120000000 triples
+[2024-05-15T01:49:58Z INFO  nemo::io::formats::rdf_reader] ... processed 7130000000 triples
+[2024-05-15T01:50:22Z INFO  nemo::io::formats::rdf_reader] ... processed 7140000000 triples
+[2024-05-15T01:50:47Z INFO  nemo::io::formats::rdf_reader] ... processed 7150000000 triples
+[2024-05-15T01:51:05Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://:www.joancrisol.com': Invalid character 'w' on line 7157725551 at position 117
+[2024-05-15T01:51:10Z INFO  nemo::io::formats::rdf_reader] ... processed 7160000000 triples
+[2024-05-15T01:51:23Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'Http://:www.radarch.org/site': Invalid character 'w' on line 7165398455 at position 118
+[2024-05-15T01:51:33Z INFO  nemo::io::formats::rdf_reader] ... processed 7170000000 triples
+[2024-05-15T01:51:57Z INFO  nemo::io::formats::rdf_reader] ... processed 7180000000 triples
+[2024-05-15T01:52:20Z INFO  nemo::io::formats::rdf_reader] ... processed 7190000000 triples
+[2024-05-15T01:52:43Z INFO  nemo::io::formats::rdf_reader] ... processed 7200000000 triples
+[2024-05-15T01:53:06Z INFO  nemo::io::formats::rdf_reader] ... processed 7210000000 triples
+[2024-05-15T01:53:17Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://elibrary.unm.edu/sora/jrr/index.php#http://elibrary.unm.edu/sora/jrr/index.php#': Invalid IRI code point '#' on line 7214991884 at position 174
+[2024-05-15T01:53:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7220000000 triples
+[2024-05-15T01:53:53Z INFO  nemo::io::formats::rdf_reader] ... processed 7230000000 triples
+[2024-05-15T01:54:16Z INFO  nemo::io::formats::rdf_reader] ... processed 7240000000 triples
+[2024-05-15T01:54:39Z INFO  nemo::io::formats::rdf_reader] ... processed 7250000000 triples
+[2024-05-15T01:55:02Z INFO  nemo::io::formats::rdf_reader] ... processed 7260000000 triples
+[2024-05-15T01:55:24Z INFO  nemo::io::formats::rdf_reader] ... processed 7270000000 triples
+[2024-05-15T01:55:42Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://web.libera.chat/#arianne,#arianne-chat': Invalid IRI code point '#' on line 7277791392 at position 135
+[2024-05-15T01:55:46Z INFO  nemo::io::formats::rdf_reader] ... processed 7280000000 triples
+[2024-05-15T01:56:08Z INFO  nemo::io::formats::rdf_reader] ... processed 7290000000 triples
+[2024-05-15T01:56:32Z INFO  nemo::io::formats::rdf_reader] ... processed 7300000000 triples
+[2024-05-15T01:56:54Z INFO  nemo::io::formats::rdf_reader] ... processed 7310000000 triples
+[2024-05-15T01:57:16Z INFO  nemo::io::formats::rdf_reader] ... processed 7320000000 triples
+[2024-05-15T01:57:37Z INFO  nemo::io::formats::rdf_reader] ... processed 7330000000 triples
+[2024-05-15T01:58:00Z INFO  nemo::io::formats::rdf_reader] ... processed 7340000000 triples
+[2024-05-15T01:58:22Z INFO  nemo::io::formats::rdf_reader] ... processed 7350000000 triples
+[2024-05-15T01:58:45Z INFO  nemo::io::formats::rdf_reader] ... processed 7360000000 triples
+[2024-05-15T01:59:08Z INFO  nemo::io::formats::rdf_reader] ... processed 7370000000 triples
+[2024-05-15T01:59:30Z INFO  nemo::io::formats::rdf_reader] ... processed 7380000000 triples
+[2024-05-15T01:59:53Z INFO  nemo::io::formats::rdf_reader] ... processed 7390000000 triples
+[2024-05-15T02:00:16Z INFO  nemo::io::formats::rdf_reader] ... processed 7400000000 triples
+[2024-05-15T02:00:39Z INFO  nemo::io::formats::rdf_reader] ... processed 7410000000 triples
+[2024-05-15T02:01:02Z INFO  nemo::io::formats::rdf_reader] ... processed 7420000000 triples
+[2024-05-15T02:01:25Z INFO  nemo::io::formats::rdf_reader] ... processed 7430000000 triples
+[2024-05-15T02:01:48Z INFO  nemo::io::formats::rdf_reader] ... processed 7440000000 triples
+[2024-05-15T02:02:11Z INFO  nemo::io::formats::rdf_reader] ... processed 7450000000 triples
+[2024-05-15T02:02:33Z INFO  nemo::io::formats::rdf_reader] ... processed 7460000000 triples
+[2024-05-15T02:02:56Z INFO  nemo::io::formats::rdf_reader] ... processed 7470000000 triples
+[2024-05-15T02:03:20Z INFO  nemo::io::formats::rdf_reader] ... processed 7480000000 triples
+[2024-05-15T02:03:44Z INFO  nemo::io::formats::rdf_reader] ... processed 7490000000 triples
+[2024-05-15T02:04:07Z INFO  nemo::io::formats::rdf_reader] ... processed 7500000000 triples
+[2024-05-15T02:04:31Z INFO  nemo::io::formats::rdf_reader] ... processed 7510000000 triples
+[2024-05-15T02:04:53Z INFO  nemo::io::formats::rdf_reader] ... processed 7520000000 triples
+[2024-05-15T02:05:15Z INFO  nemo::io::formats::rdf_reader] ... processed 7530000000 triples
+[2024-05-15T02:05:38Z INFO  nemo::io::formats::rdf_reader] ... processed 7540000000 triples
+[2024-05-15T02:06:01Z INFO  nemo::io::formats::rdf_reader] ... processed 7550000000 triples
+[2024-05-15T02:06:24Z INFO  nemo::io::formats::rdf_reader] ... processed 7560000000 triples
+[2024-05-15T02:06:47Z INFO  nemo::io::formats::rdf_reader] ... processed 7570000000 triples
+[2024-05-15T02:07:11Z INFO  nemo::io::formats::rdf_reader] ... processed 7580000000 triples
+[2024-05-15T02:07:34Z INFO  nemo::io::formats::rdf_reader] ... processed 7590000000 triples
+[2024-05-15T02:07:57Z INFO  nemo::io::formats::rdf_reader] ... processed 7600000000 triples
+[2024-05-15T02:08:20Z INFO  nemo::io::formats::rdf_reader] ... processed 7610000000 triples
+[2024-05-15T02:08:43Z INFO  nemo::io::formats::rdf_reader] ... processed 7620000000 triples
+[2024-05-15T02:09:06Z INFO  nemo::io::formats::rdf_reader] ... processed 7630000000 triples
+[2024-05-15T02:09:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7640000000 triples
+[2024-05-15T02:09:51Z INFO  nemo::io::formats::rdf_reader] ... processed 7650000000 triples
+[2024-05-15T02:10:15Z INFO  nemo::io::formats::rdf_reader] ... processed 7660000000 triples
+[2024-05-15T02:10:38Z INFO  nemo::io::formats::rdf_reader] ... processed 7670000000 triples
+[2024-05-15T02:11:01Z INFO  nemo::io::formats::rdf_reader] ... processed 7680000000 triples
+[2024-05-15T02:11:23Z INFO  nemo::io::formats::rdf_reader] ... processed 7690000000 triples
+[2024-05-15T02:11:46Z INFO  nemo::io::formats::rdf_reader] ... processed 7700000000 triples
+[2024-05-15T02:11:47Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://norgeskart.no/geoportal/#!?zoom=3&lon=626883.62&lat=7113922.81&wms=http:%2F%2Fwms.miljodirektoratet.no%2Fgeoserver%2Ffjordkatalogen%2Fwms&project=geonorge&layers=1002#6%252F-58549%252F6698183%252Fl%252Fwms%252F%255Bhttp:%252F%252Fwms.miljodirektoratet.no%252Fgeoserver%252Ffjordkatalogen%252Fwms%255D%252F+fjordkatalogen_grenser%252F+fjordkatalogen_omrade': Invalid IRI code point '#' on line 7700163903 at position 448
+[2024-05-15T02:12:09Z INFO  nemo::io::formats::rdf_reader] ... processed 7710000000 triples
+[2024-05-15T02:12:32Z INFO  nemo::io::formats::rdf_reader] ... processed 7720000000 triples
+[2024-05-15T02:12:57Z INFO  nemo::io::formats::rdf_reader] ... processed 7730000000 triples
+[2024-05-15T02:13:21Z INFO  nemo::io::formats::rdf_reader] ... processed 7740000000 triples
+[2024-05-15T02:13:37Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://kaminomachi.jp/ŽO“‡%7D‘ŠÙ/': Invalid IRI code point '' on line 7746999472 at position 135
+[2024-05-15T02:13:44Z INFO  nemo::io::formats::rdf_reader] ... processed 7750000000 triples
+[2024-05-15T02:14:08Z INFO  nemo::io::formats::rdf_reader] ... processed 7760000000 triples
+[2024-05-15T02:14:30Z INFO  nemo::io::formats::rdf_reader] ... processed 7770000000 triples
+[2024-05-15T02:14:51Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 7779052715 at position 103
+[2024-05-15T02:14:53Z INFO  nemo::io::formats::rdf_reader] ... processed 7780000000 triples
+[2024-05-15T02:15:17Z INFO  nemo::io::formats::rdf_reader] ... processed 7790000000 triples
+[2024-05-15T02:15:41Z INFO  nemo::io::formats::rdf_reader] ... processed 7800000000 triples
+[2024-05-15T02:16:05Z INFO  nemo::io::formats::rdf_reader] ... processed 7810000000 triples
+[2024-05-15T02:16:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7820000000 triples
+[2024-05-15T02:16:51Z INFO  nemo::io::formats::rdf_reader] ... processed 7830000000 triples
+[2024-05-15T02:17:14Z INFO  nemo::io::formats::rdf_reader] ... processed 7840000000 triples
+[2024-05-15T02:17:36Z INFO  nemo::io::formats::rdf_reader] ... processed 7850000000 triples
+[2024-05-15T02:17:59Z INFO  nemo::io::formats::rdf_reader] ... processed 7860000000 triples
+[2024-05-15T02:18:21Z INFO  nemo::io::formats::rdf_reader] ... processed 7870000000 triples
+[2024-05-15T02:18:44Z INFO  nemo::io::formats::rdf_reader] ... processed 7880000000 triples
+[2024-05-15T02:19:07Z INFO  nemo::io::formats::rdf_reader] ... processed 7890000000 triples
+[2024-05-15T02:19:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7900000000 triples
+[2024-05-15T02:19:52Z INFO  nemo::io::formats::rdf_reader] ... processed 7910000000 triples
+[2024-05-15T02:20:15Z INFO  nemo::io::formats::rdf_reader] ... processed 7920000000 triples
+[2024-05-15T02:20:38Z INFO  nemo::io::formats::rdf_reader] ... processed 7930000000 triples
+[2024-05-15T02:21:00Z INFO  nemo::io::formats::rdf_reader] ... processed 7940000000 triples
+[2024-05-15T02:21:23Z INFO  nemo::io::formats::rdf_reader] ... processed 7950000000 triples
+[2024-05-15T02:21:44Z INFO  nemo::io::formats::rdf_reader] ... processed 7960000000 triples
+[2024-05-15T02:22:07Z INFO  nemo::io::formats::rdf_reader] ... processed 7970000000 triples
+[2024-05-15T02:22:29Z INFO  nemo::io::formats::rdf_reader] ... processed 7980000000 triples
+[2024-05-15T02:22:53Z INFO  nemo::io::formats::rdf_reader] ... processed 7990000000 triples
+[2024-05-15T02:23:17Z INFO  nemo::io::formats::rdf_reader] ... processed 8000000000 triples
+[2024-05-15T02:23:40Z INFO  nemo::io::formats::rdf_reader] ... processed 8010000000 triples
+[2024-05-15T02:24:03Z INFO  nemo::io::formats::rdf_reader] ... processed 8020000000 triples
+[2024-05-15T02:24:24Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://vestnik.dgu.ru/pol.aspx?razdel=1&rznameru=%u0421%u0435%u0440%u0438%u044f3%3a+%u041e%u0431%u0449%u0435%u0441%u0442%u0432%u0435%u043d%u043d%u044b%u0435+%u043d%u0430%u0443%u043a%u0438&rznameen=Social+sciences': Invalid IRI percent encoding '%u0' on line 8029108603 at position 301
+[2024-05-15T02:24:26Z INFO  nemo::io::formats::rdf_reader] ... processed 8030000000 triples
+[2024-05-15T02:24:49Z INFO  nemo::io::formats::rdf_reader] ... processed 8040000000 triples
+[2024-05-15T02:25:12Z INFO  nemo::io::formats::rdf_reader] ... processed 8050000000 triples
+[2024-05-15T02:25:13Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%227187109%22,%20%227187109%22]': Invalid IRI code point '[' on line 8050122880 at position 140
+[2024-05-15T02:25:36Z INFO  nemo::io::formats::rdf_reader] ... processed 8060000000 triples
+[2024-05-15T02:25:58Z INFO  nemo::io::formats::rdf_reader] ... processed 8070000000 triples
+[2024-05-15T02:26:21Z INFO  nemo::io::formats::rdf_reader] ... processed 8080000000 triples
+[2024-05-15T02:26:28Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://dbs.ossolineum.pl/lwow/pozycja.php?id=6053&s=9&search=b%': Invalid IRI percent encoding '%' on line 8083371840 at position 154
+[2024-05-15T02:26:43Z INFO  nemo::io::formats::rdf_reader] ... processed 8090000000 triples
+[2024-05-15T02:27:05Z INFO  nemo::io::formats::rdf_reader] ... processed 8100000000 triples
+[2024-05-15T02:27:26Z INFO  nemo::io::formats::rdf_reader] ... processed 8110000000 triples
+[2024-05-15T02:27:47Z INFO  nemo::io::formats::rdf_reader] ... processed 8120000000 triples
+[2024-05-15T02:28:03Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://matrix.to/#/#pg-i18n:aragon.sh': Invalid IRI code point '#' on line 8126631835 at position 130
+[2024-05-15T02:28:10Z INFO  nemo::io::formats::rdf_reader] ... processed 8130000000 triples
+[2024-05-15T02:28:33Z INFO  nemo::io::formats::rdf_reader] ... processed 8140000000 triples
+[2024-05-15T02:28:42Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=2301&klassi=004.00032.%&anzeigeKlassi=004': Invalid IRI percent encoding '%&a' on line 8143680897 at position 194
+[2024-05-15T02:28:56Z INFO  nemo::io::formats::rdf_reader] ... processed 8150000000 triples
+[2024-05-15T02:29:19Z INFO  nemo::io::formats::rdf_reader] ... processed 8160000000 triples
+[2024-05-15T02:29:32Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'http://orlando.cambridge.org/protected/svPeople?formname=r&subform=1&person_id=rossca&adt_start_year=0612&crumbtrail=on&dt_end_cal=AD&dt_end_day=05&dt_end_month=11&dt_end_year=2018&dt_start_cal=BC&dts_historical=0612--+BC%3A2018-10-19&dts_lives=0612--+BC%': Invalid IRI percent encoding '%' on line 8165071762 at position 345
+[2024-05-15T02:29:43Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing IRI 'pubag:[%224805185%22,%20%224805185%22]': Invalid IRI code point '[' on line 8169496673 at position 140
+[2024-05-15T02:29:44Z INFO  nemo::io::formats::rdf_reader] ... processed 8170000000 triples
+[2024-05-15T02:30:04Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 8178513301 at position 232
+[2024-05-15T02:30:04Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 8178513302 at position 235
+[2024-05-15T02:30:04Z INFO  nemo::io::formats::rdf_reader] Ignoring malformed RDF: error while parsing language tag 'zh-classical': A subtag may be eight characters in length at maximum on line 8178513303 at position 212
+[2024-05-15T02:30:08Z INFO  nemo::io::formats::rdf_reader] ... processed 8180000000 triples
+[2024-05-15T02:30:28Z INFO  nemo::io::formats::rdf_reader] Finished import: processed 8188719226 triples
+[2024-05-15T03:31:02Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved temporary table: 83 entries (7.9 KB)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved permanent table inversePropEntities (1) Permutation { map: {} } with 83 entries (7.9 KB)
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 23434547 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 2: APPLYING RULE 0 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [s, _EQUALITY_0, o]
+       (1) [_EQUALITY_0, s, o]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 3: APPLYING RULE 1 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [e1, e2, _EQUALITY_0, p1, _EQUALITY_1, p2]
+       (1) [e2, e1, _EQUALITY_1, p2, _EQUALITY_0, p1]
+       (2) [e2, e1, _EQUALITY_0, p1, _EQUALITY_1, p2]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved temporary table: 83 entries (7.9 KB)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved permanent table inverse (3) Permutation { map: {} } with 83 entries (7.9 KB)
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 1 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 4: APPLYING RULE 1 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [e1, e2, _EQUALITY_0, p1, _EQUALITY_1, p2]
+       (1) [e2, e1, _EQUALITY_1, p2, _EQUALITY_0, p1]
+       (2) [e2, e1, _EQUALITY_0, p1, _EQUALITY_1, p2]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 5: APPLYING RULE 2 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [s, _1]
+       (1) [_1, s]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved temporary table: 83 entries (3.7 KB)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved permanent table pred (5) Permutation { map: {} } with 83 entries (3.8 KB)
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 6: APPLYING RULE 2 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [s, _1]
+       (1) [_1, s]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 7: APPLYING RULE 3 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [_3, o]
+       (1) [o, _3]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved temporary table: 82 entries (3.7 KB)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Saved permanent table pred (7) Permutation { map: {} } with 81 entries (3.8 KB)
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 8: APPLYING RULE 3 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [_3, o]
+       (1) [o, _3]
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T03:39:15Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T03:39:15Z INFO  nemo::execution::execution_engine] <<< 9: APPLYING RULE 4 >>>
+[2024-05-15T03:39:15Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, o]
+       (1) [p, o, s]
+[2024-05-15T05:11:56Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:12:16Z INFO  nemo_physical::management::database] Saved temporary table: 58847791 entries (719.9 MB)
+[2024-05-15T05:12:16Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:12:28Z INFO  nemo_physical::management::database] Saved temporary table: 40372636 entries (484.5 MB)
+[2024-05-15T05:12:28Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:12:37Z INFO  nemo_physical::management::database] Saved temporary table: 40372636 entries (484.5 MB)
+[2024-05-15T05:12:37Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Saved permanent table objCountPerPredAndSource (9) Permutation { map: {} } with 40372636 entries (484.5 MB)
+[2024-05-15T05:12:44Z INFO  nemo::execution::execution_engine] Rule duration: 5608398 ms
+[2024-05-15T05:12:44Z INFO  nemo::execution::execution_engine] <<< 10: APPLYING RULE 4 >>>
+[2024-05-15T05:12:44Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, o]
+       (1) [p, o, s]
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:44Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:12:44Z INFO  nemo::execution::execution_engine] <<< 11: APPLYING RULE 5 >>>
+[2024-05-15T05:12:44Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, _5]
+       (1) [_5, s, p]
+       (2) [s, p, _5]
+[2024-05-15T05:12:44Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:12:50Z INFO  nemo_physical::management::database] Saved temporary table: 40372636 entries (161.5 MB)
+[2024-05-15T05:12:50Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Saved temporary table: 163 entries (9.2 KB)
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Saved temporary table: 163 entries (9.1 KB)
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Saved permanent table totalSubjCountPerPred (11) Permutation { map: {} } with 163 entries (9.2 KB)
+[2024-05-15T05:12:51Z INFO  nemo::execution::execution_engine] Rule duration: 6995 ms
+[2024-05-15T05:12:51Z INFO  nemo::execution::execution_engine] <<< 12: APPLYING RULE 5 >>>
+[2024-05-15T05:12:51Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, _5]
+       (1) [_5, s, p]
+       (2) [s, p, _5]
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:12:51Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:12:51Z INFO  nemo::execution::execution_engine] <<< 13: APPLYING RULE 6 >>>
+[2024-05-15T05:12:51Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, count, totalSubj]
+       (1) [p, totalSubj, count, s]
+       (2) [p, count, s, totalSubj]
+[2024-05-15T05:12:51Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:20Z INFO  nemo_physical::management::database] Saved temporary table: 40372636 entries (161.6 MB)
+[2024-05-15T05:13:20Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 163 entries (14.3 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 163 entries (9.1 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved permanent table avgObjCountPerPredicate (13) Permutation { map: {} } with 163 entries (9.2 KB)
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 30853 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 14: APPLYING RULE 6 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [p, s, count, totalSubj]
+       (1) [p, totalSubj, count, s]
+       (2) [p, count, s, totalSubj]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Aggregate output
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Aggregation
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 15: APPLYING RULE 7 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [left, right, countLeft, countRight]
+       (1) [right, left, countRight, countLeft]
+       (2) [right, left, countLeft, countRight]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved permanent table rightSmaller (15) Permutation { map: {} } with 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 16: APPLYING RULE 7 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [left, right, countLeft, countRight]
+       (1) [right, left, countRight, countLeft]
+       (2) [right, left, countLeft, countRight]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 17: APPLYING RULE 8 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [right]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved permanent table predToKeep (17) Permutation { map: {} } with 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 18: APPLYING RULE 8 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [right]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 19: APPLYING RULE 9 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [left, right]
+       (1) [right, left]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Input for Project/Reorder
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 43 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved permanent table predToKeep (19) Permutation { map: {} } with 43 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] <<< 20: APPLYING RULE 9 >>>
+[2024-05-15T05:13:22Z INFO  nemo::execution::rule_execution] Available orders: 
+       (0) [left, right]
+       (1) [right, left]
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Input for Project/Reorder
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Saved temporary table: 40 entries (3.6 KB)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Body
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Execution step: Duplicate Elimination (Datalog)
+[2024-05-15T05:13:22Z INFO  nemo_physical::management::database] Trie does not contain any elements
+[2024-05-15T05:13:22Z INFO  nemo::execution::execution_engine] Rule duration: 0 ms
+[2024-05-15T05:13:22Z INFO  nmo] Reasoning done
+[2024-05-15T05:13:22Z INFO  nmo] writing output
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "inverse" to "results/inverse.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 83 tuples (dropped 0)
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "avgObjCountPerPredicate" to "results/avgObjCountPerPredicate.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 163 tuples (dropped 0)
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "rightSmaller" to "results/rightSmaller.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 40 tuples (dropped 0)
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "totalSubjCountPerPred" to "results/totalSubjCountPerPred.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 163 tuples (dropped 0)
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "inversePropEntities" to "results/inversePropEntities.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 83 tuples (dropped 0)
+[2024-05-15T05:13:22Z INFO  nemo::io::export_manager] Exporting predicate "objCountPerPredAndSource" to "results/objCountPerPredAndSource.csv.gz"
+[2024-05-15T05:13:22Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:13:34Z INFO  nemo::io::formats::dsv_writer] ... processed 10000000 tuples
+[2024-05-15T05:13:46Z INFO  nemo::io::formats::dsv_writer] ... processed 20000000 tuples
+[2024-05-15T05:13:59Z INFO  nemo::io::formats::dsv_writer] ... processed 30000000 tuples
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] ... processed 40000000 tuples
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 40372636 tuples (dropped 0)
+[2024-05-15T05:14:12Z INFO  nemo_physical::management::database] Execution step: Combining Tables
+[2024-05-15T05:14:12Z INFO  nemo_physical::management::database] Saved permanent table predToKeep (0-20) Permutation { map: {} } with 83 entries (3.8 KB)
+[2024-05-15T05:14:12Z INFO  nemo::io::export_manager] Exporting predicate "predToKeep" to "results/predToKeep.csv.gz"
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 83 tuples (dropped 0)
+[2024-05-15T05:14:12Z INFO  nemo_physical::management::database] Execution step: Combining Tables
+[2024-05-15T05:14:12Z INFO  nemo_physical::management::database] Saved permanent table pred (0-8) Permutation { map: {} } with 164 entries (4.1 KB)
+[2024-05-15T05:14:12Z INFO  nemo::io::export_manager] Exporting predicate "pred" to "results/pred.csv.gz"
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] Starting data export
+[2024-05-15T05:14:12Z INFO  nemo::io::formats::dsv_writer] Finished export: processed 164 tuples (dropped 0)
+Reasoning completed in 29132709ms. Derived 40373415 facts.
+   Data import:     28503719ms
+   Reasoning:         578630ms
+   Data export:        50359ms
+
+Timing report:
+
+ nemo [system/process/thread (ms): 29132709/29132710/29131179]
+ ├─ Reading & Preprocessing [0.0%, 25ms, 1x]
+ ├─ Reasoning [99.8%, 29080797ms, 1x]
+ │  ├─ Rules [100.0%, 29080797ms, 1x]
+ │  │  ├─ Rule 0 [80.6%, 23434547ms, 2x]
+ │  │  ├─ Rule 4 [19.3%, 5608398ms, 2x]
+ │  │  ├─ Rule 6 [0.1%, 30853ms, 2x]
+ │  │  ├─ Rule 5 [0.0%, 6995ms, 2x]
+ │  │  ├─ Rule 1 [0.0%, 1ms, 2x]
+ │  │  ├─ Rule 7 [0.0%, 0ms, 2x]
+ │  │  ├─ Rule 9 [0.0%, 0ms, 2x]
+ │  │  ├─ Rule 3 [0.0%, 0ms, 2x]
+ │  │  ├─ Rule 2 [0.0%, 0ms, 2x]
+ │  │  └─ Rule 8 [0.0%, 0ms, 2x]
+ │  └─ Execution [100.0%, 29080797ms, 1x]
+ │     ├─ Load Table [98.0%, 28502196ms, 22x]
+ │     ├─ Required Reorder [19.1%, 5561059ms, 1x]
+ │     ├─ Body [1.9%, 548852ms, 20x]
+ │     ├─ Aggregate output [0.0%, 13932ms, 6x]
+ │     ├─ Aggregation [0.0%, 9278ms, 6x]
+ │     ├─ Duplicate Elimination (Datalog) [0.0%, 6396ms, 20x]
+ │     ├─ Combining Tables [0.0%, 0ms, 2x]
+ │     └─ Input for Project [0.0%, 0ms, 0x]
+ │        └─ Reorder [0.0%, 0ms, 2x]
+ └─ Output & Final Materialization [0.2%, 50356ms, 1x]
+
+
+Memory report:
+
+ Chase (220.5 GB)
+ ├─ wikidata (220.0 GB)
+ │  └─ Step 0 (220.0 GB)
+ ├─ objCountPerPredAndSource (484.5 MB)
+ │  └─ Step 9 (484.5 MB)
+ ├─ pred (11.7 KB)
+ │  ├─ Steps 0-2 (4.1 KB)
+ │  ├─ Step 5 (3.8 KB)
+ │  └─ Step 7 (3.8 KB)
+ ├─ predToKeep (11.0 KB)
+ │  ├─ Steps 0-2 (3.8 KB)
+ │  ├─ Step 19 (3.6 KB)
+ │  └─ Step 17 (3.6 KB)
+ ├─ totalSubjCountPerPred (9.2 KB)
+ │  └─ Step 11 (9.2 KB)
+ ├─ avgObjCountPerPredicate (9.2 KB)
+ │  └─ Step 13 (9.2 KB)
+ ├─ inversePropEntities (7.9 KB)
+ │  └─ Step 1 (7.9 KB)
+ ├─ inverse (7.9 KB)
+ │  └─ Step 3 (7.9 KB)
+ └─ rightSmaller (3.6 KB)
+    └─ Step 15 (3.6 KB)
+
