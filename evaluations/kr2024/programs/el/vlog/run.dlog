@@ -1,0 +1,13 @@
+
+inf_init(VC) :- isMainClass(VC)
+inf_init(VC) :- inf_ex(VE,VR,VC)
+inf_subClassOf(VC,VC) :- inf_init(VC)
+inf_subClassOf(VC,<http://www.w3.org/2002/07/owl#Thing>) :- isMainClass(VC)
+inf_subClassOf(VC,VD1),inf_subClassOf(VC,VD2) :- inf_subClassOf(VC,VY),conj(VY,VD1,VD2)
+inf_subClassOf(VC,VI) :- inf_subClassOf(VC,VD1),inf_subClassOf(VC,VD2),conj(VI,VD1,VD2),isSubClass(VI)
+inf_ex(VE,VR,VC) :- inf_subClassOf(VE,VY),exists(VY,VR,VC)
+inf_subClassOf(VE,VY) :- inf_ex(VE,VR,VC),inf_subClassOf(VC,VD),subProp(VR,VS),exists(VY,VS,VD),isSubClass(VY)
+inf_ex(VE,VS,VD) :- inf_ex(VE,VR1,VC),inf_ex(VC,VR2,VD),subProp(VR1,VS1),subProp(VR2,VS2),subPropChain(VS1,VS2,VS)
+inf_subClassOf(VC,VE) :- inf_subClassOf(VC,VD),subClassOf(VD,VE)
+inf_subClassOf(VE,<http://www.w3.org/2002/07/owl#Nothing>) :- inf_ex(VE,VR,VC),inf_subClassOf(VC,V_EQUALITY_0)
+mainSubClassOf(VA,VB) :- inf_subClassOf(VA,VB),isMainClass(VA),isMainClass(VB)

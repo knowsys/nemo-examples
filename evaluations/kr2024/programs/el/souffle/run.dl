@@ -1,0 +1,101 @@
+/// Implements EL reasoning based on the (optimized) encoding described here:
+/// https://link.springer.com/article/10.1007/s10817-013-9296-3
+/// 
+/// The description of rules at the bottom reference the names from Figure 3.
+
+/// This file assumes a normalized owl ontology to be present
+
+// nf_isMainClass(c): class is an "interesting" class (not just an auxiliary class expression)
+.decl  nf_isMainClass(c: symbol)
+.input nf_isMainClass(IO=file, filename="../data/isMainClass.csv.gz", delimiter=",")
+// nf_isSubClass(c): class occurs in a subclass position (i.e., negatively) 
+.decl  nf_isSubClass(c: symbol)
+.input nf_isSubClass(IO=file, filename="../data/isSubClass.csv.gz", delimiter=",")
+// nf_conj(c, d1, d2): c is the conjunction of d1 and d2
+.decl  nf_conj(c: symbol, d1: symbol, d2: symbol)
+.input nf_conj(IO=file, filename="../data/conj.csv.gz", delimiter=",") 
+// nf_exists(e, r, c): Every e has an r-relation to a c
+.decl  nf_exists(e: symbol, r: symbol, c: symbol)
+.input nf_exists(IO=file, filename="../data/exists.csv.gz", delimiter=",") 
+// nf_subClassOf(c, d): Every member of c is a member of d
+.decl  nf_subClassOf(c: symbol, d: symbol)
+.input nf_subClassOf(IO=file, filename="../data/subClassOf.csv.gz", delimiter=",")
+// nf_subPropChain(s1, s2, s): Roles S1 composed with S2 are a subproperty of the role S 
+.decl  nf_subPropChain(s1: symbol, s2: symbol, s: symbol)
+.input nf_subPropChain(IO=file, filename="../data/subPropChain.csv.gz", delimiter=",") 
+// nf_subProp(r, s): Role r is a subproperty of the role s
+.decl  nf_subProp(r: symbol, s: symbol)
+.input nf_subProp(IO=file, filename="../data/subProp.csv.gz", delimiter=",") 
+
+/// Inference rules
+
+.decl inf_init(c: symbol)
+.decl inf_subClassOf(c: symbol, d: symbol)
+.decl inf_ex(e: symbol, r: symbol, c: symbol)
+.decl mainSubClassOf(c: symbol, d: symbol)
+
+// Start classification for all named classes
+inf_init(C) :- nf_isMainClass(C) .
+// R_init
+inf_init(C) :- inf_ex(_, _, C) .
+
+// R_0: Every class is a sub class of itself
+inf_subClassOf(C, C) :- inf_init(C) .
+// R_\top: Every class is a sub class of owl:Thing
+inf_subClassOf(C, "<http://www.w3.org/2002/07/owl#Thing>") :- nf_isMainClass(C) .
+
+// R_\sqcap^-: 
+//   If C is contained in the intersection of D1 and D1,
+//   then C is contained in D1 and C is contained in D2.
+inf_subClassOf(C, D1), inf_subClassOf(C, D2) :- inf_subClassOf(C, Y), nf_conj(Y, D1, D2) .
+
+// R_\sqcap^+: 
+//   If C is contained in D1 and D2, 
+//   then C is contained in the intersection I of D1 D2
+inf_subClassOf(C, I) :-
+    inf_subClassOf(C, D1), inf_subClassOf(C, D2),
+    nf_conj(I, D1, D2), nf_isSubClass(I) .
+
+// R_\exists^-: 
+//   If every Y has an R-relation to a C
+//   and every E is a Y,
+//   then every E has an R-relation to a C
+inf_ex(E, R, C) :- inf_subClassOf(E, Y), nf_exists(Y, R, C) .
+
+// R_\exists^+: 
+//   If every E has an R-relation to a C,
+//   and every C is a D,
+//   and R is a subproperty of S,
+//   then every E has an S-relation to a D
+//   (i.e. every E is an Y where Y is the class of 
+//   of individuals that have an S-relation to a D)
+inf_subClassOf(E, Y) :-
+    inf_ex(E, R, C), inf_subClassOf(C, D), nf_subProp(R, S), 
+    nf_exists(Y, S, D), nf_isSubClass(Y) .
+
+// R_\circ: 
+//   If E has an R1-relation to a C and C has an R2-relation to a D,
+//   and R1 is a subproperty of S1 and R2 is a subproperty of S2
+//   then E has an S-relation to a D
+inf_ex(E, S, D) :-
+	inf_ex(E, R1, C), inf_ex(C, R2, D),
+	nf_subProp(R1, S1), nf_subProp(R2, S2), 
+    nf_subPropChain(S1, S2, S) .
+
+// R_\sqsubseteq: Transitive closure of the subclass-of relation
+inf_subClassOf(C, E) :- inf_subClassOf(C, D), nf_subClassOf(D, E) .
+
+// R_\bot: If every E has an R-relation to a C but C is empty, then E is also empty
+inf_subClassOf(E, "<http://www.w3.org/2002/07/owl#Nothing>") :-
+    inf_ex(E, _, C), inf_subClassOf(C, "<http://www.w3.org/2002/07/owl#Nothing>") .
+
+/// Extract final results for main classes
+
+mainSubClassOf(A, B) :-
+	inf_subClassOf(A, B), nf_isMainClass(A), nf_isMainClass(B) .
+
+.printsize mainSubClassOf
+
+.printsize inf_ex
+.printsize inf_subClassOf
+.printsize inf_init

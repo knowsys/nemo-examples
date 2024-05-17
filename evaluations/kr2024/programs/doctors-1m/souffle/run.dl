@@ -1,0 +1,30 @@
+.type Skolem
+   = prescription_0_0_3 { a: symbol, b: symbol, c: symbol }
+   | doctor_1_0_3 { a: symbol, b: symbol, c: symbol }
+   | doctor_1_0_4 { a: symbol, b: symbol, c: symbol }
+   | prescription_2_0_3 { a: symbol, b: symbol, c: symbol }
+   | doctor_3_0_4 { a: symbol, b: Skolem, c: symbol, d: symbol }
+   | SkolemBase { base: symbol }
+
+.decl doctor(a: symbol, b: symbol, c: symbol, d: Skolem, e: Skolem)
+.decl physician(a: symbol, b: symbol, c: symbol, d: symbol)
+.decl medprescription(a: symbol, b: symbol, c: symbol, d: symbol, e: symbol, f: symbol)
+.decl targethospital(a: symbol, b: symbol, c: symbol, d: symbol, e: symbol)
+.decl hospital(a: symbol, b: symbol, c: symbol, d: symbol, e: symbol)
+.decl treatment(a: symbol, b: symbol, c: symbol, d: symbol, e: symbol)
+.decl prescription(a: symbol, b: symbol, c: symbol, d: Skolem)
+
+.input hospital(IO=file, filename="../data/hospital.csv.gz", delimiter=",")
+.input medprescription(IO=file, filename="../data/medprescription.csv.gz", delimiter=",")
+.input physician(IO=file, filename="../data/physician.csv.gz", delimiter=",")
+.input treatment(IO=file, filename="../data/treatment.csv.gz", delimiter=",")
+
+prescription(id, patient, npi, $prescription_0_0_3(npi, id, patient)) :- treatment(id, patient, _hospital, npi, _conf1), physician(npi, _name, _spec, _conf2) .
+doctor(npi, doctor, spec, $doctor_1_0_3(npi, spec, doctor), $doctor_1_0_4(npi, spec, doctor)) :- medprescription(_id, _patient, npi, doctor, spec, _conf) .
+prescription(id, patient, npi, $prescription_2_0_3(patient, id, npi)) :- medprescription(id, patient, npi, _doctor, _spec, _conf) .
+doctor(npi, name, spec, $SkolemBase(hospital), $doctor_3_0_4(name, $SkolemBase(hospital), npi, spec)) :- treatment(_id, _patient, hospital2 npi, _conf1), physician(npi, name, spec, _conf2) .
+targethospital(doctor, spec, hospital1, npi1, hconf1) :- hospital2doctor, spec, hospital1, npi1, hconf1) .
+
+.printsize doctor
+.printsize prescription
+.printsize targethospital

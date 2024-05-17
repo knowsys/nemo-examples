@@ -1,0 +1,342 @@
+.type Skolem
+   = headOf_42_0_1 { a: symbol }
+   | Department_42_1_0 { a: symbol }
+   | headOf_49_0_1 { a: symbol }
+   | College_49_1_0 { a: symbol }
+   | headOf_55_0_1 { a: symbol }
+   | Program_55_1_0 { a: symbol }
+   | worksFor_62_0_1 { a: symbol }
+   | Organization_62_1_0 { a: symbol }
+   | takesCourse_67_0_1 { a: symbol }
+   | GraduateCourse_67_1_0 { a: symbol }
+   | worksFor_103_0_1 { a: symbol }
+   | ResearchGroup_103_1_0 { a: symbol }
+   | takesCourse_113_0_1 { a: symbol }
+   | Course_113_1_0 { a: symbol }
+   | teachingAssistantOf_121_0_1 { a: symbol }
+   | Course_121_1_0 { a: symbol }
+   | SkolemBase { base: symbol }
+
+.decl Institute(a: symbol)
+.decl AssociateProfessor(a: symbol)
+.decl publicationAuthor(a: symbol, b: symbol)
+.decl researchInterest(a: symbol, b: symbol)
+.decl src_Course(a: symbol)
+.decl src_ResearchGroup(a: symbol)
+.decl src_teachingAssistantOf(a: symbol, b: symbol)
+.decl Schedule(a: symbol)
+.decl Dean(a: symbol)
+.decl orgPublication(a: symbol, b: symbol)
+.decl src_GraduateStudent(a: symbol)
+.decl Professor(a: symbol)
+.decl affiliateOf(a: symbol, b: symbol)
+.decl Organization(a: Skolem)
+.decl src_subOrganizationOf(a: symbol, b: symbol)
+.decl UnofficialPublication(a: symbol)
+.decl src_TeachingAssistant(a: symbol)
+.decl VisitingProfessor(a: symbol)
+.decl src_ResearchAssistant(a: symbol)
+.decl src_researchInterest(a: symbol, b: symbol)
+.decl src_AssistantProfessor(a: symbol)
+.decl Person(a: symbol)
+.decl Employee(a: symbol)
+.decl Chair(a: symbol)
+.decl takesCourse(a: symbol, b: Skolem)
+.decl src_publicationAuthor(a: symbol, b: symbol)
+.decl src_worksFor(a: symbol, b: symbol)
+.decl ResearchGroup(a: Skolem)
+.decl src_headOf(a: symbol, b: symbol)
+.decl GraduateStudent(a: symbol)
+.decl GraduateCourse(a: Skolem)
+.decl subOrganizationOf(a: symbol, b: symbol)
+.decl worksFor(a: symbol, b: Skolem)
+.decl AdministrativeStaff(a: symbol)
+.decl teachingAssistantOf(a: symbol, b: Skolem)
+.decl College(a: Skolem)
+.decl UndergraduateStudent(a: symbol)
+.decl Faculty(a: symbol)
+.decl listedCourse(a: symbol, b: symbol)
+.decl JournalArticle(a: symbol)
+.decl Manual(a: symbol)
+.decl tenured(a: symbol, b: symbol)
+.decl FullProfessor(a: symbol)
+.decl age(a: symbol, b: symbol)
+.decl title(a: symbol, b: symbol)
+.decl ResearchAssistant(a: symbol)
+.decl PostDoc(a: symbol)
+.decl src_GraduateCourse(a: symbol)
+.decl memberOf(a: symbol, b: Skolem)
+.decl Publication(a: symbol)
+.decl teacherOf(a: symbol, b: symbol)
+.decl TeachingAssistant(a: symbol)
+.decl telephone(a: symbol, b: symbol)
+.decl src_FullProfessor(a: symbol)
+.decl src_Lecturer(a: symbol)
+.decl Article(a: symbol)
+.decl src_Department(a: symbol)
+.decl Book(a: symbol)
+.decl Program(a: Skolem)
+.decl Director(a: symbol)
+.decl Research(a: symbol)
+.decl softwareDocumentation(a: symbol, b: symbol)
+.decl TechnicalReport(a: symbol)
+.decl doctoralDegreeFrom(a: symbol, b: symbol)
+.decl ConferencePaper(a: symbol)
+.decl src_takesCourse(a: symbol, b: symbol)
+.decl src_UndergraduateStudent(a: symbol)
+.decl affiliatedOrganizationOf(a: symbol, b: symbol)
+.decl src_telephone(a: symbol, b: symbol)
+.decl headOf(a: symbol, b: Skolem)
+.decl name(a: symbol, b: symbol)
+.decl publicationDate(a: symbol, b: symbol)
+.decl publicationResearch(a: symbol, b: symbol)
+.decl SystemsStaff(a: symbol)
+.decl undergraduateDegreeFrom(a: symbol, b: symbol)
+.decl AssistantProfessor(a: symbol)
+.decl emailAddress(a: symbol, b: symbol)
+.decl src_mastersDegreeFrom(a: symbol, b: symbol)
+.decl mastersDegreeFrom(a: symbol, b: symbol)
+.decl src_Publication(a: symbol)
+.decl advisor(a: symbol, b: symbol)
+.decl Software(a: symbol)
+.decl Department(a: Skolem)
+.decl Work(a: Skolem)
+.decl src_emailAddress(a: symbol, b: symbol)
+.decl softwareVersion(a: symbol, b: symbol)
+.decl src_undergraduateDegreeFrom(a: symbol, b: symbol)
+.decl ClericalStaff(a: symbol)
+.decl Course(a: Skolem)
+.decl src_memberOf(a: symbol, b: symbol)
+.decl src_name(a: symbol, b: symbol)
+.decl hasAlumnus(a: symbol, b: symbol)
+.decl Student(a: symbol)
+.decl Lecturer(a: symbol)
+.decl src_University(a: symbol)
+.decl researchProject(a: symbol, b: symbol)
+.decl Specification(a: symbol)
+.decl src_AssociateProfessor(a: symbol)
+.decl src_teacherOf(a: symbol, b: symbol)
+.decl member(a: Skolem, b: symbol)
+.decl src_advisor(a: symbol, b: symbol)
+.decl src_doctoralDegreeFrom(a: symbol, b: symbol)
+.decl University(a: symbol)
+.decl degreeFrom(a: symbol, b: symbol)
+
+.input src_advisor(IO=file, filename="../data/src_advisor.csv.gz", delimiter=",")
+.input src_AssistantProfessor(IO=file, filename="../data/src_AssistantProfessor.csv.gz", delimiter=",")
+.input src_AssociateProfessor(IO=file, filename="../data/src_AssociateProfessor.csv.gz", delimiter=",")
+.input src_Course(IO=file, filename="../data/src_Course.csv.gz", delimiter=",")
+.input src_Department(IO=file, filename="../data/src_Department.csv.gz", delimiter=",")
+.input src_doctoralDegreeFrom(IO=file, filename="../data/src_doctoralDegreeFrom.csv.gz", delimiter=",")
+.input src_emailAddress(IO=file, filename="../data/src_emailAddress.csv.gz", delimiter=",")
+.input src_FullProfessor(IO=file, filename="../data/src_FullProfessor.csv.gz", delimiter=",")
+.input src_GraduateCourse(IO=file, filename="../data/src_GraduateCourse.csv.gz", delimiter=",")
+.input src_GraduateStudent(IO=file, filename="../data/src_GraduateStudent.csv.gz", delimiter=",")
+.input src_headOf(IO=file, filename="../data/src_headOf.csv.gz", delimiter=",")
+.input src_Lecturer(IO=file, filename="../data/src_Lecturer.csv.gz", delimiter=",")
+.input src_mastersDegreeFrom(IO=file, filename="../data/src_mastersDegreeFrom.csv.gz", delimiter=",")
+.input src_memberOf(IO=file, filename="../data/src_memberOf.csv.gz", delimiter=",")
+.input src_name(IO=file, filename="../data/src_name.csv.gz", delimiter=",")
+.input src_Publication(IO=file, filename="../data/src_Publication.csv.gz", delimiter=",")
+.input src_publicationAuthor(IO=file, filename="../data/src_publicationAuthor.csv.gz", delimiter=",")
+.input src_ResearchAssistant(IO=file, filename="../data/src_ResearchAssistant.csv.gz", delimiter=",")
+.input src_ResearchGroup(IO=file, filename="../data/src_ResearchGroup.csv.gz", delimiter=",")
+.input src_researchInterest(IO=file, filename="../data/src_researchInterest.csv.gz", delimiter=",")
+.input src_subOrganizationOf(IO=file, filename="../data/src_subOrganizationOf.csv.gz", delimiter=",")
+.input src_takesCourse(IO=file, filename="../data/src_takesCourse.csv.gz", delimiter=",")
+.input src_teacherOf(IO=file, filename="../data/src_teacherOf.csv.gz", delimiter=",")
+.input src_TeachingAssistant(IO=file, filename="../data/src_TeachingAssistant.csv.gz", delimiter=",")
+.input src_teachingAssistantOf(IO=file, filename="../data/src_teachingAssistantOf.csv.gz", delimiter=",")
+.input src_telephone(IO=file, filename="../data/src_telephone.csv.gz", delimiter=",")
+.input src_undergraduateDegreeFrom(IO=file, filename="../data/src_undergraduateDegreeFrom.csv.gz", delimiter=",")
+.input src_UndergraduateStudent(IO=file, filename="../data/src_UndergraduateStudent.csv.gz", delimiter=",")
+.input src_University(IO=file, filename="../data/src_University.csv.gz", delimiter=",")
+.input src_worksFor(IO=file, filename="../data/src_worksFor.csv.gz", delimiter=",")
+
+advisor(X, Y) :- src_advisor(X, Y) .
+AssistantProfessor(X) :- src_AssistantProfessor(X) .
+AssociateProfessor(X) :- src_AssociateProfessor(X) .
+Course($SkolemBase(X)) :- src_Course(X) .
+Department($SkolemBase(X)) :- src_Department(X) .
+doctoralDegreeFrom(X, Y) :- src_doctoralDegreeFrom(X, Y) .
+emailAddress(X, Y) :- src_emailAddress(X, Y) .
+FullProfessor(X) :- src_FullProfessor(X) .
+GraduateCourse($SkolemBase(X)) :- src_GraduateCourse(X) .
+GraduateStudent(X) :- src_GraduateStudent(X) .
+headOf(X, $SkolemBase(Y)) :- src_headOf(X, Y) .
+Lecturer(X) :- src_Lecturer(X) .
+mastersDegreeFrom(X, Y) :- src_mastersDegreeFrom(X, Y) .
+memberOf(X, $SkolemBase(Y)) :- src_memberOf(X, Y) .
+name(X, Y) :- src_name(X, Y) .
+Publication(X) :- src_Publication(X) .
+publicationAuthor(X, Y) :- src_publicationAuthor(X, Y) .
+ResearchAssistant(X) :- src_ResearchAssistant(X) .
+ResearchGroup($SkolemBase(X)) :- src_ResearchGroup(X) .
+researchInterest(X, Y) :- src_researchInterest(X, Y) .
+subOrganizationOf(X, Y) :- src_subOrganizationOf(X, Y) .
+takesCourse(X, $SkolemBase(Y)) :- src_takesCourse(X, Y) .
+teacherOf(X, Y) :- src_teacherOf(X, Y) .
+TeachingAssistant(X) :- src_TeachingAssistant(X) .
+teachingAssistantOf(X, $SkolemBase(Y)) :- src_teachingAssistantOf(X, Y) .
+telephone(X, Y) :- src_telephone(X, Y) .
+undergraduateDegreeFrom(X, Y) :- src_undergraduateDegreeFrom(X, Y) .
+UndergraduateStudent(X) :- src_UndergraduateStudent(X) .
+University(X) :- src_University(X) .
+worksFor(X, $SkolemBase(Y)) :- src_worksFor(X, Y) .
+Employee(X) :- AdministrativeStaff(X) .
+Person(X) :- advisor(X, _X1) .
+Professor(X1) :- advisor(_X, X1) .
+Organization($SkolemBase(X)) :- affiliatedOrganizationOf(X, _X1) .
+Organization($SkolemBase(X1)) :- affiliatedOrganizationOf(_X, X1) .
+Organization($SkolemBase(X)) :- affiliateOf(X, _X1) .
+Person(X1) :- affiliateOf(_X, X1) .
+Person(X) :- age(X, _X1) .
+Publication(X) :- Article(X) .
+Professor(X) :- AssistantProfessor(X) .
+Professor(X) :- AssociateProfessor(X) .
+Publication(X) :- Book(X) .
+headOf(X, $headOf_42_0_1(X)), Department($Department_42_1_0(X)) :- Chair(X) .
+Person(X) :- Chair(X) .
+Professor(X) :- Chair(X) .
+AdministrativeStaff(X) :- ClericalStaff(X) .
+Organization(X) :- College(X) .
+Article(X) :- ConferencePaper(X) .
+Work(X) :- Course(X) .
+headOf(X, $headOf_49_0_1(X)), College($College_49_1_0(X)) :- Dean(X) .
+Professor(X) :- Dean(X) .
+Person(X) :- degreeFrom(X, _X1) .
+University(X1) :- degreeFrom(_X, X1) .
+hasAlumnus(X, Y) :- degreeFrom(Y, X) .
+Organization(X) :- Department(X) .
+headOf(X, $headOf_55_0_1(X)), Program($Program_55_1_0(X)) :- Director(X) .
+Person(X) :- Director(X) .
+Person(X) :- doctoralDegreeFrom(X, _X1) .
+University(X1) :- doctoralDegreeFrom(_X, X1) .
+degreeFrom(X, Y) :- doctoralDegreeFrom(X, Y) .
+Person(X) :- emailAddress(X, _X1) .
+Person(X) :- Employee(X) .
+worksFor(X, $worksFor_62_0_1(X)), Organization($Organization_62_1_0(X)) :- Employee(X) .
+Employee(X) :- Faculty(X) .
+Professor(X) :- FullProfessor(X) .
+Course(X) :- GraduateCourse(X) .
+Person(X) :- GraduateStudent(X) .
+takesCourse(X, $takesCourse_67_0_1(X)), GraduateCourse($GraduateCourse_67_1_0(X)) :- GraduateStudent(X) .
+Person(X1) :- hasAlumnus(_X, X1) .
+University(X) :- hasAlumnus(X, _X1) .
+degreeFrom(X, Y) :- hasAlumnus(Y, X) .
+Dean(X) :- headOf(X, X1), College(X1) .
+worksFor(X, Y) :- headOf(X, Y) .
+Organization($SkolemBase(X)) :- Institute(X) .
+Article(X) :- JournalArticle(X) .
+Faculty(X) :- Lecturer(X) .
+Course($SkolemBase(X1)) :- listedCourse(_X, X1) .
+Schedule(X) :- listedCourse(X, _X1) .
+Publication(X) :- Manual(X) .
+Person(X) :- mastersDegreeFrom(X, _X1) .
+University(X1) :- mastersDegreeFrom(_X, X1) .
+degreeFrom(X, Y) :- mastersDegreeFrom(X, Y) .
+Organization(X) :- member(X, _X1) .
+Person(X1) :- member(_X, X1) .
+memberOf(X, Y) :- member(Y, X) .
+member(X, Y) :- memberOf(Y, X) .
+Organization($SkolemBase(X)) :- orgPublication(X, _X1) .
+Publication(X1) :- orgPublication(_X, X1) .
+Chair(X) :- Person(X), headOf(X, X1), Department(X1) .
+Director(X) :- Person(X), headOf(X, X1), Program(X1) .
+Student(X) :- Person(X), takesCourse(X, X1), Course(X1) .
+TeachingAssistant(X) :- Person(X), teachingAssistantOf(X, X1), Course(X1) .
+Employee(X) :- Person(X), worksFor(X, X1), Organization(X1) .
+Faculty(X) :- PostDoc(X) .
+Faculty(X) :- Professor(X) .
+Organization(X) :- Program(X) .
+Person(X1) :- publicationAuthor(_X, X1) .
+Publication(X) :- publicationAuthor(X, _X1) .
+Publication(X) :- publicationDate(X, _X1) .
+Publication(X) :- publicationResearch(X, _X1) .
+Research(X1) :- publicationResearch(_X, X1) .
+Work($SkolemBase(X)) :- Research(X) .
+Person(X) :- ResearchAssistant(X) .
+worksFor(X, $worksFor_103_0_1(X)), ResearchGroup($ResearchGroup_103_1_0(X)) :- ResearchAssistant(X) .
+Organization(X) :- ResearchGroup(X) .
+Research(X1) :- researchProject(_X, X1) .
+ResearchGroup($SkolemBase(X)) :- researchProject(X, _X1) .
+Publication(X) :- Software(X) .
+Publication(X1) :- softwareDocumentation(_X, X1) .
+Software(X) :- softwareDocumentation(X, _X1) .
+Software(X) :- softwareVersion(X, _X1) .
+Publication(X) :- Specification(X) .
+Person(X) :- Student(X) .
+takesCourse(X, $takesCourse_113_0_1(X)), Course($Course_113_1_0(X)) :- Student(X) .
+Organization($SkolemBase(X)) :- subOrganizationOf(X, _X1) .
+Organization($SkolemBase(X1)) :- subOrganizationOf(_X, X1) .
+subOrganizationOf(X, Z) :- subOrganizationOf(X, Y), subOrganizationOf(Y, Z) .
+AdministrativeStaff(X) :- SystemsStaff(X) .
+Course($SkolemBase(X1)) :- teacherOf(_X, X1) .
+Faculty(X) :- teacherOf(X, _X1) .
+Person(X) :- TeachingAssistant(X) .
+teachingAssistantOf(X, $teachingAssistantOf_121_0_1(X)), Course($Course_121_1_0(X)) :- TeachingAssistant(X) .
+Course(X1) :- teachingAssistantOf(_X, X1) .
+TeachingAssistant(X) :- teachingAssistantOf(X, _X1) .
+Article(X) :- TechnicalReport(X) .
+Person(X) :- telephone(X, _X1) .
+Professor(X) :- tenured(X, _X1) .
+Person(X) :- title(X, _X1) .
+Person(X) :- undergraduateDegreeFrom(X, _X1) .
+University(X1) :- undergraduateDegreeFrom(_X, X1) .
+degreeFrom(X, Y) :- undergraduateDegreeFrom(X, Y) .
+Student(X) :- UndergraduateStudent(X) .
+Organization($SkolemBase(X)) :- University(X) .
+Publication(X) :- UnofficialPublication(X) .
+Professor(X) :- VisitingProfessor(X) .
+memberOf(X, Y) :- worksFor(X, Y) .
+
+.printsize ResearchGroup
+.printsize emailAddress
+.printsize Work
+.printsize Faculty
+.printsize Chair
+.printsize hasAlumnus
+.printsize Department
+.printsize mastersDegreeFrom
+.printsize researchInterest
+.printsize Organization
+.printsize College
+.printsize Program
+.printsize degreeFrom
+.printsize memberOf
+.printsize worksFor
+.printsize Article
+.printsize GraduateStudent
+.printsize FullProfessor
+.printsize Lecturer
+.printsize University
+.printsize Research
+.printsize undergraduateDegreeFrom
+.printsize teacherOf
+.printsize TeachingAssistant
+.printsize Person
+.printsize GraduateCourse
+.printsize Software
+.printsize advisor
+.printsize takesCourse
+.printsize doctoralDegreeFrom
+.printsize teachingAssistantOf
+.printsize Employee
+.printsize UndergraduateStudent
+.printsize Course
+.printsize headOf
+.printsize telephone
+.printsize Director
+.printsize member
+.printsize Publication
+.printsize publicationAuthor
+.printsize AdministrativeStaff
+.printsize name
+.printsize AssociateProfessor
+.printsize ResearchAssistant
+.printsize subOrganizationOf
+.printsize Professor
+.printsize Dean
+.printsize Student
+.printsize AssistantProfessor
+.printsize Schedule

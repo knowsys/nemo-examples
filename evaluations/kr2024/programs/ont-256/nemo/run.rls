@@ -1,0 +1,752 @@
+%%% Imports
+
+@import act_vnm_8_nl0_ce0 :- csv { resource = "../data/act_vnm_8_nl0_ce0.csv.gz" } .
+@import air_ad_39_nl0_ce0 :- csv { resource = "../data/air_ad_39_nl0_ce0.csv.gz" } .
+@import amount_vnm_4_nl0_ce0 :- csv { resource = "../data/amount_vnm_4_nl0_ce0.csv.gz" } .
+@import apparatus_vnm_47_nl0_ce0 :- csv { resource = "../data/apparatus_vnm_47_nl0_ce0.csv.gz" } .
+@import attack_vi_51_nl0_ce0 :- csv { resource = "../data/attack_vi_51_nl0_ce0.csv.gz" } .
+@import automatic_ad_29_nl0_ce0 :- csv { resource = "../data/automatic_ad_29_nl0_ce0.csv.gz" } .
+@import automatic_vnm_22_nl0_ce0 :- csv { resource = "../data/automatic_vnm_22_nl0_ce0.csv.gz" } .
+@import avoid_vh_18_nl0_ce0 :- csv { resource = "../data/avoid_vh_18_nl0_ce0.csv.gz" } .
+@import avoid_vi_32_nl0_ce0 :- csv { resource = "../data/avoid_vi_32_nl0_ce0.csv.gz" } .
+@import back_ad_62_nl0_ce0 :- csv { resource = "../data/back_ad_62_nl0_ce0.csv.gz" } .
+@import bag_vh_38_nl0_ce0 :- csv { resource = "../data/bag_vh_38_nl0_ce0.csv.gz" } .
+@import base_vh_64_nl0_ce0 :- csv { resource = "../data/base_vh_64_nl0_ce0.csv.gz" } .
+@import bath_ad_14_nl0_ce0 :- csv { resource = "../data/bath_ad_14_nl0_ce0.csv.gz" } .
+@import become_ad_32_nl0_ce0 :- csv { resource = "../data/become_ad_32_nl0_ce0.csv.gz" } .
+@import become_vh_45_nl0_ce0 :- csv { resource = "../data/become_vh_45_nl0_ce0.csv.gz" } .
+@import bed_ad_53_nl0_ce0 :- csv { resource = "../data/bed_ad_53_nl0_ce0.csv.gz" } .
+@import behavior_vi_59_nl0_ce0 :- csv { resource = "../data/behavior_vi_59_nl0_ce0.csv.gz" } .
+@import belong_vnm_18_nl0_ce0 :- csv { resource = "../data/belong_vnm_18_nl0_ce0.csv.gz" } .
+@import birth_vi_15_nl0_ce0 :- csv { resource = "../data/birth_vi_15_nl0_ce0.csv.gz" } .
+@import book_vh_42_nl0_ce0 :- csv { resource = "../data/book_vh_42_nl0_ce0.csv.gz" } .
+@import branch_vi_11_nl0_ce0 :- csv { resource = "../data/branch_vi_11_nl0_ce0.csv.gz" } .
+@import brick_vi_62_nl0_ce0 :- csv { resource = "../data/brick_vi_62_nl0_ce0.csv.gz" } .
+@import bright_vi_12_nl0_ce0 :- csv { resource = "../data/bright_vi_12_nl0_ce0.csv.gz" } .
+@import bucket_vh_8_nl0_ce0 :- csv { resource = "../data/bucket_vh_8_nl0_ce0.csv.gz" } .
+@import building_vh_33_nl0_ce0 :- csv { resource = "../data/building_vh_33_nl0_ce0.csv.gz" } .
+@import buy_vh_62_nl0_ce0 :- csv { resource = "../data/buy_vh_62_nl0_ce0.csv.gz" } .
+@import buy_vnm_20_nl0_ce0 :- csv { resource = "../data/buy_vnm_20_nl0_ce0.csv.gz" } .
+@import cause_ad_31_nl0_ce0 :- csv { resource = "../data/cause_ad_31_nl0_ce0.csv.gz" } .
+@import certain_vnm_3_nl0_ce0 :- csv { resource = "../data/certain_vnm_3_nl0_ce0.csv.gz" } .
+@import check_vi_49_nl0_ce0 :- csv { resource = "../data/check_vi_49_nl0_ce0.csv.gz" } .
+@import chemical_ad_20_nl0_ce0 :- csv { resource = "../data/chemical_ad_20_nl0_ce0.csv.gz" } .
+@import chess_ad_52_nl0_ce0 :- csv { resource = "../data/chess_ad_52_nl0_ce0.csv.gz" } .
+@import chief_vnm_17_nl0_ce0 :- csv { resource = "../data/chief_vnm_17_nl0_ce0.csv.gz" } .
+@import chief_vnm_30_nl0_ce0 :- csv { resource = "../data/chief_vnm_30_nl0_ce0.csv.gz" } .
+@import chin_vnm_13_nl0_ce0 :- csv { resource = "../data/chin_vnm_13_nl0_ce0.csv.gz" } .
+@import circle_vnm_51_nl0_ce0 :- csv { resource = "../data/circle_vnm_51_nl0_ce0.csv.gz" } .
+@import clear_vi_64_nl0_ce0 :- csv { resource = "../data/clear_vi_64_nl0_ce0.csv.gz" } .
+@import collect_vh_19_nl0_ce0 :- csv { resource = "../data/collect_vh_19_nl0_ce0.csv.gz" } .
+@import comb_vi_52_nl0_ce0 :- csv { resource = "../data/comb_vi_52_nl0_ce0.csv.gz" } .
+@import committee_vnm_15_nl0_ce0 :- csv { resource = "../data/committee_vnm_15_nl0_ce0.csv.gz" } .
+@import complain_vh_5_nl0_ce0 :- csv { resource = "../data/complain_vh_5_nl0_ce0.csv.gz" } .
+@import condition_ad_35_nl0_ce0 :- csv { resource = "../data/condition_ad_35_nl0_ce0.csv.gz" } .
+@import contact_vh_58_nl0_ce0 :- csv { resource = "../data/contact_vh_58_nl0_ce0.csv.gz" } .
+@import control_ad_11_nl0_ce0 :- csv { resource = "../data/control_ad_11_nl0_ce0.csv.gz" } .
+@import control_vh_39_nl0_ce0 :- csv { resource = "../data/control_vh_39_nl0_ce0.csv.gz" } .
+@import copy_vnm_23_nl0_ce0 :- csv { resource = "../data/copy_vnm_23_nl0_ce0.csv.gz" } .
+@import cover_vi_17_nl0_ce0 :- csv { resource = "../data/cover_vi_17_nl0_ce0.csv.gz" } .
+@import cruel_ad_54_nl0_ce0 :- csv { resource = "../data/cruel_ad_54_nl0_ce0.csv.gz" } .
+@import curve_vi_58_nl0_ce0 :- csv { resource = "../data/curve_vi_58_nl0_ce0.csv.gz" } .
+@import cut_vi_25_nl0_ce0 :- csv { resource = "../data/cut_vi_25_nl0_ce0.csv.gz" } .
+@import damage_vi_61_nl0_ce0 :- csv { resource = "../data/damage_vi_61_nl0_ce0.csv.gz" } .
+@import danger_vi_53_nl0_ce0 :- csv { resource = "../data/danger_vi_53_nl0_ce0.csv.gz" } .
+@import degree_vh_32_nl0_ce0 :- csv { resource = "../data/degree_vh_32_nl0_ce0.csv.gz" } .
+@import delicate_ad_6_nl0_ce0 :- csv { resource = "../data/delicate_ad_6_nl0_ce0.csv.gz" } .
+@import detail_vh_48_nl0_ce0 :- csv { resource = "../data/detail_vh_48_nl0_ce0.csv.gz" } .
+@import disgust_ad_8_nl0_ce0 :- csv { resource = "../data/disgust_ad_8_nl0_ce0.csv.gz" } .
+@import division_vh_2_nl0_ce0 :- csv { resource = "../data/division_vh_2_nl0_ce0.csv.gz" } .
+@import do_vnm_58_nl0_ce0 :- csv { resource = "../data/do_vnm_58_nl0_ce0.csv.gz" } .
+@import dress_ad_55_nl0_ce0 :- csv { resource = "../data/dress_ad_55_nl0_ce0.csv.gz" } .
+@import drink_vh_10_nl0_ce0 :- csv { resource = "../data/drink_vh_10_nl0_ce0.csv.gz" } .
+@import drive_vh_37_nl0_ce0 :- csv { resource = "../data/drive_vh_37_nl0_ce0.csv.gz" } .
+@import early_vi_56_nl0_ce0 :- csv { resource = "../data/early_vi_56_nl0_ce0.csv.gz" } .
+@import eat_vnm_63_nl0_ce0 :- csv { resource = "../data/eat_vnm_63_nl0_ce0.csv.gz" } .
+@import effect_vnm_34_nl0_ce0 :- csv { resource = "../data/effect_vnm_34_nl0_ce0.csv.gz" } .
+@import enable_ad_9_nl0_ce0 :- csv { resource = "../data/enable_ad_9_nl0_ce0.csv.gz" } .
+@import error_vnm_43_nl0_ce0 :- csv { resource = "../data/error_vnm_43_nl0_ce0.csv.gz" } .
+@import examine_ad_26_nl0_ce0 :- csv { resource = "../data/examine_ad_26_nl0_ce0.csv.gz" } .
+@import expect_vnm_21_nl0_ce0 :- csv { resource = "../data/expect_vnm_21_nl0_ce0.csv.gz" } .
+@import feather_vi_21_nl0_ce0 :- csv { resource = "../data/feather_vi_21_nl0_ce0.csv.gz" } .
+@import fill_vh_46_nl0_ce0 :- csv { resource = "../data/fill_vh_46_nl0_ce0.csv.gz" } .
+@import flower_vi_30_nl0_ce0 :- csv { resource = "../data/flower_vi_30_nl0_ce0.csv.gz" } .
+@import fold_vnm_53_nl0_ce0 :- csv { resource = "../data/fold_vnm_53_nl0_ce0.csv.gz" } .
+@import force_vnm_19_nl0_ce0 :- csv { resource = "../data/force_vnm_19_nl0_ce0.csv.gz" } .
+@import forgive_vi_24_nl0_ce0 :- csv { resource = "../data/forgive_vi_24_nl0_ce0.csv.gz" } .
+@import friend_ad_22_nl0_ce0 :- csv { resource = "../data/friend_ad_22_nl0_ce0.csv.gz" } .
+@import fruit_vi_28_nl0_ce0 :- csv { resource = "../data/fruit_vi_28_nl0_ce0.csv.gz" } .
+@import gain_ad_46_nl0_ce0 :- csv { resource = "../data/gain_ad_46_nl0_ce0.csv.gz" } .
+@import garden_vi_3_nl0_ce0 :- csv { resource = "../data/garden_vi_3_nl0_ce0.csv.gz" } .
+@import glove_vi_63_nl0_ce0 :- csv { resource = "../data/glove_vi_63_nl0_ce0.csv.gz" } .
+@import government_vh_9_nl0_ce0 :- csv { resource = "../data/government_vh_9_nl0_ce0.csv.gz" } .
+@import green_ad_27_nl0_ce0 :- csv { resource = "../data/green_ad_27_nl0_ce0.csv.gz" } .
+@import guide_vh_27_nl0_ce0 :- csv { resource = "../data/guide_vh_27_nl0_ce0.csv.gz" } .
+@import hanging_vi_16_nl0_ce0 :- csv { resource = "../data/hanging_vi_16_nl0_ce0.csv.gz" } .
+@import harbor_vi_8_nl0_ce0 :- csv { resource = "../data/harbor_vi_8_nl0_ce0.csv.gz" } .
+@import hard_vnm_36_nl0_ce0 :- csv { resource = "../data/hard_vnm_36_nl0_ce0.csv.gz" } .
+@import hat_vnm_12_nl0_ce0 :- csv { resource = "../data/hat_vnm_12_nl0_ce0.csv.gz" } .
+@import head_vnm_28_nl0_ce0 :- csv { resource = "../data/head_vnm_28_nl0_ce0.csv.gz" } .
+@import hide_vh_20_nl0_ce0 :- csv { resource = "../data/hide_vh_20_nl0_ce0.csv.gz" } .
+@import ice_vi_13_nl0_ce0 :- csv { resource = "../data/ice_vi_13_nl0_ce0.csv.gz" } .
+@import imagine_ad_23_nl0_ce0 :- csv { resource = "../data/imagine_ad_23_nl0_ce0.csv.gz" } .
+@import important_vh_7_nl0_ce0 :- csv { resource = "../data/important_vh_7_nl0_ce0.csv.gz" } .
+@import impulse_ad_10_nl0_ce0 :- csv { resource = "../data/impulse_ad_10_nl0_ce0.csv.gz" } .
+@import insurance_vi_14_nl0_ce0 :- csv { resource = "../data/insurance_vi_14_nl0_ce0.csv.gz" } .
+@import insurance_vi_50_nl0_ce0 :- csv { resource = "../data/insurance_vi_50_nl0_ce0.csv.gz" } .
+@import join_vh_41_nl0_ce0 :- csv { resource = "../data/join_vh_41_nl0_ce0.csv.gz" } .
+@import keep_vnm_10_nl0_ce0 :- csv { resource = "../data/keep_vnm_10_nl0_ce0.csv.gz" } .
+@import last_vi_4_nl0_ce0 :- csv { resource = "../data/last_vi_4_nl0_ce0.csv.gz" } .
+@import last_vnm_26_nl0_ce0 :- csv { resource = "../data/last_vnm_26_nl0_ce0.csv.gz" } .
+@import last_vnm_35_nl0_ce0 :- csv { resource = "../data/last_vnm_35_nl0_ce0.csv.gz" } .
+@import laugh_ad_13_nl0_ce0 :- csv { resource = "../data/laugh_ad_13_nl0_ce0.csv.gz" } .
+@import laugh_vh_25_nl0_ce0 :- csv { resource = "../data/laugh_vh_25_nl0_ce0.csv.gz" } .
+@import learning_ad_36_nl0_ce0 :- csv { resource = "../data/learning_ad_36_nl0_ce0.csv.gz" } .
+@import leather_vh_52_nl0_ce0 :- csv { resource = "../data/leather_vh_52_nl0_ce0.csv.gz" } .
+@import library_ad_3_nl0_ce0 :- csv { resource = "../data/library_ad_3_nl0_ce0.csv.gz" } .
+@import limit_vnm_60_nl0_ce0 :- csv { resource = "../data/limit_vnm_60_nl0_ce0.csv.gz" } .
+@import line_vi_10_nl0_ce0 :- csv { resource = "../data/line_vi_10_nl0_ce0.csv.gz" } .
+@import look_vh_63_nl0_ce0 :- csv { resource = "../data/look_vh_63_nl0_ce0.csv.gz" } .
+@import loose_vnm_32_nl0_ce0 :- csv { resource = "../data/loose_vnm_32_nl0_ce0.csv.gz" } .
+@import loud_vnm_16_nl0_ce0 :- csv { resource = "../data/loud_vnm_16_nl0_ce0.csv.gz" } .
+@import machine_vi_23_nl0_ce0 :- csv { resource = "../data/machine_vi_23_nl0_ce0.csv.gz" } .
+@import make_ad_5_nl0_ce0 :- csv { resource = "../data/make_ad_5_nl0_ce0.csv.gz" } .
+@import map_vi_57_nl0_ce0 :- csv { resource = "../data/map_vi_57_nl0_ce0.csv.gz" } .
+@import meal_vnm_27_nl0_ce0 :- csv { resource = "../data/meal_vnm_27_nl0_ce0.csv.gz" } .
+@import mixed_vi_2_nl0_ce0 :- csv { resource = "../data/mixed_vi_2_nl0_ce0.csv.gz" } .
+@import moon_vi_20_nl0_ce0 :- csv { resource = "../data/moon_vi_20_nl0_ce0.csv.gz" } .
+@import music_vi_43_nl0_ce0 :- csv { resource = "../data/music_vi_43_nl0_ce0.csv.gz" } .
+@import must_vnm_57_nl0_ce0 :- csv { resource = "../data/must_vnm_57_nl0_ce0.csv.gz" } .
+@import nail_ad_28_nl0_ce0 :- csv { resource = "../data/nail_ad_28_nl0_ce0.csv.gz" } .
+@import natural_ad_44_nl0_ce0 :- csv { resource = "../data/natural_ad_44_nl0_ce0.csv.gz" } .
+@import need_vnm_59_nl0_ce0 :- csv { resource = "../data/need_vnm_59_nl0_ce0.csv.gz" } .
+@import nerve_vh_47_nl0_ce0 :- csv { resource = "../data/nerve_vh_47_nl0_ce0.csv.gz" } .
+@import news_ad_17_nl0_ce0 :- csv { resource = "../data/news_ad_17_nl0_ce0.csv.gz" } .
+@import new_vnm_62_nl0_ce0 :- csv { resource = "../data/new_vnm_62_nl0_ce0.csv.gz" } .
+@import nose_vh_28_nl0_ce0 :- csv { resource = "../data/nose_vh_28_nl0_ce0.csv.gz" } .
+@import note_vh_24_nl0_ce0 :- csv { resource = "../data/note_vh_24_nl0_ce0.csv.gz" } .
+@import opinion_vi_9_nl0_ce0 :- csv { resource = "../data/opinion_vi_9_nl0_ce0.csv.gz" } .
+@import organization_ad_59_nl0_ce0 :- csv { resource = "../data/organization_ad_59_nl0_ce0.csv.gz" } .
+@import ornament_vh_17_nl0_ce0 :- csv { resource = "../data/ornament_vh_17_nl0_ce0.csv.gz" } .
+@import owner_vh_26_nl0_ce0 :- csv { resource = "../data/owner_vh_26_nl0_ce0.csv.gz" } .
+@import paint_vnm_2_nl0_ce0 :- csv { resource = "../data/paint_vnm_2_nl0_ce0.csv.gz" } .
+@import paper_vh_35_nl0_ce0 :- csv { resource = "../data/paper_vh_35_nl0_ce0.csv.gz" } .
+@import parallel_ad_41_nl0_ce0 :- csv { resource = "../data/parallel_ad_41_nl0_ce0.csv.gz" } .
+@import pass_vi_46_nl0_ce0 :- csv { resource = "../data/pass_vi_46_nl0_ce0.csv.gz" } .
+@import past_vh_49_nl0_ce0 :- csv { resource = "../data/past_vh_49_nl0_ce0.csv.gz" } .
+@import pencil_vh_4_nl0_ce0 :- csv { resource = "../data/pencil_vh_4_nl0_ce0.csv.gz" } .
+@import pen_vh_15_nl0_ce0 :- csv { resource = "../data/pen_vh_15_nl0_ce0.csv.gz" } .
+@import pipe_ad_2_nl0_ce0 :- csv { resource = "../data/pipe_ad_2_nl0_ce0.csv.gz" } .
+@import place_vi_6_nl0_ce0 :- csv { resource = "../data/place_vi_6_nl0_ce0.csv.gz" } .
+@import plough_vnm_55_nl0_ce0 :- csv { resource = "../data/plough_vnm_55_nl0_ce0.csv.gz" } .
+@import poor_vh_12_nl0_ce0 :- csv { resource = "../data/poor_vh_12_nl0_ce0.csv.gz" } .
+@import poor_vnm_5_nl0_ce0 :- csv { resource = "../data/poor_vnm_5_nl0_ce0.csv.gz" } .
+@import porter_vi_55_nl0_ce0 :- csv { resource = "../data/porter_vi_55_nl0_ce0.csv.gz" } .
+@import possible_ad_21_nl0_ce0 :- csv { resource = "../data/possible_ad_21_nl0_ce0.csv.gz" } .
+@import power_vi_19_nl0_ce0 :- csv { resource = "../data/power_vi_19_nl0_ce0.csv.gz" } .
+@import present_vnm_11_nl0_ce0 :- csv { resource = "../data/present_vnm_11_nl0_ce0.csv.gz" } .
+@import private_vh_55_nl0_ce0 :- csv { resource = "../data/private_vh_55_nl0_ce0.csv.gz" } .
+@import prove_vh_13_nl0_ce0 :- csv { resource = "../data/prove_vh_13_nl0_ce0.csv.gz" } .
+@import publish_ad_18_nl0_ce0 :- csv { resource = "../data/publish_ad_18_nl0_ce0.csv.gz" } .
+@import pull_vi_35_nl0_ce0 :- csv { resource = "../data/pull_vi_35_nl0_ce0.csv.gz" } .
+@import quiet_ad_19_nl0_ce0 :- csv { resource = "../data/quiet_ad_19_nl0_ce0.csv.gz" } .
+@import raise_vi_29_nl0_ce0 :- csv { resource = "../data/raise_vi_29_nl0_ce0.csv.gz" } .
+@import ready_vnm_6_nl0_ce0 :- csv { resource = "../data/ready_vnm_6_nl0_ce0.csv.gz" } .
+@import record_vi_37_nl0_ce0 :- csv { resource = "../data/record_vi_37_nl0_ce0.csv.gz" } .
+@import record_vnm_44_nl0_ce0 :- csv { resource = "../data/record_vnm_44_nl0_ce0.csv.gz" } .
+@import regret_vnm_40_nl0_ce0 :- csv { resource = "../data/regret_vnm_40_nl0_ce0.csv.gz" } .
+@import reply_vi_42_nl0_ce0 :- csv { resource = "../data/reply_vi_42_nl0_ce0.csv.gz" } .
+@import report_vnm_1_nl0_ce0 :- csv { resource = "../data/report_vnm_1_nl0_ce0.csv.gz" } .
+@import representative_vh_34_nl0_ce0 :- csv { resource = "../data/representative_vh_34_nl0_ce0.csv.gz" } .
+@import respect_vnm_7_nl0_ce0 :- csv { resource = "../data/respect_vnm_7_nl0_ce0.csv.gz" } .
+@import ring_vh_3_nl0_ce0 :- csv { resource = "../data/ring_vh_3_nl0_ce0.csv.gz" } .
+@import run_ad_24_nl0_ce0 :- csv { resource = "../data/run_ad_24_nl0_ce0.csv.gz" } .
+@import scissors_vnm_38_nl0_ce0 :- csv { resource = "../data/scissors_vnm_38_nl0_ce0.csv.gz" } .
+@import seat_vh_50_nl0_ce0 :- csv { resource = "../data/seat_vh_50_nl0_ce0.csv.gz" } .
+@import secret_vnm_56_nl0_ce0 :- csv { resource = "../data/secret_vnm_56_nl0_ce0.csv.gz" } .
+@import seed_vi_27_nl0_ce0 :- csv { resource = "../data/seed_vi_27_nl0_ce0.csv.gz" } .
+@import see_ad_42_nl0_ce0 :- csv { resource = "../data/see_ad_42_nl0_ce0.csv.gz" } .
+@import selection_vh_6_nl0_ce0 :- csv { resource = "../data/selection_vh_6_nl0_ce0.csv.gz" } .
+@import separate_vnm_24_nl0_ce0 :- csv { resource = "../data/separate_vnm_24_nl0_ce0.csv.gz" } .
+@import sex_vnm_42_nl0_ce0 :- csv { resource = "../data/sex_vnm_42_nl0_ce0.csv.gz" } .
+@import shake_ad_37_nl0_ce0 :- csv { resource = "../data/shake_ad_37_nl0_ce0.csv.gz" } .
+@import share_ad_50_nl0_ce0 :- csv { resource = "../data/share_ad_50_nl0_ce0.csv.gz" } .
+@import shoe_vh_57_nl0_ce0 :- csv { resource = "../data/shoe_vh_57_nl0_ce0.csv.gz" } .
+@import shut_vnm_52_nl0_ce0 :- csv { resource = "../data/shut_vnm_52_nl0_ce0.csv.gz" } .
+@import sing_ad_58_nl0_ce0 :- csv { resource = "../data/sing_ad_58_nl0_ce0.csv.gz" } .
+@import sky_ad_15_nl0_ce0 :- csv { resource = "../data/sky_ad_15_nl0_ce0.csv.gz" } .
+@import snake_vh_29_nl0_ce0 :- csv { resource = "../data/snake_vh_29_nl0_ce0.csv.gz" } .
+@import sneeze_vh_53_nl0_ce0 :- csv { resource = "../data/sneeze_vh_53_nl0_ce0.csv.gz" } .
+@import society_vi_1_nl0_ce0 :- csv { resource = "../data/society_vi_1_nl0_ce0.csv.gz" } .
+@import soup_vi_22_nl0_ce0 :- csv { resource = "../data/soup_vi_22_nl0_ce0.csv.gz" } .
+@import special_vnm_29_nl0_ce0 :- csv { resource = "../data/special_vnm_29_nl0_ce0.csv.gz" } .
+@import spoon_ad_34_nl0_ce0 :- csv { resource = "../data/spoon_ad_34_nl0_ce0.csv.gz" } .
+@import stamp_ad_12_nl0_ce0 :- csv { resource = "../data/stamp_ad_12_nl0_ce0.csv.gz" } .
+@import sticky_vnm_14_nl0_ce0 :- csv { resource = "../data/sticky_vnm_14_nl0_ce0.csv.gz" } .
+@import stick_vh_30_nl0_ce0 :- csv { resource = "../data/stick_vh_30_nl0_ce0.csv.gz" } .
+@import stiff_vi_5_nl0_ce0 :- csv { resource = "../data/stiff_vi_5_nl0_ce0.csv.gz" } .
+@import stone_vi_44_nl0_ce0 :- csv { resource = "../data/stone_vi_44_nl0_ce0.csv.gz" } .
+@import stop_vh_21_nl0_ce0 :- csv { resource = "../data/stop_vh_21_nl0_ce0.csv.gz" } .
+@import straight_vh_54_nl0_ce0 :- csv { resource = "../data/straight_vh_54_nl0_ce0.csv.gz" } .
+@import strong_vi_31_nl0_ce0 :- csv { resource = "../data/strong_vi_31_nl0_ce0.csv.gz" } .
+@import structure_vh_22_nl0_ce0 :- csv { resource = "../data/structure_vh_22_nl0_ce0.csv.gz" } .
+@import sweet_vnm_37_nl0_ce0 :- csv { resource = "../data/sweet_vnm_37_nl0_ce0.csv.gz" } .
+@import test_ad_1_nl0_ce0 :- csv { resource = "../data/test_ad_1_nl0_ce0.csv.gz" } .
+@import test_vi_33_nl0_ce0 :- csv { resource = "../data/test_vi_33_nl0_ce0.csv.gz" } .
+@import thank_ad_16_nl0_ce0 :- csv { resource = "../data/thank_ad_16_nl0_ce0.csv.gz" } .
+@import time_vnm_9_nl0_ce0 :- csv { resource = "../data/time_vnm_9_nl0_ce0.csv.gz" } .
+@import tree_vi_39_nl0_ce0 :- csv { resource = "../data/tree_vi_39_nl0_ce0.csv.gz" } .
+@import umbrella_vnm_41_nl0_ce0 :- csv { resource = "../data/umbrella_vnm_41_nl0_ce0.csv.gz" } .
+@import visit_ad_45_nl0_ce0 :- csv { resource = "../data/visit_ad_45_nl0_ce0.csv.gz" } .
+@import visit_vi_26_nl0_ce0 :- csv { resource = "../data/visit_vi_26_nl0_ce0.csv.gz" } .
+@import voice_vnm_49_nl0_ce0 :- csv { resource = "../data/voice_vnm_49_nl0_ce0.csv.gz" } .
+@import wall_vi_7_nl0_ce0 :- csv { resource = "../data/wall_vi_7_nl0_ce0.csv.gz" } .
+@import want_ad_30_nl0_ce0 :- csv { resource = "../data/want_ad_30_nl0_ce0.csv.gz" } .
+@import warn_vh_1_nl0_ce0 :- csv { resource = "../data/warn_vh_1_nl0_ce0.csv.gz" } .
+@import wash_vh_23_nl0_ce0 :- csv { resource = "../data/wash_vh_23_nl0_ce0.csv.gz" } .
+@import watch_vnm_61_nl0_ce0 :- csv { resource = "../data/watch_vnm_61_nl0_ce0.csv.gz" } .
+@import wax_vnm_46_nl0_ce0 :- csv { resource = "../data/wax_vnm_46_nl0_ce0.csv.gz" } .
+@import wear_ad_25_nl0_ce0 :- csv { resource = "../data/wear_ad_25_nl0_ce0.csv.gz" } .
+@import whip_vh_11_nl0_ce0 :- csv { resource = "../data/whip_vh_11_nl0_ce0.csv.gz" } .
+@import whistle_vh_31_nl0_ce0 :- csv { resource = "../data/whistle_vh_31_nl0_ce0.csv.gz" } .
+@import will_ad_7_nl0_ce0 :- csv { resource = "../data/will_ad_7_nl0_ce0.csv.gz" } .
+@import wind_vnm_25_nl0_ce0 :- csv { resource = "../data/wind_vnm_25_nl0_ce0.csv.gz" } .
+@import wing_vh_14_nl0_ce0 :- csv { resource = "../data/wing_vh_14_nl0_ce0.csv.gz" } .
+@import winter_vh_16_nl0_ce0 :- csv { resource = "../data/winter_vh_16_nl0_ce0.csv.gz" } .
+@import woman_vnm_31_nl0_ce0 :- csv { resource = "../data/woman_vnm_31_nl0_ce0.csv.gz" } .
+@import work_vi_18_nl0_ce0 :- csv { resource = "../data/work_vi_18_nl0_ce0.csv.gz" } .
+@import worm_ad_33_nl0_ce0 :- csv { resource = "../data/worm_ad_33_nl0_ce0.csv.gz" } .
+@import worry_ad_4_nl0_ce0 :- csv { resource = "../data/worry_ad_4_nl0_ce0.csv.gz" } .
+@import write_vh_56_nl0_ce0 :- csv { resource = "../data/write_vh_56_nl0_ce0.csv.gz" } .
+
+%%% Rules
+
+touch_ad_1_nl0_ce0(?a,?b,?c,!d) :- test_ad_1_nl0_ce0(?a,?b,?c) .
+different_vi_1_nl0_ce0(?a,?b,?c),society_vi_1_nl0_ce1(?a,?d,?e) :- society_vi_1_nl0_ce0(?a,?b,?c,?d,?e) .
+blue_vh_1_nl0_ce0(?a,?b,?c,!g),describe_vh_1_nl0_ce1(?d,?e,?f,!h,!g) :- warn_vh_1_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+rest_vnm_1_nl0_ce0(?a,?b,?c),place_vnm_1_nl0_ce1(?d,?e,!f,!g),expansion_vnm_1_nl0_ce2(?c,!g) :- report_vnm_1_nl0_ce0(?a,?b,?c,?d,?e) .
+future_ad_2_nl0_ce0(?a,?b,?c,?d,?e,!f) :- pipe_ad_2_nl0_ce0(?a,?b,?c,?d,?e) .
+approval_vi_2_nl0_ce0(?a,?b,?c),blow_vi_2_nl0_ce1(?a,?d,?e) :- mixed_vi_2_nl0_ce0(?a,?b,?c,?d,?e) .
+involve_vh_2_nl0_ce0(?a,?b,?c,!g),use_vh_2_nl0_ce1(?d,?e,?f,!h,!g) :- division_vh_2_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+parallel_vnm_2_nl0_ce0(?a,?b),collection_vnm_2_nl0_ce1(?c,!d,!e),handle_vnm_2_nl0_ce2(?b,!e) :- paint_vnm_2_nl0_ce0(?a,?b,?c) .
+decision_ad_3_nl0_ce0(?a,?b,?c,?d,!e) :- library_ad_3_nl0_ce0(?a,?b,?c,?d) .
+kind_vi_3_nl0_ce0(?a,?b,?c),prove_vi_3_nl0_ce1(?a,?d,?e) :- garden_vi_3_nl0_ce0(?a,?b,?c,?d,?e) .
+door_vh_3_nl0_ce0(?a,?b,!f),charge_vh_3_nl0_ce1(?c,?d,?e,!g,!f) :- ring_vh_3_nl0_ce0(?a,?b,?c,?d,?e) .
+farm_vnm_3_nl0_ce0(?a,?b,?c),political_vnm_3_nl0_ce1(?d,?e,!f,!g),language_vnm_3_nl0_ce2(?c,!g) :- certain_vnm_3_nl0_ce0(?a,?b,?c,?d,?e) .
+science_ad_4_nl0_ce0(?a,?b,?c,?d,!e) :- worry_ad_4_nl0_ce0(?a,?b,?c,?d) .
+involve_vi_4_nl0_ce0(?a,?b),mention_vi_4_nl0_ce1(?a,?c,?d) :- last_vi_4_nl0_ce0(?a,?b,?c,?d) .
+complete_vh_4_nl0_ce0(?a,?b,!f),count_vh_4_nl0_ce1(?c,?d,?e,!g,!f) :- pencil_vh_4_nl0_ce0(?a,?b,?c,?d,?e) .
+gold_vnm_4_nl0_ce0(?a,?b),pain_vnm_4_nl0_ce1(?c,!d,!e),accept_vnm_4_nl0_ce2(?b,!e) :- amount_vnm_4_nl0_ce0(?a,?b,?c) .
+thick_ad_5_nl0_ce0(?a,?b,?c,?d,?e,!f) :- make_ad_5_nl0_ce0(?a,?b,?c,?d,?e) .
+pain_vi_5_nl0_ce0(?a,?b,?c),straight_vi_5_nl0_ce1(?a,?d,?e) :- stiff_vi_5_nl0_ce0(?a,?b,?c,?d,?e) .
+record_vh_5_nl0_ce0(?a,?b,?c,!g),probable_vh_5_nl0_ce1(?d,?e,?f,!h,!g) :- complain_vh_5_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+boot_vnm_5_nl0_ce0(?a,?b,?c,?d),dependent_vnm_5_nl0_ce1(?e,?f,!g,!h),sea_vnm_5_nl0_ce2(?d,!h) :- poor_vnm_5_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+stomach_ad_6_nl0_ce0(?a,?b,?c,?d,!e) :- delicate_ad_6_nl0_ce0(?a,?b,?c,?d) .
+oven_vi_6_nl0_ce0(?a,?b),give_vi_6_nl0_ce1(?a,?c,?d) :- place_vi_6_nl0_ce0(?a,?b,?c,?d) .
+animal_vh_6_nl0_ce0(?a,!d),hate_vh_6_nl0_ce1(?b,?c,!e,!d) :- selection_vh_6_nl0_ce0(?a,?b,?c) .
+argue_vnm_6_nl0_ce0(?a,?b),late_vnm_6_nl0_ce1(?c,!d,!e),summer_vnm_6_nl0_ce2(?b,!e) :- ready_vnm_6_nl0_ce0(?a,?b,?c) .
+clock_ad_7_nl0_ce0(?a,?b,?c,?d,?e,!f) :- will_ad_7_nl0_ce0(?a,?b,?c,?d,?e) .
+fly_vi_7_nl0_ce0(?a,?b,?c),late_vi_7_nl0_ce1(?a,?d,?e) :- wall_vi_7_nl0_ce0(?a,?b,?c,?d,?e) .
+stone_vh_7_nl0_ce0(?a,!d),fertile_vh_7_nl0_ce1(?b,?c,!e,!d) :- important_vh_7_nl0_ce0(?a,?b,?c) .
+awake_vnm_7_nl0_ce0(?a,?b,?c),church_vnm_7_nl0_ce1(?d,!e,!f),hammer_vnm_7_nl0_ce2(?c,!f) :- respect_vnm_7_nl0_ce0(?a,?b,?c,?d) .
+eat_ad_8_nl0_ce0(?a,?b,?c,?d,!e) :- disgust_ad_8_nl0_ce0(?a,?b,?c,?d) .
+complain_vi_8_nl0_ce0(?a,?b,?c),snake_vi_8_nl0_ce1(?a,?d,?e) :- harbor_vi_8_nl0_ce0(?a,?b,?c,?d,?e) .
+touch_vh_8_nl0_ce0(?a,?b,!e),settle_vh_8_nl0_ce1(?c,?d,!f,!e) :- bucket_vh_8_nl0_ce0(?a,?b,?c,?d) .
+trick_vnm_8_nl0_ce0(?a,?b,?c),green_vnm_8_nl0_ce1(?d,!e,!f),jump_vnm_8_nl0_ce2(?c,!f) :- act_vnm_8_nl0_ce0(?a,?b,?c,?d) .
+needle_ad_9_nl0_ce0(?a,?b,?c,?d,?e,!f) :- enable_ad_9_nl0_ce0(?a,?b,?c,?d,?e) .
+degree_vi_9_nl0_ce0(?a,?b,?c),forgive_vi_9_nl0_ce1(?a,?d,?e) :- opinion_vi_9_nl0_ce0(?a,?b,?c,?d,?e) .
+account_vh_9_nl0_ce0(?a,?b,!f),fiction_vh_9_nl0_ce1(?c,?d,?e,!g,!f) :- government_vh_9_nl0_ce0(?a,?b,?c,?d,?e) .
+ring_vnm_9_nl0_ce0(?a,?b,?c),voice_vnm_9_nl0_ce1(?d,?e,!f,!g),room_vnm_9_nl0_ce2(?c,!g) :- time_vnm_9_nl0_ce0(?a,?b,?c,?d,?e) .
+fork_ad_10_nl0_ce0(?a,?b,?c,!d) :- impulse_ad_10_nl0_ce0(?a,?b,?c) .
+come_vi_10_nl0_ce0(?a,?b,?c),long_vi_10_nl0_ce1(?a,?d,?e) :- line_vi_10_nl0_ce0(?a,?b,?c,?d,?e) .
+reply_vh_10_nl0_ce0(?a,?b,!f),require_vh_10_nl0_ce1(?c,?d,?e,!g,!f) :- drink_vh_10_nl0_ce0(?a,?b,?c,?d,?e) .
+church_vnm_10_nl0_ce0(?a,?b,?c,?d),point_vnm_10_nl0_ce1(?e,?f,?g,!h,!i),digestion_vnm_10_nl0_ce2(?d,!i) :- keep_vnm_10_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+record_ad_11_nl0_ce0(?a,?b,?c,?d,!e) :- control_ad_11_nl0_ce0(?a,?b,?c,?d) .
+business_vi_11_nl0_ce0(?a,?b),yellow_vi_11_nl0_ce1(?a,?c,?d) :- branch_vi_11_nl0_ce0(?a,?b,?c,?d) .
+beautiful_vh_11_nl0_ce0(?a,?b,!f),watch_vh_11_nl0_ce1(?c,?d,?e,!g,!f) :- whip_vh_11_nl0_ce0(?a,?b,?c,?d,?e) .
+compare_vnm_11_nl0_ce0(?a,?b,?c),first_vnm_11_nl0_ce1(?d,?e,!f,!g),play_vnm_11_nl0_ce2(?c,!g) :- present_vnm_11_nl0_ce0(?a,?b,?c,?d,?e) .
+poor_ad_12_nl0_ce0(?a,?b,?c,?d,?e,!f) :- stamp_ad_12_nl0_ce0(?a,?b,?c,?d,?e) .
+provide_vi_12_nl0_ce0(?a,?b,?c),secret_vi_12_nl0_ce1(?a,?d,?e) :- bright_vi_12_nl0_ce0(?a,?b,?c,?d,?e) .
+try_vh_12_nl0_ce0(?a,?b,?c,!g),complex_vh_12_nl0_ce1(?d,?e,?f,!h,!g) :- poor_vh_12_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+sleep_vnm_12_nl0_ce0(?a,?b,?c),measure_vnm_12_nl0_ce1(?d,!e,!f),engine_vnm_12_nl0_ce2(?c,!f) :- hat_vnm_12_nl0_ce0(?a,?b,?c,?d) .
+set_ad_13_nl0_ce0(?a,?b,?c,?d,!e) :- laugh_ad_13_nl0_ce0(?a,?b,?c,?d) .
+thread_vi_13_nl0_ce0(?a,?b,?c),look_vi_13_nl0_ce1(?a,?d,?e) :- ice_vi_13_nl0_ce0(?a,?b,?c,?d,?e) .
+wet_vh_13_nl0_ce0(?a,?b,!e),back_vh_13_nl0_ce1(?c,?d,!f,!e) :- prove_vh_13_nl0_ce0(?a,?b,?c,?d) .
+conscious_vnm_13_nl0_ce0(?a,?b,?c),wait_vnm_13_nl0_ce1(?d,?e,!f,!g),loose_vnm_13_nl0_ce2(?c,!g) :- chin_vnm_13_nl0_ce0(?a,?b,?c,?d,?e) .
+tin_ad_14_nl0_ce0(?a,?b,?c,!d) :- bath_ad_14_nl0_ce0(?a,?b,?c) .
+advertisement_vi_14_nl0_ce0(?a,?b,?c),smoke_vi_14_nl0_ce1(?a,?d,?e,?f) :- insurance_vi_14_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+coat_vh_14_nl0_ce0(?a,?b,!e),father_vh_14_nl0_ce1(?c,?d,!f,!e) :- wing_vh_14_nl0_ce0(?a,?b,?c,?d) .
+skin_vnm_14_nl0_ce0(?a,?b,?c),believe_vnm_14_nl0_ce1(?d,?e,!f,!g),adjustment_vnm_14_nl0_ce2(?c,!g) :- sticky_vnm_14_nl0_ce0(?a,?b,?c,?d,?e) .
+run_ad_15_nl0_ce0(?a,?b,?c,!d) :- sky_ad_15_nl0_ce0(?a,?b,?c) .
+jewel_vi_15_nl0_ce0(?a,?b),change_vi_15_nl0_ce1(?a,?c) :- birth_vi_15_nl0_ce0(?a,?b,?c) .
+contain_vh_15_nl0_ce0(?a,?b,!f),know_vh_15_nl0_ce1(?c,?d,?e,!g,!f) :- pen_vh_15_nl0_ce0(?a,?b,?c,?d,?e) .
+present_vnm_15_nl0_ce0(?a,?b,?c),sister_vnm_15_nl0_ce1(?d,!e,!f),butter_vnm_15_nl0_ce2(?c,!f) :- committee_vnm_15_nl0_ce0(?a,?b,?c,?d) .
+deep_ad_16_nl0_ce0(?a,?b,?c,?d,!e) :- thank_ad_16_nl0_ce0(?a,?b,?c,?d) .
+involve_vi_16_nl0_ce0(?a,?b,?c),bee_vi_16_nl0_ce1(?a,?d,?e) :- hanging_vi_16_nl0_ce0(?a,?b,?c,?d,?e) .
+afford_vh_16_nl0_ce0(?a,?b,?c,!h),reflect_vh_16_nl0_ce1(?d,?e,?f,?g,!i,!h) :- winter_vh_16_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+tin_vnm_16_nl0_ce0(?a,?b,?c),reading_vnm_16_nl0_ce1(?d,?e,!f,!g),second_vnm_16_nl0_ce2(?c,!g) :- loud_vnm_16_nl0_ce0(?a,?b,?c,?d,?e) .
+group_ad_17_nl0_ce0(?a,?b,?c,?d,?e,!f) :- news_ad_17_nl0_ce0(?a,?b,?c,?d,?e) .
+hide_vi_17_nl0_ce0(?a,?b),shoe_vi_17_nl0_ce1(?a,?c,?d) :- cover_vi_17_nl0_ce0(?a,?b,?c,?d) .
+cross_vh_17_nl0_ce0(?a,?b,!e),act_vh_17_nl0_ce1(?c,?d,!f,!e) :- ornament_vh_17_nl0_ce0(?a,?b,?c,?d) .
+size_vnm_17_nl0_ce0(?a,?b,?c),raise_vnm_17_nl0_ce1(?d,!e,!f),baby_vnm_17_nl0_ce2(?c,!f) :- chief_vnm_17_nl0_ce0(?a,?b,?c,?d) .
+reason_ad_18_nl0_ce0(?a,?b,?c,?d,!e) :- publish_ad_18_nl0_ce0(?a,?b,?c,?d) .
+point_vi_18_nl0_ce0(?a,?b),band_vi_18_nl0_ce1(?a,?c,?d) :- work_vi_18_nl0_ce0(?a,?b,?c,?d) .
+level_vh_18_nl0_ce0(?a,?b,?c,!h),present_vh_18_nl0_ce1(?d,?e,?f,?g,!i,!h) :- avoid_vh_18_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+oven_vnm_18_nl0_ce0(?a,?b),amount_vnm_18_nl0_ce1(?c,!d,!e),avoid_vnm_18_nl0_ce2(?b,!e) :- belong_vnm_18_nl0_ce0(?a,?b,?c) .
+mass_ad_19_nl0_ce0(?a,?b,?c,!d) :- quiet_ad_19_nl0_ce0(?a,?b,?c) .
+chalk_vi_19_nl0_ce0(?a,?b,?c),smile_vi_19_nl0_ce1(?a,?d,?e,?f) :- power_vi_19_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+arrange_vh_19_nl0_ce0(?a,?b,!e),brush_vh_19_nl0_ce1(?c,?d,!f,!e) :- collect_vh_19_nl0_ce0(?a,?b,?c,?d) .
+attack_vnm_19_nl0_ce0(?a,?b,?c),stitch_vnm_19_nl0_ce1(?d,!e,!f),matter_vnm_19_nl0_ce2(?c,!f) :- force_vnm_19_nl0_ce0(?a,?b,?c,?d) .
+design_ad_20_nl0_ce0(?a,?b,?c,?d,?e,!f) :- chemical_ad_20_nl0_ce0(?a,?b,?c,?d,?e) .
+violent_vi_20_nl0_ce0(?a,?b,?c),hide_vi_20_nl0_ce1(?a,?d,?e) :- moon_vi_20_nl0_ce0(?a,?b,?c,?d,?e) .
+agencies_vh_20_nl0_ce0(?a,?b,!f),wave_vh_20_nl0_ce1(?c,?d,?e,!g,!f) :- hide_vh_20_nl0_ce0(?a,?b,?c,?d,?e) .
+family_vnm_20_nl0_ce0(?a,?b,?c),remain_vnm_20_nl0_ce1(?d,?e,!f,!g),examine_vnm_20_nl0_ce2(?c,!g) :- buy_vnm_20_nl0_ce0(?a,?b,?c,?d,?e) .
+sea_ad_21_nl0_ce0(?a,?b,?c,?d,?e,!f) :- possible_ad_21_nl0_ce0(?a,?b,?c,?d,?e) .
+screw_vi_21_nl0_ce0(?a),cook_vi_21_nl0_ce1(?a,?b) :- feather_vi_21_nl0_ce0(?a,?b) .
+touch_vh_21_nl0_ce0(?a,!d),confirm_vh_21_nl0_ce1(?b,?c,!e,!d) :- stop_vh_21_nl0_ce0(?a,?b,?c) .
+language_vnm_21_nl0_ce0(?a,?b,?c),end_vnm_21_nl0_ce1(?d,!e,!f),involve_vnm_21_nl0_ce2(?c,!f) :- expect_vnm_21_nl0_ce0(?a,?b,?c,?d) .
+healthy_ad_22_nl0_ce0(?a,?b,?c,?d,?e,?f,!g) :- friend_ad_22_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+bed_vi_22_nl0_ce0(?a,?b,?c),society_vi_22_nl0_ce1(?a,?d,?e) :- soup_vi_22_nl0_ce0(?a,?b,?c,?d,?e) .
+paper_vh_22_nl0_ce0(?a,?b,!e),mind_vh_22_nl0_ce1(?c,?d,!f,!e) :- structure_vh_22_nl0_ce0(?a,?b,?c,?d) .
+left_vnm_22_nl0_ce0(?a,?b,?c),branch_vnm_22_nl0_ce1(?d,!e,!f),blue_vnm_22_nl0_ce2(?c,!f) :- automatic_vnm_22_nl0_ce0(?a,?b,?c,?d) .
+rub_ad_23_nl0_ce0(?a,?b,?c,?d,?e,?f,!g) :- imagine_ad_23_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+use_vi_23_nl0_ce0(?a,?b,?c),white_vi_23_nl0_ce1(?a,?d,?e) :- machine_vi_23_nl0_ce0(?a,?b,?c,?d,?e) .
+concern_vh_23_nl0_ce0(?a,?b,!f),example_vh_23_nl0_ce1(?c,?d,?e,!g,!f) :- wash_vh_23_nl0_ce0(?a,?b,?c,?d,?e) .
+simple_vnm_23_nl0_ce0(?a,?b),shake_vnm_23_nl0_ce1(?c,!d,!e),record_vnm_23_nl0_ce2(?b,!e) :- copy_vnm_23_nl0_ce0(?a,?b,?c) .
+monkey_ad_24_nl0_ce0(?a,?b,?c,?d,?e,?f,!g) :- run_ad_24_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+have_vi_24_nl0_ce0(?a,?b,?c),skin_vi_24_nl0_ce1(?a,?d,?e) :- forgive_vi_24_nl0_ce0(?a,?b,?c,?d,?e) .
+system_vh_24_nl0_ce0(?a,?b,?c,!g),paint_vh_24_nl0_ce1(?d,?e,?f,!h,!g) :- note_vh_24_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+machine_vnm_24_nl0_ce0(?a,?b,?c,?d),punishment_vnm_24_nl0_ce1(?e,?f,!g,!h),authority_vnm_24_nl0_ce2(?d,!h) :- separate_vnm_24_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+market_ad_25_nl0_ce0(?a,?b,?c,?d,?e,!f) :- wear_ad_25_nl0_ce0(?a,?b,?c,?d,?e) .
+electric_vi_25_nl0_ce0(?a,?b),dust_vi_25_nl0_ce1(?a,?c,?d) :- cut_vi_25_nl0_ce0(?a,?b,?c,?d) .
+face_vh_25_nl0_ce0(?a,?b,!e),oven_vh_25_nl0_ce1(?c,?d,!f,!e) :- laugh_vh_25_nl0_ce0(?a,?b,?c,?d) .
+war_vnm_25_nl0_ce0(?a,?b),history_vnm_25_nl0_ce1(?c,!d,!e),mist_vnm_25_nl0_ce2(?b,!e) :- wind_vnm_25_nl0_ce0(?a,?b,?c) .
+substance_ad_26_nl0_ce0(?a,?b,?c,?d,!e) :- examine_ad_26_nl0_ce0(?a,?b,?c,?d) .
+provide_vi_26_nl0_ce0(?a,?b),delicate_vi_26_nl0_ce1(?a,?c,?d) :- visit_vi_26_nl0_ce0(?a,?b,?c,?d) .
+invention_vh_26_nl0_ce0(?a,?b,?c,!g),use_vh_26_nl0_ce1(?d,?e,?f,!h,!g) :- owner_vh_26_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+sock_vnm_26_nl0_ce0(?a,?b,?c),authority_vnm_26_nl0_ce1(?d,?e,!f,!g),express_vnm_26_nl0_ce2(?c,!g) :- last_vnm_26_nl0_ce0(?a,?b,?c,?d,?e) .
+fork_ad_27_nl0_ce0(?a,?b,?c,?d,!e) :- green_ad_27_nl0_ce0(?a,?b,?c,?d) .
+nation_vi_27_nl0_ce0(?a,?b),need_vi_27_nl0_ce1(?a,?c,?d) :- seed_vi_27_nl0_ce0(?a,?b,?c,?d) .
+have_vh_27_nl0_ce0(?a,?b,!e),separate_vh_27_nl0_ce1(?c,?d,!f,!e) :- guide_vh_27_nl0_ce0(?a,?b,?c,?d) .
+dark_vnm_27_nl0_ce0(?a,?b,?c),knot_vnm_27_nl0_ce1(?d,?e,!f,!g),leather_vnm_27_nl0_ce2(?c,!g) :- meal_vnm_27_nl0_ce0(?a,?b,?c,?d,?e) .
+table_ad_28_nl0_ce0(?a,?b,?c,?d,!e) :- nail_ad_28_nl0_ce0(?a,?b,?c,?d) .
+imagine_vi_28_nl0_ce0(?a,?b,?c),deliver_vi_28_nl0_ce1(?a,?d,?e) :- fruit_vi_28_nl0_ce0(?a,?b,?c,?d,?e) .
+face_vh_28_nl0_ce0(?a,?b,!f),degree_vh_28_nl0_ce1(?c,?d,?e,!g,!f) :- nose_vh_28_nl0_ce0(?a,?b,?c,?d,?e) .
+rise_vnm_28_nl0_ce0(?a,?b,?c,?d),shut_vnm_28_nl0_ce1(?e,?f,!g,!h),return_vnm_28_nl0_ce2(?d,!h) :- head_vnm_28_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+talk_ad_29_nl0_ce0(?a,?b,?c,?d,!e) :- automatic_ad_29_nl0_ce0(?a,?b,?c,?d) .
+discover_vi_29_nl0_ce0(?a,?b,?c),edge_vi_29_nl0_ce1(?a,?d,?e) :- raise_vi_29_nl0_ce0(?a,?b,?c,?d,?e) .
+thumb_vh_29_nl0_ce0(?a,?b,?c,!g),fall_vh_29_nl0_ce1(?d,?e,?f,!h,!g) :- snake_vh_29_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+shame_vnm_29_nl0_ce0(?a,?b,?c),soft_vnm_29_nl0_ce1(?d,?e,!f,!g),selection_vnm_29_nl0_ce2(?c,!g) :- special_vnm_29_nl0_ce0(?a,?b,?c,?d,?e) .
+wonder_ad_30_nl0_ce0(?a,?b,?c,?d,?e,!f) :- want_ad_30_nl0_ce0(?a,?b,?c,?d,?e) .
+plate_vi_30_nl0_ce0(?a,?b),lift_vi_30_nl0_ce1(?a,?c,?d) :- flower_vi_30_nl0_ce0(?a,?b,?c,?d) .
+protest_vh_30_nl0_ce0(?a,?b,!f),reply_vh_30_nl0_ce1(?c,?d,?e,!g,!f) :- stick_vh_30_nl0_ce0(?a,?b,?c,?d,?e) .
+regret_vnm_30_nl0_ce0(?a,?b),color_vnm_30_nl0_ce1(?c,!d,!e),work_vnm_30_nl0_ce2(?b,!e) :- chief_vnm_30_nl0_ce0(?a,?b,?c) .
+avoid_ad_31_nl0_ce0(?a,?b,?c,?d,?e,!f) :- cause_ad_31_nl0_ce0(?a,?b,?c,?d,?e) .
+expert_vi_31_nl0_ce0(?a,?b,?c),sort_vi_31_nl0_ce1(?a,?d,?e,?f) :- strong_vi_31_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+material_vh_31_nl0_ce0(?a,?b,?c,!g),cow_vh_31_nl0_ce1(?d,?e,?f,!h,!g) :- whistle_vh_31_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+canvas_vnm_31_nl0_ce0(?a,?b),count_vnm_31_nl0_ce1(?c,!d,!e),weather_vnm_31_nl0_ce2(?b,!e) :- woman_vnm_31_nl0_ce0(?a,?b,?c) .
+reading_ad_32_nl0_ce0(?a,?b,?c,?d,!e) :- become_ad_32_nl0_ce0(?a,?b,?c,?d) .
+climb_vi_32_nl0_ce0(?a,?b),ill_vi_32_nl0_ce1(?a,?c) :- avoid_vi_32_nl0_ce0(?a,?b,?c) .
+test_vh_32_nl0_ce0(?a,!c),mine_vh_32_nl0_ce1(?b,!d,!c) :- degree_vh_32_nl0_ce0(?a,?b) .
+stitch_vnm_32_nl0_ce0(?a,?b,?c),discuss_vnm_32_nl0_ce1(?d,?e,!f,!g),moon_vnm_32_nl0_ce2(?c,!g) :- loose_vnm_32_nl0_ce0(?a,?b,?c,?d,?e) .
+damage_ad_33_nl0_ce0(?a,?b,?c,!d) :- worm_ad_33_nl0_ce0(?a,?b,?c) .
+feeble_vi_33_nl0_ce0(?a,?b),collar_vi_33_nl0_ce1(?a,?c) :- test_vi_33_nl0_ce0(?a,?b,?c) .
+verse_vh_33_nl0_ce0(?a,?b,!f),open_vh_33_nl0_ce1(?c,?d,?e,!g,!f) :- building_vh_33_nl0_ce0(?a,?b,?c,?d,?e) .
+knot_vnm_33_nl0_ce0(?a,?b,?c),forgive_vnm_33_nl0_ce1(?d,!e,!f),yellow_vnm_33_nl0_ce2(?c,!f) :- wing_vh_14_nl0_ce0(?a,?b,?c,?d) .
+like_ad_34_nl0_ce0(?a,?b,?c,?d,?e,!f) :- spoon_ad_34_nl0_ce0(?a,?b,?c,?d,?e) .
+join_vi_34_nl0_ce0(?a,?b,?c),peace_vi_34_nl0_ce1(?a,?d,?e) :- enable_ad_9_nl0_ce0(?a,?b,?c,?d,?e) .
+rest_vh_34_nl0_ce0(?a,?b,!f),attorney_vh_34_nl0_ce1(?c,?d,?e,!g,!f) :- representative_vh_34_nl0_ce0(?a,?b,?c,?d,?e) .
+blue_vh_1_nl0_ce0(?a,?b,?c,?d),punishment_vnm_24_nl0_ce1(?e,?f,!g,!h),moon_vnm_32_nl0_ce2(?d,!h) :- effect_vnm_34_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+authority_vnm_24_nl0_ce2(?a,!b) :- condition_ad_35_nl0_ce0(?a) .
+protest_vi_35_nl0_ce0(?a,?b),help_vi_35_nl0_ce1(?a,?c) :- pull_vi_35_nl0_ce0(?a,?b,?c) .
+seem_vh_35_nl0_ce0(?a,!c),agreement_vh_35_nl0_ce1(?b,!d,!c) :- paper_vh_35_nl0_ce0(?a,?b) .
+complete_vh_4_nl0_ce0(?a,?b,?c),deliver_vi_28_nl0_ce1(?d,!e,!f),weather_vnm_31_nl0_ce2(?c,!f) :- last_vnm_35_nl0_ce0(?a,?b,?c,?d) .
+copy_ad_36_nl0_ce0(?a,?b,?c,?d,!e) :- learning_ad_36_nl0_ce0(?a,?b,?c,?d) .
+develop_vi_36_nl0_ce0(?a,?b),band_vi_36_nl0_ce1(?a,?c,?d) :- last_vnm_35_nl0_ce0(?a,?b,?c,?d) .
+glove_vh_36_nl0_ce0(?a,?b,!f),jump_vh_36_nl0_ce1(?c,?d,?e,!g,!f) :- want_ad_30_nl0_ce0(?a,?b,?c,?d,?e) .
+farm_vnm_3_nl0_ce0(?a,?b,?c),society_vi_22_nl0_ce1(?d,!e,!f),examine_vnm_20_nl0_ce2(?c,!f) :- hard_vnm_36_nl0_ce0(?a,?b,?c,?d) .
+treat_ad_37_nl0_ce0(?a,?b,?c,?d,?e,!f) :- shake_ad_37_nl0_ce0(?a,?b,?c,?d,?e) .
+shut_vi_37_nl0_ce0(?a,?b,?c),approval_vi_37_nl0_ce1(?a,?d,?e,?f) :- record_vi_37_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+let_vh_37_nl0_ce0(?a,!d),respect_vh_37_nl0_ce1(?b,?c,!e,!d) :- drive_vh_37_nl0_ce0(?a,?b,?c) .
+move_vnm_37_nl0_ce0(?a,?b,?c),die_vnm_37_nl0_ce1(?d,?e,!f,!g),bottle_vnm_37_nl0_ce2(?c,!g) :- sweet_vnm_37_nl0_ce0(?a,?b,?c,?d,?e) .
+kill_ad_38_nl0_ce0(?a,?b,?c,!d) :- paint_vnm_2_nl0_ce0(?a,?b,?c) .
+knowledge_vi_38_nl0_ce0(?a,?b),delicate_vi_38_nl0_ce1(?a,?c,?d) :- bucket_vh_8_nl0_ce0(?a,?b,?c,?d) .
+night_vh_38_nl0_ce0(?a,?b,!e),chemical_vh_38_nl0_ce1(?c,?d,!f,!e) :- bag_vh_38_nl0_ce0(?a,?b,?c,?d) .
+contain_vnm_38_nl0_ce0(?a,?b,?c,?d),breath_vnm_38_nl0_ce1(?e,?f,!g,!h),report_vnm_38_nl0_ce2(?d,!h) :- scissors_vnm_38_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+reflect_vh_16_nl0_ce1(?a,?b,?c,?d,?e,!f) :- air_ad_39_nl0_ce0(?a,?b,?c,?d,?e) .
+record_vnm_23_nl0_ce2(?a,?b),leather_vnm_27_nl0_ce2(?a,?c) :- tree_vi_39_nl0_ce0(?a,?b,?c) .
+fly_vh_39_nl0_ce0(?a,?b,!f),cut_vh_39_nl0_ce1(?c,?d,?e,!g,!f) :- control_vh_39_nl0_ce0(?a,?b,?c,?d,?e) .
+summer_vnm_39_nl0_ce0(?a,?b,?c),way_vnm_39_nl0_ce1(?d,!e,!f),angry_vnm_39_nl0_ce2(?c,!f) :- force_vnm_19_nl0_ce0(?a,?b,?c,?d) .
+drain_ad_40_nl0_ce0(?a,?b,?c,?d,!e) :- last_vnm_35_nl0_ce0(?a,?b,?c,?d) .
+peace_vi_40_nl0_ce0(?a,?b,?c),indicate_vi_40_nl0_ce1(?a,?d,?e,?f) :- scissors_vnm_38_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+move_vh_40_nl0_ce0(?a,!d),place_vh_40_nl0_ce1(?b,?c,!e,!d) :- stop_vh_21_nl0_ce0(?a,?b,?c) .
+ring_vnm_40_nl0_ce0(?a,?b),experience_vnm_40_nl0_ce1(?c,!d,!e),gold_vnm_40_nl0_ce2(?b,!e) :- regret_vnm_40_nl0_ce0(?a,?b,?c) .
+short_ad_41_nl0_ce0(?a,?b,?c,?d,!e) :- parallel_ad_41_nl0_ce0(?a,?b,?c,?d) .
+touch_vi_41_nl0_ce0(?a,?b,?c),separate_vi_41_nl0_ce1(?a,?d,?e) :- enable_ad_9_nl0_ce0(?a,?b,?c,?d,?e) .
+side_vh_41_nl0_ce0(?a,?b,!f),orange_vh_41_nl0_ce1(?c,?d,?e,!g,!f) :- join_vh_41_nl0_ce0(?a,?b,?c,?d,?e) .
+soft_vnm_29_nl0_ce1(?a,?b,?c,?d),invention_vh_26_nl0_ce0(?e,?f,!g,!h),feeble_vi_33_nl0_ce0(?d,!h) :- umbrella_vnm_41_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+steel_ad_42_nl0_ce0(?a,?b,?c,!d) :- see_ad_42_nl0_ce0(?a,?b,?c) .
+skin_vi_24_nl0_ce1(?a,?b,?c),bee_vi_16_nl0_ce1(?a,?d,?e) :- reply_vi_42_nl0_ce0(?a,?b,?c,?d,?e) .
+sun_vh_42_nl0_ce0(?a,?b,?c,!g),connection_vh_42_nl0_ce1(?d,?e,?f,!h,!g) :- book_vh_42_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+sense_vnm_42_nl0_ce0(?a,?b,?c,?d),exist_vnm_42_nl0_ce1(?e,?f,!g,!h),relate_vnm_42_nl0_ce2(?d,!h) :- sex_vnm_42_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+prove_ad_43_nl0_ce0(?a,?b,?c,?d,!e) :- laugh_ad_13_nl0_ce0(?a,?b,?c,?d) .
+sea_ad_21_nl0_ce0(?a,?b,?c,?d,?e,?f),clock_ad_7_nl0_ce0(?a,?g,?h,?i,?j,?k) :- music_vi_43_nl0_ce0(?a,?b,?c,?d,?e,?f,?g,?h,?i,?j,?k) .
+body_vh_43_nl0_ce0(?a,?b,!e),day_vh_43_nl0_ce1(?c,?d,!f,!e) :- wing_vh_14_nl0_ce0(?a,?b,?c,?d) .
+deliver_vi_28_nl0_ce1(?a,?b,?c),tin_vnm_16_nl0_ce0(?d,!e,!f),simple_vnm_23_nl0_ce0(?c,!f) :- error_vnm_43_nl0_ce0(?a,?b,?c,?d) .
+person_ad_44_nl0_ce0(?a,?b,?c,?d,?e,!f) :- natural_ad_44_nl0_ce0(?a,?b,?c,?d,?e) .
+second_vnm_16_nl0_ce2(?a,?b),climb_vi_32_nl0_ce0(?a,?c) :- stone_vi_44_nl0_ce0(?a,?b,?c) .
+tray_vh_44_nl0_ce0(?a,?b,!f),found_vh_44_nl0_ce1(?c,?d,?e,!g,!f) :- air_ad_39_nl0_ce0(?a,?b,?c,?d,?e) .
+mouth_vnm_44_nl0_ce0(?a,?b),industry_vnm_44_nl0_ce1(?c,!d,!e),group_vnm_44_nl0_ce2(?b,!e) :- record_vnm_44_nl0_ce0(?a,?b,?c) .
+roll_ad_45_nl0_ce0(?a,?b,?c,?d,?e,!f) :- visit_ad_45_nl0_ce0(?a,?b,?c,?d,?e) .
+narrow_vi_45_nl0_ce0(?a,?b),disease_vi_45_nl0_ce1(?a,?c,?d) :- delicate_ad_6_nl0_ce0(?a,?b,?c,?d) .
+happen_vh_45_nl0_ce0(?a,?b,!e),shade_vh_45_nl0_ce1(?c,?d,!f,!e) :- become_vh_45_nl0_ce0(?a,?b,?c,?d) .
+garden_vnm_45_nl0_ce0(?a,?b,?c),contribute_vnm_45_nl0_ce1(?d,?e,!f,!g),yellow_vnm_45_nl0_ce2(?c,!g) :- make_ad_5_nl0_ce0(?a,?b,?c,?d,?e) .
+present_vnm_15_nl0_ce0(?a,?b,!c) :- gain_ad_46_nl0_ce0(?a,?b) .
+arch_vi_46_nl0_ce0(?a,?b,?c),compare_vi_46_nl0_ce1(?a,?d,?e) :- pass_vi_46_nl0_ce0(?a,?b,?c,?d,?e) .
+cloth_vh_46_nl0_ce0(?a,?b,?c,!g),meal_vh_46_nl0_ce1(?d,?e,?f,!h,!g) :- fill_vh_46_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+grass_vnm_46_nl0_ce0(?a,?b,?c,?d),poison_vnm_46_nl0_ce1(?e,?f,!g,!h),office_vnm_46_nl0_ce2(?d,!h) :- wax_vnm_46_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+last_ad_47_nl0_ce0(?a,?b,?c,?d,?e,!f) :- last_vnm_26_nl0_ce0(?a,?b,?c,?d,?e) .
+effect_vi_47_nl0_ce0(?a,?b,?c),sound_vi_47_nl0_ce1(?a,?d,?e,?f) :- division_vh_2_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+solid_vh_47_nl0_ce0(?a,!d),fall_vh_47_nl0_ce1(?b,?c,!e,!d) :- nerve_vh_47_nl0_ce0(?a,?b,?c) .
+own_vnm_47_nl0_ce0(?a,?b,?c),intend_vnm_47_nl0_ce1(?d,!e,!f),true_vnm_47_nl0_ce2(?c,!f) :- apparatus_vnm_47_nl0_ce0(?a,?b,?c,?d) .
+loss_ad_48_nl0_ce0(?a,?b,?c,?d,?e,?f,!g) :- wax_vnm_46_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+fact_vi_48_nl0_ce0(?a,?b,?c,?d),obtain_vi_48_nl0_ce1(?a,?e,?f,?g) :- winter_vh_16_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+clear_vh_48_nl0_ce0(?a,?b,!f),achieve_vh_48_nl0_ce1(?c,?d,?e,!g,!f) :- detail_vh_48_nl0_ce0(?a,?b,?c,?d,?e) .
+voice_vnm_48_nl0_ce0(?a,?b,?c),flower_vnm_48_nl0_ce1(?d,?e,!f,!g),must_vnm_48_nl0_ce2(?c,!g) :- possible_ad_21_nl0_ce0(?a,?b,?c,?d,?e) .
+whistle_ad_49_nl0_ce0(?a,?b,?c,!d) :- tree_vi_39_nl0_ce0(?a,?b,?c) .
+fish_vi_49_nl0_ce0(?a,?b,?c),tight_vi_49_nl0_ce1(?a,?d,?e) :- check_vi_49_nl0_ce0(?a,?b,?c,?d,?e) .
+language_vh_49_nl0_ce0(?a,?b,!f),bucket_vh_49_nl0_ce1(?c,?d,?e,!g,!f) :- past_vh_49_nl0_ce0(?a,?b,?c,?d,?e) .
+manager_vnm_49_nl0_ce0(?a,?b),arm_vnm_49_nl0_ce1(?c,!d,!e),process_vnm_49_nl0_ce2(?b,!e) :- voice_vnm_49_nl0_ce0(?a,?b,?c) .
+chalk_ad_50_nl0_ce0(?a,?b,?c,?d,!e) :- share_ad_50_nl0_ce0(?a,?b,?c,?d) .
+separate_vi_41_nl0_ce1(?a,?b,?c),use_vi_23_nl0_ce0(?a,?d,?e) :- insurance_vi_50_nl0_ce0(?a,?b,?c,?d,?e) .
+place_vnm_1_nl0_ce1(?a,?b,?c,!g),know_vh_15_nl0_ce1(?d,?e,?f,!h,!g) :- seat_vh_50_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+brick_vnm_50_nl0_ce0(?a,?b),hold_vnm_50_nl0_ce1(?c,!d,!e),work_vnm_50_nl0_ce2(?b,!e) :- record_vnm_44_nl0_ce0(?a,?b,?c) .
+suggest_ad_51_nl0_ce0(?a,?b,?c,?d,!e) :- structure_vh_22_nl0_ce0(?a,?b,?c,?d) .
+yellow_vi_11_nl0_ce1(?a,?b,?c),kind_vi_3_nl0_ce0(?a,?d,?e) :- attack_vi_51_nl0_ce0(?a,?b,?c,?d,?e) .
+deliver_vh_51_nl0_ce0(?a,!c),round_vh_51_nl0_ce1(?b,!d,!c) :- feather_vi_21_nl0_ce0(?a,?b) .
+account_vh_9_nl0_ce0(?a,?b,?c),industry_vnm_44_nl0_ce1(?d,!e,!f),mouth_vnm_44_nl0_ce0(?c,!f) :- circle_vnm_51_nl0_ce0(?a,?b,?c,?d) .
+breath_vnm_38_nl0_ce1(?a,?b,?c,!d) :- chess_ad_52_nl0_ce0(?a,?b,?c) .
+light_vi_52_nl0_ce0(?a,?b),industry_vi_52_nl0_ce1(?a,?c,?d) :- comb_vi_52_nl0_ce0(?a,?b,?c,?d) .
+indicate_vi_40_nl0_ce1(?a,?b,?c,!g),charge_vh_3_nl0_ce1(?d,?e,?f,!h,!g) :- leather_vh_52_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+snow_vnm_52_nl0_ce0(?a,?b,?c),smoke_vnm_52_nl0_ce1(?d,!e,!f),card_vnm_52_nl0_ce2(?c,!f) :- shut_vnm_52_nl0_ce0(?a,?b,?c,?d) .
+amount_vnm_18_nl0_ce1(?a,?b,!c) :- bed_ad_53_nl0_ce0(?a,?b) .
+peace_vi_40_nl0_ce0(?a,?b,?c),late_vi_7_nl0_ce1(?a,?d,?e) :- danger_vi_53_nl0_ce0(?a,?b,?c,?d,?e) .
+line_vh_53_nl0_ce0(?a,?b,?c,!g),watch_vh_53_nl0_ce1(?d,?e,?f,!h,!g) :- sneeze_vh_53_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+relation_vnm_53_nl0_ce0(?a,?b,?c,?d),move_vnm_53_nl0_ce1(?e,?f,?g,!h,!i),music_vnm_53_nl0_ce2(?d,!i) :- fold_vnm_53_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+look_vi_13_nl0_ce1(?a,?b,!c) :- cruel_ad_54_nl0_ce0(?a,?b) .
+swim_vi_54_nl0_ce0(?a,?b),regret_vi_54_nl0_ce1(?a,?c,?d) :- respect_vnm_7_nl0_ce0(?a,?b,?c,?d) .
+discuss_vnm_32_nl0_ce1(?a,?b,?c,!g),paint_vh_24_nl0_ce1(?d,?e,?f,!h,!g) :- straight_vh_54_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+private_vnm_54_nl0_ce0(?a,?b,?c,?d),blood_vnm_54_nl0_ce1(?e,?f,?g,!h,!i),lock_vnm_54_nl0_ce2(?d,!i) :- winter_vh_16_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+attack_vnm_19_nl0_ce0(?a,?b,!c) :- dress_ad_55_nl0_ce0(?a,?b) .
+reading_ad_32_nl0_ce0(?a,?b,?c,?d,?e),reason_ad_18_nl0_ce0(?a,?f,?g,?h,?i) :- porter_vi_55_nl0_ce0(?a,?b,?c,?d,?e,?f,?g,?h,?i) .
+sleep_vnm_12_nl0_ce0(?a,?b,!e),fertile_vh_7_nl0_ce1(?c,?d,!f,!e) :- private_vh_55_nl0_ce0(?a,?b,?c,?d) .
+delicate_vi_26_nl0_ce1(?a,?b,?c),own_vnm_47_nl0_ce0(?d,!e,!f),stone_vh_7_nl0_ce0(?c,!f) :- plough_vnm_55_nl0_ce0(?a,?b,?c,?d) .
+protest_ad_56_nl0_ce0(?a,?b,?c,?d,!e) :- place_vi_6_nl0_ce0(?a,?b,?c,?d) .
+error_vi_56_nl0_ce0(?a,?b,?c),twist_vi_56_nl0_ce1(?a,?d,?e,?f) :- early_vi_56_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+learn_vh_56_nl0_ce0(?a,!d),loose_vh_56_nl0_ce1(?b,?c,!e,!d) :- write_vh_56_nl0_ce0(?a,?b,?c) .
+first_vnm_11_nl0_ce1(?a,?b,?c,?d),sense_vnm_42_nl0_ce0(?e,?f,!g,!h),parallel_vnm_2_nl0_ce0(?d,!h) :- secret_vnm_56_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+feeble_ad_57_nl0_ce0(?a,?b,?c,?d,?e,?f,!g) :- sneeze_vh_53_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+whistle_ad_49_nl0_ce0(?a,?b,?c,?d),damage_ad_33_nl0_ce0(?a,?e,?f,?g) :- map_vi_57_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+girl_vh_57_nl0_ce0(?a,?b,!f),cart_vh_57_nl0_ce1(?c,?d,?e,!g,!f) :- shoe_vh_57_nl0_ce0(?a,?b,?c,?d,?e) .
+offer_vnm_57_nl0_ce0(?a,?b,?c,?d),fertile_vnm_57_nl0_ce1(?e,?f,!g,!h),carry_vnm_57_nl0_ce2(?d,!h) :- must_vnm_57_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+tree_ad_58_nl0_ce0(?a,?b,?c,?d,?e,!f) :- sing_ad_58_nl0_ce0(?a,?b,?c,?d,?e) .
+curve_vi_58_nl0_ce0m(?a,?b),play_vi_58_nl0_ce1(?a,?c,?d) :- curve_vi_58_nl0_ce0(?a,?b,?c,?d) .
+nation_vh_58_nl0_ce0(?a,!d),knock_vh_58_nl0_ce1(?b,?c,!e,!d) :- contact_vh_58_nl0_ce0(?a,?b,?c) .
+liquid_vnm_58_nl0_ce0(?a,?b,?c,?d),loose_vnm_58_nl0_ce1(?e,?f,!g,!h),lay_vnm_58_nl0_ce2(?d,!h) :- do_vnm_58_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+green_vnm_8_nl0_ce1(?a,?b,!c) :- organization_ad_59_nl0_ce0(?a,?b) .
+substance_vi_59_nl0_ce0(?a,?b,?c),mean_vi_59_nl0_ce1(?a,?d,?e,?f) :- behavior_vi_59_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+answer_vh_59_nl0_ce0(?a,?b,!e),play_vh_59_nl0_ce1(?c,?d,!f,!e) :- cover_vi_17_nl0_ce0(?a,?b,?c,?d) .
+knot_vnm_33_nl0_ce0(?a,?b,?c),move_vnm_37_nl0_ce0(?d,!e,!f),business_vi_11_nl0_ce0(?c,!f) :- need_vnm_59_nl0_ce0(?a,?b,?c,?d) .
+wax_ad_60_nl0_ce0(?a,?b,?c,!d) :- see_ad_42_nl0_ce0(?a,?b,?c) .
+female_vi_60_nl0_ce0(?a,?b,?c),jelly_vi_60_nl0_ce1(?a,?d,?e,?f) :- insurance_vi_14_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+weight_vh_60_nl0_ce0(?a,!c),page_vh_60_nl0_ce1(?b,!d,!c) :- dress_ad_55_nl0_ce0(?a,?b) .
+fall_vnm_60_nl0_ce0(?a,?b,?c),common_vnm_60_nl0_ce1(?d,?e,!f,!g),safe_vnm_60_nl0_ce2(?c,!g) :- limit_vnm_60_nl0_ce0(?a,?b,?c,?d,?e) .
+use_ad_61_nl0_ce0(?a,?b,?c,!d) :- worm_ad_33_nl0_ce0(?a,?b,?c) .
+avoid_vi_61_nl0_ce0(?a,?b,?c),grey_vi_61_nl0_ce1(?a,?d,?e,?f) :- damage_vi_61_nl0_ce0(?a,?b,?c,?d,?e,?f) .
+blue_vh_61_nl0_ce0(?a,?b,!e),stick_vh_61_nl0_ce1(?c,?d,!f,!e) :- learning_ad_36_nl0_ce0(?a,?b,?c,?d) .
+delicate_vi_38_nl0_ce1(?a,?b,?c),pain_vnm_4_nl0_ce1(?d,!e,!f),mist_vnm_25_nl0_ce2(?c,!f) :- watch_vnm_61_nl0_ce0(?a,?b,?c,?d) .
+poison_ad_62_nl0_ce0(?a,?b,?c,?d,!e) :- back_ad_62_nl0_ce0(?a,?b,?c,?d) .
+eat_ad_8_nl0_ce0(?a,?b,?c,?d,?e),deep_ad_16_nl0_ce0(?a,?f,?g,?h,?i) :- brick_vi_62_nl0_ce0(?a,?b,?c,?d,?e,?f,?g,?h,?i) .
+smell_vh_62_nl0_ce0(?a,?b,!f),base_vh_62_nl0_ce1(?c,?d,?e,!g,!f) :- buy_vh_62_nl0_ce0(?a,?b,?c,?d,?e) .
+cushion_vnm_62_nl0_ce0(?a,?b),bell_vnm_62_nl0_ce1(!c,!d),could_vnm_62_nl0_ce2(?b,!d) :- new_vnm_62_nl0_ce0(?a,?b) .
+protest_ad_63_nl0_ce0(?a,?b,?c,?d,?e,?f,?g,!h) :- winter_vh_16_nl0_ce0(?a,?b,?c,?d,?e,?f,?g) .
+would_vi_63_nl0_ce0(?a,?b),gun_vi_63_nl0_ce1(?a,?c) :- glove_vi_63_nl0_ce0(?a,?b,?c) .
+conscious_vnm_13_nl0_ce0(?a,?b,!e),hate_vh_6_nl0_ce1(?c,?d,!f,!e) :- look_vh_63_nl0_ce0(?a,?b,?c,?d) .
+collar_vnm_63_nl0_ce0(?a,?b,?c),concern_vnm_63_nl0_ce1(?d,?e,!f,!g),science_vnm_63_nl0_ce2(?c,!g) :- eat_vnm_63_nl0_ce0(?a,?b,?c,?d,?e) .
+ray_ad_64_nl0_ce0(?a,?b,?c,!d) :- belong_vnm_18_nl0_ce0(?a,?b,?c) .
+neck_vi_64_nl0_ce0(?a,?b),encourage_vi_64_nl0_ce1(?a,?c,?d) :- clear_vi_64_nl0_ce0(?a,?b,?c,?d) .
+fly_vh_64_nl0_ce0(?a,!d),twist_vh_64_nl0_ce1(?b,?c,!e,!d) :- base_vh_64_nl0_ce0(?a,?b,?c) .
+use_vnm_64_nl0_ce0(?a,?b),grey_vnm_64_nl0_ce1(?c,!d,!e),horse_vnm_64_nl0_ce2(?b,!e) :- worm_ad_33_nl0_ce0(?a,?b,?c) .
+different_vi_1_nl0_ce0(!compare_vi_1_nl0_ae0ke0JoinAttr,!demand_vi_1_nl0_ae10,!great_vi_1_nl0_ae21) :- society_vi_1_nl0_ce1(?compare_vi_1_nl0_ae0ke0Ref,?board_vi_1_nl0_ae3,?affect_vi_1_nl0_ae4) .
+blue_vh_1_nl0_ce0(!tail_vh_1_nl0_ae00,!red_vh_1_nl0_ae11,!wrong_vh_1_nl0_ae22,?letter_vh_1_nl0_ae0JoinAttr) :- describe_vh_1_nl0_ce1(?past_vh_1_nl0_ae30,?wheel_vh_1_nl0_ae41,?work_vh_1_nl0_ae52,?letter_vh_1_nl0_ae0JoinAttr,?letter_vh_1_nl0_ae0JoinAttrRef3) .
+rest_vnm_1_nl0_ce0(!night_vnm_1_nl0_ae0ke00,!attention_vnm_1_nl0_ae11,!oven_vnm_1_nl0_ae00) :- expansion_vnm_1_nl0_ce2(?oven_vnm_1_nl0_ae00Ref,?narrow_vnm_1_nl1_ae01Ref) .
+place_vnm_1_nl0_ce1(!discover_vnm_1_nl0_ae20,!different_vnm_1_nl0_ae31,!reveal_vnm_1_nl0_ae42,!narrow_vnm_1_nl1_ae01) :- expansion_vnm_1_nl0_ce2(?oven_vnm_1_nl0_ae00Ref,?narrow_vnm_1_nl1_ae01Ref) .
+approval_vi_2_nl0_ce0(!small_vi_2_nl0_ae0ke0JoinAttr,!brain_vi_2_nl0_ae10,!branch_vi_2_nl0_ae21) :- blow_vi_2_nl0_ce1(?small_vi_2_nl0_ae0ke0Ref,?swim_vi_2_nl0_ae3,?place_vi_2_nl0_ae4) .
+involve_vh_2_nl0_ce0(!ready_vh_2_nl0_ae00,!property_vh_2_nl0_ae11,!gun_vh_2_nl0_ae22,?discuss_vh_2_nl0_ae0JoinAttr) :- use_vh_2_nl0_ce1(?winter_vh_2_nl0_ae30,?powder_vh_2_nl0_ae41,?work_vh_2_nl0_ae52,?discuss_vh_2_nl0_ae0JoinAttr,?discuss_vh_2_nl0_ae0JoinAttrRef3) .
+parallel_vnm_2_nl0_ce0(!dead_vnm_2_nl0_ae0ke00,!knee_vnm_2_nl0_ae00) :- handle_vnm_2_nl0_ce2(?knee_vnm_2_nl0_ae00Ref,?leave_vnm_2_nl1_ae01Ref) .
+collection_vnm_2_nl0_ce1(!send_vnm_2_nl0_ae10,!regular_vnm_2_nl0_ae21,!leave_vnm_2_nl1_ae01) :- handle_vnm_2_nl0_ce2(?knee_vnm_2_nl0_ae00Ref,?leave_vnm_2_nl1_ae01Ref) .
+kind_vi_3_nl0_ce0(!necessary_vi_3_nl0_ae0ke0JoinAttr,!stick_vi_3_nl0_ae10,!effect_vi_3_nl0_ae21) :- prove_vi_3_nl0_ce1(?necessary_vi_3_nl0_ae0ke0Ref,?slow_vi_3_nl0_ae3,?word_vi_3_nl0_ae4) .
+door_vh_3_nl0_ce0(!early_vh_3_nl0_ae00,!violent_vh_3_nl0_ae11,?mind_vh_3_nl0_ae0JoinAttr) :- charge_vh_3_nl0_ce1(?chalk_vh_3_nl0_ae20,?regular_vh_3_nl0_ae31,?love_vh_3_nl0_ae42,?mind_vh_3_nl0_ae0JoinAttr,?mind_vh_3_nl0_ae0JoinAttrRef3) .
+farm_vnm_3_nl0_ce0(!sugar_vnm_3_nl0_ae0ke00,!bent_vnm_3_nl0_ae11,!crush_vnm_3_nl0_ae00) :- language_vnm_3_nl0_ce2(?crush_vnm_3_nl0_ae00Ref,?treat_vnm_3_nl1_ae01Ref) .
+political_vnm_3_nl0_ce1(!sweet_vnm_3_nl0_ae20,!rod_vnm_3_nl0_ae31,!silk_vnm_3_nl0_ae42,!treat_vnm_3_nl1_ae01) :- language_vnm_3_nl0_ce2(?crush_vnm_3_nl0_ae00Ref,?treat_vnm_3_nl1_ae01Ref) .
+involve_vi_4_nl0_ce0(!found_vi_4_nl0_ae0ke0JoinAttr,!sleep_vi_4_nl0_ae10) :- mention_vi_4_nl0_ce1(?found_vi_4_nl0_ae0ke0Ref,?clean_vi_4_nl0_ae2,?flower_vi_4_nl0_ae3) .
+complete_vh_4_nl0_ce0(!grip_vh_4_nl0_ae00,!complex_vh_4_nl0_ae11,?agency_vh_4_nl0_ae0JoinAttr) :- count_vh_4_nl0_ce1(?claim_vh_4_nl0_ae20,?state_vh_4_nl0_ae31,?egg_vh_4_nl0_ae42,?agency_vh_4_nl0_ae0JoinAttr,?agency_vh_4_nl0_ae0JoinAttrRef3) .
+gold_vnm_4_nl0_ce0(!death_vnm_4_nl0_ae0ke00,!leather_vnm_4_nl0_ae00) :- accept_vnm_4_nl0_ce2(?leather_vnm_4_nl0_ae00Ref,?distribution_vnm_4_nl1_ae01Ref) .
+pain_vnm_4_nl0_ce1(!hollow_vnm_4_nl0_ae10,!hollow_vnm_4_nl0_ae21,!distribution_vnm_4_nl1_ae01) :- accept_vnm_4_nl0_ce2(?leather_vnm_4_nl0_ae00Ref,?distribution_vnm_4_nl1_ae01Ref) .
+pain_vi_5_nl0_ce0(!feeling_vi_5_nl0_ae0ke0JoinAttr,!disease_vi_5_nl0_ae10,!attraction_vi_5_nl0_ae21) :- straight_vi_5_nl0_ce1(?feeling_vi_5_nl0_ae0ke0Ref,?sad_vi_5_nl0_ae3,?root_vi_5_nl0_ae4) .
+record_vh_5_nl0_ce0(!question_vh_5_nl0_ae00,!walk_vh_5_nl0_ae11,!count_vh_5_nl0_ae22,?settle_vh_5_nl0_ae0JoinAttr) :- probable_vh_5_nl0_ce1(?involve_vh_5_nl0_ae30,?explain_vh_5_nl0_ae41,?theory_vh_5_nl0_ae52,?settle_vh_5_nl0_ae0JoinAttr,?settle_vh_5_nl0_ae0JoinAttrRef3) .
+boot_vnm_5_nl0_ce0(!goat_vnm_5_nl0_ae0ke00,!head_vnm_5_nl0_ae11,!judge_vnm_5_nl0_ae22,!flat_vnm_5_nl0_ae00) :- sea_vnm_5_nl0_ce2(?flat_vnm_5_nl0_ae00Ref,?train_vnm_5_nl1_ae01Ref) .
+dependent_vnm_5_nl0_ce1(!impulse_vnm_5_nl0_ae30,!prose_vnm_5_nl0_ae41,!agencies_vnm_5_nl0_ae52,!train_vnm_5_nl1_ae01) :- sea_vnm_5_nl0_ce2(?flat_vnm_5_nl0_ae00Ref,?train_vnm_5_nl1_ae01Ref) .
+oven_vi_6_nl0_ce0(!return_vi_6_nl0_ae0ke0JoinAttr,!debts_vi_6_nl0_ae10) :- give_vi_6_nl0_ce1(?return_vi_6_nl0_ae0ke0Ref,?wash_vi_6_nl0_ae2,?gain_vi_6_nl0_ae3) .
+animal_vh_6_nl0_ce0(!window_vh_6_nl0_ae00,?female_vh_6_nl0_ae0JoinAttr) :- hate_vh_6_nl0_ce1(?belong_vh_6_nl0_ae10,?increase_vh_6_nl0_ae21,?female_vh_6_nl0_ae0JoinAttr,?female_vh_6_nl0_ae0JoinAttrRef2) .
+argue_vnm_6_nl0_ce0(!round_vnm_6_nl0_ae0ke00,!chin_vnm_6_nl0_ae00) :- summer_vnm_6_nl0_ce2(?chin_vnm_6_nl0_ae00Ref,?salt_vnm_6_nl1_ae01Ref) .
+late_vnm_6_nl0_ce1(!act_vnm_6_nl0_ae10,!turn_vnm_6_nl0_ae21,!salt_vnm_6_nl1_ae01) :- summer_vnm_6_nl0_ce2(?chin_vnm_6_nl0_ae00Ref,?salt_vnm_6_nl1_ae01Ref) .
+fly_vi_7_nl0_ce0(!private_vi_7_nl0_ae0ke0JoinAttr,!inform_vi_7_nl0_ae10,!hollow_vi_7_nl0_ae21) :- late_vi_7_nl0_ce1(?private_vi_7_nl0_ae0ke0Ref,?space_vi_7_nl0_ae30,?art_vi_7_nl0_ae41) .
+stone_vh_7_nl0_ce0(!support_vh_7_nl0_ae00,?orange_vh_7_nl0_ae0JoinAttr) :- fertile_vh_7_nl0_ce1(?silver_vh_7_nl0_ae10,?tight_vh_7_nl0_ae21,?orange_vh_7_nl0_ae0JoinAttr,?orange_vh_7_nl0_ae0JoinAttrRef2) .
+awake_vnm_7_nl0_ce0(!interest_vnm_7_nl0_ae0ke00,!connection_vnm_7_nl0_ae11,!disappear_vnm_7_nl0_ae00) :- hammer_vnm_7_nl0_ce2(?disappear_vnm_7_nl0_ae00Ref,?indicate_vnm_7_nl1_ae01Ref) .
+church_vnm_7_nl0_ce1(!heart_vnm_7_nl0_ae20,!seem_vnm_7_nl0_ae31,!indicate_vnm_7_nl1_ae01) :- hammer_vnm_7_nl0_ce2(?disappear_vnm_7_nl0_ae00Ref,?indicate_vnm_7_nl1_ae01Ref) .
+complain_vi_8_nl0_ce0(!foot_vi_8_nl0_ae0ke0JoinAttr,!year_vi_8_nl0_ae10,!poison_vi_8_nl0_ae21) :- snake_vi_8_nl0_ce1(?foot_vi_8_nl0_ae0ke0Ref,?opinion_vi_8_nl0_ae3,?help_vi_8_nl0_ae4) .
+touch_vh_8_nl0_ce0(!angle_vh_8_nl0_ae00,!jump_vh_8_nl0_ae11,?discover_vh_8_nl0_ae0JoinAttr) :- settle_vh_8_nl0_ce1(?lift_vh_8_nl0_ae20,?exchange_vh_8_nl0_ae31,?discover_vh_8_nl0_ae0JoinAttr,?discover_vh_8_nl0_ae0JoinAttrRef2) .
+trick_vnm_8_nl0_ce0(!winter_vnm_8_nl0_ae0ke00,!hollow_vnm_8_nl0_ae11,!observation_vnm_8_nl0_ae00) :- jump_vnm_8_nl0_ce2(?observation_vnm_8_nl0_ae00Ref,?like_vnm_8_nl1_ae01Ref) .
+green_vnm_8_nl0_ce1(!sign_vnm_8_nl0_ae20,!bitter_vnm_8_nl0_ae31,!like_vnm_8_nl1_ae01) :- jump_vnm_8_nl0_ce2(?observation_vnm_8_nl0_ae00Ref,?like_vnm_8_nl1_ae01Ref) .
+degree_vi_9_nl0_ce0(!prove_vi_9_nl0_ae0ke0JoinAttr,!base_vi_9_nl0_ae10,!speak_vi_9_nl0_ae21) :- forgive_vi_9_nl0_ce1(?prove_vi_9_nl0_ae0ke0Ref,?comb_vi_9_nl0_ae3,?paint_vi_9_nl0_ae4) .
+account_vh_9_nl0_ce0(!weight_vh_9_nl0_ae00,!event_vh_9_nl0_ae11,?paste_vh_9_nl0_ae0JoinAttr) :- fiction_vh_9_nl0_ce1(?sort_vh_9_nl0_ae20,?mean_vh_9_nl0_ae31,?desire_vh_9_nl0_ae42,?paste_vh_9_nl0_ae0JoinAttr,?paste_vh_9_nl0_ae0JoinAttrRef3) .
+ring_vnm_9_nl0_ce0(!round_vnm_9_nl0_ae0ke00,!regret_vnm_9_nl0_ae11,!cut_vnm_9_nl0_ae00) :- room_vnm_9_nl0_ce2(?cut_vnm_9_nl0_ae00Ref,?connection_vnm_9_nl1_ae01Ref) .
+voice_vnm_9_nl0_ce1(!train_vnm_9_nl0_ae20,!beat_vnm_9_nl0_ae31,!hammer_vnm_9_nl0_ae42,!connection_vnm_9_nl1_ae01) :- room_vnm_9_nl0_ce2(?cut_vnm_9_nl0_ae00Ref,?connection_vnm_9_nl1_ae01Ref) .
+come_vi_10_nl0_ce0(!sail_vi_10_nl0_ae0ke0JoinAttr,!ink_vi_10_nl0_ae10,!conscious_vi_10_nl0_ae21) :- long_vi_10_nl0_ce1(?sail_vi_10_nl0_ae0ke0Ref,?lead_vi_10_nl0_ae3,?basin_vi_10_nl0_ae4) .
+reply_vh_10_nl0_ce0(!destruction_vh_10_nl0_ae00,!insurance_vh_10_nl0_ae11,?thin_vh_10_nl0_ae0JoinAttr) :- require_vh_10_nl0_ce1(?rhythm_vh_10_nl0_ae20,?fiction_vh_10_nl0_ae31,?cook_vh_10_nl0_ae42,?thin_vh_10_nl0_ae0JoinAttr,?thin_vh_10_nl0_ae0JoinAttrRef3) .
+church_vnm_10_nl0_ce0(!family_vnm_10_nl0_ae0ke00,!plane_vnm_10_nl0_ae11,!parallel_vnm_10_nl0_ae22,!blade_vnm_10_nl0_ae00) :- digestion_vnm_10_nl0_ce2(?blade_vnm_10_nl0_ae00Ref,?company_vnm_10_nl1_ae01Ref) .
+point_vnm_10_nl0_ce1(!grain_vnm_10_nl0_ae30,!lift_vnm_10_nl0_ae41,!thin_vnm_10_nl0_ae52,!yellow_vnm_10_nl0_ae63,!company_vnm_10_nl1_ae01) :- digestion_vnm_10_nl0_ce2(?blade_vnm_10_nl0_ae00Ref,?company_vnm_10_nl1_ae01Ref) .
+business_vi_11_nl0_ce0(!safe_vi_11_nl0_ae0ke0JoinAttr,!talk_vi_11_nl0_ae10) :- yellow_vi_11_nl0_ce1(?safe_vi_11_nl0_ae0ke0Ref,?regard_vi_11_nl0_ae20,?burn_vi_11_nl0_ae31) .
+beautiful_vh_11_nl0_ce0(!receipt_vh_11_nl0_ae00,!fish_vh_11_nl0_ae11,?go_vh_11_nl0_ae0JoinAttr) :- watch_vh_11_nl0_ce1(?wish_vh_11_nl0_ae20,?red_vh_11_nl0_ae31,?thumb_vh_11_nl0_ae42,?go_vh_11_nl0_ae0JoinAttr,?go_vh_11_nl0_ae0JoinAttrRef3) .
+compare_vnm_11_nl0_ce0(!form_vnm_11_nl0_ae0ke00,!stamp_vnm_11_nl0_ae11,!side_vnm_11_nl0_ae00) :- play_vnm_11_nl0_ce2(?side_vnm_11_nl0_ae00Ref,?arrange_vnm_11_nl1_ae01Ref) .
+first_vnm_11_nl0_ce1(!check_vnm_11_nl0_ae20,!place_vnm_11_nl0_ae31,!language_vnm_11_nl0_ae42,!arrange_vnm_11_nl1_ae01) :- play_vnm_11_nl0_ce2(?side_vnm_11_nl0_ae00Ref,?arrange_vnm_11_nl1_ae01Ref) .
+provide_vi_12_nl0_ce0(!request_vi_12_nl0_ae0ke0JoinAttr,!shade_vi_12_nl0_ae10,!point_vi_12_nl0_ae21) :- secret_vi_12_nl0_ce1(?request_vi_12_nl0_ae0ke0Ref,?learn_vi_12_nl0_ae3,?acid_vi_12_nl0_ae4) .
+try_vh_12_nl0_ce0(!see_vh_12_nl0_ae00,!open_vh_12_nl0_ae11,!silk_vh_12_nl0_ae22,?trousers_vh_12_nl0_ae0JoinAttr) :- complex_vh_12_nl0_ce1(?could_vh_12_nl0_ae30,?error_vh_12_nl0_ae41,?bell_vh_12_nl0_ae52,?trousers_vh_12_nl0_ae0JoinAttr,?trousers_vh_12_nl0_ae0JoinAttrRef3) .
+sleep_vnm_12_nl0_ce0(!driving_vnm_12_nl0_ae0ke00,!mountain_vnm_12_nl0_ae11,!dependent_vnm_12_nl0_ae00) :- engine_vnm_12_nl0_ce2(?dependent_vnm_12_nl0_ae00Ref,?desire_vnm_12_nl1_ae01Ref) .
+measure_vnm_12_nl0_ce1(!powder_vnm_12_nl0_ae20,!tax_vnm_12_nl0_ae31,!desire_vnm_12_nl1_ae01) :- engine_vnm_12_nl0_ce2(?dependent_vnm_12_nl0_ae00Ref,?desire_vnm_12_nl1_ae01Ref) .
+thread_vi_13_nl0_ce0(!avoid_vi_13_nl0_ae0ke0JoinAttr,!do_vi_13_nl0_ae10,!knock_vi_13_nl0_ae21) :- look_vi_13_nl0_ce1(?avoid_vi_13_nl0_ae0ke0Ref,?talk_vi_13_nl0_ae3,?bulb_vi_13_nl0_ae4) .
+wet_vh_13_nl0_ce0(!ticket_vh_13_nl0_ae00,!desire_vh_13_nl0_ae11,?death_vh_13_nl0_ae0JoinAttr) :- back_vh_13_nl0_ce1(?male_vh_13_nl0_ae20,?general_vh_13_nl0_ae31,?death_vh_13_nl0_ae0JoinAttr,?death_vh_13_nl0_ae0JoinAttrRef2) .
+conscious_vnm_13_nl0_ce0(!hurt_vnm_13_nl0_ae0ke00,!stop_vnm_13_nl0_ae11,!pot_vnm_13_nl0_ae00) :- loose_vnm_13_nl0_ce2(?pot_vnm_13_nl0_ae00Ref,?add_vnm_13_nl1_ae01Ref) .
+wait_vnm_13_nl0_ce1(!year_vnm_13_nl0_ae20,!expert_vnm_13_nl0_ae31,!promise_vnm_13_nl0_ae42,!add_vnm_13_nl1_ae01) :- loose_vnm_13_nl0_ce2(?pot_vnm_13_nl0_ae00Ref,?add_vnm_13_nl1_ae01Ref) .
+advertisement_vi_14_nl0_ce0(!eye_vi_14_nl0_ae0ke0JoinAttr,!lead_vi_14_nl0_ae10,!wound_vi_14_nl0_ae21) :- smoke_vi_14_nl0_ce1(?eye_vi_14_nl0_ae0ke0Ref,?happy_vi_14_nl0_ae3,?prefer_vi_14_nl0_ae4,?describe_vi_14_nl0_ae5) .
+coat_vh_14_nl0_ce0(!sudden_vh_14_nl0_ae00,!obtain_vh_14_nl0_ae11,?year_vh_14_nl0_ae0JoinAttr) :- father_vh_14_nl0_ce1(?receive_vh_14_nl0_ae20,?mark_vh_14_nl0_ae31,?year_vh_14_nl0_ae0JoinAttr,?year_vh_14_nl0_ae0JoinAttrRef2) .
+skin_vnm_14_nl0_ce0(!touch_vnm_14_nl0_ae0ke00,!opinion_vnm_14_nl0_ae11,!taste_vnm_14_nl0_ae00) :- adjustment_vnm_14_nl0_ce2(?taste_vnm_14_nl0_ae00Ref,?steel_vnm_14_nl1_ae01Ref) .
+believe_vnm_14_nl0_ce1(!receive_vnm_14_nl0_ae20,!hide_vnm_14_nl0_ae31,!open_vnm_14_nl0_ae42,!steel_vnm_14_nl1_ae01) :- adjustment_vnm_14_nl0_ce2(?taste_vnm_14_nl0_ae00Ref,?steel_vnm_14_nl1_ae01Ref) .
+jewel_vi_15_nl0_ce0(!nerve_vi_15_nl0_ae0ke0JoinAttr,!ticket_vi_15_nl0_ae10) :- change_vi_15_nl0_ce1(?nerve_vi_15_nl0_ae0ke0Ref,?warn_vi_15_nl0_ae2) .
+contain_vh_15_nl0_ce0(!card_vh_15_nl0_ae00,!brick_vh_15_nl0_ae11,?flat_vh_15_nl0_ae0JoinAttr) :- know_vh_15_nl0_ce1(?smooth_vh_15_nl0_ae20,?will_vh_15_nl0_ae31,?rest_vh_15_nl0_ae42,?flat_vh_15_nl0_ae0JoinAttr,?flat_vh_15_nl0_ae0JoinAttrRef3) .
+present_vnm_15_nl0_ce0(!wash_vnm_15_nl0_ae0ke00,!amount_vnm_15_nl0_ae11,!feed_vnm_15_nl0_ae00) :- butter_vnm_15_nl0_ce2(?feed_vnm_15_nl0_ae00Ref,?price_vnm_15_nl1_ae01Ref) .
+sister_vnm_15_nl0_ce1(!medical_vnm_15_nl0_ae20,!delicate_vnm_15_nl0_ae31,!price_vnm_15_nl1_ae01) :- butter_vnm_15_nl0_ce2(?feed_vnm_15_nl0_ae00Ref,?price_vnm_15_nl1_ae01Ref) .
+involve_vi_16_nl0_ce0(!sun_vi_16_nl0_ae0ke0JoinAttr,!claim_vi_16_nl0_ae10,!can_vi_16_nl0_ae21) :- bee_vi_16_nl0_ce1(?sun_vi_16_nl0_ae0ke0Ref,?clean_vi_16_nl0_ae30,?smell_vi_16_nl0_ae41) .
+afford_vh_16_nl0_ce0(!sneeze_vh_16_nl0_ae00,!avoid_vh_16_nl0_ae11,!clean_vh_16_nl0_ae22,?laugh_vh_16_nl0_ae0JoinAttr) :- reflect_vh_16_nl0_ce1(?round_vh_16_nl0_ae30,?begin_vh_16_nl0_ae41,?create_vh_16_nl0_ae52,?copy_vh_16_nl0_ae63,?laugh_vh_16_nl0_ae0JoinAttr,?laugh_vh_16_nl0_ae0JoinAttrRef4) .
+tin_vnm_16_nl0_ce0(!side_vnm_16_nl0_ae0ke00,!fixed_vnm_16_nl0_ae11,!cheese_vnm_16_nl0_ae00) :- second_vnm_16_nl0_ce2(?cheese_vnm_16_nl0_ae00Ref,?grip_vnm_16_nl1_ae01Ref0) .
+reading_vnm_16_nl0_ce1(!baby_vnm_16_nl0_ae20,!pass_vnm_16_nl0_ae31,!orange_vnm_16_nl0_ae42,!grip_vnm_16_nl1_ae01) :- second_vnm_16_nl0_ce2(?cheese_vnm_16_nl0_ae00Ref,?grip_vnm_16_nl1_ae01Ref0) .
+hide_vi_17_nl0_ce0(!cry_vi_17_nl0_ae0ke0JoinAttr,!stand_vi_17_nl0_ae10) :- shoe_vi_17_nl0_ce1(?cry_vi_17_nl0_ae0ke0Ref,?man_vi_17_nl0_ae2,?begin_vi_17_nl0_ae3) .
+cross_vh_17_nl0_ce0(!expert_vh_17_nl0_ae00,!sudden_vh_17_nl0_ae11,?minute_vh_17_nl0_ae0JoinAttr) :- act_vh_17_nl0_ce1(?plane_vh_17_nl0_ae20,?bitter_vh_17_nl0_ae31,?minute_vh_17_nl0_ae0JoinAttr,?minute_vh_17_nl0_ae0JoinAttrRef2) .
+size_vnm_17_nl0_ce0(!last_vnm_17_nl0_ae0ke00,!avoid_vnm_17_nl0_ae11,!drain_vnm_17_nl0_ae00) :- baby_vnm_17_nl0_ce2(?drain_vnm_17_nl0_ae00Ref,?cough_vnm_17_nl1_ae01Ref) .
+raise_vnm_17_nl0_ce1(!card_vnm_17_nl0_ae20,!walk_vnm_17_nl0_ae31,!cough_vnm_17_nl1_ae01) :- baby_vnm_17_nl0_ce2(?drain_vnm_17_nl0_ae00Ref,?cough_vnm_17_nl1_ae01Ref) .
+point_vi_18_nl0_ce0(!public_vi_18_nl0_ae0ke0JoinAttr,!like_vi_18_nl0_ae10) :- band_vi_18_nl0_ce1(?public_vi_18_nl0_ae0ke0Ref,?oven_vi_18_nl0_ae2,?sky_vi_18_nl0_ae3) .
+level_vh_18_nl0_ce0(!debts_vh_18_nl0_ae00,!screw_vh_18_nl0_ae11,!lock_vh_18_nl0_ae22,?tax_vh_18_nl0_ae0JoinAttr) :- present_vh_18_nl0_ce1(?examine_vh_18_nl0_ae30,?simple_vh_18_nl0_ae41,?past_vh_18_nl0_ae52,?page_vh_18_nl0_ae63,?tax_vh_18_nl0_ae0JoinAttr,?tax_vh_18_nl0_ae0JoinAttrRef4) .
+oven_vnm_18_nl0_ce0(!sheep_vnm_18_nl0_ae0ke00,!muscle_vnm_18_nl0_ae00) :- avoid_vnm_18_nl0_ce2(?muscle_vnm_18_nl0_ae00Ref,?lie_vnm_18_nl1_ae01Ref) .
+amount_vnm_18_nl0_ce1(!grey_vnm_18_nl0_ae10,!trouble_vnm_18_nl0_ae21,!lie_vnm_18_nl1_ae01) :- avoid_vnm_18_nl0_ce2(?muscle_vnm_18_nl0_ae00Ref,?lie_vnm_18_nl1_ae01Ref) .
+chalk_vi_19_nl0_ce0(!study_vi_19_nl0_ae0ke0JoinAttr,!married_vi_19_nl0_ae10,!copy_vi_19_nl0_ae21) :- smile_vi_19_nl0_ce1(?study_vi_19_nl0_ae0ke0Ref,?shut_vi_19_nl0_ae3,?miss_vi_19_nl0_ae4,?manage_vi_19_nl0_ae5) .
+arrange_vh_19_nl0_ce0(!acid_vh_19_nl0_ae00,!sort_vh_19_nl0_ae11,?sweet_vh_19_nl0_ae0JoinAttr) :- brush_vh_19_nl0_ce1(?hope_vh_19_nl0_ae20,?advertisement_vh_19_nl0_ae31,?sweet_vh_19_nl0_ae0JoinAttr,?sweet_vh_19_nl0_ae0JoinAttrRef2) .
+attack_vnm_19_nl0_ce0(!orange_vnm_19_nl0_ae0ke00,!seat_vnm_19_nl0_ae11,!sharp_vnm_19_nl0_ae00) :- matter_vnm_19_nl0_ce2(?sharp_vnm_19_nl0_ae00Ref,?cause_vnm_19_nl1_ae01Ref) .
+stitch_vnm_19_nl0_ce1(!parcel_vnm_19_nl0_ae20,!ray_vnm_19_nl0_ae31,!cause_vnm_19_nl1_ae01) :- matter_vnm_19_nl0_ce2(?sharp_vnm_19_nl0_ae00Ref,?cause_vnm_19_nl1_ae01Ref) .
+violent_vi_20_nl0_ce0(!improve_vi_20_nl0_ae0ke0JoinAttr,!band_vi_20_nl0_ae10,!sail_vi_20_nl0_ae21) :- hide_vi_20_nl0_ce1(?improve_vi_20_nl0_ae0ke0Ref,?boy_vi_20_nl0_ae3,?solid_vi_20_nl0_ae4) .
+agencies_vh_20_nl0_ce0(!hide_vh_20_nl0_ae00,!floor_vh_20_nl0_ae11,?change_vh_20_nl0_ae0JoinAttr) :- wave_vh_20_nl0_ce1(?cover_vh_20_nl0_ae20,?copper_vh_20_nl0_ae31,?depend_vh_20_nl0_ae42,?change_vh_20_nl0_ae0JoinAttr,?change_vh_20_nl0_ae0JoinAttrRef3) .
+family_vnm_20_nl0_ce0(!ice_vnm_20_nl0_ae0ke00,!pain_vnm_20_nl0_ae11,!represent_vnm_20_nl0_ae00) :- examine_vnm_20_nl0_ce2(?represent_vnm_20_nl0_ae00Ref,?earth_vnm_20_nl1_ae01Ref) .
+remain_vnm_20_nl0_ce1(!thumb_vnm_20_nl0_ae20,!request_vnm_20_nl0_ae31,!division_vnm_20_nl0_ae42,!earth_vnm_20_nl1_ae01) :- examine_vnm_20_nl0_ce2(?represent_vnm_20_nl0_ae00Ref,?earth_vnm_20_nl1_ae01Ref) .
+screw_vi_21_nl0_ce0(!nation_vi_21_nl0_ae0ke0JoinAttr) :- cook_vi_21_nl0_ce1(?nation_vi_21_nl0_ae0ke0Ref,?wet_vi_21_nl0_ae1) .
+touch_vh_21_nl0_ce0(!library_vh_21_nl0_ae00,?board_vh_21_nl0_ae0JoinAttr) :- confirm_vh_21_nl0_ce1(?crime_vh_21_nl0_ae10,?measure_vh_21_nl0_ae21,?board_vh_21_nl0_ae0JoinAttr,?board_vh_21_nl0_ae0JoinAttrRef2) .
+language_vnm_21_nl0_ce0(!blow_vnm_21_nl0_ae0ke00,!person_vnm_21_nl0_ae11,!leaf_vnm_21_nl0_ae00) :- involve_vnm_21_nl0_ce2(?leaf_vnm_21_nl0_ae00Ref,?play_vnm_21_nl1_ae01Ref) .
+end_vnm_21_nl0_ce1(!prose_vnm_21_nl0_ae20,!rub_vnm_21_nl0_ae31,!play_vnm_21_nl1_ae01) :- involve_vnm_21_nl0_ce2(?leaf_vnm_21_nl0_ae00Ref,?play_vnm_21_nl1_ae01Ref) .
+bed_vi_22_nl0_ce0(!change_vi_22_nl0_ae0ke0JoinAttr,!flight_vi_22_nl0_ae10,!suppose_vi_22_nl0_ae21) :- society_vi_22_nl0_ce1(?change_vi_22_nl0_ae0ke0Ref0,?smooth_vi_22_nl0_ae31,?walk_vi_22_nl0_ae4) .
+paper_vh_22_nl0_ce0(!smile_vh_22_nl0_ae00,!indicate_vh_22_nl0_ae11,?station_vh_22_nl0_ae0JoinAttr) :- mind_vh_22_nl0_ce1(?dear_vh_22_nl0_ae20,?loud_vh_22_nl0_ae31,?station_vh_22_nl0_ae0JoinAttr,?station_vh_22_nl0_ae0JoinAttrRef2) .
+left_vnm_22_nl0_ce0(!carry_vnm_22_nl0_ae0ke00,!face_vnm_22_nl0_ae11,!reading_vnm_22_nl0_ae00) :- blue_vnm_22_nl0_ce2(?reading_vnm_22_nl0_ae00Ref,?basin_vnm_22_nl1_ae01Ref) .
+branch_vnm_22_nl0_ce1(!night_vnm_22_nl0_ae20,!meet_vnm_22_nl0_ae31,!basin_vnm_22_nl1_ae01) :- blue_vnm_22_nl0_ce2(?reading_vnm_22_nl0_ae00Ref,?basin_vnm_22_nl1_ae01Ref) .
+use_vi_23_nl0_ce0(!price_vi_23_nl0_ae0ke0JoinAttr,!orange_vi_23_nl0_ae10,!copy_vi_23_nl0_ae21) :- white_vi_23_nl0_ce1(?price_vi_23_nl0_ae0ke0Ref,?board_vi_23_nl0_ae3,?process_vi_23_nl0_ae4) .
+concern_vh_23_nl0_ce0(!understand_vh_23_nl0_ae00,!pencil_vh_23_nl0_ae11,?pen_vh_23_nl0_ae0JoinAttr) :- example_vh_23_nl0_ce1(?liquid_vh_23_nl0_ae20,?birth_vh_23_nl0_ae31,?influence_vh_23_nl0_ae42,?pen_vh_23_nl0_ae0JoinAttr,?pen_vh_23_nl0_ae0JoinAttrRef3) .
+simple_vnm_23_nl0_ce0(!star_vnm_23_nl0_ae0ke00,!warm_vnm_23_nl0_ae00) :- record_vnm_23_nl0_ce2(?warm_vnm_23_nl0_ae00Ref,?religion_vnm_23_nl1_ae01Ref0) .
+shake_vnm_23_nl0_ce1(!insect_vnm_23_nl0_ae10,!intend_vnm_23_nl0_ae21,!religion_vnm_23_nl1_ae01) :- record_vnm_23_nl0_ce2(?warm_vnm_23_nl0_ae00Ref,?religion_vnm_23_nl1_ae01Ref0) .
+have_vi_24_nl0_ce0(!behavior_vi_24_nl0_ae0ke0JoinAttr,!sponge_vi_24_nl0_ae10,!curtain_vi_24_nl0_ae21) :- skin_vi_24_nl0_ce1(?behavior_vi_24_nl0_ae0ke0Ref,?glove_vi_24_nl0_ae30,?snow_vi_24_nl0_ae41) .
+system_vh_24_nl0_ce0(!short_vh_24_nl0_ae00,!include_vh_24_nl0_ae11,!become_vh_24_nl0_ae22,?white_vh_24_nl0_ae0JoinAttr) :- paint_vh_24_nl0_ce1(?prove_vh_24_nl0_ae30,?payment_vh_24_nl0_ae41,?pin_vh_24_nl0_ae52,?white_vh_24_nl0_ae0JoinAttr,?white_vh_24_nl0_ae0JoinAttrRef3) .
+machine_vnm_24_nl0_ce0(!servant_vnm_24_nl0_ae0ke00,!snow_vnm_24_nl0_ae11,!work_vnm_24_nl0_ae22,!regard_vnm_24_nl0_ae00) :- authority_vnm_24_nl0_ce2(?regard_vnm_24_nl0_ae00Ref,?breath_vnm_24_nl1_ae01Ref) .
+punishment_vnm_24_nl0_ce1(!ship_vnm_24_nl0_ae30,!distribution_vnm_24_nl0_ae41,!lie_vnm_24_nl0_ae52,!breath_vnm_24_nl1_ae01) :- authority_vnm_24_nl0_ce2(?regard_vnm_24_nl0_ae00Ref,?breath_vnm_24_nl1_ae01Ref) .
+electric_vi_25_nl0_ce0(!owner_vi_25_nl0_ae0ke0JoinAttr,!woman_vi_25_nl0_ae10) :- dust_vi_25_nl0_ce1(?owner_vi_25_nl0_ae0ke0Ref,?cook_vi_25_nl0_ae2,?pocket_vi_25_nl0_ae3) .
+face_vh_25_nl0_ce0(!mind_vh_25_nl0_ae00,!run_vh_25_nl0_ae11,?need_vh_25_nl0_ae0JoinAttr) :- oven_vh_25_nl0_ce1(?push_vh_25_nl0_ae20,?order_vh_25_nl0_ae31,?need_vh_25_nl0_ae0JoinAttr,?need_vh_25_nl0_ae0JoinAttrRef2) .
+war_vnm_25_nl0_ce0(!agencies_vnm_25_nl0_ae0ke00,!encourage_vnm_25_nl0_ae00) :- mist_vnm_25_nl0_ce2(?encourage_vnm_25_nl0_ae00Ref,?cheap_vnm_25_nl1_ae01Ref) .
+history_vnm_25_nl0_ce1(!reflect_vnm_25_nl0_ae10,!blue_vnm_25_nl0_ae21,!cheap_vnm_25_nl1_ae01) :- mist_vnm_25_nl0_ce2(?encourage_vnm_25_nl0_ae00Ref,?cheap_vnm_25_nl1_ae01Ref) .
+provide_vi_26_nl0_ce0(!snake_vi_26_nl0_ae0ke0JoinAttr,!shelf_vi_26_nl0_ae10) :- delicate_vi_26_nl0_ce1(?snake_vi_26_nl0_ae0ke0Ref0,?affect_vi_26_nl0_ae21,?private_vi_26_nl0_ae3) .
+invention_vh_26_nl0_ce0(!sweet_vh_26_nl0_ae00,!face_vh_26_nl0_ae11,!introduce_vh_26_nl0_ae22,?young_vh_26_nl0_ae0JoinAttr) :- use_vh_26_nl0_ce1(?stomach_vh_26_nl0_ae30,?afford_vh_26_nl0_ae41,?base_vh_26_nl0_ae52,?young_vh_26_nl0_ae0JoinAttr,?young_vh_26_nl0_ae0JoinAttrRef3) .
+sock_vnm_26_nl0_ce0(!star_vnm_26_nl0_ae0ke00,!sock_vnm_26_nl0_ae11,!deal_vnm_26_nl0_ae00) :- express_vnm_26_nl0_ce2(?deal_vnm_26_nl0_ae00Ref,?pot_vnm_26_nl1_ae01Ref) .
+authority_vnm_26_nl0_ce1(!stone_vnm_26_nl0_ae20,!call_vnm_26_nl0_ae31,!win_vnm_26_nl0_ae42,!pot_vnm_26_nl1_ae01) :- express_vnm_26_nl0_ce2(?deal_vnm_26_nl0_ae00Ref,?pot_vnm_26_nl1_ae01Ref) .
+nation_vi_27_nl0_ce0(!mention_vi_27_nl0_ae0ke0JoinAttr,!road_vi_27_nl0_ae10) :- need_vi_27_nl0_ce1(?mention_vi_27_nl0_ae0ke0Ref,?thought_vi_27_nl0_ae2,?sudden_vi_27_nl0_ae3) .
+have_vh_27_nl0_ce0(!heart_vh_27_nl0_ae00,!punishment_vh_27_nl0_ae11,?dirty_vh_27_nl0_ae0JoinAttr) :- separate_vh_27_nl0_ce1(?support_vh_27_nl0_ae20,?acid_vh_27_nl0_ae31,?dirty_vh_27_nl0_ae0JoinAttr,?dirty_vh_27_nl0_ae0JoinAttrRef2) .
+dark_vnm_27_nl0_ce0(!safe_vnm_27_nl0_ae0ke00,!meat_vnm_27_nl0_ae11,!chess_vnm_27_nl0_ae00) :- leather_vnm_27_nl0_ce2(?chess_vnm_27_nl0_ae00Ref,?wrong_vnm_27_nl1_ae01Ref0) .
+knot_vnm_27_nl0_ce1(!dry_vnm_27_nl0_ae20,!disgust_vnm_27_nl0_ae31,!value_vnm_27_nl0_ae42,!wrong_vnm_27_nl1_ae01) :- leather_vnm_27_nl0_ce2(?chess_vnm_27_nl0_ae00Ref,?wrong_vnm_27_nl1_ae01Ref0) .
+imagine_vi_28_nl0_ce0(!share_vi_28_nl0_ae0ke0JoinAttr,!wine_vi_28_nl0_ae10,!brush_vi_28_nl0_ae21) :- deliver_vi_28_nl0_ce1(?share_vi_28_nl0_ae0ke0Ref0,?canvas_vi_28_nl0_ae31,?introduce_vi_28_nl0_ae4) .
+face_vh_28_nl0_ce0(!copy_vh_28_nl0_ae00,!hat_vh_28_nl0_ae11,?part_vh_28_nl0_ae0JoinAttr) :- degree_vh_28_nl0_ce1(?destruction_vh_28_nl0_ae20,?brake_vh_28_nl0_ae31,?thank_vh_28_nl0_ae42,?part_vh_28_nl0_ae0JoinAttr,?part_vh_28_nl0_ae0JoinAttrRef3) .
+rise_vnm_28_nl0_ce0(!bulb_vnm_28_nl0_ae0ke00,!theory_vnm_28_nl0_ae11,!whistle_vnm_28_nl0_ae22,!pull_vnm_28_nl0_ae00) :- return_vnm_28_nl0_ce2(?pull_vnm_28_nl0_ae00Ref,?base_vnm_28_nl1_ae01Ref) .
+shut_vnm_28_nl0_ce1(!language_vnm_28_nl0_ae30,!meat_vnm_28_nl0_ae41,!discuss_vnm_28_nl0_ae52,!base_vnm_28_nl1_ae01) :- return_vnm_28_nl0_ce2(?pull_vnm_28_nl0_ae00Ref,?base_vnm_28_nl1_ae01Ref) .
+discover_vi_29_nl0_ce0(!rub_vi_29_nl0_ae0ke0JoinAttr,!rough_vi_29_nl0_ae10,!potato_vi_29_nl0_ae21) :- edge_vi_29_nl0_ce1(?rub_vi_29_nl0_ae0ke0Ref,?egg_vi_29_nl0_ae3,?commit_vi_29_nl0_ae4) .
+thumb_vh_29_nl0_ce0(!feel_vh_29_nl0_ae00,!correct_vh_29_nl0_ae11,!bulb_vh_29_nl0_ae22,?box_vh_29_nl0_ae0JoinAttr) :- fall_vh_29_nl0_ce1(?cost_vh_29_nl0_ae30,?coal_vh_29_nl0_ae41,?apparatus_vh_29_nl0_ae52,?box_vh_29_nl0_ae0JoinAttr,?box_vh_29_nl0_ae0JoinAttrRef3) .
+shame_vnm_29_nl0_ce0(!mind_vnm_29_nl0_ae0ke00,!kick_vnm_29_nl0_ae11,!female_vnm_29_nl0_ae00) :- selection_vnm_29_nl0_ce2(?female_vnm_29_nl0_ae00Ref,?existence_vnm_29_nl1_ae01Ref) .
+soft_vnm_29_nl0_ce1(!person_vnm_29_nl0_ae20,!suggestion_vnm_29_nl0_ae31,!salt_vnm_29_nl0_ae42,!existence_vnm_29_nl1_ae01) :- selection_vnm_29_nl0_ce2(?female_vnm_29_nl0_ae00Ref,?existence_vnm_29_nl1_ae01Ref) .
+plate_vi_30_nl0_ce0(!adjustment_vi_30_nl0_ae0ke0JoinAttr,!fowl_vi_30_nl0_ae10) :- lift_vi_30_nl0_ce1(?adjustment_vi_30_nl0_ae0ke0Ref,?strong_vi_30_nl0_ae2,?sound_vi_30_nl0_ae3) .
+protest_vh_30_nl0_ce0(!ring_vh_30_nl0_ae00,!nation_vh_30_nl0_ae11,?sweet_vh_30_nl0_ae0JoinAttr) :- reply_vh_30_nl0_ce1(?art_vh_30_nl0_ae20,?lock_vh_30_nl0_ae31,?become_vh_30_nl0_ae42,?sweet_vh_30_nl0_ae0JoinAttr,?sweet_vh_30_nl0_ae0JoinAttrRef3) .
+regret_vnm_30_nl0_ce0(!comfort_vnm_30_nl0_ae0ke00,!kiss_vnm_30_nl0_ae00) :- work_vnm_30_nl0_ce2(?kiss_vnm_30_nl0_ae00Ref,?zoo_vnm_30_nl1_ae01Ref) .
+color_vnm_30_nl0_ce1(!view_vnm_30_nl0_ae10,!prose_vnm_30_nl0_ae21,!zoo_vnm_30_nl1_ae01) :- work_vnm_30_nl0_ce2(?kiss_vnm_30_nl0_ae00Ref,?zoo_vnm_30_nl1_ae01Ref) .
+expert_vi_31_nl0_ce0(!harmony_vi_31_nl0_ae0ke0JoinAttr,!competition_vi_31_nl0_ae10,!act_vi_31_nl0_ae21) :- sort_vi_31_nl0_ce1(?harmony_vi_31_nl0_ae0ke0Ref,?sleep_vi_31_nl0_ae3,?create_vi_31_nl0_ae4,?agree_vi_31_nl0_ae5) .
+material_vh_31_nl0_ce0(!brick_vh_31_nl0_ae00,!extend_vh_31_nl0_ae11,!complete_vh_31_nl0_ae22,?reward_vh_31_nl0_ae0JoinAttr) :- cow_vh_31_nl0_ce1(?collect_vh_31_nl0_ae30,?agree_vh_31_nl0_ae41,?effect_vh_31_nl0_ae52,?reward_vh_31_nl0_ae0JoinAttr,?reward_vh_31_nl0_ae0JoinAttrRef3) .
+canvas_vnm_31_nl0_ce0(!allow_vnm_31_nl0_ae0ke00,!smile_vnm_31_nl0_ae00) :- weather_vnm_31_nl0_ce2(?smile_vnm_31_nl0_ae00Ref,?meal_vnm_31_nl1_ae01Ref) .
+count_vnm_31_nl0_ce1(!describe_vnm_31_nl0_ae10,!female_vnm_31_nl0_ae21,!meal_vnm_31_nl1_ae01) :- weather_vnm_31_nl0_ce2(?smile_vnm_31_nl0_ae00Ref,?meal_vnm_31_nl1_ae01Ref) .
+climb_vi_32_nl0_ce0(!shut_vi_32_nl0_ae0ke0JoinAttr,!paper_vi_32_nl0_ae10) :- ill_vi_32_nl0_ce1(?shut_vi_32_nl0_ae0ke0Ref,?year_vi_32_nl0_ae2) .
+test_vh_32_nl0_ce0(!coat_vh_32_nl0_ae00,?building_vh_32_nl0_ae0JoinAttr) :- mine_vh_32_nl0_ce1(?introduce_vh_32_nl0_ae10,?building_vh_32_nl0_ae0JoinAttr,?building_vh_32_nl0_ae0JoinAttrRef1) .
+stitch_vnm_32_nl0_ce0(!connection_vnm_32_nl0_ae0ke00,!attempt_vnm_32_nl0_ae11,!change_vnm_32_nl0_ae00) :- moon_vnm_32_nl0_ce2(?change_vnm_32_nl0_ae00Ref,?contain_vnm_32_nl1_ae01Ref) .
+discuss_vnm_32_nl0_ce1(!detail_vnm_32_nl0_ae20,!notice_vnm_32_nl0_ae31,!electric_vnm_32_nl0_ae42,!contain_vnm_32_nl1_ae01) :- moon_vnm_32_nl0_ce2(?change_vnm_32_nl0_ae00Ref,?contain_vnm_32_nl1_ae01Ref) .
+feeble_vi_33_nl0_ce0(!wear_vi_33_nl0_ae0ke0JoinAttr,!brother_vi_33_nl0_ae10) :- collar_vi_33_nl0_ce1(?wear_vi_33_nl0_ae0ke0Ref,?equal_vi_33_nl0_ae2) .
+verse_vh_33_nl0_ce0(!street_vh_33_nl0_ae00,!door_vh_33_nl0_ae11,?rest_vh_33_nl0_ae0JoinAttr) :- open_vh_33_nl0_ce1(?buy_vh_33_nl0_ae20,?tray_vh_33_nl0_ae31,?ball_vh_33_nl0_ae42,?rest_vh_33_nl0_ae0JoinAttr,?rest_vh_33_nl0_ae0JoinAttrRef3) .
+knot_vnm_33_nl0_ce0(!sudden_vh_14_nl0_ae00,!obtain_vh_14_nl0_ae11,!report_vnm_33_nl0_ae00) :- yellow_vnm_33_nl0_ce2(?report_vnm_33_nl0_ae00Ref,?office_vnm_33_nl1_ae01Ref) .
+forgive_vnm_33_nl0_ce1(!receive_vh_14_nl0_ae20,!mark_vh_14_nl0_ae31,!office_vnm_33_nl1_ae01) :- yellow_vnm_33_nl0_ce2(?report_vnm_33_nl0_ae00Ref,?office_vnm_33_nl1_ae01Ref) .
+join_vi_34_nl0_ce0(!soap_ad_9_nl0_ae0ke0JoinAttr,!fruit_ad_9_nl0_ae10,!stay_ad_9_nl0_ae21) :- peace_vi_34_nl0_ce1(?soap_ad_9_nl0_ae0ke0Ref,?shall_ad_9_nl0_ae3,?committee_ad_9_nl0_ae4) .
+rest_vh_34_nl0_ce0(!pleasure_vh_34_nl0_ae00,!worry_vh_34_nl0_ae11,?authority_vh_34_nl0_ae0JoinAttr) :- attorney_vh_34_nl0_ce1(?box_vh_34_nl0_ae20,?miss_vh_34_nl0_ae31,?ticket_vh_34_nl0_ae42,?authority_vh_34_nl0_ae0JoinAttr,?authority_vh_34_nl0_ae0JoinAttrRef3) .
+blue_vh_1_nl0_ce0(!tail_vh_1_nl0_ae00,!red_vh_1_nl0_ae11,!wrong_vh_1_nl0_ae22,!letter_vh_1_nl0_ae0JoinAttr) :- moon_vnm_32_nl0_ce2(?change_vnm_32_nl0_ae00Ref,?contain_vnm_32_nl1_ae01Ref) .
+punishment_vnm_24_nl0_ce1(!ship_vnm_24_nl0_ae30,!distribution_vnm_24_nl0_ae41,!lie_vnm_24_nl0_ae52,!breath_vnm_24_nl1_ae01) :- moon_vnm_32_nl0_ce2(?change_vnm_32_nl0_ae00Ref,?contain_vnm_32_nl1_ae01Ref) .
+protest_vi_35_nl0_ce0(!finger_vi_35_nl0_ae0ke0JoinAttr,!body_vi_35_nl0_ae10) :- help_vi_35_nl0_ce1(?finger_vi_35_nl0_ae0ke0Ref,?town_vi_35_nl0_ae2) .
+seem_vh_35_nl0_ce0(!stop_vh_35_nl0_ae00,?jump_vh_35_nl0_ae0JoinAttr) :- agreement_vh_35_nl0_ce1(?simple_vh_35_nl0_ae10,?jump_vh_35_nl0_ae0JoinAttr,?jump_vh_35_nl0_ae0JoinAttrRef1) .
+complete_vh_4_nl0_ce0(!grip_vh_4_nl0_ae00,!complex_vh_4_nl0_ae11,!agency_vh_4_nl0_ae0JoinAttr) :- weather_vnm_31_nl0_ce2(?smile_vnm_31_nl0_ae00Ref,?meal_vnm_31_nl1_ae01Ref) .
+deliver_vi_28_nl0_ce1(!share_vi_28_nl0_ae0ke0Ref0,!canvas_vi_28_nl0_ae31,!introduce_vi_28_nl0_ae4) :- weather_vnm_31_nl0_ce2(?smile_vnm_31_nl0_ae00Ref,?meal_vnm_31_nl1_ae01Ref) .
+develop_vi_36_nl0_ce0(!camera_vnm_35_nl0_ae0ke0JoinAttr,!prove_vnm_35_nl0_ae10) :- band_vi_36_nl0_ce1(?camera_vnm_35_nl0_ae0ke0Ref,?sleep_vnm_35_nl0_ae2,?attorney_vnm_35_nl0_ae3) .
+glove_vh_36_nl0_ce0(!necessary_ad_30_nl0_ae0ke00,!government_ad_30_nl0_ae11,?gun_vh_36_nl0_ae0JoinAttr) :- jump_vh_36_nl0_ce1(?cut_ad_30_nl0_ae20,?would_ad_30_nl0_ae31,?apply_ad_30_nl0_ae42,?gun_vh_36_nl0_ae0JoinAttr,?gun_vh_36_nl0_ae0JoinAttrRef3) .
+farm_vnm_3_nl0_ce0(!sugar_vnm_3_nl0_ae0ke00,!bent_vnm_3_nl0_ae11,!crush_vnm_3_nl0_ae00) :- examine_vnm_20_nl0_ce2(?represent_vnm_20_nl0_ae00Ref,?earth_vnm_20_nl1_ae01Ref) .
+society_vi_22_nl0_ce1(!change_vi_22_nl0_ae0ke0Ref0,!smooth_vi_22_nl0_ae31,!walk_vi_22_nl0_ae4) :- examine_vnm_20_nl0_ce2(?represent_vnm_20_nl0_ae00Ref,?earth_vnm_20_nl1_ae01Ref) .
+shut_vi_37_nl0_ce0(!arch_vi_37_nl0_ae0ke0JoinAttr,!afford_vi_37_nl0_ae10,!continue_vi_37_nl0_ae21) :- approval_vi_37_nl0_ce1(?arch_vi_37_nl0_ae0ke0Ref,?fear_vi_37_nl0_ae3,?earth_vi_37_nl0_ae4,?remove_vi_37_nl0_ae5) .
+let_vh_37_nl0_ce0(!arm_vh_37_nl0_ae00,?add_vh_37_nl0_ae0JoinAttr) :- respect_vh_37_nl0_ce1(?mark_vh_37_nl0_ae10,?sea_vh_37_nl0_ae21,?add_vh_37_nl0_ae0JoinAttr,?add_vh_37_nl0_ae0JoinAttrRef2) .
+move_vnm_37_nl0_ce0(!pig_vnm_37_nl0_ae0ke00,!consist_vnm_37_nl0_ae11,!mass_vnm_37_nl0_ae00) :- bottle_vnm_37_nl0_ce2(?mass_vnm_37_nl0_ae00Ref,?limit_vnm_37_nl1_ae01Ref) .
+die_vnm_37_nl0_ce1(!follow_vnm_37_nl0_ae20,!thick_vnm_37_nl0_ae31,!bee_vnm_37_nl0_ae42,!limit_vnm_37_nl1_ae01) :- bottle_vnm_37_nl0_ce2(?mass_vnm_37_nl0_ae00Ref,?limit_vnm_37_nl1_ae01Ref) .
+knowledge_vi_38_nl0_ce0(!angle_vh_8_nl0_ae0JoinAttr,!jump_vh_8_nl0_ae10) :- delicate_vi_38_nl0_ce1(?angle_vh_8_nl0_ae0Ref0,?lift_vh_8_nl0_ae21,?exchange_vh_8_nl0_ae3) .
+night_vh_38_nl0_ce0(!cough_vh_38_nl0_ae00,!window_vh_38_nl0_ae11,?hold_vh_38_nl0_ae0JoinAttr) :- chemical_vh_38_nl0_ce1(?telos_vh_38_nl0_ae20,?part_vh_38_nl0_ae31,?hold_vh_38_nl0_ae0JoinAttr,?hold_vh_38_nl0_ae0JoinAttrRef2) .
+contain_vnm_38_nl0_ce0(!unit_vnm_38_nl0_ae0ke00,!conscious_vnm_38_nl0_ae11,!shut_vnm_38_nl0_ae22,!thread_vnm_38_nl0_ae00) :- report_vnm_38_nl0_ce2(?thread_vnm_38_nl0_ae00Ref,?can_vnm_38_nl1_ae01Ref) .
+breath_vnm_38_nl0_ce1(!wall_vnm_38_nl0_ae30,!tall_vnm_38_nl0_ae41,!ill_vnm_38_nl0_ae52,!can_vnm_38_nl1_ae01) :- report_vnm_38_nl0_ce2(?thread_vnm_38_nl0_ae00Ref,?can_vnm_38_nl1_ae01Ref) .
+record_vnm_23_nl0_ce2(!warm_vnm_23_nl0_ae00Ref,!religion_vnm_23_nl1_ae01Ref0) :- leather_vnm_27_nl0_ce2(?chess_vnm_27_nl0_ae00Ref,?wrong_vnm_27_nl1_ae01Ref0) .
+fly_vh_39_nl0_ce0(!consider_vh_39_nl0_ae00,!sky_vh_39_nl0_ae11,?memory_vh_39_nl0_ae0JoinAttr) :- cut_vh_39_nl0_ce1(?wound_vh_39_nl0_ae20,?false_vh_39_nl0_ae31,?belong_vh_39_nl0_ae42,?memory_vh_39_nl0_ae0JoinAttr,?memory_vh_39_nl0_ae0JoinAttrRef3) .
+summer_vnm_39_nl0_ce0(!orange_vnm_19_nl0_ae0ke00,!seat_vnm_19_nl0_ae11,!store_vnm_39_nl0_ae00) :- angry_vnm_39_nl0_ce2(?store_vnm_39_nl0_ae00Ref,?flame_vnm_39_nl1_ae01Ref) .
+way_vnm_39_nl0_ce1(!parcel_vnm_19_nl0_ae20,!ray_vnm_19_nl0_ae31,!flame_vnm_39_nl1_ae01) :- angry_vnm_39_nl0_ce2(?store_vnm_39_nl0_ae00Ref,?flame_vnm_39_nl1_ae01Ref) .
+peace_vi_40_nl0_ce0(!unit_vnm_38_nl0_ae0ke0JoinAttr,!conscious_vnm_38_nl0_ae10,!shut_vnm_38_nl0_ae21) :- indicate_vi_40_nl0_ce1(?unit_vnm_38_nl0_ae0ke0Ref0,?wall_vnm_38_nl0_ae31,?tall_vnm_38_nl0_ae42,?ill_vnm_38_nl0_ae5) .
+move_vh_40_nl0_ce0(!library_vh_21_nl0_ae00,?hanging_vh_40_nl0_ae0JoinAttr) :- place_vh_40_nl0_ce1(?crime_vh_21_nl0_ae10,?measure_vh_21_nl0_ae21,?hanging_vh_40_nl0_ae0JoinAttr,?hanging_vh_40_nl0_ae0JoinAttrRef2) .
+ring_vnm_40_nl0_ce0(!example_vnm_40_nl0_ae0ke00,!brass_vnm_40_nl0_ae00) :- gold_vnm_40_nl0_ce2(?brass_vnm_40_nl0_ae00Ref,?serious_vnm_40_nl1_ae01Ref) .
+experience_vnm_40_nl0_ce1(!comparison_vnm_40_nl0_ae10,!climb_vnm_40_nl0_ae21,!serious_vnm_40_nl1_ae01) :- gold_vnm_40_nl0_ce2(?brass_vnm_40_nl0_ae00Ref,?serious_vnm_40_nl1_ae01Ref) .
+touch_vi_41_nl0_ce0(!soap_ad_9_nl0_ae0ke0JoinAttr,!fruit_ad_9_nl0_ae10,!stay_ad_9_nl0_ae21) :- separate_vi_41_nl0_ce1(?soap_ad_9_nl0_ae0ke0Ref,?shall_ad_9_nl0_ae30,?committee_ad_9_nl0_ae41) .
+side_vh_41_nl0_ce0(!rise_vh_41_nl0_ae00,!sun_vh_41_nl0_ae11,?care_vh_41_nl0_ae0JoinAttr) :- orange_vh_41_nl0_ce1(?snake_vh_41_nl0_ae20,?put_vh_41_nl0_ae31,?fight_vh_41_nl0_ae42,?care_vh_41_nl0_ae0JoinAttr,?care_vh_41_nl0_ae0JoinAttrRef3) .
+soft_vnm_29_nl0_ce1(!person_vnm_29_nl0_ae20,!suggestion_vnm_29_nl0_ae31,!salt_vnm_29_nl0_ae42,!existence_vnm_29_nl1_ae01) :- feeble_vi_33_nl0_ce0(?wear_vi_33_nl0_ae0ke0JoinAttr,?brother_vi_33_nl0_ae10) .
+invention_vh_26_nl0_ce0(!sweet_vh_26_nl0_ae00,!face_vh_26_nl0_ae11,!introduce_vh_26_nl0_ae22,!young_vh_26_nl0_ae0JoinAttr) :- feeble_vi_33_nl0_ce0(?wear_vi_33_nl0_ae0ke0JoinAttr,?brother_vi_33_nl0_ae10) .
+skin_vi_24_nl0_ce1(!behavior_vi_24_nl0_ae0ke0Ref,!glove_vi_24_nl0_ae30,!snow_vi_24_nl0_ae41) :- bee_vi_16_nl0_ce1(?sun_vi_16_nl0_ae0ke0Ref,?clean_vi_16_nl0_ae30,?smell_vi_16_nl0_ae41) .
+sun_vh_42_nl0_ce0(!dust_vh_42_nl0_ae00,!sort_vh_42_nl0_ae11,!comfort_vh_42_nl0_ae22,?use_vh_42_nl0_ae0JoinAttr) :- connection_vh_42_nl0_ce1(?find_vh_42_nl0_ae30,?telos_vh_42_nl0_ae41,?hour_vh_42_nl0_ae52,?use_vh_42_nl0_ae0JoinAttr,?use_vh_42_nl0_ae0JoinAttrRef3) .
+sense_vnm_42_nl0_ce0(!hold_vnm_42_nl0_ae0ke00,!smell_vnm_42_nl0_ae11,!jump_vnm_42_nl0_ae22,!ticket_vnm_42_nl0_ae00) :- relate_vnm_42_nl0_ce2(?ticket_vnm_42_nl0_ae00Ref,?price_vnm_42_nl1_ae01Ref) .
+exist_vnm_42_nl0_ce1(!gun_vnm_42_nl0_ae30,!property_vnm_42_nl0_ae41,!punishment_vnm_42_nl0_ae52,!price_vnm_42_nl1_ae01) :- relate_vnm_42_nl0_ce2(?ticket_vnm_42_nl0_ae00Ref,?price_vnm_42_nl1_ae01Ref) .
+sea_ad_21_nl0_ce0(!snow_ad_21_nl0_ae0ke0,!wheel_ad_21_nl0_ae10,!face_ad_21_nl0_ae21,!song_ad_21_nl0_ae32,!writing_ad_21_nl0_ae43,!ticket_ad_21_nl0_ae54) :- clock_ad_7_nl0_ce0(?shut_ad_7_nl0_ae0ke0,?chain_ad_7_nl0_ae10,?appear_ad_7_nl0_ae21,?idea_ad_7_nl0_ae32,?tail_ad_7_nl0_ae43,?express_ad_7_nl0_ae54) .
+body_vh_43_nl0_ce0(!sudden_vh_14_nl0_ae00,!obtain_vh_14_nl0_ae11,?fixed_vh_43_nl0_ae0JoinAttr) :- day_vh_43_nl0_ce1(?receive_vh_14_nl0_ae20,?mark_vh_14_nl0_ae31,?fixed_vh_43_nl0_ae0JoinAttr,?fixed_vh_43_nl0_ae0JoinAttrRef2) .
+deliver_vi_28_nl0_ce1(!share_vi_28_nl0_ae0ke0Ref0,!canvas_vi_28_nl0_ae31,!introduce_vi_28_nl0_ae4) :- simple_vnm_23_nl0_ce0(?star_vnm_23_nl0_ae0ke00,?warm_vnm_23_nl0_ae00) .
+tin_vnm_16_nl0_ce0(!side_vnm_16_nl0_ae0ke00,!fixed_vnm_16_nl0_ae11,!cheese_vnm_16_nl0_ae00) :- simple_vnm_23_nl0_ce0(?star_vnm_23_nl0_ae0ke00,?warm_vnm_23_nl0_ae00) .
+second_vnm_16_nl0_ce2(!cheese_vnm_16_nl0_ae00Ref,!grip_vnm_16_nl1_ae01Ref0) :- climb_vi_32_nl0_ce0(?shut_vi_32_nl0_ae0ke0JoinAttr,?paper_vi_32_nl0_ae10) .
+tray_vh_44_nl0_ce0(!top_ad_39_nl0_ae0ke00,!shock_ad_39_nl0_ae11,?might_vh_44_nl0_ae0JoinAttr) :- found_vh_44_nl0_ce1(?plan_ad_39_nl0_ae20,?rub_ad_39_nl0_ae31,?copper_ad_39_nl0_ae42,?might_vh_44_nl0_ae0JoinAttr,?might_vh_44_nl0_ae0JoinAttrRef3) .
+mouth_vnm_44_nl0_ce0(!shake_vnm_44_nl0_ae0ke00,!parallel_vnm_44_nl0_ae00) :- group_vnm_44_nl0_ce2(?parallel_vnm_44_nl0_ae00Ref,?slip_vnm_44_nl1_ae01Ref) .
+industry_vnm_44_nl0_ce1(!money_vnm_44_nl0_ae10,!money_vnm_44_nl0_ae21,!slip_vnm_44_nl1_ae01) :- group_vnm_44_nl0_ce2(?parallel_vnm_44_nl0_ae00Ref,?slip_vnm_44_nl1_ae01Ref) .
+narrow_vi_45_nl0_ce0(!sleep_ad_6_nl0_ae0ke0JoinAttr,!call_ad_6_nl0_ae10) :- disease_vi_45_nl0_ce1(?sleep_ad_6_nl0_ae0ke0Ref,?road_ad_6_nl0_ae2,?rhythm_ad_6_nl0_ae3) .
+happen_vh_45_nl0_ce0(!fall_vh_45_nl0_ae00,!notice_vh_45_nl0_ae11,?peace_vh_45_nl0_ae0JoinAttr) :- shade_vh_45_nl0_ce1(?blade_vh_45_nl0_ae20,?ear_vh_45_nl0_ae31,?peace_vh_45_nl0_ae0JoinAttr,?peace_vh_45_nl0_ae0JoinAttrRef2) .
+garden_vnm_45_nl0_ce0(!prevent_ad_5_nl0_ae0ke00,!low_ad_5_nl0_ae11,!return_vnm_45_nl0_ae00) :- yellow_vnm_45_nl0_ce2(?return_vnm_45_nl0_ae00Ref,?same_vnm_45_nl1_ae01Ref) .
+contribute_vnm_45_nl0_ce1(!bath_ad_5_nl0_ae20,!butter_ad_5_nl0_ae31,!copy_ad_5_nl0_ae42,!same_vnm_45_nl1_ae01) :- yellow_vnm_45_nl0_ce2(?return_vnm_45_nl0_ae00Ref,?same_vnm_45_nl1_ae01Ref) .
+arch_vi_46_nl0_ce0(!cross_vi_46_nl0_ae0ke0JoinAttr,!comfort_vi_46_nl0_ae10,!turn_vi_46_nl0_ae21) :- compare_vi_46_nl0_ce1(?cross_vi_46_nl0_ae0ke0Ref,?high_vi_46_nl0_ae3,?serious_vi_46_nl0_ae4) .
+cloth_vh_46_nl0_ce0(!humor_vh_46_nl0_ae00,!umbrella_vh_46_nl0_ae11,!prepare_vh_46_nl0_ae22,?act_vh_46_nl0_ae0JoinAttr) :- meal_vh_46_nl0_ce1(?hanging_vh_46_nl0_ae30,?can_vh_46_nl0_ae41,?button_vh_46_nl0_ae52,?act_vh_46_nl0_ae0JoinAttr,?act_vh_46_nl0_ae0JoinAttrRef3) .
+grass_vnm_46_nl0_ce0(!error_vnm_46_nl0_ae0ke00,!purpose_vnm_46_nl0_ae11,!advertisement_vnm_46_nl0_ae22,!same_vnm_46_nl0_ae00) :- office_vnm_46_nl0_ce2(?same_vnm_46_nl0_ae00Ref,?group_vnm_46_nl1_ae01Ref) .
+poison_vnm_46_nl0_ce1(!friend_vnm_46_nl0_ae30,!collar_vnm_46_nl0_ae41,!attorneys_vnm_46_nl0_ae52,!group_vnm_46_nl1_ae01) :- office_vnm_46_nl0_ce2(?same_vnm_46_nl0_ae00Ref,?group_vnm_46_nl1_ae01Ref) .
+effect_vi_47_nl0_ce0(!ready_vh_2_nl0_ae0JoinAttr,!property_vh_2_nl0_ae10,!gun_vh_2_nl0_ae21) :- sound_vi_47_nl0_ce1(?ready_vh_2_nl0_ae0Ref,?winter_vh_2_nl0_ae3,?powder_vh_2_nl0_ae4,?work_vh_2_nl0_ae5) .
+solid_vh_47_nl0_ce0(!condition_vh_47_nl0_ae00,?use_vh_47_nl0_ae0JoinAttr) :- fall_vh_47_nl0_ce1(?cheap_vh_47_nl0_ae10,?machine_vh_47_nl0_ae21,?use_vh_47_nl0_ae0JoinAttr,?use_vh_47_nl0_ae0JoinAttrRef2) .
+own_vnm_47_nl0_ce0(!throat_vnm_47_nl0_ae0ke00,!fertile_vnm_47_nl0_ae11,!natural_vnm_47_nl0_ae00) :- true_vnm_47_nl0_ce2(?natural_vnm_47_nl0_ae00Ref,?river_vnm_47_nl1_ae01Ref) .
+intend_vnm_47_nl0_ce1(!suffer_vnm_47_nl0_ae20,!achieve_vnm_47_nl0_ae31,!river_vnm_47_nl1_ae01) :- true_vnm_47_nl0_ce2(?natural_vnm_47_nl0_ae00Ref,?river_vnm_47_nl1_ae01Ref) .
+fact_vi_48_nl0_ce0(!sneeze_vh_16_nl0_ae0JoinAttr,!avoid_vh_16_nl0_ae10,!clean_vh_16_nl0_ae21,!round_vh_16_nl0_ae32) :- obtain_vi_48_nl0_ce1(?sneeze_vh_16_nl0_ae0Ref,?begin_vh_16_nl0_ae4,?create_vh_16_nl0_ae5,?copy_vh_16_nl0_ae6) .
+clear_vh_48_nl0_ce0(!road_vh_48_nl0_ae00,!raise_vh_48_nl0_ae11,?affect_vh_48_nl0_ae0JoinAttr) :- achieve_vh_48_nl0_ce1(?current_vh_48_nl0_ae20,?political_vh_48_nl0_ae31,?agencies_vh_48_nl0_ae42,?affect_vh_48_nl0_ae0JoinAttr,?affect_vh_48_nl0_ae0JoinAttrRef3) .
+voice_vnm_48_nl0_ce0(!snow_ad_21_nl0_ae0ke00,!wheel_ad_21_nl0_ae11,!enjoy_vnm_48_nl0_ae00) :- must_vnm_48_nl0_ce2(?enjoy_vnm_48_nl0_ae00Ref,?potato_vnm_48_nl1_ae01Ref) .
+flower_vnm_48_nl0_ce1(!face_ad_21_nl0_ae20,!song_ad_21_nl0_ae31,!writing_ad_21_nl0_ae42,!potato_vnm_48_nl1_ae01) :- must_vnm_48_nl0_ce2(?enjoy_vnm_48_nl0_ae00Ref,?potato_vnm_48_nl1_ae01Ref) .
+fish_vi_49_nl0_ce0(!gold_vi_49_nl0_ae0ke0JoinAttr,!button_vi_49_nl0_ae10,!support_vi_49_nl0_ae21) :- tight_vi_49_nl0_ce1(?gold_vi_49_nl0_ae0ke0Ref,?attention_vi_49_nl0_ae3,?feed_vi_49_nl0_ae4) .
+language_vh_49_nl0_ce0(!improve_vh_49_nl0_ae00,!quick_vh_49_nl0_ae11,?will_vh_49_nl0_ae0JoinAttr) :- bucket_vh_49_nl0_ce1(?normal_vh_49_nl0_ae20,?loss_vh_49_nl0_ae31,?flag_vh_49_nl0_ae42,?will_vh_49_nl0_ae0JoinAttr,?will_vh_49_nl0_ae0JoinAttrRef3) .
+manager_vnm_49_nl0_ce0(!stomach_vnm_49_nl0_ae0ke00,!protest_vnm_49_nl0_ae00) :- process_vnm_49_nl0_ce2(?protest_vnm_49_nl0_ae00Ref,?grain_vnm_49_nl1_ae01Ref) .
+arm_vnm_49_nl0_ce1(!remain_vnm_49_nl0_ae10,!plough_vnm_49_nl0_ae21,!grain_vnm_49_nl1_ae01) :- process_vnm_49_nl0_ce2(?protest_vnm_49_nl0_ae00Ref,?grain_vnm_49_nl1_ae01Ref) .
+separate_vi_41_nl0_ce1(!soap_ad_9_nl0_ae0ke0Ref,!shall_ad_9_nl0_ae30,!committee_ad_9_nl0_ae41) :- use_vi_23_nl0_ce0(?price_vi_23_nl0_ae0ke0JoinAttr,?orange_vi_23_nl0_ae10,?copy_vi_23_nl0_ae21) .
+place_vnm_1_nl0_ce1(!discover_vnm_1_nl0_ae20,!different_vnm_1_nl0_ae31,!reveal_vnm_1_nl0_ae42,!narrow_vnm_1_nl1_ae01) :- know_vh_15_nl0_ce1(?smooth_vh_15_nl0_ae20,?will_vh_15_nl0_ae31,?rest_vh_15_nl0_ae42,?flat_vh_15_nl0_ae0JoinAttr,?flat_vh_15_nl0_ae0JoinAttrRef3) .
+brick_vnm_50_nl0_ce0(!shake_vnm_44_nl0_ae0ke00,!drop_vnm_50_nl0_ae00) :- work_vnm_50_nl0_ce2(?drop_vnm_50_nl0_ae00Ref,?slope_vnm_50_nl1_ae01Ref) .
+hold_vnm_50_nl0_ce1(!money_vnm_44_nl0_ae10,!money_vnm_44_nl0_ae21,!slope_vnm_50_nl1_ae01) :- work_vnm_50_nl0_ce2(?drop_vnm_50_nl0_ae00Ref,?slope_vnm_50_nl1_ae01Ref) .
+yellow_vi_11_nl0_ce1(!safe_vi_11_nl0_ae0ke0Ref,!regard_vi_11_nl0_ae20,!burn_vi_11_nl0_ae31) :- kind_vi_3_nl0_ce0(?necessary_vi_3_nl0_ae0ke0JoinAttr,?stick_vi_3_nl0_ae10,?effect_vi_3_nl0_ae21) .
+deliver_vh_51_nl0_ce0(!nation_vi_21_nl0_ae0ke00,?disgust_vh_51_nl0_ae0JoinAttr) :- round_vh_51_nl0_ce1(?wet_vi_21_nl0_ae10,?disgust_vh_51_nl0_ae0JoinAttr,?disgust_vh_51_nl0_ae0JoinAttrRef1) .
+account_vh_9_nl0_ce0(!weight_vh_9_nl0_ae00,!event_vh_9_nl0_ae11,!paste_vh_9_nl0_ae0JoinAttr) :- mouth_vnm_44_nl0_ce0(?shake_vnm_44_nl0_ae0ke00,?parallel_vnm_44_nl0_ae00) .
+industry_vnm_44_nl0_ce1(!money_vnm_44_nl0_ae10,!money_vnm_44_nl0_ae21,!slip_vnm_44_nl1_ae01) :- mouth_vnm_44_nl0_ce0(?shake_vnm_44_nl0_ae0ke00,?parallel_vnm_44_nl0_ae00) .
+light_vi_52_nl0_ce0(!knife_vi_52_nl0_ae0ke0JoinAttr,!clear_vi_52_nl0_ae10) :- industry_vi_52_nl0_ce1(?knife_vi_52_nl0_ae0ke0Ref,?arrive_vi_52_nl0_ae2,?happen_vi_52_nl0_ae3) .
+indicate_vi_40_nl0_ce1(!unit_vnm_38_nl0_ae0ke0Ref0,!wall_vnm_38_nl0_ae31,!tall_vnm_38_nl0_ae42,!ill_vnm_38_nl0_ae5) :- charge_vh_3_nl0_ce1(?chalk_vh_3_nl0_ae20,?regular_vh_3_nl0_ae31,?love_vh_3_nl0_ae42,?mind_vh_3_nl0_ae0JoinAttr,?mind_vh_3_nl0_ae0JoinAttrRef3) .
+snow_vnm_52_nl0_ce0(!weather_vnm_52_nl0_ae0ke00,!steel_vnm_52_nl0_ae11,!share_vnm_52_nl0_ae00) :- card_vnm_52_nl0_ce2(?share_vnm_52_nl0_ae00Ref,?handle_vnm_52_nl1_ae01Ref) .
+smoke_vnm_52_nl0_ce1(!help_vnm_52_nl0_ae20,!act_vnm_52_nl0_ae31,!handle_vnm_52_nl1_ae01) :- card_vnm_52_nl0_ce2(?share_vnm_52_nl0_ae00Ref,?handle_vnm_52_nl1_ae01Ref) .
+peace_vi_40_nl0_ce0(!unit_vnm_38_nl0_ae0ke0JoinAttr,!conscious_vnm_38_nl0_ae10,!shut_vnm_38_nl0_ae21) :- late_vi_7_nl0_ce1(?private_vi_7_nl0_ae0ke0Ref,?space_vi_7_nl0_ae30,?art_vi_7_nl0_ae41) .
+line_vh_53_nl0_ce0(!aim_vh_53_nl0_ae00,!ticket_vh_53_nl0_ae11,!different_vh_53_nl0_ae22,?sneeze_vh_53_nl0_ae0JoinAttr) :- watch_vh_53_nl0_ce1(?expansion_vh_53_nl0_ae30,?share_vh_53_nl0_ae41,?able_vh_53_nl0_ae52,?sneeze_vh_53_nl0_ae0JoinAttr,?sneeze_vh_53_nl0_ae0JoinAttrRef3) .
+relation_vnm_53_nl0_ce0(!gain_vnm_53_nl0_ae0ke00,!raise_vnm_53_nl0_ae11,!mean_vnm_53_nl0_ae22,!zoo_vnm_53_nl0_ae00) :- music_vnm_53_nl0_ce2(?zoo_vnm_53_nl0_ae00Ref,?hole_vnm_53_nl1_ae01Ref) .
+move_vnm_53_nl0_ce1(!knock_vnm_53_nl0_ae30,!page_vnm_53_nl0_ae41,!egg_vnm_53_nl0_ae52,!should_vnm_53_nl0_ae63,!hole_vnm_53_nl1_ae01) :- music_vnm_53_nl0_ce2(?zoo_vnm_53_nl0_ae00Ref,?hole_vnm_53_nl1_ae01Ref) .
+swim_vi_54_nl0_ce0(!interest_vnm_7_nl0_ae0ke0JoinAttr,!connection_vnm_7_nl0_ae10) :- regret_vi_54_nl0_ce1(?interest_vnm_7_nl0_ae0ke0Ref,?heart_vnm_7_nl0_ae2,?seem_vnm_7_nl0_ae3) .
+discuss_vnm_32_nl0_ce1(!detail_vnm_32_nl0_ae20,!notice_vnm_32_nl0_ae31,!electric_vnm_32_nl0_ae42,!contain_vnm_32_nl1_ae01) :- paint_vh_24_nl0_ce1(?prove_vh_24_nl0_ae30,?payment_vh_24_nl0_ae41,?pin_vh_24_nl0_ae52,?white_vh_24_nl0_ae0JoinAttr,?white_vh_24_nl0_ae0JoinAttrRef3) .
+private_vnm_54_nl0_ce0(!sneeze_vh_16_nl0_ae00,!avoid_vh_16_nl0_ae11,!clean_vh_16_nl0_ae22,!responsible_vnm_54_nl0_ae00) :- lock_vnm_54_nl0_ce2(?responsible_vnm_54_nl0_ae00Ref,?poor_vnm_54_nl1_ae01Ref) .
+blood_vnm_54_nl0_ce1(!round_vh_16_nl0_ae30,!begin_vh_16_nl0_ae41,!create_vh_16_nl0_ae52,!copy_vh_16_nl0_ae63,!poor_vnm_54_nl1_ae01) :- lock_vnm_54_nl0_ce2(?responsible_vnm_54_nl0_ae00Ref,?poor_vnm_54_nl1_ae01Ref) .
+reading_ad_32_nl0_ce0(!ice_ad_32_nl0_ae0ke0,!comb_ad_32_nl0_ae10,!glass_ad_32_nl0_ae21,!shame_ad_32_nl0_ae32,!prose_ad_32_nl0_ae43) :- reason_ad_18_nl0_ce0(?middle_ad_18_nl0_ae0ke0,?attempt_ad_18_nl0_ae10,?hear_ad_18_nl0_ae21,?meal_ad_18_nl0_ae32,?degree_ad_18_nl0_ae43) .
+sleep_vnm_12_nl0_ce0(!driving_vnm_12_nl0_ae0ke00,!mountain_vnm_12_nl0_ae11,!dependent_vnm_12_nl0_ae00) :- fertile_vh_7_nl0_ce1(?silver_vh_7_nl0_ae10,?tight_vh_7_nl0_ae21,?orange_vh_7_nl0_ae0JoinAttr,?orange_vh_7_nl0_ae0JoinAttrRef2) .
+delicate_vi_26_nl0_ce1(!snake_vi_26_nl0_ae0ke0Ref0,!affect_vi_26_nl0_ae21,!private_vi_26_nl0_ae3) :- stone_vh_7_nl0_ce0(?support_vh_7_nl0_ae00,?orange_vh_7_nl0_ae0JoinAttr) .
+own_vnm_47_nl0_ce0(!throat_vnm_47_nl0_ae0ke00,!fertile_vnm_47_nl0_ae11,!natural_vnm_47_nl0_ae00) :- stone_vh_7_nl0_ce0(?support_vh_7_nl0_ae00,?orange_vh_7_nl0_ae0JoinAttr) .
+error_vi_56_nl0_ce0(!observation_vi_56_nl0_ae0ke0JoinAttr,!stretch_vi_56_nl0_ae10,!care_vi_56_nl0_ae21) :- twist_vi_56_nl0_ce1(?observation_vi_56_nl0_ae0ke0Ref,?finger_vi_56_nl0_ae3,?examine_vi_56_nl0_ae4,?stocking_vi_56_nl0_ae5) .
+learn_vh_56_nl0_ce0(!desire_vh_56_nl0_ae00,?daughter_vh_56_nl0_ae0JoinAttr) :- loose_vh_56_nl0_ce1(?consist_vh_56_nl0_ae10,?chess_vh_56_nl0_ae21,?daughter_vh_56_nl0_ae0JoinAttr,?daughter_vh_56_nl0_ae0JoinAttrRef2) .
+first_vnm_11_nl0_ce1(!check_vnm_11_nl0_ae20,!place_vnm_11_nl0_ae31,!language_vnm_11_nl0_ae42,!arrange_vnm_11_nl1_ae01) :- parallel_vnm_2_nl0_ce0(?dead_vnm_2_nl0_ae0ke00,?knee_vnm_2_nl0_ae00) .
+sense_vnm_42_nl0_ce0(!hold_vnm_42_nl0_ae0ke00,!smell_vnm_42_nl0_ae11,!jump_vnm_42_nl0_ae22,!ticket_vnm_42_nl0_ae00) :- parallel_vnm_2_nl0_ce0(?dead_vnm_2_nl0_ae0ke00,?knee_vnm_2_nl0_ae00) .
+whistle_ad_49_nl0_ce0(!sail_vi_39_nl0_ae0ke0,!jelly_vi_39_nl0_ae10,!lift_vi_39_nl0_ae21,!dog_ad_49_nl0_ae32) :- damage_ad_33_nl0_ce0(?influence_ad_33_nl0_ae0ke0,?profit_ad_33_nl0_ae10,?reward_ad_33_nl0_ae21,?fail_ad_33_nl0_ae32) .
+girl_vh_57_nl0_ce0(!cow_vh_57_nl0_ae00,!discovery_vh_57_nl0_ae11,?set_vh_57_nl0_ae0JoinAttr) :- cart_vh_57_nl0_ce1(?plane_vh_57_nl0_ae20,?offer_vh_57_nl0_ae31,?trouble_vh_57_nl0_ae42,?set_vh_57_nl0_ae0JoinAttr,?set_vh_57_nl0_ae0JoinAttrRef3) .
+offer_vnm_57_nl0_ce0(!thin_vnm_57_nl0_ae0ke00,!indicate_vnm_57_nl0_ae11,!fish_vnm_57_nl0_ae22,!disgust_vnm_57_nl0_ae00) :- carry_vnm_57_nl0_ce2(?disgust_vnm_57_nl0_ae00Ref,?realize_vnm_57_nl1_ae01Ref) .
+fertile_vnm_57_nl0_ce1(!rhythm_vnm_57_nl0_ae30,!meal_vnm_57_nl0_ae41,!pull_vnm_57_nl0_ae52,!realize_vnm_57_nl1_ae01) :- carry_vnm_57_nl0_ce2(?disgust_vnm_57_nl0_ae00Ref,?realize_vnm_57_nl1_ae01Ref) .
+curve_vi_58_nl0_ce0m(!use_vi_58_nl0_ae0ke0JoinAttr,!art_vi_58_nl0_ae10) :- play_vi_58_nl0_ce1(?use_vi_58_nl0_ae0ke0Ref,?limit_vi_58_nl0_ae2,?shoe_vi_58_nl0_ae3) .
+nation_vh_58_nl0_ce0(!intend_vh_58_nl0_ae00,?bee_vh_58_nl0_ae0JoinAttr) :- knock_vh_58_nl0_ce1(?trick_vh_58_nl0_ae10,?guide_vh_58_nl0_ae21,?bee_vh_58_nl0_ae0JoinAttr,?bee_vh_58_nl0_ae0JoinAttrRef2) .
+liquid_vnm_58_nl0_ce0(!system_vnm_58_nl0_ae0ke00,!stick_vnm_58_nl0_ae11,!button_vnm_58_nl0_ae22,!regular_vnm_58_nl0_ae00) :- lay_vnm_58_nl0_ce2(?regular_vnm_58_nl0_ae00Ref,?frequent_vnm_58_nl1_ae01Ref) .
+loose_vnm_58_nl0_ce1(!tree_vnm_58_nl0_ae30,!wind_vnm_58_nl0_ae41,!country_vnm_58_nl0_ae52,!frequent_vnm_58_nl1_ae01) :- lay_vnm_58_nl0_ce2(?regular_vnm_58_nl0_ae00Ref,?frequent_vnm_58_nl1_ae01Ref) .
+substance_vi_59_nl0_ce0(!tendency_vi_59_nl0_ae0ke0JoinAttr,!drain_vi_59_nl0_ae10,!future_vi_59_nl0_ae21) :- mean_vi_59_nl0_ce1(?tendency_vi_59_nl0_ae0ke0Ref,?engine_vi_59_nl0_ae3,?edge_vi_59_nl0_ae4,?form_vi_59_nl0_ae5) .
+answer_vh_59_nl0_ce0(!cry_vi_17_nl0_ae0ke00,!stand_vi_17_nl0_ae11,?spade_vh_59_nl0_ae0JoinAttr) :- play_vh_59_nl0_ce1(?man_vi_17_nl0_ae20,?begin_vi_17_nl0_ae31,?spade_vh_59_nl0_ae0JoinAttr,?spade_vh_59_nl0_ae0JoinAttrRef2) .
+knot_vnm_33_nl0_ce0(!sudden_vh_14_nl0_ae00,!obtain_vh_14_nl0_ae11,!report_vnm_33_nl0_ae00) :- business_vi_11_nl0_ce0(?safe_vi_11_nl0_ae0ke0JoinAttr,?talk_vi_11_nl0_ae10) .
+move_vnm_37_nl0_ce0(!pig_vnm_37_nl0_ae0ke00,!consist_vnm_37_nl0_ae11,!mass_vnm_37_nl0_ae00) :- business_vi_11_nl0_ce0(?safe_vi_11_nl0_ae0ke0JoinAttr,?talk_vi_11_nl0_ae10) .
+female_vi_60_nl0_ce0(!eye_vi_14_nl0_ae0ke0JoinAttr,!lead_vi_14_nl0_ae10,!wound_vi_14_nl0_ae21) :- jelly_vi_60_nl0_ce1(?eye_vi_14_nl0_ae0ke0Ref,?happy_vi_14_nl0_ae3,?prefer_vi_14_nl0_ae4,?describe_vi_14_nl0_ae5) .
+weight_vh_60_nl0_ce0(!possible_ad_55_nl0_ae0ke00,?found_vh_60_nl0_ae0JoinAttr) :- page_vh_60_nl0_ce1(?miss_ad_55_nl0_ae10,?found_vh_60_nl0_ae0JoinAttr,?found_vh_60_nl0_ae0JoinAttrRef1) .
+fall_vnm_60_nl0_ce0(!expect_vnm_60_nl0_ae0ke00,!punishment_vnm_60_nl0_ae11,!finger_vnm_60_nl0_ae00) :- safe_vnm_60_nl0_ce2(?finger_vnm_60_nl0_ae00Ref,?enjoy_vnm_60_nl1_ae01Ref) .
+common_vnm_60_nl0_ce1(!sea_vnm_60_nl0_ae20,!material_vnm_60_nl0_ae31,!kind_vnm_60_nl0_ae42,!enjoy_vnm_60_nl1_ae01) :- safe_vnm_60_nl0_ce2(?finger_vnm_60_nl0_ae00Ref,?enjoy_vnm_60_nl1_ae01Ref) .
+avoid_vi_61_nl0_ce0(!winter_vi_61_nl0_ae0ke0JoinAttr,!bright_vi_61_nl0_ae10,!wire_vi_61_nl0_ae21) :- grey_vi_61_nl0_ce1(?winter_vi_61_nl0_ae0ke0Ref,?name_vi_61_nl0_ae3,?deliver_vi_61_nl0_ae4,?fat_vi_61_nl0_ae5) .
+blue_vh_61_nl0_ce0(!slow_ad_36_nl0_ae0ke00,!band_ad_36_nl0_ae11,?quality_vh_61_nl0_ae0JoinAttr) :- stick_vh_61_nl0_ce1(?light_ad_36_nl0_ae20,?wet_ad_36_nl0_ae31,?quality_vh_61_nl0_ae0JoinAttr,?quality_vh_61_nl0_ae0JoinAttrRef2) .
+delicate_vi_38_nl0_ce1(!angle_vh_8_nl0_ae0Ref0,!lift_vh_8_nl0_ae21,!exchange_vh_8_nl0_ae3) :- mist_vnm_25_nl0_ce2(?encourage_vnm_25_nl0_ae00Ref,?cheap_vnm_25_nl1_ae01Ref) .
+pain_vnm_4_nl0_ce1(!hollow_vnm_4_nl0_ae10,!hollow_vnm_4_nl0_ae21,!distribution_vnm_4_nl1_ae01) :- mist_vnm_25_nl0_ce2(?encourage_vnm_25_nl0_ae00Ref,?cheap_vnm_25_nl1_ae01Ref) .
+eat_ad_8_nl0_ce0(!shut_ad_8_nl0_ae0ke0,!exist_ad_8_nl0_ae10,!cover_ad_8_nl0_ae21,!allow_ad_8_nl0_ae32,!prefer_ad_8_nl0_ae43) :- deep_ad_16_nl0_ce0(?toe_ad_16_nl0_ae0ke0,?handle_ad_16_nl0_ae10,?glove_ad_16_nl0_ae21,?dark_ad_16_nl0_ae32,?picture_ad_16_nl0_ae43) .
+smell_vh_62_nl0_ce0(!shade_vh_62_nl0_ae00,!dirty_vh_62_nl0_ae11,?door_vh_62_nl0_ae0JoinAttr) :- base_vh_62_nl0_ce1(?false_vh_62_nl0_ae20,?rule_vh_62_nl0_ae31,?check_vh_62_nl0_ae42,?door_vh_62_nl0_ae0JoinAttr,?door_vh_62_nl0_ae0JoinAttrRef3) .
+cushion_vnm_62_nl0_ce0(!help_vnm_62_nl0_ae0ke00,!hide_vnm_62_nl0_ae00) :- could_vnm_62_nl0_ce2(?hide_vnm_62_nl0_ae00Ref,?result_vnm_62_nl1_ae01Ref) .
+bell_vnm_62_nl0_ce1(!gold_vnm_62_nl0_ae10,!result_vnm_62_nl1_ae01) :- could_vnm_62_nl0_ce2(?hide_vnm_62_nl0_ae00Ref,?result_vnm_62_nl1_ae01Ref) .
+would_vi_63_nl0_ce0(!opinion_vi_63_nl0_ae0ke0JoinAttr,!rice_vi_63_nl0_ae10) :- gun_vi_63_nl0_ce1(?opinion_vi_63_nl0_ae0ke0Ref,?news_vi_63_nl0_ae2) .
+conscious_vnm_13_nl0_ce0(!hurt_vnm_13_nl0_ae0ke00,!stop_vnm_13_nl0_ae11,!pot_vnm_13_nl0_ae00) :- hate_vh_6_nl0_ce1(?belong_vh_6_nl0_ae10,?increase_vh_6_nl0_ae21,?female_vh_6_nl0_ae0JoinAttr,?female_vh_6_nl0_ae0JoinAttrRef2) .
+collar_vnm_63_nl0_ce0(!fasten_vnm_63_nl0_ae0ke00,!prove_vnm_63_nl0_ae11,!act_vnm_63_nl0_ae00) :- science_vnm_63_nl0_ce2(?act_vnm_63_nl0_ae00Ref,?rate_vnm_63_nl1_ae01Ref) .
+concern_vnm_63_nl0_ce1(!attention_vnm_63_nl0_ae20,!belong_vnm_63_nl0_ae31,!week_vnm_63_nl0_ae42,!rate_vnm_63_nl1_ae01) :- science_vnm_63_nl0_ce2(?act_vnm_63_nl0_ae00Ref,?rate_vnm_63_nl1_ae01Ref) .
+neck_vi_64_nl0_ce0(!summer_vi_64_nl0_ae0ke0JoinAttr,!want_vi_64_nl0_ae10) :- encourage_vi_64_nl0_ce1(?summer_vi_64_nl0_ae0ke0Ref,?condition_vi_64_nl0_ae2,?manager_vi_64_nl0_ae3) .
+fly_vh_64_nl0_ce0(!humor_vh_64_nl0_ae00,?aim_vh_64_nl0_ae0JoinAttr) :- twist_vh_64_nl0_ce1(?open_vh_64_nl0_ae10,?regret_vh_64_nl0_ae21,?aim_vh_64_nl0_ae0JoinAttr,?aim_vh_64_nl0_ae0JoinAttrRef2) .
+use_vnm_64_nl0_ce0(!influence_ad_33_nl0_ae0ke00,!oil_vnm_64_nl0_ae00) :- horse_vnm_64_nl0_ce2(?oil_vnm_64_nl0_ae00Ref,?answer_vnm_64_nl1_ae01Ref) .
+grey_vnm_64_nl0_ce1(!profit_ad_33_nl0_ae10,!reward_ad_33_nl0_ae21,!answer_vnm_64_nl1_ae01) :- horse_vnm_64_nl0_ce2(?oil_vnm_64_nl0_ae00Ref,?answer_vnm_64_nl1_ae01Ref) .
+touch_vi_41_nl0_ce0(!soap_ad_9_nl0_ae0ke0JoinAttr,!fruit_ad_9_nl0_ae10,!stay_ad_9_nl0_ae21) :- base_vh_62_nl0_ce1(?false_vh_62_nl0_ae20,?rule_vh_62_nl0_ae31,?check_vh_62_nl0_ae42,?door_vh_62_nl0_ae0JoinAttr,?door_vh_62_nl0_ae0JoinAttrRef3) .
+protest_ad_56_nl0_ce0(!return_vi_6_nl0_ae0ke0,!debts_vi_6_nl0_ae10,!wash_vi_6_nl0_ae21,!gain_vi_6_nl0_ae32,!fall_ad_56_nl0_ae43) :- let_vh_37_nl0_ce0(?arm_vh_37_nl0_ae00,?add_vh_37_nl0_ae0JoinAttr) .
+narrow_vi_45_nl0_ce0(!sleep_ad_6_nl0_ae0ke0JoinAttr,!call_ad_6_nl0_ae10) :- society_vi_22_nl0_ce1(?change_vi_22_nl0_ae0ke0Ref0,?smooth_vi_22_nl0_ae31,?walk_vi_22_nl0_ae4) .
+end_vnm_21_nl0_ce1(!prose_vnm_21_nl0_ae20,!rub_vnm_21_nl0_ae31,!play_vnm_21_nl1_ae01) :- chemical_vh_38_nl0_ce1(?telos_vh_38_nl0_ae20,?part_vh_38_nl0_ae31,?hold_vh_38_nl0_ae0JoinAttr,?hold_vh_38_nl0_ae0JoinAttrRef2) .
+language_vh_49_nl0_ce0(!improve_vh_49_nl0_ae00,!quick_vh_49_nl0_ae11,!will_vh_49_nl0_ae0JoinAttr) :- copy_ad_36_nl0_ce0(?slow_ad_36_nl0_ae0ke0,?band_ad_36_nl0_ae10,?light_ad_36_nl0_ae21,?wet_ad_36_nl0_ae32,?finish_ad_36_nl0_ae43) .
+reading_vnm_16_nl0_ce1(!baby_vnm_16_nl0_ae20,!pass_vnm_16_nl0_ae31,!orange_vnm_16_nl0_ae42,!grip_vnm_16_nl1_ae01) :- leather_vnm_27_nl0_ce2(?chess_vnm_27_nl0_ae00Ref,?wrong_vnm_27_nl1_ae01Ref0) .
+authority_vnm_26_nl0_ce1(!stone_vnm_26_nl0_ae20,!call_vnm_26_nl0_ae31,!win_vnm_26_nl0_ae42,!pot_vnm_26_nl1_ae01) :- private_vnm_54_nl0_ce0(?sneeze_vh_16_nl0_ae00,?avoid_vh_16_nl0_ae11,?clean_vh_16_nl0_ae22,?responsible_vnm_54_nl0_ae00) .
+bee_vi_16_nl0_ce1(!sun_vi_16_nl0_ae0ke0Ref,!clean_vi_16_nl0_ae30,!smell_vi_16_nl0_ae41) :- kind_vi_3_nl0_ce0(?necessary_vi_3_nl0_ae0ke0JoinAttr,?stick_vi_3_nl0_ae10,?effect_vi_3_nl0_ae21) .
+blue_vh_1_nl0_ce0(!tail_vh_1_nl0_ae00,!red_vh_1_nl0_ae11,!wrong_vh_1_nl0_ae22,!letter_vh_1_nl0_ae0JoinAttr) :- blue_vnm_22_nl0_ce2(?reading_vnm_22_nl0_ae00Ref,?basin_vnm_22_nl1_ae01Ref) .
+oven_vi_6_nl0_ce0(!return_vi_6_nl0_ae0ke0JoinAttr,!debts_vi_6_nl0_ae10) :- grey_vnm_64_nl0_ce1(?profit_ad_33_nl0_ae10,?reward_ad_33_nl0_ae21,?answer_vnm_64_nl1_ae01) .
+oven_vnm_18_nl0_ce0(!sheep_vnm_18_nl0_ae0ke00,!muscle_vnm_18_nl0_ae00) :- size_vnm_17_nl0_ce0(?last_vnm_17_nl0_ae0ke00,?avoid_vnm_17_nl0_ae11,?drain_vnm_17_nl0_ae00) .
+fly_vh_64_nl0_ce0(!humor_vh_64_nl0_ae00,!aim_vh_64_nl0_ae0JoinAttr) :- shake_vnm_23_nl0_ce1(?insect_vnm_23_nl0_ae10,?intend_vnm_23_nl0_ae21,?religion_vnm_23_nl1_ae01) .
+found_vh_44_nl0_ce1(!plan_ad_39_nl0_ae20,!rub_ad_39_nl0_ae31,!copper_ad_39_nl0_ae42,!might_vh_44_nl0_ae0JoinAttr,!might_vh_44_nl0_ae0JoinAttrRef3) :- kill_ad_38_nl0_ce0(?dead_vnm_2_nl0_ae0ke0,?send_vnm_2_nl0_ae10,?regular_vnm_2_nl0_ae21,?advertisement_ad_38_nl0_ae32) .
+deep_ad_16_nl0_ce0(!toe_ad_16_nl0_ae0ke0,!handle_ad_16_nl0_ae10,!glove_ad_16_nl0_ae21,!dark_ad_16_nl0_ae32,!picture_ad_16_nl0_ae43) :- forgive_vnm_33_nl0_ce1(?receive_vh_14_nl0_ae20,?mark_vh_14_nl0_ae31,?office_vnm_33_nl1_ae01) .
+know_vh_15_nl0_ce1(!smooth_vh_15_nl0_ae20,!will_vh_15_nl0_ae31,!rest_vh_15_nl0_ae42,!flat_vh_15_nl0_ae0JoinAttr,!flat_vh_15_nl0_ae0JoinAttrRef3) :- use_ad_61_nl0_ce0(?influence_ad_33_nl0_ae0ke0,?profit_ad_33_nl0_ae10,?reward_ad_33_nl0_ae21,?belief_ad_61_nl0_ae32) .
+jewel_vi_15_nl0_ce0(!nerve_vi_15_nl0_ae0ke0JoinAttr,!ticket_vi_15_nl0_ae10) :- mine_vh_32_nl0_ce1(?introduce_vh_32_nl0_ae10,?building_vh_32_nl0_ae0JoinAttr,?building_vh_32_nl0_ae0JoinAttrRef1) .
+business_vi_11_nl0_ce0(!safe_vi_11_nl0_ae0ke0JoinAttr,!talk_vi_11_nl0_ae10) :- shade_vh_45_nl0_ce1(?blade_vh_45_nl0_ae20,?ear_vh_45_nl0_ae31,?peace_vh_45_nl0_ae0JoinAttr,?peace_vh_45_nl0_ae0JoinAttrRef2) .

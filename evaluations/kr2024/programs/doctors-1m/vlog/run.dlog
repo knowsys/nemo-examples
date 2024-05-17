@@ -1,0 +1,6 @@
+
+prescription(Vid,Vpatient,Vnpi,VC1) :- treatment(Vid,Vpatient,Vhospital,Vnpi,Vconf1),physician(Vnpi,Vname,Vspec,Vconf2)
+doctor(Vnpi,Vdoctor,Vspec,VH,VC2) :- medprescription(Vid,Vpatient,Vnpi,Vdoctor,Vspec,Vconf)
+prescription(Vid,Vpatient,Vnpi,VC1) :- medprescription(Vid,Vpatient,Vnpi,Vdoctor,Vspec,Vconf)
+doctor(Vnpi,Vname,Vspec,Vhospital,VC2) :- treatment(Vid,Vpatient,Vhospital,Vnpi,Vconf1),physician(Vnpi,Vname,Vspec,Vconf2)
+targethospital(Vdoctor,Vspec,Vhospital1,Vnpi1,Vhconf1) :- hospital(Vdoctor,Vspec,Vhospital1,Vnpi1,Vhconf1)
