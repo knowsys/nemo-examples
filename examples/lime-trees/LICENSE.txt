@@ -1,6 +1,6 @@
 The data sets used in this example are available under the following licenses:
 
-# File dresden-tree-ages-heights.csv
+# File dresden-trees-ages-heights.csv
 
 Data derived from Open Government data of the city of Dresden.
 See https://opendata.dresden.de/informationsportal/?open=1&result=8B5B50B7A6E746EB9DEB634A041F596E#app/mainpage
@@ -10,7 +10,7 @@ Published under dl-de/by-2-0, see https://www.govdata.de/dl-de/by-2-0
 
 # File wikidata-taxon-name-parent.csv.gz
 
-Data dervied from Wikidata.
+Data derived from Wikidata.
 Published under CC-0.
 
 
