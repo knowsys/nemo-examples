@@ -11,9 +11,9 @@
 %wikidata("z", "b", "x").
 
 inversePropEntities(?s,?o) :- wikidata(?s,wdt:P1696,?o), COMPARE(STR(?s), STR(?o)) = -1.
-inverse(?p1, ?p2) :- inversePropEntities(?e1, ?e2), wikidata(?e1, wikibase:directClaim, ?p1), wikidata(?e2, wikibase:directClaim, ?p2).
-pred(?s) :- inverse(?s,_).
-pred(?o) :- inverse(_,?o).
+inv(?p1, ?p2) :- inversePropEntities(?e1, ?e2), wikidata(?e1, wikibase:directClaim, ?p1), wikidata(?e2, wikibase:directClaim, ?p2).
+pred(?s) :- inv(?s,_).
+pred(?o) :- inv(_,?o).
 
 objCountPerPredAndSource(?p,?s,#count(?o)) :- 
     pred(?p), wikidata(?s,?p,?o).
@@ -25,11 +25,11 @@ avgObjCountPerPredicate(?p,DOUBLE(#sum(?count,?s)) / ?totalSubj) :-
     totalSubjCountPerPred(?p,?totalSubj).
 
 rightSmaller(?right) :- 
-    inverse(?left,?right),
+    inv(?left,?right),
     avgObjCountPerPredicate(?left,?countLeft),
     avgObjCountPerPredicate(?right,?countRight),
     ?countRight < ?countLeft.
 
 predToKeep(?right) :- rightSmaller(?right).
-predToKeep(?left) :- inverse(?left,?right), ~rightSmaller(?right).
+predToKeep(?left) :- inv(?left,?right), ~rightSmaller(?right).
 
