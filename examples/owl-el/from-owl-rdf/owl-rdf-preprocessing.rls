@@ -95,8 +95,8 @@ directSubProp(?R,?S) :- TRIPLE(?R,rdfs:subPropertyOf,?S) .
 nf:subProp(?P,?P) :- nf:exists(?C,?P,?D), nf:isSubClass(?C) . 
 nf:subProp(?R,?T) :- nf:subProp(?R,?S), directSubProp(?S,?T) .
 
-@export nf:isMainClass :- csv{format=(any), compression="gzip", resource="isMainClass.csv.gz"} .
-@export nf:isSubClass :- csv{format=(any), compression="gzip", resource="isSubClass.csv.gz"} .
+@export nf:isMainClass :- csv{format=(any,), compression="gzip", resource="isMainClass.csv.gz"} .
+@export nf:isSubClass :- csv{format=(any,), compression="gzip", resource="isSubClass.csv.gz"} .
 @export nf:conj :- csv{format=(any, any, any), compression="gzip", resource="conj.csv.gz"} .
 @export nf:exists :- csv{format=(any, any, any), compression="gzip", resource="exists.csv.gz"} .
 @export nf:subClassOf :- csv{format=(any, any), compression="gzip", resource="subClassOf.csv.gz"} .

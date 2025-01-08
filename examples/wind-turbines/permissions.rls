@@ -8,7 +8,7 @@
 %%%      unless the proposed wind turbine is not taller than 50m, 
 %%%      in which case it is deemed to not have an environmental impact.
 
-%%% Define relevant constants
+%% Define relevant constants
 
 % Workaround that allows us to use boolean functions to filter tables
 TRUE("true"^^<http://www.w3.org/2001/XMLSchema#boolean>).
@@ -20,7 +20,7 @@ CIRC_EARTH(40075000.0).
 %%% Imports
 
 % Import the list of endangered species
-@import endangered :- csv { resource = "data/endangered.csv", format=(string) } .
+@import endangered :- csv { resource = "data/endangered.csv", format=(string,) } .
 
 % Load a QGIS (https://www.qgis.org/de/site/) export containing all marked location of a German town.
 %
