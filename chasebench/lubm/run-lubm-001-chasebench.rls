@@ -1,4 +1,4 @@
-%%% Imports
+%% Imports
 
 @import src_advisor :- csv { resource = "data/001/src_advisor.csv.gz" } .
 @import src_AssistantProfessor :- csv { resource = "data/001/src_AssistantProfessor.csv.gz" } .
@@ -31,7 +31,8 @@
 @import src_University :- csv { resource = "data/001/src_University.csv.gz" } .
 @import src_worksFor :- csv { resource = "data/001/src_worksFor.csv.gz" } .
 
-%%% st-tgds
+
+%% st-tgds
 
 advisor(?X, ?Y) :- src_advisor(?X, ?Y) .
 AssistantProfessor(?X) :- src_AssistantProfessor(?X) .
@@ -64,7 +65,8 @@ UndergraduateStudent(?X) :- src_UndergraduateStudent(?X) .
 University(?X) :- src_University(?X) .
 worksFor(?X, ?Y) :- src_worksFor(?X, ?Y) .
 
-%%% t-tgds
+
+%% t-tgds
 
 Employee(?X) :- AdministrativeStaff(?X) .
 Person(?X) :- advisor(?X, ?X1) .

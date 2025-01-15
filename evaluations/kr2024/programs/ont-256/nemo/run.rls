@@ -1,4 +1,4 @@
-%%% Imports
+%% Imports
 
 @import act_vnm_8_nl0_ce0 :- csv { resource = "../data/act_vnm_8_nl0_ce0.csv.gz" } .
 @import air_ad_39_nl0_ce0 :- csv { resource = "../data/air_ad_39_nl0_ce0.csv.gz" } .
@@ -219,7 +219,8 @@
 @import worry_ad_4_nl0_ce0 :- csv { resource = "../data/worry_ad_4_nl0_ce0.csv.gz" } .
 @import write_vh_56_nl0_ce0 :- csv { resource = "../data/write_vh_56_nl0_ce0.csv.gz" } .
 
-%%% Rules
+
+%% Rules
 
 touch_ad_1_nl0_ce0(?a,?b,?c,!d) :- test_ad_1_nl0_ce0(?a,?b,?c) .
 different_vi_1_nl0_ce0(?a,?b,?c),society_vi_1_nl0_ce1(?a,?d,?e) :- society_vi_1_nl0_ce0(?a,?b,?c,?d,?e) .
