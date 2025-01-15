@@ -1,14 +1,14 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/>.
 @prefix wikibase: <http://wikiba.se/ontology#>.
 
-@import wikidata :- ntriples{resource="wikidata.nt.gz"}.
-%wikidata("entityA", wdt:P1696, "entityB").
-%wikidata("entityA", wikibase:directClaim, "a").
-%wikidata("entityB", wikibase:directClaim, "b").
-%wikidata("x", "a", "y").
-%wikidata("x", "a", "z").
-%wikidata("y", "b", "x").
-%wikidata("z", "b", "x").
+%@import wikidata :- ntriples{resource="wikidata.nt.gz"}.
+wikidata("entityA", wdt:P1696, "entityB").
+wikidata("entityA", wikibase:directClaim, "a").
+wikidata("entityB", wikibase:directClaim, "b").
+wikidata("x", "a", "y").
+wikidata("x", "a", "z").
+wikidata("y", "b", "x").
+wikidata("z", "b", "x").
 
 inversePropEntities(?s,?o) :- wikidata(?s,wdt:P1696,?o), COMPARE(STR(?s), STR(?o)) = -1.
 inv(?p1, ?p2) :- inversePropEntities(?e1, ?e2), wikidata(?e1, wikibase:directClaim, ?p1), wikidata(?e2, wikibase:directClaim, ?p2).

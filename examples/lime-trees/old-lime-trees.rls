@@ -1,13 +1,16 @@
-%%% This example finds trees of (some species of lime/linden tree) in Dresden,
-%%% which are more than 200 years old.
-%%% 
-%%% It shows how to load (typed) data from (compressed) CSV files, how to
-%%% perform a recursive reachability query, and how to use datatype built-in to
-%%% find old trees. It can be modified to use a different species or genus of
-%%% plant, and by changing the required age.
+%! This example finds trees of (some species of lime/linden tree) in Dresden,
+%! which are more than 200 years old.
+%! 
+%! It shows how to load (typed) data from (compressed) CSV files, how to
+%! perform a recursive reachability query, and how to use datatype built-in to
+%! find old trees. It can be modified to use a different species or genus of
+%! plant, and by changing the required age.
 
-@import tree :- csv { resource = "dresden-trees-ages-heights.csv" } .    % location URL, species, age, height in m
-@import taxon :- csv { resource = "wikidata-taxon-name-parent.csv.gz" } . % Wikidata ID, taxon name, Wikidata ID of parent taxon
+%%% tree contains: (location URL, species, age, height in m)
+@import tree :- csv { resource = "dresden-trees-ages-heights.csv",format=(string,string,int,int)} .    
+
+%%% taxon contains: (Wikidata ID, taxon name, Wikidata ID of parent taxon)
+@import taxon :- csv { resource = "wikidata-taxon-name-parent.csv.gz" } . 
 
 limeSpecies(?X, Tilia) :- taxon(?X, Tilia, ?P).
 limeSpecies(?X, ?Name) :- taxon(?X, ?Name, ?Y), limeSpecies(?Y, ?N).

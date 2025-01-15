@@ -1,42 +1,44 @@
-%%% This rule file defines a fictional scenario where 
-%%% the construction of several wind turbines near a German city is proposed.
-%%% The task is to check whether the planned projects satisfy all the regulations.
-%%%
-%%% For this example, a wind turbine is approved if
-%%%    * it is sufficiently far away from a residential building, and
-%%%    * there were no sightings of an endangered animal near the proposed location,
-%%%      unless the proposed wind turbine is not taller than 50m, 
-%%%      in which case it is deemed to not have an environmental impact.
+%! This rule file defines a fictional scenario where 
+%! the construction of several wind turbines near a German city is proposed.
+%! The task is to check whether the planned projects satisfy all the regulations.
+%!
+%! For this example, a wind turbine is approved if
+%!    * it is sufficiently far away from a residential building, and
+%!    * there were no sightings of an endangered animal near the proposed location,
+%!      unless the proposed wind turbine is not taller than 50m, 
+%!      in which case it is deemed to not have an environmental impact.
 
 %% Define relevant constants
 
-% Workaround that allows us to use boolean functions to filter tables
+%%% Workaround that allows us to use boolean functions to filter tables
 TRUE("true"^^<http://www.w3.org/2001/XMLSchema#boolean>).
-% The constant Pi
+
+%%% The constant Pi
 PI(3.14159).
-% The equatorial circumference of Earth in meters
+
+%%% The equatorial circumference of Earth in meters
 CIRC_EARTH(40075000.0).
 
-%%% Imports
+%% Imports
 
-% Import the list of endangered species
+%%% Import the list of endangered species
 @import endangered :- csv { resource = "data/endangered.csv", format=(string,) } .
 
-% Load a QGIS (https://www.qgis.org/de/site/) export containing all marked location of a German town.
-%
-% We only store the longitude and latitude,
-% as well as the "tag" column for distiguishing residential buildings.
+%%% Load a QGIS (https://www.qgis.org/de/site/) export containing all marked location of a German town.
+%%%
+%%% We only store the longitude and latitude,
+%%% as well as the "tag" column for distiguishing residential buildings.
 @import locations :- csv { 
     resource = "data/locations.csv", 
     format = (double, double, skip, skip, skip, skip, skip, skip, skip, skip, skip, skip, string)
 }.
 
-%%% Define planned wind turbines
-%%% 
-%%% project(?name): Name of the project
-%%% project_location(?project, ?longitude, ?latitude): Geographic coordinates of the proposed project
-%%% project_height_m(?project, ?height): Height of the proposed wind turbine
-%%% project_species(?project, ?species): Sighting of an animal of that ?species at the project site 
+%% Define planned wind turbines
+%% 
+%% project(?name): Name of the project
+%% project_location(?project, ?longitude, ?latitude): Geographic coordinates of the proposed project
+%% project_height_m(?project, ?height): Height of the proposed wind turbine
+%% project_species(?project, ?species): Sighting of an animal of that ?species at the project site 
 
 project("Wind Turbine A").
 project_location("Wind Turbine A", 13.69510396381167, 50.89312291453255).
@@ -54,17 +56,16 @@ project_location("Wind Turbine C", 13.688126881341304, 50.90297432498729).
 project_height_m("Wind Turbine C", 60).
 project_species("Wind Turbine C", "Mauersegler").
 
-%%% Check whether all regulations are satisfied
+%% Check whether all regulations are satisfied
 
-% We are only interested in locations that are tagged with an address
+%%% We are only interested in locations that are tagged with an address
 coordinates(?longitude, ?latitude) :- locations(?longitude, ?latitude, ?tag), TRUE(CONTAINS(?tag, "addr")).
 
-% Convert geographic coordinates into coordinates in meters.
-% This is needed for computing the distances in meters.
-%
-% This calculation is an approximation based on an a stackoverflow answer:
-% https://stackoverflow.com/questions/639695/how-to-convert-latitude-or-longitude-to-meters
-
+%%% Convert geographic coordinates into coordinates in meters.
+%%% This is needed for computing the distances in meters.
+%%%
+%%% This calculation is an approximation based on an a stackoverflow answer:
+%%% https://stackoverflow.com/questions/639695/how-to-convert-latitude-or-longitude-to-meters
 coordinates_m(?Xm, ?Ym) :- coordinates(?longitude, ?latitude), PI(?PI), CIRC_EARTH(?earth),
     ?Xm = ?longitude * ?earth * COS(?latitude / 180.0 * ?PI) / 360.0,
     ?Ym = ?latitude * (?earth / 360.0).
@@ -72,35 +73,34 @@ project_location_m(?project, ?Xm, ?Ym) :- project_location(?project, ?longitude,
     ?Xm = ?longitude * ?earth * COS(?latitude / 180.0 * ?PI) / 360.0,
     ?Ym = ?latitude * (?earth / 360.0).
 
-% An environmental impact assessment is only needed, 
-% if the planned wind turbine is taller than 50m.
+%%% An environmental impact assessment is only needed, 
+%%% if the planned wind turbine is taller than 50m.
 environmental_impact(?project) :- project_height_m(?project, ?height), ?height >= 50.
 
-% Calculate for each project the distance to all residence buldings
+%%% Calculate for each project the distance to all residence buldings
 distance(?project, ?distance) :- 
     project_location_m(?project, ?Xp, ?Yp), 
     coordinates_m(?Xr, ?Yr),
     ?distance = SQRT(POW(?Xp - ?Xr, 2.0) + POW(?Yp - ?Yr, 2.0)).
 
-% A project is rejected if there is a residence building closer than 200m.
+%%% A project is rejected if there is a residence building closer than 200m.
 project_reject(?project) :- distance(?project, ?distance), ?distance < 200.0. 
 
-% A project is rejected if an environmental impact assessment is needed
-% and an endangered species was found.
+%%% A project is rejected if an environmental impact assessment is needed
+%%% and an endangered species was found.
 project_reject(?project) :- 
     environmental_impact(?project), 
     project_species(?project, ?species), 
     endangered(?species).
 
-% A project is approved if it is not rejected.
+%%% A project is approved if it is not rejected.
 project_approved(?project) :- project(?project), ~project_reject(?project).
 
-% Get the distance of the closest house for each project.
+%%% Get the distance of the closest house for each project.
 closest_house(?project, #min(?distance)) :- distance(?project, ?distance).
 
 %%% Export the name of all approved and rejected project
 %%% and the distance of the closest house for each project.
-
 @export project_approved :- csv {}.
 @export project_reject :- csv {}.
 @export closest_house :- csv {}.
