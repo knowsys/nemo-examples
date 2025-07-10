@@ -17,3 +17,4 @@ limeSpecies(?X, ?Name) :- taxon(?X, ?Name, ?Y), limeSpecies(?Y, ?N).
 
 oldLime(?location,?species,?age) :- tree(?location,?species,?age,?heightInMeters), ?age > 200, limeSpecies(?id,?species) .
 
+@output oldLime.
