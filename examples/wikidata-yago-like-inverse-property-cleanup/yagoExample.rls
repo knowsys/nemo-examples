@@ -33,3 +33,4 @@ rightSmaller(?right) :-
 predToKeep(?right) :- rightSmaller(?right).
 predToKeep(?left) :- inv(?left,?right), ~rightSmaller(?right).
 
+@output predToKeep.
