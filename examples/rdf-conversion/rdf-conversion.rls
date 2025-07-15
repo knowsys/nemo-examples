@@ -1,0 +1,5 @@
+@import input :- rdf { resource = $input } .
+
+output(?s, ?p, ?o) :- input(?s, ?p, ?o) .
+
+@export output :- rdf { resource = $output } .
