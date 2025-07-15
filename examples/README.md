@@ -11,6 +11,8 @@ We provide the following examples:
    *(uses: CSV input with numerical data, numerical comparisons)*
 * `owl-el`: classification of OWL EL ontologies, possibly directly from the original OWL/RDF file
   *(uses: negation, existential rules, RDF input, CSV input)*
+* `rdf-conversion`: converts between RDF formats
+  *(uses: RDF input, RDF output, global parameters)*
 * `wikidata-awards`: retrieves awards of Douglas Adams from Wikidata
   *(uses: SPARQL queries, language strings)*
 * `wikidata-yago-like-inverse-property-cleanup`: identifies inverse properties that have the most objects per subject on average

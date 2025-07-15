@@ -1,0 +1,5 @@
+<https://example.org/a> <https://example.org/p> <https://example.org/b> .
+<https://example.org/a> <https://example.org/q> <https://example.org/c> .
+<https://example.org/a> <https://example.org/p> <https://example.org/d> .
+<https://example.org/b> <https://example.org/p> <https://example.org/d> .
+<https://example.org/c> <https://example.org/q> <https://example.org/c> .
