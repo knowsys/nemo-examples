@@ -244,3 +244,5 @@ ConstFolding(?ins,?var, ?val1 / ?val2,  ?meth) :-
     ?pos1 < ?pos2,
     IntegerConstant(?var1, ?val1, ?meth),
     IntegerConstant(?var2, ?val2,?meth).
+
+@output ConstFolding.

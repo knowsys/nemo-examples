@@ -1,0 +1,18 @@
+% This gets all of the awards awarded to Douglas Adams (Q42) from
+% Wikidata, and splits the language strings into language and string
+% value.
+
+@import awards :- sparql{
+  endpoint=<https://query.wikidata.org/sparql>,
+  query="""
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT ?award ?awardLabel WHERE {
+      wd:Q42 wdt:P166 ?award .
+      ?award rdfs:label ?awardLabel .
+    }"""
+} .
+
+awardsByLanguage(LANG(?label), STR(?label), ?award) :- awards(?award, ?label).
+@output awardsByLanguage.
