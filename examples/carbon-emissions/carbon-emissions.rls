@@ -61,5 +61,8 @@ countryEmissionsPerYear(#sum(?Mtco2eq),?country) :-
 countryEmissionsPerYear(#sum(?Mtco2eq),"Missing country") :- 
     cmData($yearOfInterest,?org,?type,?lei,?Mtco2eq), ~orgCountry(?org,_) . 
 
+orgWithMissingCountry(?Mtco2eq,?org,?type,?lei) :- cmData($yearOfInterest,?org,?type,?lei,?Mtco2eq), ~orgCountry(?org,_) .
+
 @output countryEmissionsPerYear .
+@output orgWithMissingCountry .
 
