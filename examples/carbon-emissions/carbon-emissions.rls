@@ -14,6 +14,7 @@ SELECT """ .
 %%% Carbon Majors data. Schema: cmData(year,organisation,org-type,LEI,Mt CO2 equiv.)
 @import cmData :- csv{
   resource=<https://raw.githubusercontent.com/knowsys/nemo-examples/main/examples/carbon-emissions/emissions_low_granularity.csv>,
+  % resource=<https://carbonmajors.org/evoke/391/get_cm_file?type=Basic&file=emissions_low_granularity.csv>, %% < original source, may fail in browser due to site config
   ignore_headers=true, % first line is CSV header here
   format=(int,string,string,string,double)
 } .
