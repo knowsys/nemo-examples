@@ -28,7 +28,7 @@
 
 %%% Import predicate "tree" from CSV (location URL, species, age, height in m).
 %%% This data is derived from data from the Dresden Open Data Portal https://opendata.dresden.de/.
-@import tree :- csv{format=(any, string, int, int), resource="https://raw.githubusercontent.com/knowsys/nemo-examples/main/examples/lime-trees/dresden-trees-ages-heights.csv"} . 
+@import tree :- csv{format=(any, string, int, int), resource="dresden-trees-ages-heights.csv"} . 
 %%% Import (arbitrary) single triples from Wikidata:
 @import wdTriple :- sparql{
   endpoint = wdqs:sparql,
@@ -56,4 +56,4 @@ namedSpeciesOfInterest(?species,STR(?speciesLabel)) :- speciesOfInterest(?specie
 oldTreeOfInterest(?speciesLabel,?age,?location) :- tree(?location,?speciesLabel,?age,?heightInMeters), ?age >= $minAge, namedSpeciesOfInterest(?species,?speciesLabel) .
 
 %%% Select output predicate:
-@output oldTreeOfInterest.
+@export oldTreeOfInterest :- tsv{ resource="", format=(string,int,any)} .
