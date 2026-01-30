@@ -1,0 +1,18 @@
+{
+  "predicate": "invention_vh_26_nl0_ce0",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 163,
+      "head_index": 1,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

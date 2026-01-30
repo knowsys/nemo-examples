@@ -1,0 +1,133 @@
+{
+  "predicate": "http://rulewerk.semantic-web.org/inferred/ex",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 6,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 9,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": {
+                  "rule": 9,
+                  "head_index": 0,
+                  "children": [
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": {
+                        "rule": 5,
+                        "head_index": 0,
+                        "children": [
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": null
+                          },
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": {
+                              "rule": 5,
+                              "head_index": 0,
+                              "children": [
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                },
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": {
+                                    "rule": 9,
+                                    "head_index": 0,
+                                    "children": [
+                                      {
+                                        "queries": [],
+                                        "pagination": null,
+                                        "next": {
+                                          "rule": 9,
+                                          "head_index": 0,
+                                          "children": [
+                                            {
+                                              "queries": [],
+                                              "pagination": null,
+                                              "next": null
+                                            },
+                                            {
+                                              "queries": [],
+                                              "pagination": null,
+                                              "next": null
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "queries": [],
+                                        "pagination": null,
+                                        "next": null
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                },
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": null
+                          },
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": null
+                    }
+                  ]
+                }
+              },
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

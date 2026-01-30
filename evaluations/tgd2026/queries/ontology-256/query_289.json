@@ -1,0 +1,18 @@
+{
+  "predicate": "deliver_vi_28_nl0_ce1",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 171,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

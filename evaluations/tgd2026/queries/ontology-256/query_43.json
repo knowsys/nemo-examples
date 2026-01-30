@@ -1,0 +1,18 @@
+{
+  "predicate": "test_vh_32_nl0_ce0",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 126,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

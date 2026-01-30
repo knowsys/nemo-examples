@@ -1,0 +1,18 @@
+{
+  "predicate": "green_vnm_8_nl0_ce1",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 232,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

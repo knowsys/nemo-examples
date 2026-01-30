@@ -1,0 +1,18 @@
+{
+  "predicate": "second_vnm_16_nl0_ce2",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 63,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

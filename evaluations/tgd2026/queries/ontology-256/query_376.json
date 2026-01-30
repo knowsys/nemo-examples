@@ -1,0 +1,28 @@
+{
+  "predicate": "face_vh_28_nl0_ce0",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 365,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 110,
+            "head_index": 1,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

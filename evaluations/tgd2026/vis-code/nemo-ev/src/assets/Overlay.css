@@ -1,0 +1,39 @@
+.overlay-toggle-btn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 32px;
+  height: 48px;
+  background: #fff;
+  color: #217dbb;
+  border: 1px solid #bbb;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.overlay-toggle-btn:hover {
+  background: #f0f0f0;
+  color: #135a96;
+}
+
+.re-resizable .resizable-handle {
+  width: 120px !important;         
+  right: 0;
+  background: rgba(25, 118, 210, 0.2); 
+  cursor: ew-resize;
+  z-index: 2000;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s;
+}
+.re-resizable .resizable-handle:hover {
+  background: rgba(25, 118, 210, 0.5);
+}

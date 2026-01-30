@@ -1,0 +1,18 @@
+{
+  "predicate": "move_vnm_37_nl0_ce0",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 235,
+      "head_index": 1,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

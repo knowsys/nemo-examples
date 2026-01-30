@@ -1,0 +1,18 @@
+{
+  "predicate": "digestion_vnm_10_nl0_ce2",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 39,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

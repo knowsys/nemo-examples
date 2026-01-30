@@ -1,0 +1,18 @@
+{
+  "predicate": "room_vnm_9_nl0_ce2",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 35,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

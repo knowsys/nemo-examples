@@ -1,0 +1,196 @@
+{
+  "responseType": "treeForTable",
+  "payload": {
+    "childInformation": {
+      "rule": 2,
+      "children": [
+        {
+          "predicate": "teaches",
+          "tableEntries": {
+            "entries": [
+              {
+                "entryId": 1,
+                "termTuple": [
+                  "prof_smith",
+                  "math101"
+                ]
+              }
+            ],
+            "pagination": {
+              "start": 0,
+              "moreEntriesExist": false
+            }
+          },
+          "possibleRulesAbove": [
+            2
+          ],
+          "possibleRulesBelow": []
+        },
+        {
+          "childInformation": {
+            "rule": 1,
+            "children": [
+              {
+                "predicate": "gaveRating",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 3,
+                      "termTuple": [
+                        "alice",
+                        "math101",
+                        "good"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1
+                ],
+                "possibleRulesBelow": []
+              },
+              {
+                "childInformation": {
+                  "rule": 0,
+                  "children": [
+                    {
+                      "predicate": "enrolled",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 5,
+                            "termTuple": [
+                              "alice",
+                              "math101"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        0
+                      ],
+                      "possibleRulesBelow": []
+                    },
+                    {
+                      "predicate": "enrolled",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 6,
+                            "termTuple": [
+                              "alice",
+                              "cs102"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        0
+                      ],
+                      "possibleRulesBelow": []
+                    },
+                    {
+                      "predicate": "enrolled",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 7,
+                            "termTuple": [
+                              "alice",
+                              "hist201"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        0
+                      ],
+                      "possibleRulesBelow": []
+                    }
+                  ]
+                },
+                "predicate": "activeStudent",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 4,
+                      "termTuple": [
+                        "alice"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1
+                ],
+                "possibleRulesBelow": [
+                  0
+                ]
+              }
+            ]
+          },
+          "predicate": "goodCourseRatingFromActiveStudent",
+          "tableEntries": {
+            "entries": [
+              {
+                "entryId": 2,
+                "termTuple": [
+                  "math101"
+                ]
+              }
+            ],
+            "pagination": {
+              "start": 0,
+              "moreEntriesExist": false
+            }
+          },
+          "possibleRulesAbove": [
+            2
+          ],
+          "possibleRulesBelow": [
+            1
+          ]
+        }
+      ]
+    },
+    "predicate": "wellRatedProfessor",
+    "tableEntries": {
+      "entries": [
+        {
+          "entryId": 0,
+          "termTuple": [
+            "prof_smith"
+          ]
+        }
+      ],
+      "pagination": {
+        "start": 0,
+        "moreEntriesExist": false
+      }
+    },
+    "possibleRulesAbove": [],
+    "possibleRulesBelow": [
+      2
+    ]
+  }
+}

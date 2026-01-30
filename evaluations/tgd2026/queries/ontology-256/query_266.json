@@ -1,0 +1,18 @@
+{
+  "predicate": "back_vh_13_nl0_ce1",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 50,
+      "head_index": 1,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

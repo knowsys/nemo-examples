@@ -1,0 +1,28 @@
+{
+  "predicate": "member",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 85,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 13,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

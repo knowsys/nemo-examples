@@ -1,0 +1,18 @@
+{
+  "predicate": "agreement_vh_35_nl0_ce1",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 138,
+      "head_index": 1,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

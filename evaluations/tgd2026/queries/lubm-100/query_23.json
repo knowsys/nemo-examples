@@ -1,0 +1,28 @@
+{
+  "predicate": "Person",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 51,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 130,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

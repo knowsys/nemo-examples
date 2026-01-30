@@ -1,0 +1,18 @@
+{
+  "predicate": "substance_vi_59_nl0_ce0",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 233,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

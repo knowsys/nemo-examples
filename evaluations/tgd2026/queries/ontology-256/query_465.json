@@ -1,0 +1,18 @@
+{
+  "predicate": "reflect_vh_16_nl0_ce1",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 152,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

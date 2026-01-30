@@ -1,0 +1,18 @@
+{
+  "predicate": "baby_vnm_17_nl0_ce2",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 67,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

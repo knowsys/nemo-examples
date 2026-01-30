@@ -1,0 +1,28 @@
+{
+  "predicate": "m59004",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 30,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 120,
+            "head_index": 2,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

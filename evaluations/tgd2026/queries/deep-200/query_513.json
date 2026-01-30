@@ -1,0 +1,58 @@
+{
+  "predicate": "m39004",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 61,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 14,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": {
+                  "rule": 113,
+                  "head_index": 0,
+                  "children": [
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": {
+                        "rule": 5,
+                        "head_index": 1,
+                        "children": [
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": {
+                              "rule": 60,
+                              "head_index": 0,
+                              "children": [
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

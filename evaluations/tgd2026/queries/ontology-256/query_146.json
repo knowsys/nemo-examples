@@ -1,0 +1,18 @@
+{
+  "predicate": "authority_vnm_24_nl0_ce2",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 136,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+%! Sensor Readings Example from https://datalogmtl.github.io/
+
+% Original facts:
+% HighTemperature(sensor1)@[0,27.5]
+% HighTemperature(sensor2)@3.5
+% HighTemperature(sensor2)@5.1
+% HighTemperature(sensor2)@10
+% HighTemperature(sensor2)@14.7
+% HighTemperature(sensor2)@20
+% SameLocation(sensor1,sensor2)@(-inf,+inf)
+
+% Original Rules:
+% Overheat(X) :- ALWAYS[-10,0] HighTemperature(X)
+% Overheat(X) :- ALWAYS[-20,0] SOMETIME[-5.5,0] HighTemperature(X)
+% Alert :- Overheat(X), Overheat(Y), SameLocation(X,Y)
+% Entailment check
+% Alert@25
+
+
+%% Translated facts
+
+HighTemperature("sensor1", 0.0, 27.5).
+HighTemperature("sensor2", 3.5, 3.5).
+HighTemperature("sensor2", 5.1, 5.1).
+HighTemperature("sensor2", 10.0, 10.0).
+HighTemperature("sensor2", 14.7, 14.7).
+HighTemperature("sensor2", 20.0, 20.0).
+SameLocation("sensor1", "sensor2"). % Always holds
+
+
+%% Translated rules 
+
+%%% aux rule to combine intervals
+HighTemperatureSometimes(?Sensor, ?StartA, ?EndB) :- 
+    HighTemperatureSometimes(?Sensor, ?StartA, ?EndA),
+    HighTemperatureSometimes(?Sensor, ?StartB, ?EndB),
+    ?StartA <= ?EndB,
+    ?StartB <= ?EndA,
+    ?StartA <= ?StartB,
+    ?EndA <= ?EndB.
+
+%%% aux rule to combine intervals
+Overheat(?Sensor, ?StartA, ?EndB) :- 
+    Overheat(?Sensor, ?StartA, ?EndA),
+    Overheat(?Sensor, ?StartB, ?EndB),
+    ?StartA <= ?EndB,
+    ?StartB <= ?EndA,
+    ?StartA <= ?StartB,
+    ?EndA <= ?EndB.
+
+%%% corresponds to rule 1
+Overheat(?Sensor, ?Start + 10.0, ?End) :- 
+    HighTemperature(?Sensor, ?Start, ?End), 
+    ?End - ?Start >= 10.0.
+
+
+%% corresponds to rule 2 (split into two rules)
+
+HighTemperatureSometimes(?Sensor, ?Start, ?End + 5.5) :- 
+    HighTemperature(?Sensor, ?Start, ?End).
+Overheat(?Sensor, ?Start + 20.0, ?End) :- 
+    HighTemperatureSometimes(?Sensor, ?Start, ?End), 
+    ?End - ?Start >= 20.0.
+
+%%% corresponds to rule  3 (slightly altered since we do not have nullary predicates)
+Alert(?SensorA, MAX(?StartA, ?StartB), MIN(?EndA, ?EndB)), Alert(?SensorB, MAX(?StartA, ?StartB), MIN(?EndA, ?EndB)) :- 
+    Overheat(?SensorA, ?StartA, ?EndA), 
+    Overheat(?SensorB, ?StartB, ?EndB), 
+    SameLocation(?SensorA, ?SensorB),
+    ?StartA <= ?EndB,
+    ?StartB <= ?EndA.
+
+@export Overheat :- tsv{resource="Overheat.tsv"}.
+@export Alert :- tsv{resource="Alert.tsv"}.

@@ -1,0 +1,48 @@
+{
+  "predicate": "Employee",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 92,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 103,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": {
+                  "rule": 17,
+                  "head_index": 0,
+                  "children": [
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

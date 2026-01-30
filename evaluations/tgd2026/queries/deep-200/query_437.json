@@ -1,0 +1,48 @@
+{
+  "predicate": "m3004",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 81,
+      "head_index": 2,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 21,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": {
+                  "rule": 80,
+                  "head_index": 1,
+                  "children": [
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": {
+                        "rule": 87,
+                        "head_index": 0,
+                        "children": [
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": null
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

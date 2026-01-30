@@ -1,0 +1,57 @@
+% Fakten
+
+student(alice).
+student(bob).
+student(charlie).
+student(diana).
+
+professor(prof_smith).
+professor(prof_jones).
+
+course(math101).
+course(cs102).
+course(hist201).
+course(phil301).
+
+teaches(prof_smith, math101).
+teaches(prof_smith, cs102).
+teaches(prof_jones, hist201).
+teaches(prof_jones, phil301).
+
+enrolled(alice, math101).
+enrolled(alice, cs102).
+enrolled(alice, hist201).
+
+enrolled(bob, cs102).
+enrolled(bob, hist201).
+enrolled(bob, phil301).
+
+enrolled(tobias, cs102).
+enrolled(tobias, hist201).
+enrolled(tobias, phil301).
+
+enrolled(charlie, math101).
+enrolled(charlie, cs102).
+
+enrolled(diana, hist201).
+
+gaveRating(alice, math101, good).
+gaveRating(bob, cs102, good).
+gaveRating(tobias, hist201, good).
+gaveRating(charlie, math101, bad).
+gaveRating(diana, hist201, good).
+
+% Regeln
+
+% Subfunktion 1: Aktive Studierende (mehr als 2 belegte Kurse)
+activeStudent(?S) :- enrolled(?S, ?C1), enrolled(?S, ?C2), enrolled(?S, ?C3), ?C1 != ?C2, ?C1 != ?C3, ?C2 != ?C3.
+
+% Subfunktion 2: Kurs hat gute Bewertung bekommen von aktivem Studenten
+goodCourseRatingFromActiveStudent(?C) :- gaveRating(?S, ?C, good), activeStudent(?S).
+
+% Subfunktion 3: Professor hat Kurs mit guter Bewertung unterrichtet
+wellRatedProfessor(?P) :- teaches(?P, ?C), goodCourseRatingFromActiveStudent(?C).
+
+% Hauptabfrage: Finde Professoren mit gut bewerteten Kursen von aktiven Studierenden
+@output wellRatedProfessor.
+

@@ -1,0 +1,63 @@
+%! Inspired by:
+%! https://github.com/wdimmy/MeTeoR/blob/main/experiments/AAAI2022/programs/w.txt
+%! (diamondminus in head should really be a boxminus according to original example; seems to be a typo in the meteor repo)
+
+
+%% Weather Station in Ohio with some Temperature Data
+
+LocatedInState("StationA","Ohio",0.0,1000.0).
+TempAbove41("StationA", 213.4, 213.5).
+TempAbove24("StationA", 210.0, 215.0).
+HeavyWindForce("StationA", 111.7,112.0).
+HeavyWindForce("StationA", 113.4,115.2).
+HeavyWindForce("StationA", 115.3,117.0).
+HeavyWindForce("StationA", 117.1,118.0).
+
+%% Boxminus[0,1]ExcessiveHeat(X):-Diamondminus[0,1]TempAbove41(X),Boxminus[0,1]TempAbove24(X)
+%% HeatAffectedState(X):-ExcessiveHeat(Y),LocatedInState(Y,X)
+
+%%% diamondminus part of first body
+TempAbove41DiamondMinus1(?Station, ?Start, ?End + 1.0) 
+    :- TempAbove41(?Station, ?Start, ?End).
+
+%%% boxminus part of first body 
+TempConstantOver24AtLeastFor1(?Station, ?Start + 1.0, ?End)
+    :- TempAbove24(?Station, ?Start, ?End), 
+        ?Start + 1.0 < ?End.
+
+%%% first rule using aux predicates
+ExcessiveHeat(?Station, MAX(?Start24, ?Start41) - 1.0, MIN(?End41, ?End24)) 
+    :-  TempAbove41DiamondMinus1(?Station, ?Start41, ?End41),
+        TempConstantOver24AtLeastFor1(?Station, ?Start24, ?End24),
+        ?Start41 < ?End24,
+        ?Start24 < ?End41.
+
+%%% second rule
+HeatAffectedState(?State, MAX(?StartHeat, ?StartIn), MIN(?EndHeat, ?EndIn)) 
+    :-  ExcessiveHeat(?Station, ?StartHeat, ?EndHeat),
+        LocatedInState(?Station, ?State, ?StartIn, ?EndIn),
+        ?StartHeat < ?EndIn,
+        ?StartIn < ?EndHeat.
+
+
+%% Boxminus[0,1]HeavyWind(X):-Boxminus[0,1]HeavyWindForce(X)
+%% HeavyWindAffectedState(X):-HeavyWind(Y),LocatedInState(Y,X)
+
+%%% third rule
+HeavyWind(?Station, ?Start, ?End) 
+    :-  HeavyWindForce(?Station, ?Start, ?End), 
+        ?Start + 1.0 < ?End.
+
+%%% fourth rule
+HeavyWindAffectedState(?State, MAX(?StartWind, ?StartIn), MIN(?EndWind, ?EndIn))
+    :-  HeavyWind(?Station, ?StartWind, ?EndWind),
+        LocatedInState(?Station, ?State, ?StartIn, ?EndIn),
+        ?StartWind < ?EndIn,
+        ?StartIn < ?EndWind.
+
+@export TempAbove41DiamondMinus1 :- tsv{resource="TempAbove41DiamondMinus1.tsv"}.
+@export TempConstantOver24AtLeastFor1 :- tsv{resource="TempConstantOver24AtLeastFor1.tsv"}.
+@export ExcessiveHeat :- tsv{resource="ExcessiveHeat.tsv"}.
+@export HeatAffectedState :- tsv{resource="HeatAffectedState.tsv"}.
+@export HeavyWind :- tsv{resource="HeavyWind.tsv"}.
+@export HeavyWindAffectedState :- tsv{resource="HeavyWindAffectedState.tsv"}.

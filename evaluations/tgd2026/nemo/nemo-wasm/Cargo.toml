@@ -1,0 +1,40 @@
+[package]
+name = "nemo-wasm"
+description = "WebAssembly bindings for nemo, a fast in-memory rule engine"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+readme = "README.md"
+repository.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["web_sys_unstable_apis"]
+web_sys_unstable_apis = []
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(wasm_bindgen_unstable_test_coverage)'] }
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+js-sys = "0.3.63"
+nemo = { path = "../nemo", features = [ "js" ], default-features = false }
+nemo-physical = { path = "../nemo-physical", default-features = false }
+nemo-language-server = { path = "../nemo-language-server", features = [ "js" ], default-features = false}
+futures = "0.3.21"
+gloo-utils = { version = "0.2.0", features = ["serde"] }
+thiserror = "2.0"
+# NOTE: the version of wasm-bindgen must be kept in sync with flake.nix
+wasm-bindgen = "=0.2.100"
+wasm-bindgen-futures = "0.4.37"
+web-sys = { version = "0.3.64", features = [ "Blob", "FileReaderSync", "FileSystemSyncAccessHandle" ]}
+serde = "1.0.219"
+serde_json = "1.0.140"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+

@@ -1,0 +1,108 @@
+{
+  "predicate": "http://rulewerk.semantic-web.org/inferred/subClassOf",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 7,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": {
+            "rule": 9,
+            "head_index": 0,
+            "children": [
+              {
+                "queries": [],
+                "pagination": null,
+                "next": {
+                  "rule": 5,
+                  "head_index": 0,
+                  "children": [
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": null
+                    },
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": {
+                        "rule": 9,
+                        "head_index": 0,
+                        "children": [
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": {
+                              "rule": 9,
+                              "head_index": 0,
+                              "children": [
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                },
+                                {
+                                  "queries": [],
+                                  "pagination": null,
+                                  "next": null
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "queries": [],
+                            "pagination": null,
+                            "next": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": null
+                    },
+                    {
+                      "queries": [],
+                      "pagination": null,
+                      "next": null
+                    }
+                  ]
+                }
+              },
+              {
+                "queries": [],
+                "pagination": null,
+                "next": null
+              }
+            ]
+          }
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

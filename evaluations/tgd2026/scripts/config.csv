@@ -1,0 +1,6 @@
+doctors,../rules/chase-bench/doctors/1m/rules
+deep-100,../rules/chase-bench/deep/100/rules
+deep-200,../rules/chase-bench/deep/200/rules
+ontology-256,../rules/chase-bench/ontology-256/rules
+lubm-100,../rules/chase-bench/lubm/100/rules
+galen,../rules/el/rules

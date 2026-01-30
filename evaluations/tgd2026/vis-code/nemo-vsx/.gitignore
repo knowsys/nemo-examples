@@ -1,0 +1,8 @@
+/dist
+/node_modules
+/nemo*.vsix
+*~
+#*#
+/result
+/.dream2nix/
+/.direnv/

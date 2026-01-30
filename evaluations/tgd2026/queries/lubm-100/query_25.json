@@ -1,0 +1,18 @@
+{
+  "predicate": "UndergraduateStudent",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 27,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

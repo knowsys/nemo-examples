@@ -1,0 +1,18 @@
+{
+  "predicate": "teacherOf",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 22,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

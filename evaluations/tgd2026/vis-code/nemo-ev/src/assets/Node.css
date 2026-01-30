@@ -1,0 +1,196 @@
+/* Node Container */
+.custom-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Button Basis */
+.custom-node-btn-side,
+.custom-node-btn-bottom,
+.custom-node-btn-top {
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Side Buttons */
+.custom-node-btn-side {
+  top: 50%;
+  background: #2ecc40;
+  transform: translateY(-50%);
+}
+
+.custom-node-btn-side.left,
+.custom-node-btn-side.left-delete {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+
+.custom-node-btn-side.right {
+  right: -60px;
+  border-radius: 0 50% 50% 0;
+}
+
+.custom-node-btn-side.collapse {
+  right: -24px;
+  border-radius: 0 50% 50% 0;
+  background: #3498db;
+}
+
+.custom-node-btn-side.left-delete {
+  background: #e74c3c;
+}
+
+/*  Side Buttons Hover  */
+.custom-node-btn-side:hover,
+.custom-node-btn-side:focus {
+  background: #27ae38;
+  box-shadow: 0 2px 8px rgba(39, 174, 56, 0.15);
+}
+
+.custom-node-btn-side.left-delete:hover,
+.custom-node-btn-side.left-delete:focus {
+  background: #c0392b;
+  box-shadow: 0 2px 8px rgba(192, 57, 43, 0.15);
+}
+
+.custom-node-btn-side.collapse:hover,
+.custom-node-btn-side.collapse:focus {
+  background: #217dbb;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+}
+
+/* Button-Bottom */
+.custom-node-btn-bottom {
+  left: 50%;
+  bottom: -22px;
+  transform: translateX(-50%);
+  border-radius: 0 0 50% 50%;
+  background: #3498db;
+}
+
+.custom-node-btn-bottom:hover,
+.custom-node-btn-bottom:focus {
+  background: #217dbb;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+}
+
+.custom-node-btn-bottom.add {
+  background: #2ecc40;
+  color: #fff;
+}
+
+.custom-node-btn-bottom.add:hover,
+.custom-node-btn-bottom.add:focus {
+  background: #27ae38;
+  box-shadow: 0 2px 8px rgba(39, 174, 56, 0.15);
+}
+
+/* Button-Top */
+.custom-node-btn-top {
+  left: 50%;
+  top: -22px;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+  background: #e74c3c;
+}
+
+.custom-node-btn-top:hover,
+.custom-node-btn-top:focus {
+  background: #c0392b;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+}
+
+.custom-node-btn-top.add {
+  background: #2ecc40;
+  color: #fff;
+}
+
+.custom-node-btn-top.add:hover,
+.custom-node-btn-top.add:focus {
+  background: #27ae38;
+  box-shadow: 0 2px 8px rgba(39, 174, 56, 0.15);
+}
+
+/*  Focus-Button  */
+.custom-node-btn-corner-base {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.custom-node-btn-corner {
+  background: #e74c3c;
+}
+.custom-node-btn-corner:hover,
+.custom-node-btn-corner:focus {
+  background: #c0392b;
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.15);
+}
+
+.custom-node-btn-corner-explore {
+  background: #3498db;
+}
+.custom-node-btn-corner-explore:hover,
+.custom-node-btn-corner-explore:focus {
+  background: #217dbb;
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.15);
+}
+
+.custom-node-btn-side-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  pointer-events: auto;
+  z-index: 1;
+  border-radius: 50% 0 0 50%;
+  background: #3498db;
+}
+
+.custom-node-btn-side-left:hover,
+.custom-node-btn-side-left:focus {
+  background: #217dbb;
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.15);
+}

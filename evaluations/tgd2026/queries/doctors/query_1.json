@@ -1,0 +1,18 @@
+{
+  "predicate": "targethospital",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 4,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

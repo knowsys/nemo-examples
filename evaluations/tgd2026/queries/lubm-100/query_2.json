@@ -1,0 +1,18 @@
+{
+  "predicate": "GraduateCourse",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 8,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

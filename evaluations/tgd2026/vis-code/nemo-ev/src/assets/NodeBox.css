@@ -1,0 +1,100 @@
+.table-node-box,
+.rule-node-box {
+  background: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.table-node-box--highlighted {
+  outline: 3px solid #ffb300;
+  outline-offset: 2px;
+  z-index: 10;
+}
+.table-node-box {
+  border: 2px solid #69b3a2;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  transition: width 0.2s, min-height 0.2s;
+}
+
+.rule-node-box {
+  border: 2px solid #4152b1;
+}
+
+/* Expandiert */
+.table-node-box--expanded {
+  width: 320px;
+  min-height: 120px;
+}
+
+/* Header */
+.table-node-box__header,
+.rule-node-box__header {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+}
+
+/* Body */
+.table-node-box__body {
+  padding: 4px 0;
+  text-align: center;
+}
+
+/* Arrow/Icon in Header */
+.table-node-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  margin-right: 8px;
+  margin-left: 2px;
+  vertical-align: middle;
+  line-height: 1;
+  height: 1.2em;
+  width: 1.2em;
+  user-select: none;
+}
+
+/* Hover-Effecte */
+.rule-node-box:hover,
+.custom-node.hovered .rule-node-box {
+  background: #c6e2fa;
+  box-shadow: 0 4px 16px #69b3a233;
+}
+
+.table-node-box--header-hovered:not(.table-node-box--expanded),
+.custom-node.hovered .table-node-box {
+  background: #d2f5e3;
+}
+
+/*Header Hover when expanded */
+.table-node-box--expanded .table-node-box__header:hover,
+.table-node-box--expanded .table-node-box__header:focus {
+  background: #b6ebcd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.table-node-box--expanded .table-node-box__header {
+  background: #d2f5e3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: background 0.2s;
+}
+
+.node-blur {  pointer-events: none; opacity: 0.5; }
+.node-grey {
+  filter: grayscale(1);
+  opacity: 0.25;
+}

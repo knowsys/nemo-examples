@@ -1,0 +1,465 @@
+{
+  "responseType": "treeForTable",
+  "payload": {
+    "childInformation": {
+      "rule": 2,
+      "children": [
+        {
+          "childInformation": {
+            "rule": 1,
+            "children": [
+              {
+                "childInformation": {
+                  "rule": 1,
+                  "children": [
+                    {
+                      "childInformation": {
+                        "rule": 1,
+                        "children": [
+                          {
+                            "childInformation": {
+                              "rule": 0,
+                              "children": [
+                                {
+                                  "predicate": "parent",
+                                  "tableEntries": {
+                                    "entries": [
+                                      {
+                                        "entryId": 5,
+                                        "termTuple": [
+                                          "alice",
+                                          "charlotte"
+                                        ]
+                                      }
+                                    ],
+                                    "pagination": {
+                                      "start": 0,
+                                      "moreEntriesExist": false
+                                    }
+                                  },
+                                  "possibleRulesAbove": [
+                                    1,
+                                    0
+                                  ],
+                                  "possibleRulesBelow": []
+                                }
+                              ]
+                            },
+                            "predicate": "ancestor",
+                            "tableEntries": {
+                              "entries": [
+                                {
+                                  "entryId": 4,
+                                  "termTuple": [
+                                    "alice",
+                                    "charlotte"
+                                  ]
+                                }
+                              ],
+                              "pagination": {
+                                "start": 0,
+                                "moreEntriesExist": false
+                              }
+                            },
+                            "possibleRulesAbove": [
+                              1,
+                              2
+                            ],
+                            "possibleRulesBelow": [
+                              0,
+                              1
+                            ]
+                          },
+                          {
+                            "predicate": "parent",
+                            "tableEntries": {
+                              "entries": [
+                                {
+                                  "entryId": 6,
+                                  "termTuple": [
+                                    "charlotte",
+                                    "edward"
+                                  ]
+                                }
+                              ],
+                              "pagination": {
+                                "start": 0,
+                                "moreEntriesExist": false
+                              }
+                            },
+                            "possibleRulesAbove": [
+                              1,
+                              0
+                            ],
+                            "possibleRulesBelow": []
+                          }
+                        ]
+                      },
+                      "predicate": "ancestor",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 3,
+                            "termTuple": [
+                              "alice",
+                              "edward"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        1,
+                        2
+                      ],
+                      "possibleRulesBelow": [
+                        0,
+                        1
+                      ]
+                    },
+                    {
+                      "predicate": "parent",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 7,
+                            "termTuple": [
+                              "edward",
+                              "gilbert"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        1,
+                        0
+                      ],
+                      "possibleRulesBelow": []
+                    }
+                  ]
+                },
+                "predicate": "ancestor",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 2,
+                      "termTuple": [
+                        "alice",
+                        "gilbert"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1,
+                  2
+                ],
+                "possibleRulesBelow": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "predicate": "parent",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 8,
+                      "termTuple": [
+                        "gilbert",
+                        "isabelle"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1,
+                  0
+                ],
+                "possibleRulesBelow": []
+              }
+            ]
+          },
+          "predicate": "ancestor",
+          "tableEntries": {
+            "entries": [
+              {
+                "entryId": 1,
+                "termTuple": [
+                  "alice",
+                  "isabelle"
+                ]
+              }
+            ],
+            "pagination": {
+              "start": 0,
+              "moreEntriesExist": false
+            }
+          },
+          "possibleRulesAbove": [
+            1,
+            2
+          ],
+          "possibleRulesBelow": [
+            0,
+            1
+          ]
+        },
+        {
+          "childInformation": {
+            "rule": 1,
+            "children": [
+              {
+                "childInformation": {
+                  "rule": 1,
+                  "children": [
+                    {
+                      "childInformation": {
+                        "rule": 1,
+                        "children": [
+                          {
+                            "childInformation": {
+                              "rule": 0,
+                              "children": [
+                                {
+                                  "predicate": "parent",
+                                  "tableEntries": {
+                                    "entries": [
+                                      {
+                                        "entryId": 5,
+                                        "termTuple": [
+                                          "alice",
+                                          "charlotte"
+                                        ]
+                                      }
+                                    ],
+                                    "pagination": {
+                                      "start": 0,
+                                      "moreEntriesExist": false
+                                    }
+                                  },
+                                  "possibleRulesAbove": [
+                                    1,
+                                    0
+                                  ],
+                                  "possibleRulesBelow": []
+                                }
+                              ]
+                            },
+                            "predicate": "ancestor",
+                            "tableEntries": {
+                              "entries": [
+                                {
+                                  "entryId": 4,
+                                  "termTuple": [
+                                    "alice",
+                                    "charlotte"
+                                  ]
+                                }
+                              ],
+                              "pagination": {
+                                "start": 0,
+                                "moreEntriesExist": false
+                              }
+                            },
+                            "possibleRulesAbove": [
+                              1,
+                              2
+                            ],
+                            "possibleRulesBelow": [
+                              0,
+                              1
+                            ]
+                          },
+                          {
+                            "predicate": "parent",
+                            "tableEntries": {
+                              "entries": [
+                                {
+                                  "entryId": 6,
+                                  "termTuple": [
+                                    "charlotte",
+                                    "edward"
+                                  ]
+                                }
+                              ],
+                              "pagination": {
+                                "start": 0,
+                                "moreEntriesExist": false
+                              }
+                            },
+                            "possibleRulesAbove": [
+                              1,
+                              0
+                            ],
+                            "possibleRulesBelow": []
+                          }
+                        ]
+                      },
+                      "predicate": "ancestor",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 3,
+                            "termTuple": [
+                              "alice",
+                              "edward"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        1,
+                        2
+                      ],
+                      "possibleRulesBelow": [
+                        0,
+                        1
+                      ]
+                    },
+                    {
+                      "predicate": "parent",
+                      "tableEntries": {
+                        "entries": [
+                          {
+                            "entryId": 11,
+                            "termTuple": [
+                              "edward",
+                              "fabienne"
+                            ]
+                          }
+                        ],
+                        "pagination": {
+                          "start": 0,
+                          "moreEntriesExist": false
+                        }
+                      },
+                      "possibleRulesAbove": [
+                        1,
+                        0
+                      ],
+                      "possibleRulesBelow": []
+                    }
+                  ]
+                },
+                "predicate": "ancestor",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 10,
+                      "termTuple": [
+                        "alice",
+                        "fabienne"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1,
+                  2
+                ],
+                "possibleRulesBelow": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "predicate": "parent",
+                "tableEntries": {
+                  "entries": [
+                    {
+                      "entryId": 12,
+                      "termTuple": [
+                        "fabienne",
+                        "heinrich"
+                      ]
+                    }
+                  ],
+                  "pagination": {
+                    "start": 0,
+                    "moreEntriesExist": false
+                  }
+                },
+                "possibleRulesAbove": [
+                  1,
+                  0
+                ],
+                "possibleRulesBelow": []
+              }
+            ]
+          },
+          "predicate": "ancestor",
+          "tableEntries": {
+            "entries": [
+              {
+                "entryId": 9,
+                "termTuple": [
+                  "alice",
+                  "heinrich"
+                ]
+              }
+            ],
+            "pagination": {
+              "start": 0,
+              "moreEntriesExist": false
+            }
+          },
+          "possibleRulesAbove": [
+            1,
+            2
+          ],
+          "possibleRulesBelow": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "predicate": "commonDescendant",
+    "tableEntries": {
+      "entries": [
+        {
+          "entryId": 0,
+          "termTuple": [
+            "alice",
+            "isabelle",
+            "heinrich"
+          ]
+        }
+      ],
+      "pagination": {
+        "start": 0,
+        "moreEntriesExist": false
+      }
+    },
+    "possibleRulesAbove": [
+      3
+    ],
+    "possibleRulesBelow": [
+      2
+    ]
+  }
+}

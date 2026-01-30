@@ -1,0 +1,94 @@
+{
+    "name": "nemo",
+    "displayName": "nemo",
+    "description": "",
+    "version": "0.0.17",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/knowsys/nemo-vscode-extension.git"
+    },
+    "private": "true",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "browser": "./dist/browserClientMain.js",
+    "main": "./dist/nodeClientMain.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "nemo.restartLanguageServer",
+                "title": "Nemo: Start or restart the Nemo language server"
+            },
+            {
+                "command": "nemo.stopLanguageServer",
+                "title": "Nemo: Stop the Nemo language server"
+            }
+        ],
+        "configuration": {
+            "title": "Nemo",
+            "properties": {
+                "nemo.languageServerExecutablePath": {
+                    "type": "string",
+                    "description": "Specifies the command to start the Nemo Language Server executable. See extension README.md for further information."
+                }
+            }
+        },
+        "languages": [
+            {
+                "id": "nemo",
+                "aliases": [
+                    "Nemo Rule Language",
+                    "nemo"
+                ],
+                "extensions": [
+                    ".rls"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "nemo",
+                "scopeName": "source.nemo",
+                "path": "./syntaxes/nemo.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run webpack",
+        "webpack": "webpack",
+        "weppackWatch": "webpack --watch",
+        "webpackProduction": "webpack --mode production --devtool hidden-source-map",
+        "tscTests": "tsc -p . --outDir out",
+        "tsxTestsWatch": "tsc -p . -w --outDir out",
+        "pretest": "npm run tscTests && npm run webpack && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test",
+        "package": "vsce package --skip-license"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "^22.14.0",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^7.13.0",
+        "@typescript-eslint/parser": "^7.13.0",
+        "@vscode/test-cli": "^0.0.11",
+        "@vscode/test-electron": "^2.4.0",
+        "@vscode/vsce": "^3.4.2",
+        "eslint": "^8.57.0",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.4.5",
+        "webpack": "^5.92.0",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@vscode/wasm-wasi": "^0.13.0-pre.1",
+        "@vscode/wasm-wasi-lsp": "^0.1.0-pre.1",
+        "path-browserify": "^1.0.1",
+        "vscode-languageclient": "^10.0.0-next.3",
+        "vscode-languageserver": "^9.0.1"
+    }
+}

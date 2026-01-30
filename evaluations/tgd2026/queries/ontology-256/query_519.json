@@ -1,0 +1,18 @@
+{
+  "predicate": "curve_vi_58_nl0_ce0m",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 229,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

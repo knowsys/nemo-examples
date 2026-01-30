@@ -1,0 +1,18 @@
+{
+  "predicate": "researchInterest",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 19,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

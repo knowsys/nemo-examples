@@ -1,0 +1,31 @@
+.custom-link-btn {
+  width: 24px;
+  height: 24px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-link-btn:hover,
+.custom-link-btn:focus {
+  background: #c0392b;
+  box-shadow: 0 0 2px 0 rgba(192, 57, 43, 0.35);
+}
+
+.edge-blur {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.edge{
+  pointer-events: stroke;
+}
+
+foreignObject {
+  overflow: visible;
+}

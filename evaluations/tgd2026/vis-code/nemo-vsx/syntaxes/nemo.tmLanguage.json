@@ -1,0 +1,124 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Nemo Rule Language",
+    "patterns": [
+        {
+            "include": "#attribute"
+        },
+        {
+            "include": "#fstring"
+        },
+        {
+            "include": "#specialDeclation"
+        },
+        {
+            "include": "#specialVariable"
+        },
+        {
+            "include": "#iri"
+        },
+        {
+            "include": "#operator"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#identifier"
+        },
+        {
+            "include": "#number"
+        },
+        {
+            "include": "#string"
+        },
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#invalid"
+        }
+    ],
+    "repository": {     
+        "attribute": {
+            "name": "entity.name.tag",
+            "begin": "(#\\[)",
+            "end": "(\\])"
+        },           
+
+        "fstring": {
+            "name" : "string",
+            "begin": "(f)(\")",
+            "end": "\"",
+            "captures": {
+                "1" : {
+                    "name" : "keyword"
+                },
+                "2" : {
+                    "name" : "string"
+                }
+            },
+            "patterns": [
+                {
+                    "name" : "keyword.operator",
+                    "match" : "\\{[^{}]*\\}"
+                },
+                {
+                    "name" : "string",
+                    "match" : "[^{}\"]*"
+                }
+            ]
+        },
+
+        "specialVariable": {
+            "name": "variable",
+            "match": "\\?[a-zA-Z][a-zA-Z0-9_\\-]*"
+        },
+
+        "specialDeclation": {
+            "name": "keyword",
+            "match": "@base|@prefix|@import|@export|@output"
+        },
+
+        "comment": {
+            "name": "comment",
+            "match": "%(.)*\n"
+        },
+
+        "punctuation": {
+            "name": "punctuation",
+            "match": "[()\\[\\]{}\\.,:?!~^#_@]|:-"
+        },
+
+        "operator": {
+            "name": "operator",
+            "match": "[<=>+\\-*/]|<=|>=|!="
+        },
+
+        "identifier": {
+            "name": "entity.name.function",
+            "match": "[a-zA-Z][a-zA-Z0-9_\\-]*"
+        },
+
+        "iri": {
+            "name": "constant",
+            "match": "<[^>]*>"
+        },
+
+        "number": {
+            "name": "number",
+            "match": "[0-9]"
+        },
+
+        "string": {
+            "name": "string",
+            "match": "\"([^\"\\\\]|\\\\.)*\""
+        },
+
+        "invalid": {
+            "name": "invalid",
+            "match": "."
+        }
+    },
+    "scopeName": "source.nemo"
+}

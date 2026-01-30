@@ -1,0 +1,18 @@
+{
+  "predicate": "Organization",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 104,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

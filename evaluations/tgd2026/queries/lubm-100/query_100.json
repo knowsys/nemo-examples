@@ -1,0 +1,18 @@
+{
+  "predicate": "University",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 28,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}

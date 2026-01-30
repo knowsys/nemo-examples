@@ -1,0 +1,23 @@
+{
+  "predicate": "prescription",
+  "inner": {
+    "queries": [],
+    "pagination": null,
+    "next": {
+      "rule": 0,
+      "head_index": 0,
+      "children": [
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        },
+        {
+          "queries": [],
+          "pagination": null,
+          "next": null
+        }
+      ]
+    }
+  }
+}
