@@ -1,0 +1,50 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+
+@source wdTriple[3]: sparql(wdqs:sparql,
+                            "subject,prop,value",
+                            "?subject ?prop ?value") .
+@source wdLabel[2]: sparql(wdqs:sparql,
+                            "subject,label",
+                            '?subject rdfs:label ?label FILTER(LANG(?label) = "en"') .
+@source compare[2]: sparql(wdqs:sparql, "left,right", "STR(?left) < STR(?right)") .
+@source directProperty[2]: sparql(wdqs:sparql, "direct,prop",
+                                 'BIND(IRI(CONCAT("http://www.wikidata.org/prop/direct/", SUBSTR(STR(?prop), STRLEN(STR(STR(wd:P)))))) AS ?direct)') .
+
+% Get disjoint classes:
+% Note: Separating the first rule helps Nemo to determine an order for the SPARQL queries; could also be one query, of course.
+deprecatedRank(wikibase:DeprecatedRank) .
+disjointPart(?qid, ?statement, ?listItem) :- wdTriple(?qid, p:P2738, ?statement), wdTriple(?statement, pq:P11260, ?listItem), wdTriple(?statement, wikibase:rank, ?rank), ~deprecatedRank(?rank).
+disjointClasses(?class1, ?class2), disjointClass(?class1), disjointClass(?class2) :-
+  disjointPart(?qid, ?statement, ?class1), disjointPart(?qid, ?statement, ?class2), compare(?class1, ?class2) .
+
+% Find subclass-of subproperties:
+subclassProperty(wd:P279) .
+subclassProperty(?subProp) :- subclassProperty(?prop), wdTriple(?subProp, wdt:P1647, ?prop) .
+subclassDirectProperty(?direct) :- subclassProperty(?prop), directProperty(?direct, ?prop) .
+
+% Find subclass paths to all classes involved in disjointness:
+subclassOfPlus(?class1, ?class2) :- disjointClass(?class1), subclassDirectProperty(?prop), wdTriple(?class1, ?prop, ?class2) .
+subclassOfPlus(?class1, ?class2) :- subclassOfPlus(?class1, ?c), subclassDirectProperty(?prop), wdTriple(?c, ?prop, ?class2) .
+
+% Add reflexive relations, but only for the disjoint classes:
+subclassOfOrEqual(?class1, ?class1) :- disjointClass(?class1) .
+subclassOfOrEqual(?class1, ?class2) :- subclassOfPlus(?class1, ?class2) .
+
+% Find empty classes, maximal empty classes, and empty classes in cycles (which are never maximal):
+empty(?class, ?class1, ?class2) :- subclassOfOrEqual(?class, ?class1), subclassOfOrEqual(?class, ?class2), disjointClasses(?class1, ?class2).
+hasEmptySuperClass(?class) :- subclassOfPlus(?class, ?superClass), empty(?superClass, ?x, ?y) .
+emptyMax(?class, ?class1, ?class2) :- empty(?class, ?class1, ?class2), ~hasEmptySuperClass(?class) .
+emptyCyclic(?class, ?class1, ?class2) :- empty(?class, ?class1, ?class2), subclassOfPlus(?class, ?class) .
+
+% Fetch and join some labels:
+% Note: creating a local label/2 predicate is currently necessary to work around a bug; will be fixed in v0.9.
+label(?class, ?classLabel) :- disjointClass(?class), wdLabel(?class, ?classLabel) .
+label(?class, ?classLabel) :- empty(?class, ?x, ?y), wdLabel(?class, ?classLabel) .
+emptyMaxLabels(?class, ?classLabel, ?class1, ?class1Label, ?class2, ?class2Label) :- emptyMax(?class, ?class1, ?class2), label(?class, ?classLabel), label(?class1, ?class1Label), label(?class2, ?class2Label) .
+

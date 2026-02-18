@@ -1,0 +1,19 @@
+[package]
+name = "nemo-python"
+description = "Python bindings for nemo, a fast in-memory rule engine"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+readme = "README.md"
+repository.workspace = true
+
+[lib]
+name = "nmo_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.27.0", features = ["extension-module"] }
+tokio = { version = "1.47.1", features = ["rt"] }
+nemo = { path = "../nemo" }

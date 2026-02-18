@@ -1,0 +1,30 @@
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@source wdTriple[3]: sparql(wdqs:sparql,
+                            "subject,prop,value",
+                            "?subject ?prop ?value") .
+@source wdLabel[2]: sparql(wdqs:sparql,
+                            "subject,label",
+                            '?subject rdfs:label ?label FILTER(LANG(?label) = "en"') .
+
+property(wdt:P22).
+property(wdt:P25).
+
+wdParent(?child, ?parent) :- property(?property), wdTriple(?child, ?property, ?parent).
+
+ancestor(wd:Q7259, ?parent) :- wdParent(wd:Q7259,?parent).
+ancestor(wd:Q14045, ?parent) :- wdParent(wd:Q14045,?parent).
+
+ancestor(?person, ?ancestor) :- ancestor(?person, ?x), wdParent(?x, ?ancestor) .
+
+ancestorOfBoth(?qid, ?name) :-
+  ancestor(wd:Q7259, ?qid),
+  ancestor(wd:Q14045, ?qid),
+  wdLabel(?qid, ?name) .
+
+ancestorOfAncestorOfBoth(?parent) :- ancestorOfBoth(?child, ?other), wdParent(?child, ?parent) .
+mostRecentAncestorOfBoth(?qid, ?name) :- ancestorOfBoth(?qid, ?name), ~ancestorOfAncestorOfBoth(?qid) .
+

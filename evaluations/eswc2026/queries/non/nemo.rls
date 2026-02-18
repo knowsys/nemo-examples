@@ -1,0 +1,28 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+
+@import wdTriple :- sparql{
+  endpoint=wdqs:sparql,
+  query="SELECT ?subject ?prop ?value WHERE { ?subject ?prop ?value }"
+} .
+
+property(wd:P31) .
+noneOf(?prop, ?value) :- property(?prop),
+                         wdTriple(?prop, p:P2302, ?stmt),         % property constraint
+                         wdTriple(?stmt, ps:P2302, wd:Q52558054), % none-of constraint
+                         wdTriple(?stmt, pq:P2305, ?value) .      % forbidden value
+
+violation(?stmt, ?prop, ?value) :- noneOf(?prop, ?value),
+                                   wdTriple(?prop, wikibase:claim, ?p),
+                                   wdTriple(?prop, wikibase:statementProperty, ?ps),
+                                   wdTriple(?subject, ?p, ?stmt),
+                                   wdTriple(?stmt, ?ps, ?value) .
+
+@output violation .
+@export violation :- csv{} .

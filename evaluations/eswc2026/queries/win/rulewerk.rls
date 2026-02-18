@@ -1,0 +1,27 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@source wdTriple[3]: sparql(wdqs:sparql,
+                            "subject,prop,value",
+                            "?subject ?prop ?value") .
+
+sportsEvent(?event) :- wdTriple(?event, wdt:P3450, wd:Q1778808) .
+winner(?event, ?winner) :- sportsEvent(?event), wdTriple(?event, wdt:P1346, ?winner) .
+next(?event, ?next) :-
+   sportsEvent(?event),
+   wdTriple(?event, p:P3450, ?stmt),
+   wdTriple(?stmt, ps:P3450, wd:Q1778808),
+   wdTriple(?stmt, pq:P156, ?next) .
+sameWinnerAsPrevious(?event) :- next(?previous, ?event), winner(?event, ?winner), winner(?previous, ?winner) .
+streakStart(?event) :- sportsEvent(?event), ~sameWinnerAsPrevious(?event) .
+onStreak(?start, ?start) :- streakStart(?start) .
+onStreak(?start, ?next) :-
+  onStreak(?start, ?previous),
+  next(?previous, ?next),
+  sameWinnerAsPrevious(?next) .
+

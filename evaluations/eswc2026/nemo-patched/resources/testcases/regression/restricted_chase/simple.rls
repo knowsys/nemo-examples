@@ -1,0 +1,4 @@
+@import data :- csv { resource = "sources/data.csv" }.
+@export result :- csv { }.
+
+result(?X, !V) :- data(?X, ?Y) .

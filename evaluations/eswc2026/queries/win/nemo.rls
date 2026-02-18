@@ -1,0 +1,43 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@parameter $eventType = wd:Q1778808 . % All-Ireland Senior Hurling Championship
+
+@import wdTriple :- sparql{
+  endpoint = wdqs:sparql,
+  query = "SELECT ?subject ?prop ?value WHERE { ?subject ?prop ?value }"
+} .
+
+sportsEvent(?event) :- wdTriple(?event, wdt:P3450, $eventType) .
+winner(?event, ?winner) :- sportsEvent(?event), wdTriple(?event, wdt:P1346, ?winner) .
+next(?event, ?next) :-
+   sportsEvent(?event),
+   wdTriple(?event, p:P3450, ?stmt),
+   wdTriple(?stmt, ps:P3450, $eventType),
+   wdTriple(?stmt, pq:P156, ?next) .
+sameWinnerAsPrevious(?event) :- next(?previous, ?event), winner(?event, ?winner), winner(?previous, ?winner) .
+streakStart(?event) :- sportsEvent(?event), ~sameWinnerAsPrevious(?event) .
+onStreak(?start, ?start) :- streakStart(?start) .
+onStreak(?start, ?next) :-
+  onStreak(?start, ?previous),
+  next(?previous, ?next),
+  sameWinnerAsPrevious(?next) .
+streakLength(?start, #count(?onStreak)) :- onStreak(?start, ?onStreak) .
+streaksByLength(?length, ?winner, ?winnerLabel, ?start, ?startLabel) :-
+  streakLength(?start, ?length), ?length > 1,
+  winner(?start, ?winner),
+  wdTriple(?winner, rdfs:label, ?winnerLabel), LANG(?winnerLabel) = "en",
+  wdTriple(?start, rdfs:label, ?startLabel), LANG(?startLabel) = "en" .
+longestStreakLength(#max(?length)) :- streakLength(_, ?length) .
+recordStreak(f"{?winnerLabel} had a record-length winning streak of length {?length} that started by winning the event {?startLabel}") :-
+  longestStreakLength(?length), streaksByLength(?length, _, ?winnerLabel, _, ?startLabel).
+
+@output recordStreak .
+@output streaksByLength .
+@export recordStreak :- csv{} .
+@export streaksByLength :- csv{} .

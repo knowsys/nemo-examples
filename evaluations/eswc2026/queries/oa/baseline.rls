@@ -1,0 +1,34 @@
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix dblpservice: <https://sparql.dblp.org/> .
+@prefix dblp: <https://dblp.org/rdf/schema#> .
+
+@parameter $sparqlService = <https://query.wikidata.org/sparql> .
+% @parameter $sparqlService = <https://qlever.dev/api/wikidata> .
+
+@import wdTriple :- sparql{
+  endpoint = $sparqlService,
+  query = "SELECT ?subject ?prop ?value WHERE { ?subject ?prop ?value }"
+} .
+
+@import dblpAuthorIssn :- sparql{
+  endpoint=dblpservice:sparql,
+  query="""
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?author ?issn WHERE {
+  ?pub dblp:authoredBy ?author ;
+    dblp:publishedInStream ?stream .
+  ?stream dblp:issn ?issn .
+}
+  """
+} .
+
+oaJournalByType(?journal) :- wdTriple(?journal,wdt:P31,wd:Q773668) .
+
+oaJournalByTypeIssn(?journal,IRI(f"urn:issn:{?issn}")) :- oaJournalByType(?journal), wdTriple(?journal,wdt:P236,?issn) .
+
+oxfordEmployee(?person) :- wdTriple(?person, wdt:P108, wd:Q34433) .
+oxfordEmployeeDblp(?person,IRI(f"https://dblp.org/pid/{?dblpId}")) :- oxfordEmployee(?person), wdTriple(?person, wdt:P2456, ?dblpId) .
+
+oxfordOaAuthor(?person,?journal) :- oxfordEmployeeDblp(?person,?dblpIri), dblpAuthorIssn(?dblpIri,?issnIri), oaJournalByTypeIssn(?journal,?issnIri) .

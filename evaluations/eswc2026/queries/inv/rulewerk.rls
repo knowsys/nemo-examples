@@ -1,0 +1,27 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+
+@source wdTriple[3]: sparql(wdqs:sparql,
+                            "subject,prop,value",
+                            "?subject ?prop ?value") .
+
+property(wd:P25) .
+inverse(?prop, ?inverse) :- property(?prop),
+                            wdTriple(?prop, p:P2302, ?stmt),         % property constraint
+                            wdTriple(?stmt, ps:P2302, wd:Q21510855), % inverse constraint
+                            wdTriple(?stmt, pq:P2306, ?inverse) .    % inverse property
+
+violation(?stmt, ?prop, ?inverse) :- inverse(?prop, ?inverse),
+                                     wdTriple(?prop, wikibase:claim, ?p),
+                                     wdTriple(?prop, wikibase:statementProperty, ?ps),
+                                     wdTriple(?inverse, wikibase:directClaim, ?i),
+                                     wdTriple(?subject, ?p, ?stmt),
+                                     wdTriple(?stmt, ?ps, ?object),
+                                     ~wdTriple(?object, ?i, ?subject) .
+

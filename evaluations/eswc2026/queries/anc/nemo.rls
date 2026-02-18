@@ -1,0 +1,33 @@
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@parameter $personId1 = wd:Q7259 . 
+@parameter $personId2 = wd:Q14045 .
+
+@import wdTriple :- sparql{
+  endpoint = wdqs:sparql,
+  query = "SELECT ?subject ?prop ?value WHERE { ?subject ?prop ?value }"
+} .
+
+property(wdt:P22).
+property(wdt:P25).
+
+wdParent(?child, ?parent) :- property(?property), wdTriple(?child, ?property, ?parent).
+
+ancestor($personId1, ?parent) :- wdParent($personId1,?parent).
+ancestor($personId2, ?parent) :- wdParent($personId2,?parent).
+
+ancestor(?person, ?ancestor) :- ancestor(?person, ?x), wdParent(?x, ?ancestor) .
+
+ancestorOfBoth(?qid, ?name) :-
+  ancestor($personId1, ?qid),
+  ancestor($personId2, ?qid),
+  wdTriple(?qid, rdfs:label, ?name), LANG(?name) = "en" .
+
+ancestorOfAncestorOfBoth(?parent) :- ancestorOfBoth(?child, _), wdParent(?child, ?parent) .
+mostRecentAncestorOfBoth(?qid, ?name) :- ancestorOfBoth(?qid, ?name), ~ancestorOfAncestorOfBoth(?qid) .
+
+@export mostRecentAncestorOfBoth :- csv{} .
+@output mostRecentAncestorOfBoth.

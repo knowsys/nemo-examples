@@ -1,0 +1,53 @@
+@prefix wdqs: <https://query.wikidata.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+
+@parameter $sparqlService = <https://query.wikidata.org/sparql> .
+
+@import wdTriple :- sparql{
+  endpoint = $sparqlService,
+  query = "SELECT ?subject ?prop ?value WHERE { ?subject ?prop ?value }"
+} .
+
+% Get disjoint classes:
+disjointPart(?qid, ?statement, ?listItem) :- wdTriple(?qid, p:P2738, ?statement), wdTriple(?statement, pq:P11260, ?listItem), wdTriple(?statement, wikibase:rank, ?rank), ?rank != wikibase:DeprecatedRank .
+disjointClasses(?class1, ?class2), disjointClass(?class1), disjointClass(?class2) :-
+  disjointPart(?qid, ?statement, ?class1),
+  disjointPart(?qid, ?statement, ?class2),
+  COMPARE(STR(?class1), STR(?class2)) = 1 . % compare strings to break symmetries in disjointClasses()
+
+% Find subclass-of subproperties:
+subclassProperty(wd:P279) .
+subclassProperty(?subProp) :- subclassProperty(?prop), wdTriple(?subProp, wdt:P1647, ?prop) .
+subclassDirectProperty( IRI(f"http://www.wikidata.org/prop/direct/{?pid}") ) :-
+  subclassProperty(?prop), ?pid = SUBSTR(STR(?prop),STRLEN(STR(wd:P))) .
+
+% Find subclass paths to all classes involved in disjointness:
+subclassOfPlus(?class1, ?class2) :- disjointClass(?class1), subclassDirectProperty(?prop), wdTriple(?class1, ?prop, ?class2) .
+subclassOfPlus(?class1, ?class2) :- subclassOfPlus(?class1, ?c), subclassDirectProperty(?prop), wdTriple(?c, ?prop, ?class2) .
+
+% Add reflexive relations, but only for the disjoint classes:
+subclassOfOrEqual(?class1, ?class1) :- disjointClass(?class1) .
+subclassOfOrEqual(?class1, ?class2) :- subclassOfPlus(?class1, ?class2) .
+
+% Find empty classes, maximal empty classes, and empty classes in cycles (which are never maximal):
+   empty(?emptyClass, ?class1, ?class2) :- subclassOfOrEqual(?emptyClass, ?class1), subclassOfOrEqual(?emptyClass, ?class2), disjointClasses(?class1, ?class2).
+        hasEmptySuperClass(?emptyClass) :- subclassOfPlus(?emptyClass, ?superClass), empty(?superClass, _, _) .
+emptyMax(?emptyClass, ?class1, ?class2) :- empty(?emptyClass, ?class1, ?class2), ~hasEmptySuperClass(?emptyClass) .
+ emptyOnCycle(?class, ?class1, ?class2) :- empty(?class, ?class1, ?class2), subclassOfPlus(?class, ?class) .
+
+% Fetch and join some labels:
+label(?class, ?classLabel) :- disjointClass(?class), wdTriple(?class, rdfs:label, ?classLabel), LANG(?classLabel) = "en" .
+label(?class, ?classLabel) :- empty(?class, _, _), wdTriple(?class, rdfs:label, ?classLabel), LANG(?classLabel) = "en" .
+
+emptyMaxLabels(?class, ?classLabel, ?class1, ?class1Label, ?class2, ?class2Label) :-
+  emptyMax(?class, ?class1, ?class2), label(?class,?classLabel), label(?class1,?class1Label), label(?class2,?class2Label).
+emptyOnCycleLabels(?class, ?classLabel, ?class1, ?class1Label, ?class2, ?class2Label) :-
+  emptyOnCycle(?class, ?class1, ?class2), label(?class,?classLabel), label(?class1,?class1Label), label(?class2,?class2Label).
+
+@output emptyMaxLabels.
+@export emptyMaxLabels :- csv {}.
