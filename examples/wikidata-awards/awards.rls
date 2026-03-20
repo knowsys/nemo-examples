@@ -2,17 +2,20 @@
 % Wikidata, and splits the language strings into language and string
 % value.
 
-@import awards :- sparql{
-  endpoint=<https://query.wikidata.org/sparql>,
-  query="""
-    PREFIX wd: <http://www.wikidata.org/entity/>
-    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    SELECT ?award ?awardLabel WHERE {
-      wd:Q42 wdt:P166 ?award .
-      ?award rdfs:label ?awardLabel .
-    }"""
-} .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-awardsByLanguage(LANG(?label), STR(?label), ?award) :- awards(?award, ?label).
-@output awardsByLanguage.
+%%%% import arbitrary triples from Wikidata
+@import wdTriple :- sparql{ endpoint = <https://query.wikidata.org/sparql> } .
+
+%%% find awards received by Douglas Adams, together with their labels
+awards(?award, ?awardLabel) :-
+  wdTriple(wd:Q42, wdt:P166, ?award),
+  wdTriple(?award, rdfs:label, ?awardLabel) .
+
+%%% split the award labels into text and language
+awardsByLanguage(LANG(?label), STR(?label), ?award) :- awards(?award, ?label) .
+
+@output awardsByLanguage .
+@export awardsByLanguage :- csv{} .
