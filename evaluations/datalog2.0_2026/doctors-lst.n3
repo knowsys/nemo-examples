@@ -1,0 +1,7 @@
+@prefix : <http://example.org/> .
+
+{ ?id :treatment ( ?patient ?hospital ?npi ?conf1 ) . ?npi :physician ( ?name ?spec ?conf2 ) } => { ?id :prescription ( ?patient ?npi _:C1 ) } .
+{ ?id :medprescription ( ?patient ?npi ?doctor ?spec ?conf ) } => { ?npi :doctor ( ?doctor ?spec _:H _:C2 ) } .
+{ ?id :medprescription ( ?patient ?npi ?doctor ?spec ?conf ) } => { ?id :prescription ( ?patient ?npi _:C1 ) } .
+{ ?id :treatment ( ?patient ?hospital ?npi ?conf1 ) . ?npi :physician ( ?name ?spec ?conf2 ) } => { ?npi :doctor ( ?name ?spec ?hospital _:C2 ) } .
+{ ?doctor :hospital ( ?spec ?hospital1 ?npi1 ?hconf1 ) } => { ?doctor :targethospital ( ?spec ?hospital1 ?npi1 ?hconf1 ) } .
