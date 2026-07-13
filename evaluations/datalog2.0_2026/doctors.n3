@@ -1,0 +1,7 @@
+@prefix : <http://example.org/> .
+
+{ ?id :treatment _:1 . _:1 :arg1 ?patient . _:1 :arg2 ?hospital . _:1 :arg3 ?npi . _:1 :arg4 ?conf1 . ?npi :physician _:2 . _:2 :arg1 ?name . _:2 :arg2 ?spec . _:2 :arg3 ?conf2 } => { ?id :prescription _:3 . _:3 :arg1 ?patient . _:3 :arg2 ?npi . _:3 :arg3 _:C1 } .
+{ ?id :medprescription _:4 . _:4 :arg1 ?patient . _:4 :arg2 ?npi . _:4 :arg3 ?doctor . _:4 :arg4 ?spec . _:4 :arg5 ?conf } => { ?npi :doctor _:5 . _:5 :arg1 ?doctor . _:5 :arg2 ?spec . _:5 :arg3 _:H . _:5 :arg4 _:C2 } .
+{ ?id :medprescription _:6 . _:6 :arg1 ?patient . _:6 :arg2 ?npi . _:6 :arg3 ?doctor . _:6 :arg4 ?spec . _:6 :arg5 ?conf } => { ?id :prescription _:7 . _:7 :arg1 ?patient . _:7 :arg2 ?npi . _:7 :arg3 _:C1 } .
+{ ?id :treatment _:8 . _:8 :arg1 ?patient . _:8 :arg2 ?hospital . _:8 :arg3 ?npi . _:8 :arg4 ?conf1 . ?npi :physician _:9 . _:9 :arg1 ?name . _:9 :arg2 ?spec . _:9 :arg3 ?conf2 } => { ?npi :doctor _:10 . _:10 :arg1 ?name . _:10 :arg2 ?spec . _:10 :arg3 ?hospital . _:10 :arg4 _:C2 } .
+{ ?doctor :hospital _:11 . _:11 :arg1 ?spec . _:11 :arg2 ?hospital1 . _:11 :arg3 ?npi1 . _:11 :arg4 ?hconf1 } => { ?doctor :targethospital _:12 . _:12 :arg1 ?spec . _:12 :arg2 ?hospital1 . _:12 :arg3 ?npi1 . _:12 :arg4 ?hconf1 } .
