@@ -17,6 +17,9 @@
 
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
 
 %%% Main SPARQL endpoint to use
 @parameter $sparqlService = <https://query.wikidata.org/sparql> .
@@ -28,9 +31,6 @@
 @import wdDisjointUnionStatement :- sparql{
   endpoint = $sparqlService,
   query="""
-    PREFIX p: <http://www.wikidata.org/prop/>
-    PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
-    PREFIX wikibase: <http://wikiba.se/ontology#>
     SELECT ?qid ?statement ?listItem
     WHERE {
       ?qid p:P2738 ?statement .
@@ -49,7 +49,6 @@
 @import wdLabel :- sparql{
   endpoint = <https://query.wikidata.org/sparql>,
   query = """
-    PREFIX wikibase: <http://wikiba.se/ontology#>
     SELECT ?qid ?qidLabel WHERE {
       SERVICE wikibase:label {
         <http://www.bigdata.com/rdf#serviceParam> wikibase:language "mul,en" } }"""

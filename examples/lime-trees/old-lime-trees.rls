@@ -18,6 +18,7 @@
 @prefix wdqs: <https://query.wikidata.org/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
 
 %%% Define what kind of genus (of trees) we are looking for:
 @parameter $treeGenus = wd:Q127849 . % = lime/linden tree
@@ -38,7 +39,6 @@
 @import wdLabel :- sparql{
   endpoint=wdqs:sparql,
   query="""
-    PREFIX wikibase: <http://wikiba.se/ontology#>
     SELECT ?qid ?qidLabel WHERE {
       SERVICE wikibase:label {
         <http://www.bigdata.com/rdf#serviceParam> wikibase:language "mul,en" } }"""
